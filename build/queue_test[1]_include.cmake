@@ -1,0 +1,5 @@
+if(EXISTS "/home/alex/labs3/build/queue_test[1]_tests.cmake")
+  include("/home/alex/labs3/build/queue_test[1]_tests.cmake")
+else()
+  add_test(queue_test_NOT_BUILT queue_test_NOT_BUILT)
+endif()

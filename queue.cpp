@@ -71,6 +71,37 @@ void Queue::print() const {
 
 
 void Queue::saveToFile(const string& filename) const {
+    ofstream file(filename);
+    if (!file) return;
+
+    int count = 0;
+    for (QNode* curr = front; curr; curr = curr->next) {
+        count++;
+    }
+    file << count << "\n";
+
+    for (QNode* curr = front; curr; curr = curr->next) {
+        writeStringText(file, curr->data);
+    }
+}
+
+void Queue::loadFromFile(const string& filename) {
+    ifstream file(filename);
+    if (!file) return;
+
+    while (!isEmpty()) pop();
+
+    int count;
+    file >> count;
+    string dummy; getline(file, dummy);
+
+    for (int i = 0; i < count; ++i) {
+        push(readStringText(file));
+    }
+}
+
+// --- BINARY ---
+void Queue::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) return;
 
@@ -85,7 +116,7 @@ void Queue::saveToFile(const string& filename) const {
     }
 }
 
-void Queue::loadFromFile(const string& filename) {
+void Queue::loadFromBinaryFile(const string& filename) {
     ifstream file(filename, ios::binary);
     if (!file) return;
 

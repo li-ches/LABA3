@@ -1,0 +1,5 @@
+if(EXISTS "/home/alex/labs3/build/arr_test[1]_tests.cmake")
+  include("/home/alex/labs3/build/arr_test[1]_tests.cmake")
+else()
+  add_test(arr_test_NOT_BUILT arr_test_NOT_BUILT)
+endif()

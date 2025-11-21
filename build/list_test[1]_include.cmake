@@ -1,0 +1,5 @@
+if(EXISTS "/home/alex/labs3/build/list_test[1]_tests.cmake")
+  include("/home/alex/labs3/build/list_test[1]_tests.cmake")
+else()
+  add_test(list_test_NOT_BUILT list_test_NOT_BUILT)
+endif()

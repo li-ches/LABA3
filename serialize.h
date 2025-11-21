@@ -3,10 +3,11 @@
 
 #include <string>
 #include <fstream>
+#include <iostream>
 
 using namespace std; 
 
-//inline - функция будет включена в несколько .cpp файлов
+//бинарный
 inline void writeString(ofstream& file, const string& s) {
     size_t len = s.length();
     file.write(reinterpret_cast<const char*>(&len), sizeof(len));
@@ -20,11 +21,23 @@ inline string readString(ifstream& file) {
     
     string s(len, '\0');
     file.read(&s[0], len);
-    
-    // ВАЖНОЕ ИСПРАВЛЕНИЕ: Проверяем, удалось ли считать данные
     if (file.fail()) return ""; 
-    
     return s;
+}
+
+//текстовый
+inline void writeStringText(ofstream& file, const string& s) {
+    // Записываем строку и перенос
+    file << s << "\n";
+}
+
+inline string readStringText(ifstream& file) {
+    string s;
+    if (getline(file, s)) {
+        if (!s.empty() && s.back() == '\r') s.pop_back();
+        return s;
+    }
+    return "";
 }
 
 #endif

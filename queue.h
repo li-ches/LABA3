@@ -41,6 +41,10 @@ public:
     void saveToFile(const string& filename) const;
     void loadFromFile(const string& filename);
 
+    // Бинарный
+    void saveToBinaryFile(const string& filename) const;
+    void loadFromBinaryFile(const string& filename);
+
     QNode* getFront_test() const
     {
         return front;

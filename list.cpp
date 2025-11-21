@@ -209,8 +209,41 @@ void MyList::delBeforeValue(const string& val) {
 }
 
 
-
 void MyList::saveToFile(const string& filename) const {
+    ofstream file(filename);
+    if (!file) return;
+
+    int count = 0;
+    for (Node* curr = head; curr; curr = curr->next) {
+        count++;
+    }
+    file << count << "\n";
+
+    for (Node* curr = head; curr; curr = curr->next) {
+        writeStringText(file, curr->value);
+    }
+}
+
+void MyList::loadFromFile(const string& filename) {
+    ifstream file(filename);
+    if (!file) return;
+
+    while (head) delHead();
+
+    int count;
+    file >> count;
+    string dummy; getline(file, dummy);
+
+    if (file.fail()) return;
+
+    for (int i = 0; i < count; ++i) {
+        string val = readStringText(file);
+        addTail(val); 
+    }
+}
+
+// --- BINARY ---
+void MyList::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) return;
 
@@ -225,11 +258,10 @@ void MyList::saveToFile(const string& filename) const {
     }
 }
 
-void MyList::loadFromFile(const string& filename) {
+void MyList::loadFromBinaryFile(const string& filename) {
     ifstream file(filename, ios::binary);
     if (!file) return;
 
-    //очищаем список
     while (head) delHead();
 
     int count;

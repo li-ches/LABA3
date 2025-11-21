@@ -39,9 +39,12 @@ public:
     // Изменено согласно modernize-use-trailing-return-type
     auto lenArr() const -> int;
 
-    //сериализация
     void saveToFile(const string& filename) const;
     void loadFromFile(const string& filename);
+
+    // Бинарная
+    void saveToBinaryFile(const string& filename) const;
+    void loadFromBinaryFile(const string& filename);
 
     string* getData_test() const //хелпер для тестов
     {   return data;

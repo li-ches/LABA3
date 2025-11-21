@@ -4,10 +4,10 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <fstream> 
 
 using namespace std;
 
-// Изменено на trailing return type
 auto hash_str(const string& key, int mod) -> int;
 
 class ChainHash {
@@ -40,6 +40,15 @@ public:
     auto find(const string& key) -> string;
 
     void show();
+
+    // --- СЕРИАЛИЗАЦИЯ ---
+    // Текстовая
+    void saveToFile(const string& filename) const;
+    void loadFromFile(const string& filename);
+    
+    // Бинарная
+    void saveToBinaryFile(const string& filename) const;
+    void loadFromBinaryFile(const string& filename);
 };
 
 class OpenHash {
@@ -67,9 +76,16 @@ public:
     auto find(const string& key) const -> string;
 
     void show();
+
+    void saveToFile(const string& filename) const;
+    void loadFromFile(const string& filename);
+
+    // Бинарный
+    void saveToBinaryFile(const string& filename) const;
+    void loadFromBinaryFile(const string& filename);
 };
 
 void hash_man();
-void parse_cmd(const std::string& line, std::string& cmd, std::string& arg1, std::string& rest);
+void parse_cmd(const std::string& line, std::string& cmd, std::string& arg1, std::string& arg2);
 
 #endif

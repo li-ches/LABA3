@@ -1,0 +1,138 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "main.o",
+      "main.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/main.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "rbtree.o",
+      "rbtree.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/rbtree.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/rbtree.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "onelist.o",
+      "onelist.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/onelist.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/onelist.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "twolist.o",
+      "twolist.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/twolist.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/twolist.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "stack.o",
+      "stack.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/stack.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/stack.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "queue.o",
+      "queue.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/queue.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/queue.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "dynarr.o",
+      "dynarr.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/dynarr.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/dynarr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-I.",
+      "-Wall",
+      "-Wextra",
+      "-g",
+      "-c",
+      "-o",
+      "hash-table.o",
+      "hash-table.cpp"
+    ],
+    "directory": "/home/danilglock-18/laba3/zad1",
+    "file": "/home/danilglock-18/laba3/zad1/hash-table.cpp",
+    "output": "/home/danilglock-18/laba3/zad1/hash-table.o"
+  }
+]

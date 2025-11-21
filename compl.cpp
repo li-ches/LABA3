@@ -5,9 +5,6 @@
 #include <functional>   
 using namespace std;
 
-
-
-
 // --- Реализация методов класса CompleteBinaryTree ---
 
 // Конструктор
@@ -91,7 +88,7 @@ void CompleteBinaryTree::clear() {
         deleteTreeRecursive(root);
         root = nullptr;
         size = 0;
-        std::cout << "Дерево очищено." << std::endl;
+        // std::cout << "Дерево очищено." << std::endl;
     }
 }
 
@@ -102,7 +99,7 @@ void CompleteBinaryTree::insert(int value) {
     if (root == nullptr) {
         root = newNode;
         size++;
-        std::cout << "Элемент " << value << " добавлен" << std::endl;
+        // std::cout << "Элемент " << value << " добавлен" << std::endl;
         return;
     }
 
@@ -112,7 +109,7 @@ void CompleteBinaryTree::insert(int value) {
             if (current->left == nullptr) {
                 current->left = newNode;
                 size++;
-                std::cout << "Элемент " << value << " добавлен." << std::endl;
+                // std::cout << "Элемент " << value << " добавлен." << std::endl;
                 return;
             }
             current = current->left;
@@ -120,12 +117,12 @@ void CompleteBinaryTree::insert(int value) {
             if (current->right == nullptr) {
                 current->right = newNode;
                 size++;
-                std::cout << "Элемент " << value << " добавлен." << std::endl;
+                // std::cout << "Элемент " << value << " добавлен." << std::endl;
                 return;
             }
             current = current->right;
         } else {
-            std::cout << "Элемент " << value << " уже существует." << std::endl;
+            // std::cout << "Элемент " << value << " уже существует." << std::endl;
             delete newNode;
             return;
         }
@@ -152,13 +149,11 @@ void CompleteBinaryTree::remove(int value) {
 // Поиск элемента
 bool CompleteBinaryTree::search(int value) const {
     if (isEmpty()) {
-        std::cout << "Поиск в пустом дереве." << std::endl;
         return false;
     }
     TreeNode* current = root;
     while (current != nullptr) {
         if (current->data == value) {
-            std::cout << "Элемент " << value << " найден." << std::endl;
             return true;
         }
         if (value < current->data) {
@@ -167,7 +162,6 @@ bool CompleteBinaryTree::search(int value) const {
             current = current->right;
         }
     }
-    std::cout << "Элемент " << value << " не найден." << std::endl;
     return false;
 }
 
@@ -230,6 +224,8 @@ int CompleteBinaryTree::getSize() const {
     return size;
 }
 
+// --- Реализация для потоков (Stream based) ---
+
 void CompleteBinaryTree::saveToFile(std::ofstream& out) const {
     std::function<void(TreeNode*)> dfs = [&](TreeNode* node) {
         if (!node) {
@@ -272,6 +268,7 @@ void CompleteBinaryTree::saveToBinaryFile(std::ofstream& out) const {
     };
     dfs(root);
 }
+
 void CompleteBinaryTree::loadFromBinaryFile(std::ifstream& in) {
     clear();
     std::function<TreeNode*()> dfs = [&]() -> TreeNode* {
@@ -287,4 +284,29 @@ void CompleteBinaryTree::loadFromBinaryFile(std::ifstream& in) {
         return node;
     };
     root = dfs();
+}
+
+
+void CompleteBinaryTree::saveToFile(const std::string& filename) const {
+    std::ofstream file(filename);
+    if (!file) return;
+    saveToFile(file);
+}
+
+void CompleteBinaryTree::loadFromFile(const std::string& filename) {
+    std::ifstream file(filename);
+    if (!file) return;
+    loadFromFile(file);
+}
+
+void CompleteBinaryTree::saveToBinaryFile(const std::string& filename) const {
+    std::ofstream file(filename, std::ios::binary | std::ios::trunc);
+    if (!file) return;
+    saveToBinaryFile(file);
+}
+
+void CompleteBinaryTree::loadFromBinaryFile(const std::string& filename) {
+    std::ifstream file(filename, std::ios::binary);
+    if (!file) return;
+    loadFromBinaryFile(file);
 }

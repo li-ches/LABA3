@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Остановка при любой ошибке
+set -e
+
+# 1. Полная очистка предыдущей сборки
+echo "--- Cleaning up old build ---"
+rm -rf build
+mkdir -p build
+cd build
+
+# 2. Настраиваем CMake с включенным покрытием
+echo "--- Configuring CMake with Coverage ---"
+cmake -DENABLE_COVERAGE=ON ..
+
+# 3. Компилируем
+echo "--- Building ---"
+make -j$(nproc)
+
+# 4. Обнуляем счетчики
+lcov --directory . --zerocounters --ignore-errors mismatch,inconsistent,negative,empty
+
+# 5. Запускаем тесты
+echo "--- Running Tests ---"
+ctest --output-on-failure
+
+# 6. Захватываем данные покрытия
+echo "--- Capturing Coverage Data ---"
+lcov --capture --directory . --output-file coverage.info --ignore-errors mismatch,inconsistent,negative,empty
+
+# 7. Фильтрация данных (САМЫЙ ВАЖНЫЙ ЭТАП)
+echo "--- Filtering Coverage Data ---"
+# Мы удаляем:
+# - /usr/* : Системные файлы
+# - */tests/* : Сами файлы тестов (нам интересно покрытие библиотеки, а не тестов)
+# - */build/* : Сгенерированные файлы и зависимости внутри папки build
+# - */_deps/* : Зависимости (googletest, benchmark), скачанные CMake
+lcov --remove coverage.info \
+    '/usr/*' \
+    '*/tests/*' \
+    '*/build/*' \
+    '*/_deps/*' \
+    '*/googletest/*' \
+    '*/benchmark/*' \
+    --output-file coverage_cleaned.info \
+    --ignore-errors mismatch,inconsistent,negative,empty
+
+# 8. Генерируем HTML отчет
+echo "--- Generating HTML Report ---"
+genhtml coverage_cleaned.info --output-directory coverage_report --ignore-errors mismatch,inconsistent,negative,empty
+
+echo ""
+echo "============================================================"
+echo "Готово! Отчет доступен по адресу:"
+echo "  file://$(pwd)/coverage_report/index.html"
+echo "============================================================"

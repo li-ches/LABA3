@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-
+#include <fstream>
 
 // Класс узла дерева
 class TreeNode {
@@ -37,17 +37,20 @@ public:
     bool isEmpty() const;
     void clear();
     void insert(int value);
-    void remove(int value); // Переименовал deleteNodeCBT в remove для краткости
+    void remove(int value); 
     bool search(int value) const;
     void print() const;
     int getSize() const;
 
     void saveToFile(std::ofstream& out) const;
-void loadFromFile(std::ifstream& in);
+    void loadFromFile(std::ifstream& in);
+    void saveToBinaryFile(std::ofstream& out) const;
+    void loadFromBinaryFile(std::ifstream& in);
 
-void saveToBinaryFile(std::ofstream& out) const;
-void loadFromBinaryFile(std::ifstream& in);
+    void saveToFile(const std::string& filename) const;
+    void loadFromFile(const std::string& filename);
+    void saveToBinaryFile(const std::string& filename) const;
+    void loadFromBinaryFile(const std::string& filename);
 };
-
 
 #endif

@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>hashtable: Go Coverage Report</title>
+		<style>
+			body {
+				background: black;
+				color: rgb(80, 80, 80);
+			}
+			body, pre, #legend span {
+				font-family: Menlo, monospace;
+				font-weight: bold;
+			}
+			#topbar {
+				background: black;
+				position: fixed;
+				top: 0; left: 0; right: 0;
+				height: 42px;
+				border-bottom: 1px solid rgb(80, 80, 80);
+			}
+			#content {
+				margin-top: 50px;
+			}
+			#nav, #legend {
+				float: left;
+				margin-left: 10px;
+			}
+			#legend {
+				margin-top: 12px;
+			}
+			#nav {
+				margin-top: 10px;
+			}
+			#legend span {
+				margin: 0 5px;
+			}
+			.cov0 { color: rgb(192, 0, 0) }
+.cov1 { color: rgb(128, 128, 128) }
+.cov2 { color: rgb(116, 140, 131) }
+.cov3 { color: rgb(104, 152, 134) }
+.cov4 { color: rgb(92, 164, 137) }
+.cov5 { color: rgb(80, 176, 140) }
+.cov6 { color: rgb(68, 188, 143) }
+.cov7 { color: rgb(56, 200, 146) }
+.cov8 { color: rgb(44, 212, 149) }
+.cov9 { color: rgb(32, 224, 152) }
+.cov10 { color: rgb(20, 236, 155) }
+
+		</style>
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="nav">
+				<select id="files">
+				
+				<option value="file0">hashtable/hashtable.go (90.0%)</option>
+				
+				</select>
+			</div>
+			<div id="legend">
+				<span>not tracked</span>
+			
+				<span class="cov0">not covered</span>
+				<span class="cov8">covered</span>
+			
+			</div>
+		</div>
+		<div id="content">
+		
+		<pre class="file" id="file0" style="display: none">package hashtable
+
+import (
+        "encoding/binary"
+        "errors"
+        "fmt"
+        "io"
+        "os"
+        "strings"
+)
+
+type CuckooHashTable struct {
+        table1        []CKNode
+        table2        []CKNode
+        capacity      int
+        size          int
+        maxIterations int
+}
+
+func NewCuckooHashTable(capacity int) *CuckooHashTable <span class="cov8" title="1">{
+        if capacity &lt;= 0 </span><span class="cov8" title="1">{
+                capacity = DefaultInitialCapHash
+        }</span>
+
+        <span class="cov8" title="1">table := &amp;CuckooHashTable{
+                capacity:      capacity,
+                size:          0,
+                maxIterations: capacity * 2,
+                table1:        make([]CKNode, capacity),
+                table2:        make([]CKNode, capacity),
+        }
+
+        for i := 0; i &lt; capacity; i++ </span><span class="cov8" title="1">{
+                table.table1[i].IsEmpty = true
+                table.table1[i].IsDeleted = false
+                table.table2[i].IsEmpty = true
+                table.table2[i].IsDeleted = false
+        }</span>
+
+        <span class="cov8" title="1">return table</span>
+}
+
+func (c *CuckooHashTable) hash1(key string) int <span class="cov8" title="1">{
+        hash := 0
+        for _, ch := range key </span><span class="cov8" title="1">{
+                hash = (hash*FirstHash + int(ch)) % c.capacity
+        }</span>
+        <span class="cov8" title="1">return hash</span>
+}
+
+func (c *CuckooHashTable) hash2(key string) int <span class="cov8" title="1">{
+        hash := 0
+        for _, ch := range key </span><span class="cov8" title="1">{
+                hash = (hash*SecondHash + int(ch)) % c.capacity
+        }</span>
+        <span class="cov8" title="1">return hash</span>
+}
+
+func (c *CuckooHashTable) rehash(newCapacity int) bool <span class="cov8" title="1">{
+        elements := c.GetAllElements()
+        c.table1 = make([]CKNode, newCapacity)
+        c.table2 = make([]CKNode, newCapacity)
+        c.capacity = newCapacity
+        c.size = 0
+        c.maxIterations = newCapacity * 2
+
+        for i := 0; i &lt; newCapacity; i++ </span><span class="cov8" title="1">{
+                c.table1[i].IsEmpty = true
+                c.table1[i].IsDeleted = false
+                c.table2[i].IsEmpty = true
+                c.table2[i].IsDeleted = false
+        }</span>
+
+        <span class="cov8" title="1">success := true
+        for _, elem := range elements </span><span class="cov8" title="1">{
+                key := elem.Key
+                value := elem.Data
+                if !c.Insert(key, value) </span><span class="cov0" title="0">{
+                        success = false
+                        break</span>
+                }
+        }
+
+        <span class="cov8" title="1">return success</span>
+}
+
+func (c *CuckooHashTable) Insert(key string, data string) bool <span class="cov8" title="1">{
+        if key == "" </span><span class="cov8" title="1">{
+                return false
+        }</span>
+
+        <span class="cov8" title="1">pos1 := c.hash1(key)
+        pos2 := c.hash2(key)
+
+        if !c.table1[pos1].IsEmpty &amp;&amp; !c.table1[pos1].IsDeleted &amp;&amp; c.table1[pos1].Key == key </span><span class="cov8" title="1">{
+                c.table1[pos1].Data = data
+                return true
+        }</span>
+        <span class="cov8" title="1">if !c.table2[pos2].IsEmpty &amp;&amp; !c.table2[pos2].IsDeleted &amp;&amp; c.table2[pos2].Key == key </span><span class="cov0" title="0">{
+                c.table2[pos2].Data = data
+                return true
+        }</span>
+
+        <span class="cov8" title="1">loadFactor := float64(c.size) / float64(c.capacity)
+        if loadFactor &gt; LoadFactorCoo </span><span class="cov8" title="1">{
+                if !c.rehash(c.capacity * 2) </span><span class="cov0" title="0">{
+                        return false
+                }</span>
+        }
+
+        <span class="cov8" title="1">currentKey := key
+        currentData := data
+        iterations := 0
+
+        for iterations &lt; c.maxIterations </span><span class="cov8" title="1">{
+                pos1 := c.hash1(currentKey)
+                if c.table1[pos1].IsEmpty || c.table1[pos1].IsDeleted </span><span class="cov8" title="1">{
+                        c.table1[pos1].Key = currentKey
+                        c.table1[pos1].Data = currentData
+                        c.table1[pos1].IsEmpty = false
+                        c.table1[pos1].IsDeleted = false
+                        c.size++
+                        return true
+                }</span>
+
+                <span class="cov8" title="1">currentKey, c.table1[pos1].Key = c.table1[pos1].Key, currentKey
+                currentData, c.table1[pos1].Data = c.table1[pos1].Data, currentData
+
+                pos2 := c.hash2(currentKey)
+                if c.table2[pos2].IsEmpty || c.table2[pos2].IsDeleted </span><span class="cov8" title="1">{
+                        c.table2[pos2].Key = currentKey
+                        c.table2[pos2].Data = currentData
+                        c.table2[pos2].IsEmpty = false
+                        c.table2[pos2].IsDeleted = false
+                        c.size++
+                        return true
+                }</span>
+
+                <span class="cov8" title="1">currentKey, c.table2[pos2].Key = c.table2[pos2].Key, currentKey
+                currentData, c.table2[pos2].Data = c.table2[pos2].Data, currentData
+
+                iterations++</span>
+        }
+
+        <span class="cov8" title="1">if iterations &gt;= c.maxIterations </span><span class="cov8" title="1">{
+                if c.rehash(c.capacity * 2) </span><span class="cov8" title="1">{
+                        return c.Insert(key, data)
+                }</span>
+        }
+
+        <span class="cov0" title="0">return false</span>
+}
+
+func (c *CuckooHashTable) Search(key string) string <span class="cov8" title="1">{
+        if key == "" </span><span class="cov8" title="1">{
+                return ""
+        }</span>
+
+        <span class="cov8" title="1">pos1 := c.hash1(key)
+        pos2 := c.hash2(key)
+
+        if !c.table1[pos1].IsEmpty &amp;&amp; !c.table1[pos1].IsDeleted &amp;&amp; c.table1[pos1].Key == key </span><span class="cov8" title="1">{
+                return c.table1[pos1].Data
+        }</span>
+        <span class="cov8" title="1">if !c.table2[pos2].IsEmpty &amp;&amp; !c.table2[pos2].IsDeleted &amp;&amp; c.table2[pos2].Key == key </span><span class="cov8" title="1">{
+                return c.table2[pos2].Data
+        }</span>
+        <span class="cov8" title="1">return ""</span>
+}
+
+func (c *CuckooHashTable) Remove(key string) bool <span class="cov8" title="1">{
+        if key == "" </span><span class="cov8" title="1">{
+                return false
+        }</span>
+
+        <span class="cov8" title="1">pos1 := c.hash1(key)
+        pos2 := c.hash2(key)
+
+        if !c.table1[pos1].IsEmpty &amp;&amp; !c.table1[pos1].IsDeleted &amp;&amp; c.table1[pos1].Key == key </span><span class="cov8" title="1">{
+                c.table1[pos1].IsDeleted = true
+                c.size--
+                return true
+        }</span>
+        <span class="cov8" title="1">if !c.table2[pos2].IsEmpty &amp;&amp; !c.table2[pos2].IsDeleted &amp;&amp; c.table2[pos2].Key == key </span><span class="cov8" title="1">{
+                c.table2[pos2].IsDeleted = true
+                c.size--
+                return true
+        }</span>
+        <span class="cov0" title="0">return false</span>
+}
+
+func (c *CuckooHashTable) Print() <span class="cov8" title="1">{
+        fmt.Println("=== Кукушкина таблица ===")
+        fmt.Printf("Размер: %d/%d (нагрузка: %.2f%%)\n", c.size, c.capacity, float64(c.size)/float64(c.capacity)*float64(Proc))
+
+        fmt.Print("Таблица 1: ")
+        for i := 0; i &lt; c.capacity; i++ </span><span class="cov8" title="1">{
+                if !c.table1[i].IsEmpty &amp;&amp; !c.table1[i].IsDeleted </span><span class="cov8" title="1">{
+                        fmt.Printf("[%d]:'%s -&gt; %s' ", i, c.table1[i].Key, c.table1[i].Data)
+                }</span>
+        }
+        <span class="cov8" title="1">fmt.Println()
+
+        fmt.Print("Таблица 2: ")
+        for i := 0; i &lt; c.capacity; i++ </span><span class="cov8" title="1">{
+                if !c.table2[i].IsEmpty &amp;&amp; !c.table2[i].IsDeleted </span><span class="cov8" title="1">{
+                        fmt.Printf("[%d]:'%s -&gt; %s' ", i, c.table2[i].Key, c.table2[i].Data)
+                }</span>
+        }
+        <span class="cov8" title="1">fmt.Println()</span>
+}
+
+type KeyValuePair struct {
+        Key  string
+        Data string
+}
+
+func (c *CuckooHashTable) GetAllElements() []KeyValuePair <span class="cov8" title="1">{
+        var elements []KeyValuePair
+        for i := 0; i &lt; c.capacity; i++ </span><span class="cov8" title="1">{
+                if !c.table1[i].IsEmpty &amp;&amp; !c.table1[i].IsDeleted </span><span class="cov8" title="1">{
+                        elements = append(elements, KeyValuePair{c.table1[i].Key, c.table1[i].Data})
+                }</span>
+                <span class="cov8" title="1">if !c.table2[i].IsEmpty &amp;&amp; !c.table2[i].IsDeleted </span><span class="cov8" title="1">{
+                        elements = append(elements, KeyValuePair{c.table2[i].Key, c.table2[i].Data})
+                }</span>
+        }
+        <span class="cov8" title="1">return elements</span>
+}
+
+func (c *CuckooHashTable) SaveToFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">for i := 0; i &lt; c.capacity; i++ </span><span class="cov8" title="1">{
+                if !c.table1[i].IsEmpty &amp;&amp; !c.table1[i].IsDeleted </span><span class="cov8" title="1">{
+                        _, err := file.WriteString(fmt.Sprintf("%s:%s ", c.table1[i].Key, c.table1[i].Data))
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                }
+                <span class="cov8" title="1">if !c.table2[i].IsEmpty &amp;&amp; !c.table2[i].IsDeleted </span><span class="cov8" title="1">{
+                        _, err := file.WriteString(fmt.Sprintf("%s:%s ", c.table2[i].Key, c.table2[i].Data))
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                }
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (c *CuckooHashTable) LoadFromFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">content, err := io.ReadAll(file)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        <span class="cov8" title="1">keyValues := strings.Fields(string(content))
+        for _, kv := range keyValues </span><span class="cov8" title="1">{
+                colonPos := strings.Index(kv, ":")
+                if colonPos != -1 </span><span class="cov8" title="1">{
+                        key := kv[:colonPos]
+                        value := kv[colonPos+1:]
+                        c.Insert(key, value)
+                }</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (c *CuckooHashTable) SaveToBinaryFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">for i := 0; i &lt; c.capacity; i++ </span><span class="cov8" title="1">{
+                if !c.table1[i].IsEmpty &amp;&amp; !c.table1[i].IsDeleted </span><span class="cov8" title="1">{
+                        keySize := uint64(len(c.table1[i].Key))
+                        err := binary.Write(file, binary.LittleEndian, keySize)
+                        if err != nil </span><span class="cov8" title="1">{
+                                return err
+                        }</span>
+                        <span class="cov8" title="1">_, err = file.WriteString(c.table1[i].Key)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+
+                        <span class="cov8" title="1">dataSize := uint64(len(c.table1[i].Data))
+                        err = binary.Write(file, binary.LittleEndian, dataSize)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                        <span class="cov8" title="1">_, err = file.WriteString(c.table1[i].Data)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                }
+                <span class="cov8" title="1">if !c.table2[i].IsEmpty &amp;&amp; !c.table2[i].IsDeleted </span><span class="cov8" title="1">{
+                        keySize := uint64(len(c.table2[i].Key))
+                        err := binary.Write(file, binary.LittleEndian, keySize)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                        <span class="cov8" title="1">_, err = file.WriteString(c.table2[i].Key)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+
+                        <span class="cov8" title="1">dataSize := uint64(len(c.table2[i].Data))
+                        err = binary.Write(file, binary.LittleEndian, dataSize)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                        <span class="cov8" title="1">_, err = file.WriteString(c.table2[i].Data)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                }
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (c *CuckooHashTable) LoadFromBinaryFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">for </span><span class="cov8" title="1">{
+                var keySize uint64
+                err := binary.Read(file, binary.LittleEndian, &amp;keySize)
+                if err != nil </span><span class="cov8" title="1">{
+                        if err == io.EOF </span><span class="cov8" title="1">{
+                                break</span>
+                        }
+                        <span class="cov0" title="0">return err</span>
+                }
+
+                <span class="cov8" title="1">keyBuffer := make([]byte, keySize)
+                _, err = file.Read(keyBuffer)
+                if err != nil </span><span class="cov8" title="1">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">key := string(keyBuffer)
+
+                var dataSize uint64
+                err = binary.Read(file, binary.LittleEndian, &amp;dataSize)
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+
+                <span class="cov8" title="1">dataBuffer := make([]byte, dataSize)
+                _, err = file.Read(dataBuffer)
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">value := string(dataBuffer)
+
+                c.Insert(key, value)</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+type DoubleHashTable struct {
+        table    []DHNode
+        capacity int
+        size     int
+}
+
+func NewDoubleHashTable(capacity int) *DoubleHashTable <span class="cov8" title="1">{
+        if capacity &lt;= 0 </span><span class="cov8" title="1">{
+                capacity = DefaultInitialCapHash
+        }</span>
+
+        <span class="cov8" title="1">table := &amp;DoubleHashTable{
+                capacity: capacity,
+                size:     0,
+                table:    make([]DHNode, capacity),
+        }
+
+        for i := 0; i &lt; capacity; i++ </span><span class="cov8" title="1">{
+                table.table[i].IsEmpty = true
+                table.table[i].IsDeleted = false
+        }</span>
+
+        <span class="cov8" title="1">return table</span>
+}
+
+func (d *DoubleHashTable) hash1(key string) int <span class="cov8" title="1">{
+        hash := 0
+        for _, ch := range key </span><span class="cov8" title="1">{
+                hash = (hash*FirstHash + int(ch)) % d.capacity
+        }</span>
+        <span class="cov8" title="1">return hash</span>
+}
+
+func (d *DoubleHashTable) hash2(key string) int <span class="cov8" title="1">{
+        hash := 0
+        for _, ch := range key </span><span class="cov8" title="1">{
+                hash = (hash*SecondHash + int(ch)) % d.capacity
+        }</span>
+        <span class="cov8" title="1">return hash</span>
+}
+
+func (d *DoubleHashTable) rehash(newCapacity int) bool <span class="cov8" title="1">{
+        elements := d.GetAllElements()
+
+        d.table = make([]DHNode, newCapacity)
+        d.capacity = newCapacity
+        d.size = 0
+
+        for i := 0; i &lt; newCapacity; i++ </span><span class="cov8" title="1">{
+                d.table[i].IsEmpty = true
+                d.table[i].IsDeleted = false
+        }</span>
+
+        <span class="cov8" title="1">success := true
+        for _, elem := range elements </span><span class="cov8" title="1">{
+                key := elem.Key
+                value := elem.Data
+                if !d.Insert(key, value) </span><span class="cov0" title="0">{
+                        success = false
+                        break</span>
+                }
+        }
+
+        <span class="cov8" title="1">return success</span>
+}
+
+func (d *DoubleHashTable) Insert(key string, data string) bool <span class="cov8" title="1">{
+        if key == "" </span><span class="cov8" title="1">{
+                return false
+        }</span>
+
+        <span class="cov8" title="1">loadFactor := float64(d.size) / float64(d.capacity)
+        if loadFactor &gt; LoadFactorDouble </span><span class="cov8" title="1">{
+                if !d.rehash(d.capacity * 2) </span><span class="cov0" title="0">{
+                        return false
+                }</span>
+        }
+
+        <span class="cov8" title="1">hash1 := d.hash1(key)
+        hash2 := d.hash2(key)
+        index := hash1
+
+        for i := 0; i &lt; d.capacity; i++ </span><span class="cov8" title="1">{
+                if d.table[index].IsEmpty || d.table[index].IsDeleted </span><span class="cov8" title="1">{
+                        d.table[index].Key = key
+                        d.table[index].Data = data
+                        d.table[index].IsEmpty = false
+                        d.table[index].IsDeleted = false
+                        d.size++
+                        return true
+                }</span>
+                <span class="cov8" title="1">if !d.table[index].IsEmpty &amp;&amp; !d.table[index].IsDeleted &amp;&amp; d.table[index].Key == key </span><span class="cov8" title="1">{
+                        d.table[index].Data = data
+                        return true
+                }</span>
+
+                <span class="cov8" title="1">index = (hash1 + i*hash2) % d.capacity</span>
+        }
+
+        <span class="cov8" title="1">if d.rehash(d.capacity * 2) </span><span class="cov8" title="1">{
+                return d.Insert(key, data)
+        }</span>
+
+        <span class="cov0" title="0">return false</span>
+}
+
+func (d *DoubleHashTable) Search(key string) string <span class="cov8" title="1">{
+        if key == "" </span><span class="cov8" title="1">{
+                return ""
+        }</span>
+
+        <span class="cov8" title="1">hash1 := d.hash1(key)
+        hash2 := d.hash2(key)
+        index := hash1
+
+        for i := 0; i &lt; d.capacity; i++ </span><span class="cov8" title="1">{
+                if d.table[index].IsEmpty &amp;&amp; !d.table[index].IsDeleted </span><span class="cov8" title="1">{
+                        break</span>
+                }
+                <span class="cov8" title="1">if !d.table[index].IsEmpty &amp;&amp; !d.table[index].IsDeleted &amp;&amp; d.table[index].Key == key </span><span class="cov8" title="1">{
+                        return d.table[index].Data
+                }</span>
+                <span class="cov8" title="1">index = (hash1 + i*hash2) % d.capacity</span>
+        }
+        <span class="cov8" title="1">return ""</span>
+}
+
+func (d *DoubleHashTable) Remove(key string) bool <span class="cov8" title="1">{
+        if key == "" </span><span class="cov8" title="1">{
+                return false
+        }</span>
+
+        <span class="cov8" title="1">hash1 := d.hash1(key)
+        hash2 := d.hash2(key)
+        index := hash1
+
+        for i := 0; i &lt; d.capacity; i++ </span><span class="cov8" title="1">{
+                if d.table[index].IsEmpty &amp;&amp; !d.table[index].IsDeleted </span><span class="cov0" title="0">{
+                        break</span>
+                }
+
+                <span class="cov8" title="1">if !d.table[index].IsEmpty &amp;&amp; !d.table[index].IsDeleted &amp;&amp; d.table[index].Key == key </span><span class="cov8" title="1">{
+                        d.table[index].IsDeleted = true
+                        d.size--
+                        return true
+                }</span>
+
+                <span class="cov8" title="1">index = (hash1 + i*hash2) % d.capacity</span>
+        }
+        <span class="cov0" title="0">return false</span>
+}
+
+func (d *DoubleHashTable) Print() <span class="cov8" title="1">{
+        fmt.Println("=== Таблица двойного хеширования ===")
+        fmt.Printf("Размер: %d/%d (нагрузка: %.2f%%)\n", d.size, d.capacity, float64(d.size)/float64(d.capacity)*float64(Proc))
+
+        for i := 0; i &lt; d.capacity; i++ </span><span class="cov8" title="1">{
+                if !d.table[i].IsEmpty &amp;&amp; !d.table[i].IsDeleted </span><span class="cov8" title="1">{
+                        fmt.Printf("[%d]:'%s -&gt; %s' ", i, d.table[i].Key, d.table[i].Data)
+                }</span>
+        }
+        <span class="cov8" title="1">fmt.Println()</span>
+}
+
+func (d *DoubleHashTable) GetAllElements() []KeyValuePair <span class="cov8" title="1">{
+        var elements []KeyValuePair
+        for i := 0; i &lt; d.capacity; i++ </span><span class="cov8" title="1">{
+                if !d.table[i].IsEmpty &amp;&amp; !d.table[i].IsDeleted </span><span class="cov8" title="1">{
+                        elements = append(elements, KeyValuePair{d.table[i].Key, d.table[i].Data})
+                }</span>
+        }
+        <span class="cov8" title="1">return elements</span>
+}
+
+func (d *DoubleHashTable) SaveToFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">for i := 0; i &lt; d.capacity; i++ </span><span class="cov8" title="1">{
+                if !d.table[i].IsEmpty &amp;&amp; !d.table[i].IsDeleted </span><span class="cov8" title="1">{
+                        _, err := file.WriteString(fmt.Sprintf("%s:%s ", d.table[i].Key, d.table[i].Data))
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                }
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (d *DoubleHashTable) LoadFromFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">content, err := io.ReadAll(file)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        <span class="cov8" title="1">keyValues := strings.Fields(string(content))
+        for _, kv := range keyValues </span><span class="cov8" title="1">{
+                colonPos := strings.Index(kv, ":")
+                if colonPos != -1 </span><span class="cov8" title="1">{
+                        key := kv[:colonPos]
+                        value := kv[colonPos+1:]
+                        d.Insert(key, value)
+                }</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (d *DoubleHashTable) SaveToBinaryFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">for i := 0; i &lt; d.capacity; i++ </span><span class="cov8" title="1">{
+                if !d.table[i].IsEmpty &amp;&amp; !d.table[i].IsDeleted </span><span class="cov8" title="1">{
+                        keySize := uint64(len(d.table[i].Key))
+                        err := binary.Write(file, binary.LittleEndian, keySize)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                        <span class="cov8" title="1">_, err = file.WriteString(d.table[i].Key)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+
+                        <span class="cov8" title="1">dataSize := uint64(len(d.table[i].Data))
+                        err = binary.Write(file, binary.LittleEndian, dataSize)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                        <span class="cov8" title="1">_, err = file.WriteString(d.table[i].Data)
+                        if err != nil </span><span class="cov0" title="0">{
+                                return err
+                        }</span>
+                }
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (d *DoubleHashTable) LoadFromBinaryFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">for </span><span class="cov8" title="1">{
+                var keySize uint64
+                err := binary.Read(file, binary.LittleEndian, &amp;keySize)
+                if err != nil </span><span class="cov8" title="1">{
+                        if err == io.EOF </span><span class="cov8" title="1">{
+                                break</span>
+                        }
+                        <span class="cov0" title="0">return err</span>
+                }
+
+                <span class="cov8" title="1">keyBuffer := make([]byte, keySize)
+                _, err = file.Read(keyBuffer)
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">key := string(keyBuffer)
+
+                var dataSize uint64
+                err = binary.Read(file, binary.LittleEndian, &amp;dataSize)
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+
+                <span class="cov8" title="1">dataBuffer := make([]byte, dataSize)
+                _, err = file.Read(dataBuffer)
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">value := string(dataBuffer)
+
+                d.Insert(key, value)</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+</pre>
+		
+		</div>
+	</body>
+	<script>
+	(function() {
+		var files = document.getElementById('files');
+		var visible;
+		files.addEventListener('change', onChange, false);
+		function select(part) {
+			if (visible)
+				visible.style.display = 'none';
+			visible = document.getElementById(part);
+			if (!visible)
+				return;
+			files.value = part;
+			visible.style.display = 'block';
+			location.hash = part;
+		}
+		function onChange() {
+			select(files.value);
+			window.scrollTo(0, 0);
+		}
+		if (location.hash != "") {
+			select(location.hash.substr(1));
+		}
+		if (!visible) {
+			select("file0");
+		}
+	})();
+	</script>
+</html>

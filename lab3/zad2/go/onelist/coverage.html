@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>onelist: Go Coverage Report</title>
+		<style>
+			body {
+				background: black;
+				color: rgb(80, 80, 80);
+			}
+			body, pre, #legend span {
+				font-family: Menlo, monospace;
+				font-weight: bold;
+			}
+			#topbar {
+				background: black;
+				position: fixed;
+				top: 0; left: 0; right: 0;
+				height: 42px;
+				border-bottom: 1px solid rgb(80, 80, 80);
+			}
+			#content {
+				margin-top: 50px;
+			}
+			#nav, #legend {
+				float: left;
+				margin-left: 10px;
+			}
+			#legend {
+				margin-top: 12px;
+			}
+			#nav {
+				margin-top: 10px;
+			}
+			#legend span {
+				margin: 0 5px;
+			}
+			.cov0 { color: rgb(192, 0, 0) }
+.cov1 { color: rgb(128, 128, 128) }
+.cov2 { color: rgb(116, 140, 131) }
+.cov3 { color: rgb(104, 152, 134) }
+.cov4 { color: rgb(92, 164, 137) }
+.cov5 { color: rgb(80, 176, 140) }
+.cov6 { color: rgb(68, 188, 143) }
+.cov7 { color: rgb(56, 200, 146) }
+.cov8 { color: rgb(44, 212, 149) }
+.cov9 { color: rgb(32, 224, 152) }
+.cov10 { color: rgb(20, 236, 155) }
+
+		</style>
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="nav">
+				<select id="files">
+				
+				<option value="file0">onelist/onelist.go (92.9%)</option>
+				
+				</select>
+			</div>
+			<div id="legend">
+				<span>not tracked</span>
+			
+				<span class="cov0">not covered</span>
+				<span class="cov8">covered</span>
+			
+			</div>
+		</div>
+		<div id="content">
+		
+		<pre class="file" id="file0" style="display: none">package onelist
+
+import (
+        "encoding/binary"
+        "errors"
+        "fmt"
+        "io"
+        "os"
+        "strings"
+)
+
+type OneList struct {
+        head *OneListNode
+        tail *OneListNode
+}
+
+func NewOneList() *OneList <span class="cov8" title="1">{
+        return &amp;OneList{}
+}</span>
+
+func (ol *OneList) AddToHead(val string) <span class="cov8" title="1">{
+        newNode := &amp;OneListNode{Data: val}
+        newNode.Next = ol.head
+        ol.head = newNode
+        if ol.tail == nil </span><span class="cov8" title="1">{
+                ol.tail = newNode
+        }</span>
+}
+
+func (ol *OneList) AddToTail(val string) <span class="cov8" title="1">{
+        newNode := &amp;OneListNode{Data: val}
+        if ol.tail == nil </span><span class="cov8" title="1">{
+                ol.head = newNode
+                ol.tail = newNode
+        }</span> else<span class="cov8" title="1"> {
+                ol.tail.Next = newNode
+                ol.tail = newNode
+        }</span>
+}
+
+func (ol *OneList) AddAfterValue(targetVal, newVal string) error <span class="cov8" title="1">{
+        targetNode := ol.findByVal(targetVal)
+        if targetNode == nil </span><span class="cov8" title="1">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">newNode := &amp;OneListNode{Data: newVal}
+        newNode.Next = targetNode.Next
+        targetNode.Next = newNode
+
+        if targetNode == ol.tail </span><span class="cov8" title="1">{
+                ol.tail = newNode
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) AddBeforeValue(targetVal, newVal string) error <span class="cov8" title="1">{
+        targetNode := ol.findByVal(targetVal)
+        if targetNode == nil </span><span class="cov8" title="1">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">if targetNode == ol.head </span><span class="cov8" title="1">{
+                ol.AddToHead(newVal)
+                return nil
+        }</span>
+
+        <span class="cov8" title="1">prevNode := ol.head
+        for prevNode != nil &amp;&amp; prevNode.Next != targetNode </span><span class="cov0" title="0">{
+                prevNode = prevNode.Next
+        }</span>
+
+        <span class="cov8" title="1">if prevNode == nil </span><span class="cov0" title="0">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">newNode := &amp;OneListNode{Data: newVal}
+        newNode.Next = targetNode
+        prevNode.Next = newNode
+        return nil</span>
+}
+
+func (ol *OneList) RemoveFromHead() error <span class="cov8" title="1">{
+        if ol.head == nil </span><span class="cov8" title="1">{
+                return errors.New("error")
+        }</span>
+        <span class="cov8" title="1">ol.head = ol.head.Next
+        if ol.head == nil </span><span class="cov8" title="1">{
+                ol.tail = nil
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) RemoveFromTail() error <span class="cov8" title="1">{
+        if ol.head == nil </span><span class="cov8" title="1">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">if ol.head == ol.tail </span><span class="cov8" title="1">{
+                ol.head = nil
+                ol.tail = nil
+                return nil
+        }</span>
+
+        <span class="cov8" title="1">curr := ol.head
+        for curr.Next != ol.tail </span><span class="cov8" title="1">{
+                curr = curr.Next
+        }</span>
+        <span class="cov8" title="1">curr.Next = nil
+        ol.tail = curr
+        return nil</span>
+}
+
+func (ol *OneList) RemoveAfterValue(targetVal string) error <span class="cov8" title="1">{
+        targetNode := ol.findByVal(targetVal)
+        if targetNode == nil || targetNode.Next == nil </span><span class="cov8" title="1">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">temp := targetNode.Next
+        targetNode.Next = temp.Next
+
+        if temp == ol.tail </span><span class="cov0" title="0">{
+                ol.tail = targetNode
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) RemoveBeforeValue(targetVal string) error <span class="cov8" title="1">{
+        targetNode := ol.findByVal(targetVal)
+        if targetNode == nil || targetNode == ol.head </span><span class="cov8" title="1">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">if ol.head.Next == targetNode </span><span class="cov8" title="1">{
+                return ol.RemoveFromHead()
+        }</span>
+
+        <span class="cov8" title="1">prevPrev := ol.head
+        for prevPrev.Next != nil &amp;&amp; prevPrev.Next.Next != targetNode </span><span class="cov0" title="0">{
+                prevPrev = prevPrev.Next
+        }</span>
+
+        <span class="cov8" title="1">if prevPrev.Next == nil </span><span class="cov0" title="0">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">prevPrev.Next = targetNode
+        return nil</span>
+}
+
+func (ol *OneList) RemoveByValue(targetVal string) error <span class="cov8" title="1">{
+        targetNode := ol.findByVal(targetVal)
+        if targetNode == nil </span><span class="cov8" title="1">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">if targetNode == ol.head </span><span class="cov8" title="1">{
+                return ol.RemoveFromHead()
+        }</span>
+
+        <span class="cov8" title="1">prevNode := ol.head
+        for prevNode != nil &amp;&amp; prevNode.Next != targetNode </span><span class="cov8" title="1">{
+                prevNode = prevNode.Next
+        }</span>
+
+        <span class="cov8" title="1">if prevNode == nil </span><span class="cov0" title="0">{
+                return errors.New("error")
+        }</span>
+
+        <span class="cov8" title="1">prevNode.Next = targetNode.Next
+        if targetNode == ol.tail </span><span class="cov8" title="1">{
+                ol.tail = prevNode
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) GetElementByValue(targetVal string) (string, error) <span class="cov8" title="1">{
+        targetNode := ol.findByVal(targetVal)
+        if targetNode == nil </span><span class="cov8" title="1">{
+                return "", errors.New("error")
+        }</span>
+        <span class="cov8" title="1">return targetNode.Data, nil</span>
+}
+
+func (ol *OneList) findByVal(val string) *OneListNode <span class="cov8" title="1">{
+        curr := ol.head
+        for curr != nil </span><span class="cov8" title="1">{
+                if curr.Data == val </span><span class="cov8" title="1">{
+                        return curr
+                }</span>
+                <span class="cov8" title="1">curr = curr.Next</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) Print() <span class="cov8" title="1">{
+        if ol.head == nil </span><span class="cov8" title="1">{
+                fmt.Println("error")
+                return
+        }</span>
+
+        <span class="cov8" title="1">curr := ol.head
+        fmt.Print("список: ")
+        for curr != nil </span><span class="cov8" title="1">{
+                fmt.Print(curr.Data)
+                if curr.Next != nil </span><span class="cov8" title="1">{
+                        fmt.Print(" -&gt; ")
+                }</span>
+                <span class="cov8" title="1">curr = curr.Next</span>
+        }
+        <span class="cov8" title="1">fmt.Println()</span>
+}
+
+func (ol *OneList) SaveToFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">curr := ol.head
+        for curr != nil </span><span class="cov8" title="1">{
+                _, err := file.WriteString(curr.Data + " ")
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">curr = curr.Next</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) LoadFromFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">content, err := io.ReadAll(file)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        <span class="cov8" title="1">values := strings.Fields(string(content))
+        for _, val := range values </span><span class="cov8" title="1">{
+                ol.AddToTail(val)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) SaveToBinaryFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">curr := ol.head
+        for curr != nil </span><span class="cov8" title="1">{
+                strSize := uint64(len(curr.Data))
+                err := binary.Write(file, binary.LittleEndian, strSize)
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">_, err = file.WriteString(curr.Data)
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">curr = curr.Next</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (ol *OneList) LoadFromBinaryFile(file *os.File) error <span class="cov8" title="1">{
+        if file == nil </span><span class="cov8" title="1">{
+                return errors.New("file is nil")
+        }</span>
+
+        <span class="cov8" title="1">for </span><span class="cov8" title="1">{
+                var strSize uint64
+                err := binary.Read(file, binary.LittleEndian, &amp;strSize)
+                if err != nil </span><span class="cov8" title="1">{
+                        if err == io.EOF </span><span class="cov8" title="1">{
+                                break</span>
+                        }
+                        <span class="cov0" title="0">return err</span>
+                }
+
+                <span class="cov8" title="1">buffer := make([]byte, strSize)
+                _, err = file.Read(buffer)
+                if err != nil </span><span class="cov8" title="1">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">ol.AddToTail(string(buffer))</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+</pre>
+		
+		</div>
+	</body>
+	<script>
+	(function() {
+		var files = document.getElementById('files');
+		var visible;
+		files.addEventListener('change', onChange, false);
+		function select(part) {
+			if (visible)
+				visible.style.display = 'none';
+			visible = document.getElementById(part);
+			if (!visible)
+				return;
+			files.value = part;
+			visible.style.display = 'block';
+			location.hash = part;
+		}
+		function onChange() {
+			select(files.value);
+			window.scrollTo(0, 0);
+		}
+		if (location.hash != "") {
+			select(location.hash.substr(1));
+		}
+		if (!visible) {
+			select("file0");
+		}
+	})();
+	</script>
+</html>

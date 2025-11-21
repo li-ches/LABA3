@@ -5,11 +5,11 @@
 
 #include "arr.h"
 #include "list.h"
-#include "dList.h"
+#include "dlist.h"
 #include "stack.h"
 #include "queue.h"
 #include "hash.h"
-#include "compl.h" // Подключаем полное бинарное дерево вместо bst.h
+#include "compl.h" 
 
 using namespace std;
 
@@ -238,7 +238,6 @@ int main() {
             cout << "Верхний: " << stack.peek() << "\n";
         }
 
-        // --- CBT (ПОЛНОЕ БИНАРНОЕ ДЕРЕВО) ---
         else if (cmd == "CBT_INSERT") {
             if (arg1.empty()) { cout << "Ошибка: команда требует число." << "\n"; continue; }
             cbt.insert(safe_stoi(arg1));

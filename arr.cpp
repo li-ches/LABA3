@@ -173,8 +173,40 @@ auto MyArr::lenArr() const -> int {
 }
 
 
-
 void MyArr::saveToFile(const string& filename) const {
+    ofstream file(filename);
+    if (!file) return;
+
+    file << size << "\n"; 
+    for (int i = 0; i < size; ++i) {
+        writeStringText(file, data[i]);
+    }
+}
+
+void MyArr::loadFromFile(const string& filename) {
+    ifstream file(filename);
+    if (!file) return;
+
+    delete[] data;
+    data = nullptr;
+    size = 0;
+    capacity = 0;
+
+    int newSize;
+    file >> newSize;
+    string dummy; getline(file, dummy); // consume newline
+
+    if (file.fail()) return;
+
+    ensureCapacity(newSize);
+    size = newSize;
+    
+    for (int i = 0; i < size; ++i) {
+        data[i] = readStringText(file);
+    }
+}
+
+void MyArr::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) {
         return;
@@ -186,13 +218,12 @@ void MyArr::saveToFile(const string& filename) const {
     }
 }
 
-void MyArr::loadFromFile(const string& filename) {
+void MyArr::loadFromBinaryFile(const string& filename) {
     ifstream file(filename, ios::binary);
     if (!file) {
         return;
     }
 
-    // Очищаем текущий массив
     delete[] data;
     data = nullptr;
     size = 0;
@@ -204,13 +235,13 @@ void MyArr::loadFromFile(const string& filename) {
         return;
     }
 
-    ensureCapacity(newSize); //выделяем память
-    size = newSize; //установка размера
+    ensureCapacity(newSize); 
+    size = newSize; 
     
     for (int i = 0; i < size; ++i) {
-        data[i] = readString(file); //прямое присваивание
+        data[i] = readString(file); 
         if (file.fail()) {
-            size = i; //сохранение частичный результат
+            size = i; 
             break;
         }
     }

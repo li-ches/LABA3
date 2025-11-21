@@ -1,10 +1,10 @@
 #include "gtest/gtest.h"
 #include "../list.h"
-#include "../serialize.h" // Нужно для создания битых файлов вручную
+#include "../serialize.h"
 #include <string>
 #include <sstream>
 #include <fstream>
-#include <cstdio> // для remove
+#include <cstdio>
 
 using namespace std;
 
@@ -17,28 +17,26 @@ public:
     std::string str() { return buffer.str(); }
 };
 
-// --- СТАРЫЕ ТЕСТЫ (Логика работы) ---
-
 TEST(MyListTest, Branch_Deletions) {
     MyList list;
     OutputCapture cap;
 
-    list.delTail(); // Empty
+    list.delTail();
     list.addHead("A");
-    list.delTail(); // Single
+    list.delTail();
     EXPECT_EQ(list.getHead_test(), nullptr);
     
     list.addTail("A");
     list.addTail("B");
-    list.delTail(); // Loop
+    list.delTail();
     EXPECT_EQ(list.getHead_test()->value, "A");
 
-    list.delByValue("Z"); // Not found
-    list.delByValue("A"); // Head match
+    list.delByValue("Z");
+    list.delByValue("A");
     EXPECT_EQ(list.getHead_test(), nullptr);
 
     list.addTail("X"); list.addTail("Y");
-    list.delByValue("Y"); // Body match
+    list.delByValue("Y");
     EXPECT_FALSE(list.findValue("Y"));
 }
 
@@ -141,23 +139,18 @@ TEST(DestructorTest, MyListCleanup) {
     }
 }
 
-// --- НОВЫЕ ТЕСТЫ (ДЛЯ ПОКРЫТИЯ > 90%) ---
-
 TEST(MyListTest, Coverage_EmptyPrints) {
-    // Покрывает ветки "Список пуст" в readForward/readBack
     MyList l;
     OutputCapture cap;
     
     l.readForward();
     l.readBack();
     
-    // Проверяем, что вывод содержит "пуст"
     string out = cap.str();
     EXPECT_TRUE(out.find("пуст") != string::npos);
 }
 
 TEST(MyListTest, Coverage_DelHeadEmpty) {
-    // Покрывает ветку if(!head) в delHead
     MyList l;
     l.delHead(); 
     EXPECT_EQ(l.getHead_test(), nullptr);
@@ -166,54 +159,47 @@ TEST(MyListTest, Coverage_DelHeadEmpty) {
 TEST(MyListTest, Coverage_Serialization_Fail) {
     MyList l;
     
-    // 1. Ошибка открытия файла при записи (пустое имя)
-    // Покрывает if (!file) return; в saveToFile
     l.saveToFile(""); 
 
-    // 2. Ошибка открытия файла при чтении
-    // Покрывает if (!file) return; в loadFromFile
     l.loadFromFile("non_existent_file_123.dat");
 }
 
 TEST(MyListTest, Coverage_Load_Corrupted) {
-    // Покрывает ветки if (file.fail()) break; внутри цикла загрузки
     MyList l;
     
-    // Создаем "битый" файл: говорим, что там 5 элементов, а пишем 0
     {
         ofstream f("corrupted_list.dat", ios::binary);
         int count = 5;
         f.write((char*)&count, sizeof(count));
-        // Данные не пишем
         f.close();
     }
     
     l.loadFromFile("corrupted_list.dat");
-    // Список должен быть пуст (или содержать то, что успел считать до ошибки)
     
     remove("corrupted_list.dat");
 }
 
 TEST(MyListTest, Coverage_Load_Overwrite) {
-    // Покрывает цикл очистки while(head) delHead() внутри loadFromFile
     MyList l;
     l.addTail("Old1");
     l.addTail("Old2");
     
-    // Создаем нормальный файл с 1 элементом
+    // Ensure clean slate
+    remove("good_list.dat");
+
     {
-        ofstream f("good_list.dat", ios::binary);
-        int count = 1;
-        f.write((char*)&count, sizeof(count));
-        size_t len = 3;
-        f.write((char*)&len, sizeof(len));
-        f.write("New", 3);
-        f.close();
+        ofstream f("good_list.dat"); 
+        if (f.is_open()) {
+            f << "1\n";      
+            f << "New\n";  
+            f.close();
+        }
     }
     
-    // Загрузка должна сначала удалить Old1 и Old2
     l.loadFromFile("good_list.dat");
     
+   
+    ASSERT_NE(l.getHead_test(), nullptr);
     EXPECT_EQ(l.getHead_test()->value, "New");
     EXPECT_EQ(l.getHead_test()->next, nullptr);
     

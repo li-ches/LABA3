@@ -62,6 +62,46 @@ void Stack::readStack() const {
 
 
 void Stack::saveToFile(const string& filename) const {
+    ofstream file(filename);
+    if (!file) return;
+
+    int count = 0;
+    for (SNode* curr = top; curr; curr = curr->next) {
+        count++;
+    }
+    file << count << "\n";
+
+    // Сохраняем в обратном порядке, чтобы при загрузке порядок восстановился
+    SNode* curr = top;
+    string* tempArr = new string[count];
+    for (int i = count - 1; i >= 0; --i) {
+        tempArr[i] = curr->value;
+        curr = curr->next;
+    }
+
+    for (int i = 0; i < count; ++i) {
+        writeStringText(file, tempArr[i]);
+    }
+    delete[] tempArr;
+}
+
+void Stack::loadFromFile(const string& filename) {
+    ifstream file(filename);
+    if (!file) return;
+
+    while (!isEmpty()) pop();
+
+    int count;
+    file >> count;
+    string dummy; getline(file, dummy);
+
+    for (int i = 0; i < count; ++i) {
+        push(readStringText(file));
+    }
+}
+
+// --- BINARY ---
+void Stack::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) return;
 
@@ -71,8 +111,6 @@ void Stack::saveToFile(const string& filename) const {
     }
     file.write(reinterpret_cast<const char*>(&count), sizeof(count));
 
-    //обратном порядке (снизу вверх)
-    //чтобы при загрузке push() восстановил правильный порядок
     SNode* curr = top;
     string* tempArr = new string[count];
     for (int i = count - 1; i >= 0; --i) {
@@ -86,11 +124,10 @@ void Stack::saveToFile(const string& filename) const {
     delete[] tempArr;
 }
 
-void Stack::loadFromFile(const string& filename) {
+void Stack::loadFromBinaryFile(const string& filename) {
     ifstream file(filename, ios::binary);
     if (!file) return;
 
-    //очищаем стек
     while (!isEmpty()) pop();
 
     int count;
