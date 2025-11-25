@@ -5,15 +5,18 @@
 #include <fstream>
 #include <cstdio>
 
+using namespace std;
+
 class OutputCapture {
-    std::stringstream buffer;
-    std::streambuf* old;
+    stringstream buffer;
+    streambuf* old;
 public:
-    OutputCapture() : old(std::cout.rdbuf(buffer.rdbuf())) {}
-    ~OutputCapture() { std::cout.rdbuf(old); }
-    std::string str() const { return buffer.str(); }
+    OutputCapture() : old(cout.rdbuf(buffer.rdbuf())) {}
+    ~OutputCapture() { cout.rdbuf(old); }
+    string str() const { return buffer.str(); }
 };
 
+// проверка на операции с пустым деревом (поиск, удаление, вывод)
 TEST(TreeTest, EmptySearchPrintRemove) {
     CompleteBinaryTree t;
 
@@ -26,6 +29,7 @@ TEST(TreeTest, EmptySearchPrintRemove) {
     t.print();
 }
 
+// проверка на вставку корня и дубликатов
 TEST(TreeTest, InsertRootAndDuplicate) {
     CompleteBinaryTree t;
 
@@ -37,6 +41,7 @@ TEST(TreeTest, InsertRootAndDuplicate) {
     EXPECT_EQ(t.getSize(), 1); 
 }
 
+// проверка на вставку левого и правого потомков и поиск
 TEST(TreeTest, InsertLeftRightSearch) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -50,6 +55,7 @@ TEST(TreeTest, InsertLeftRightSearch) {
     EXPECT_FALSE(t.search(99));
 }
 
+// проверка на удаление листового узла
 TEST(TreeTest, DeleteLeaf) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -62,6 +68,7 @@ TEST(TreeTest, DeleteLeaf) {
     EXPECT_EQ(t.getSize(), 2);
 }
 
+// проверка на удаление узла с одним левым потомком
 TEST(TreeTest, DeleteNodeOneChild_LeftOnly) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -75,6 +82,7 @@ TEST(TreeTest, DeleteNodeOneChild_LeftOnly) {
     EXPECT_EQ(t.getSize(), 2);
 }
 
+// проверка на удаление узла с одним правым потомком
 TEST(TreeTest, DeleteNodeOneChild_RightOnly) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -88,6 +96,7 @@ TEST(TreeTest, DeleteNodeOneChild_RightOnly) {
     EXPECT_EQ(t.getSize(), 2);
 }
 
+// проверка на удаление узла с двумя потомками
 TEST(TreeTest, DeleteNodeTwoChildren) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -103,6 +112,7 @@ TEST(TreeTest, DeleteNodeTwoChildren) {
     EXPECT_EQ(t.getSize(), 4);
 }
 
+// проверка на удаление несуществующего узла
 TEST(TreeTest, RemoveMissing) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -115,6 +125,7 @@ TEST(TreeTest, RemoveMissing) {
     EXPECT_EQ(sizeBefore, sizeAfter);
 }
 
+// проверка на полную очистку дерева
 TEST(TreeTest, ClearTree) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -126,6 +137,7 @@ TEST(TreeTest, ClearTree) {
     EXPECT_EQ(t.getSize(), 0);
 }
 
+// проверка на вывод непустого дерева
 TEST(TreeTest, PrintNonEmpty) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -135,22 +147,23 @@ TEST(TreeTest, PrintNonEmpty) {
     SUCCEED(); 
 }
 
+// проверка на сохранение и загрузку в текстовом формате
 TEST(TreeTest, SaveLoadTextFile) {
     CompleteBinaryTree t;
     t.insert(10);
     t.insert(5);
     t.insert(15);
 
-    std::string fname = "tree_test.txt";
+    string fname = "tree_test.txt";
     
     {
-        std::ofstream out(fname);
+        ofstream out(fname);
         t.saveToFile(out);
     }
 
     CompleteBinaryTree t2;
     {
-        std::ifstream in(fname);
+        ifstream in(fname);
         t2.loadFromFile(in);
     }
 
@@ -159,25 +172,26 @@ TEST(TreeTest, SaveLoadTextFile) {
     EXPECT_TRUE(t2.search(5));
     EXPECT_TRUE(t2.search(15));
 
-    std::remove(fname.c_str());
+    remove(fname.c_str());
 }
 
+// проверка на сохранение и загрузку в бинарном формате
 TEST(TreeTest, SaveLoadBinaryFile) {
     CompleteBinaryTree t;
     t.insert(100);
     t.insert(50);
     t.insert(150);
 
-    std::string fname = "tree_test.bin";
+    string fname = "tree_test.bin";
     
     {
-        std::ofstream out(fname, std::ios::binary);
+        ofstream out(fname, ios::binary);
         t.saveToBinaryFile(out);
     }
 
     CompleteBinaryTree t2;
     {
-        std::ifstream in(fname, std::ios::binary);
+        ifstream in(fname, ios::binary);
         t2.loadFromBinaryFile(in);
     }
 
@@ -186,9 +200,10 @@ TEST(TreeTest, SaveLoadBinaryFile) {
     EXPECT_TRUE(t2.search(50));
     EXPECT_TRUE(t2.search(150));
 
-    std::remove(fname.c_str());
+    remove(fname.c_str());
 }
 
+// проверка на удаление корня с двумя потомками
 TEST(TreeTest, Coverage_Remove_Root_TwoChildren) {
     CompleteBinaryTree t;
     t.insert(10); 
@@ -204,6 +219,7 @@ TEST(TreeTest, Coverage_Remove_Root_TwoChildren) {
     EXPECT_EQ(t.getSize(), 2);
 }
 
+// проверка на удаление корня с одним потомком
 TEST(TreeTest, Coverage_Remove_Root_OneChild) {
     CompleteBinaryTree t;
     t.insert(10);
@@ -215,18 +231,20 @@ TEST(TreeTest, Coverage_Remove_Root_OneChild) {
     EXPECT_TRUE(t.search(5));
 }
 
+// проверка на удаление несуществующих элементов и из пустого дерева
 TEST(TreeTest, Coverage_Remove_NotExists_And_Empty) {
     OutputCapture cap;
     CompleteBinaryTree t;
     
     t.remove(10); 
-    EXPECT_NE(cap.str().find("Нельзя удалить"), std::string::npos);
+    EXPECT_NE(cap.str().find("Нельзя удалить"), string::npos);
     
     t.insert(5);
     t.remove(99); // Несуществующий
     // Проверяем, что размер не изменился
 }
 
+// проверка на вставку дубликатов
 TEST(TreeTest, Coverage_Insert_Duplicates) {
     OutputCapture cap;
     CompleteBinaryTree t;
@@ -236,6 +254,7 @@ TEST(TreeTest, Coverage_Insert_Duplicates) {
     EXPECT_EQ(t.getSize(), 1);
 }
 
+// проверка на обработку ошибок ввода-вывода
 TEST(TreeTest, Coverage_IO_Errors) {
     CompleteBinaryTree t;
     t.saveToFile("");
@@ -246,36 +265,37 @@ TEST(TreeTest, Coverage_IO_Errors) {
     
     // Бинарный файл с маркером конца (-1) сразу
     {
-        std::ofstream f("empty_tree.bin", std::ios::binary);
+        ofstream f("empty_tree.bin", ios::binary);
         int m = -1;
         f.write((char*)&m, sizeof(m));
         f.close();
     }
     t.loadFromBinaryFile("empty_tree.bin");
     EXPECT_EQ(t.getSize(), 0);
-    std::remove("empty_tree.bin");
+    remove("empty_tree.bin");
 }
 
+// проверка на загрузку из пустых файлов
 TEST(TreeTest, LoadFromEmptyFiles) {
     CompleteBinaryTree t;
     
     {
-        std::ofstream out("empty.txt");
+        ofstream out("empty.txt");
     }
     {
-        std::ifstream in("empty.txt");
+        ifstream in("empty.txt");
         t.loadFromFile(in);
     }
     EXPECT_EQ(t.getSize(), 0);
-    std::remove("empty.txt");
+    remove("empty.txt");
 
     {
-        std::ofstream out("empty.bin", std::ios::binary);
+        ofstream out("empty.bin", ios::binary);
     }
     {
-        std::ifstream in("empty.bin", std::ios::binary);
+        ifstream in("empty.bin", ios::binary);
         t.loadFromBinaryFile(in);
     }
     EXPECT_EQ(t.getSize(), 0);
-    std::remove("empty.bin");
+    remove("empty.bin");
 }

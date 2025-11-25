@@ -7,14 +7,15 @@
 using namespace std;
 
 class OutputCapture {
-    std::stringstream buffer;
-    std::streambuf* prev;
+    stringstream buffer;
+    streambuf* prev;
 public:
-    OutputCapture() : prev(std::cout.rdbuf(buffer.rdbuf())) {}
-    ~OutputCapture() { std::cout.rdbuf(prev); }
-    std::string str() { return buffer.str(); }
+    OutputCapture() : prev(cout.rdbuf(buffer.rdbuf())) {}
+    ~OutputCapture() { cout.rdbuf(prev); }
+    string str() { return buffer.str(); }
 };
 
+// проверка на основные операции стека и граничные случаи
 TEST(StackTest, Branch_Coverage) {
     Stack s;
     OutputCapture cap;
@@ -29,6 +30,7 @@ TEST(StackTest, Branch_Coverage) {
     EXPECT_EQ(s.pop(), "A");
 }
 
+// проверка на расширенные сценарии работы стека (LIFO)
 TEST(StackTest, Branch_Killer_And_Extras) {
     Stack s;
     EXPECT_EQ(s.pop(), "[STACK_EMPTY]");
@@ -44,6 +46,7 @@ TEST(StackTest, Branch_Killer_And_Extras) {
     EXPECT_EQ(s.pop(), "[STACK_EMPTY]");
 }
 
+// проверка на сохранение и загрузку стека из файла
 TEST(StackTest, SaveAndLoadFile) {
     OutputCapture cap;
     Stack s;
@@ -60,6 +63,7 @@ TEST(StackTest, SaveAndLoadFile) {
     remove("stack_test.dat");
 }
 
+// проверка на загрузку из несуществующих и поврежденных файлов
 TEST(StackTest, LoadFromBadFile) {
     OutputCapture cap;
     Stack s;
@@ -71,6 +75,7 @@ TEST(StackTest, LoadFromBadFile) {
     remove("bad_stack.dat");
 }
 
+// проверка на корректность работы деструктора стека
 TEST(DestructorTest, StackCleanup) {
     OutputCapture cap;
     {
@@ -80,6 +85,7 @@ TEST(DestructorTest, StackCleanup) {
     }
 }
 
+// проверка на операции с пустым стеком
 TEST(StackTest, Coverage_EmptyOps) {
     Stack s;
     OutputCapture cap;
@@ -91,6 +97,7 @@ TEST(StackTest, Coverage_EmptyOps) {
     EXPECT_NE(cap.str().find("пуст"), string::npos);
 }
 
+// проверка на обработку ошибок ввода-вывода
 TEST(StackTest, Coverage_IO) {
     Stack s;
     s.saveToFile("");

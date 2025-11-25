@@ -8,14 +8,15 @@
 using namespace std;
 
 class OutputCapture {
-    std::stringstream buffer;
-    std::streambuf* prev;
+    stringstream buffer;
+    streambuf* prev;
 public:
-    OutputCapture() : prev(std::cout.rdbuf(buffer.rdbuf())) {}
-    ~OutputCapture() { std::cout.rdbuf(prev); }
-    std::string str() { return buffer.str(); }
+    OutputCapture() : prev(cout.rdbuf(buffer.rdbuf())) {}
+    ~OutputCapture() { cout.rdbuf(prev); }
+    string str() { return buffer.str(); }
 };
 
+// проверка на основные операции добавления и удаления в двусвязном списке
 TEST(DListTest, Branch_Killer) {
     DList d;
 
@@ -39,6 +40,7 @@ TEST(DListTest, Branch_Killer) {
     EXPECT_TRUE(d.contains("B"));
 }
 
+// проверка на операции с пустым списком
 TEST(DListTest, Coverage_Empty_Ops) {
     DList d;
     d.delHead();
@@ -52,6 +54,7 @@ TEST(DListTest, Coverage_Empty_Ops) {
     EXPECT_FALSE(d.contains("A"));
 }
 
+// проверка на переходы между состояниями списка с одним элементом
 TEST(DListTest, Coverage_SingleElement_Transitions) {
     DList d;
     
@@ -66,6 +69,7 @@ TEST(DListTest, Coverage_SingleElement_Transitions) {
     EXPECT_EQ(d.getTail_Test(), nullptr);
 }
 
+// проверка на сложные случаи вставки before/after
 TEST(DListTest, Coverage_AddBefore_AddAfter_Complex) {
     DList d;
     d.addTail("A");
@@ -86,6 +90,7 @@ TEST(DListTest, Coverage_AddBefore_AddAfter_Complex) {
     EXPECT_EQ(d.getTail_Test()->value, "End");
 }
 
+// проверка на различные ветви удаления по значению
 TEST(DListTest, Coverage_DelByVal_Branches) {
     DList d;
     d.addTail("1");
@@ -106,6 +111,7 @@ TEST(DListTest, Coverage_DelByVal_Branches) {
     EXPECT_TRUE(d.contains("X"));
 }
 
+// проверка на граничные случаи удаления before/after
 TEST(DListTest, Coverage_DelAfter_DelBefore_Boundary) {
     DList d;
     d.addTail("A");
@@ -126,6 +132,7 @@ TEST(DListTest, Coverage_DelAfter_DelBefore_Boundary) {
     EXPECT_FALSE(d.contains("C"));
 }
 
+// проверка на обработку ошибок ввода-вывода
 TEST(DListTest, Coverage_IO) {
     DList d;
     d.saveToFile(""); 

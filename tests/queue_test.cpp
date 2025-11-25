@@ -8,14 +8,15 @@
 using namespace std;
 
 class OutputCapture {
-    std::stringstream buffer;
-    std::streambuf* prev;
+    stringstream buffer;
+    streambuf* prev;
 public:
-    OutputCapture() : prev(std::cout.rdbuf(buffer.rdbuf())) {}
-    ~OutputCapture() { std::cout.rdbuf(prev); }
-    std::string str() { return buffer.str(); }
+    OutputCapture() : prev(cout.rdbuf(buffer.rdbuf())) {}
+    ~OutputCapture() { cout.rdbuf(prev); }
+    string str() { return buffer.str(); }
 };
 
+// проверка на основные операции очереди и граничные случаи
 TEST(QueueTest, Branch_Coverage) {
     Queue q;
     OutputCapture cap;
@@ -35,6 +36,7 @@ TEST(QueueTest, Branch_Coverage) {
     EXPECT_EQ(q.pop(), "2");
 }
 
+// проверка на поведение при полном извлечении элементов из очереди
 TEST(QueueTest, BranchBooster_PopEmpty) {
     OutputCapture cap;
     Queue q;
@@ -46,6 +48,7 @@ TEST(QueueTest, BranchBooster_PopEmpty) {
     EXPECT_TRUE(q.isEmpty());
 }
 
+// проверка на сохранение и загрузку очереди из файла
 TEST(QueueTest, SaveAndLoadFile) {
     OutputCapture cap;
     Queue q;
@@ -62,6 +65,7 @@ TEST(QueueTest, SaveAndLoadFile) {
     remove("queue_test.dat");
 }
 
+// проверка на загрузку из несуществующего файла
 TEST(QueueTest, LoadFromBadFile) {
     OutputCapture cap;
     Queue q;
@@ -69,17 +73,19 @@ TEST(QueueTest, LoadFromBadFile) {
     EXPECT_TRUE(q.isEmpty());
 }
 
+// проверка на загрузку из обрезанного файла
 TEST(QueueTest, TruncatedFile) {
-    std::ofstream out("q_trunc.dat", std::ios::binary);
+    ofstream out("q_trunc.dat", ios::binary);
     int count = 2;
     out.write(reinterpret_cast<char*>(&count), sizeof(count));
-    writeString(out, std::string("only"));
+    writeString(out, string("only"));
     out.close();
 
     Queue q; q.loadFromFile("q_trunc.dat");
     remove("q_trunc.dat");
 }
 
+// проверка на корректность работы деструктора очереди
 TEST(DestructorTest, QueueCleanup) {
     OutputCapture cap;
     {
@@ -89,6 +95,7 @@ TEST(DestructorTest, QueueCleanup) {
     }
 }
 
+// проверка на операции с пустой очередью
 TEST(QueueTest, Coverage_EmptyOps) {
     Queue q;
     OutputCapture cap;
@@ -100,6 +107,7 @@ TEST(QueueTest, Coverage_EmptyOps) {
     EXPECT_NE(cap.str().find("пуста"), string::npos);
 }
 
+// проверка на полный цикл работы очереди (FIFO)
 TEST(QueueTest, Coverage_FullCycle) {
     Queue q;
     q.push("A");
@@ -114,6 +122,7 @@ TEST(QueueTest, Coverage_FullCycle) {
     EXPECT_TRUE(q.isEmpty());
 }
 
+// проверка на обработку ошибок ввода-вывода
 TEST(QueueTest, Coverage_IO) {
     Queue q;
     q.saveToFile("");

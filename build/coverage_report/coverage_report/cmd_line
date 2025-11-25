@@ -1,1 +1,0 @@
-genhtml coverage_cleaned.info --output-directory coverage_report

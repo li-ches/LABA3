@@ -9,14 +9,15 @@
 using namespace std;
 
 class OutputCapture {
-    std::stringstream buffer;
-    std::streambuf* prev;
+    stringstream buffer;
+    streambuf* prev;
 public:
-    OutputCapture() : prev(std::cout.rdbuf(buffer.rdbuf())) {}
-    ~OutputCapture() { std::cout.rdbuf(prev); }
-    std::string str() { return buffer.str(); }
+    OutputCapture() : prev(cout.rdbuf(buffer.rdbuf())) {}
+    ~OutputCapture() { cout.rdbuf(prev); }
+    string str() { return buffer.str(); }
 };
 
+// проверка на различные сценарии удаления элементов
 TEST(MyListTest, Branch_Deletions) {
     MyList list;
     OutputCapture cap;
@@ -40,6 +41,7 @@ TEST(MyListTest, Branch_Deletions) {
     EXPECT_FALSE(list.findValue("Y"));
 }
 
+// проверка на сложные операций удаления (до и после значений)
 TEST(MyListTest, Branch_AdvancedOps) {
     MyList list;
     OutputCapture cap;
@@ -69,6 +71,7 @@ TEST(MyListTest, Branch_AdvancedOps) {
     l3.readBack();
 }
 
+// проверка на вставку относительно значений
 TEST(MyListTest, AddBeforeHeadValue) {
     OutputCapture cap;
     MyList l;
@@ -78,6 +81,7 @@ TEST(MyListTest, AddBeforeHeadValue) {
     EXPECT_EQ(l.getHead_test()->value, "Z");
 }
 
+// проверка на вставку после несуществующего значения
 TEST(MyListTest, AddAfterNotFound) {
     OutputCapture cap;
     MyList l;
@@ -85,12 +89,14 @@ TEST(MyListTest, AddAfterNotFound) {
     l.addAfter("Z", "B"); 
 }
 
+// проверка на удаление по значению из пустого списка
 TEST(MyListTest, DelByValueEmpty) {
     OutputCapture cap;
     MyList l;
     l.delByValue("A"); 
 }
 
+// проверка на многократное удаление хвоста
 TEST(MyListTest, DelTailMultiple) {
     OutputCapture cap;
     MyList l;
@@ -100,6 +106,7 @@ TEST(MyListTest, DelTailMultiple) {
     EXPECT_FALSE(l.findValue("C"));
 }
 
+// проверка на комбинации сложных условий удаления
 TEST(ListTest, BranchBooster_ComplexConditions) {
     OutputCapture cap;
     MyList l;
@@ -130,6 +137,7 @@ TEST(ListTest, BranchBooster_ComplexConditions) {
     l4.delBeforeValue("Z");
 }
 
+// проверка на корректность работы деструктора
 TEST(DestructorTest, MyListCleanup) {
     OutputCapture cap;
     {
@@ -139,6 +147,7 @@ TEST(DestructorTest, MyListCleanup) {
     }
 }
 
+// проверка на вывод пустого списка
 TEST(MyListTest, Coverage_EmptyPrints) {
     MyList l;
     OutputCapture cap;
@@ -150,12 +159,14 @@ TEST(MyListTest, Coverage_EmptyPrints) {
     EXPECT_TRUE(out.find("пуст") != string::npos);
 }
 
+// проверка на удаление головы из пустого списка
 TEST(MyListTest, Coverage_DelHeadEmpty) {
     MyList l;
     l.delHead(); 
     EXPECT_EQ(l.getHead_test(), nullptr);
 }
 
+// проверка на ошибки сериализации
 TEST(MyListTest, Coverage_Serialization_Fail) {
     MyList l;
     
@@ -164,6 +175,7 @@ TEST(MyListTest, Coverage_Serialization_Fail) {
     l.loadFromFile("non_existent_file_123.dat");
 }
 
+// проверка на загрузку поврежденных файлов
 TEST(MyListTest, Coverage_Load_Corrupted) {
     MyList l;
     
@@ -179,6 +191,7 @@ TEST(MyListTest, Coverage_Load_Corrupted) {
     remove("corrupted_list.dat");
 }
 
+// проверка на все виды удаления из пустого списка
 TEST(MyListTest, Coverage_Delete_From_Empty) {
     MyList list;
     OutputCapture cap;
@@ -194,6 +207,7 @@ TEST(MyListTest, Coverage_Delete_From_Empty) {
     EXPECT_NE(out.find("пуст"), string::npos); // Проверяем вывод ошибки
 }
 
+// проверка на граничные случаи добавления
 TEST(MyListTest, Coverage_Add_EdgeCases) {
     MyList list;
     OutputCapture cap;
@@ -214,6 +228,7 @@ TEST(MyListTest, Coverage_Add_EdgeCases) {
     list.addBefore("NonExistent", "X");
 }
 
+// проверка на удаление из списка с одним элементом
 TEST(MyListTest, Coverage_Delete_Head_Tail_SingleElement) {
     MyList list;
     list.addHead("Single");
@@ -227,6 +242,7 @@ TEST(MyListTest, Coverage_Delete_Head_Tail_SingleElement) {
     EXPECT_EQ(list.getHead_test(), nullptr);
 }
 
+// проверка на различные сценарии удаления по значению
 TEST(MyListTest, Coverage_DelByValue_Cases) {
     MyList list;
     OutputCapture cap;
@@ -249,6 +265,7 @@ TEST(MyListTest, Coverage_DelByValue_Cases) {
     EXPECT_FALSE(list.findValue("C"));
 }
 
+// проверка на удаление после/до в разных позициях
 TEST(MyListTest, Coverage_DelAfter_DelBefore) {
     MyList list;
     
@@ -274,6 +291,7 @@ TEST(MyListTest, Coverage_DelAfter_DelBefore) {
     EXPECT_FALSE(list.findValue("1"));
 }
 
+// проверка на различные ошибки ввода-вывода
 TEST(MyListTest, Coverage_IO_Failures) {
     MyList list;
     // Запись в недоступный файл
@@ -293,6 +311,7 @@ TEST(MyListTest, Coverage_IO_Failures) {
     remove("broken_list.txt");
 }
 
+// проверка на загрузку с перезаписью существующих данных
 TEST(MyListTest, Coverage_Load_Overwrite) {
     MyList l;
     l.addTail("Old1");

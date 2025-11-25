@@ -7,7 +7,7 @@
 #include "hash.h"
 #include "compl.h"
 
-
+//для динамического массива - добавление в конец
 static void BM_DynArr_PushEnd(benchmark::State& state) {
     for (auto _ : state) {
         MyArr arr;
@@ -17,6 +17,7 @@ static void BM_DynArr_PushEnd(benchmark::State& state) {
 }
 BENCHMARK(BM_DynArr_PushEnd)->Range(1000, 100000);
 
+//для односвязного списка - добавление в хвост
 static void BM_List_AddTail(benchmark::State& state) {
     for (auto _ : state) {
         MyList l;
@@ -26,6 +27,7 @@ static void BM_List_AddTail(benchmark::State& state) {
 }
 BENCHMARK(BM_List_AddTail)->Range(1000, 100000);
 
+//для двусвязного списка - добавление в хвост
 static void BM_DList_AddTail(benchmark::State& state) {
     for (auto _ : state) {
         DList l;
@@ -35,7 +37,7 @@ static void BM_DList_AddTail(benchmark::State& state) {
 }
 BENCHMARK(BM_DList_AddTail)->Range(1000, 100000);
 
-
+//для стека - операции push и pop
 static void BM_Stack_PushPop(benchmark::State& state) {
     for (auto _ : state) {
         Stack s;
@@ -47,7 +49,7 @@ static void BM_Stack_PushPop(benchmark::State& state) {
 }
 BENCHMARK(BM_Stack_PushPop)->Range(1000, 100000);
 
-
+//для очереди - операции push и pop
 static void BM_Queue_PushPop(benchmark::State& state) {
     for (auto _ : state) {
         Queue q;
@@ -59,7 +61,7 @@ static void BM_Queue_PushPop(benchmark::State& state) {
 }
 BENCHMARK(BM_Queue_PushPop)->Range(1000, 100000);
 
-
+//для полного бинарного дерева - вставка элементов
 static void BM_CBT_Insert(benchmark::State& state) {
     for (auto _ : state) {
         CompleteBinaryTree t;
@@ -69,6 +71,7 @@ static void BM_CBT_Insert(benchmark::State& state) {
 }
 BENCHMARK(BM_CBT_Insert)->Range(1000, 50000);
 
+//для полного бинарного дерева - поиск элемента
 static void BM_CBT_Search(benchmark::State& state) {
     CompleteBinaryTree t;
     for (int i = 0; i < state.range(0); i++)
@@ -79,10 +82,7 @@ static void BM_CBT_Search(benchmark::State& state) {
 }
 BENCHMARK(BM_CBT_Search)->Range(1000, 50000);
 
-
-
-
-
+//для хеш-таблицы с цепочками - вставка
 static void BM_ChainHash_Insert(benchmark::State& state) {
     for (auto _ : state) {
         ChainHash h(1000);
@@ -92,7 +92,7 @@ static void BM_ChainHash_Insert(benchmark::State& state) {
 }
 BENCHMARK(BM_ChainHash_Insert)->Range(1000, 50000);
 
-
+//для хеш-таблицы с открытой адресацией - вставка
 static void BM_OpenHash_Insert(benchmark::State& state) {
     for (auto _ : state) {
         OpenHash h(state.range(0) * 2);

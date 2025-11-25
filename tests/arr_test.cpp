@@ -9,14 +9,15 @@
 using namespace std;
 
 class OutputCapture {
-    std::stringstream buffer;
-    std::streambuf* prev;
+    stringstream buffer;
+    streambuf* prev;
 public:
-    OutputCapture() : prev(std::cout.rdbuf(buffer.rdbuf())) {}
-    ~OutputCapture() { std::cout.rdbuf(prev); }
-    std::string str() { return buffer.str(); }
+    OutputCapture() : prev(cout.rdbuf(buffer.rdbuf())) {}
+    ~OutputCapture() { cout.rdbuf(prev); }
+    string str() { return buffer.str(); }
 };
 
+// проверка на управление памятью при расширении и сжатии массива
 TEST(MyArrTest, Branch_CapacityAndShrink) {
     MyArr arr;
 
@@ -40,6 +41,7 @@ TEST(MyArrTest, Branch_CapacityAndShrink) {
     EXPECT_EQ(arr.lenArr(), 0);
 }
 
+// проверка на граничные случаи и обработку ошибок индексов
 TEST(MyArrTest, Branch_EdgeCases) {
     MyArr arr;
     OutputCapture cap; 
@@ -73,6 +75,7 @@ TEST(MyArrTest, Branch_EdgeCases) {
     EXPECT_NE(arr.getData_test(), nullptr);
 }
 
+// проверка на обработку ошибок ввода-вывода
 TEST(MyArrTest, IO_Errors_Coverage) {
     MyArr arr;
     
@@ -101,6 +104,7 @@ TEST(MyArrTest, IO_Errors_Coverage) {
     arr.saveToBinaryFile("");
 }
 
+// проверка на корректную работу сериализации и десериализации
 TEST(MyArrTest, SaveAndLoad_HappyPath) {
     MyArr arr;
     arr.addEnd("1");
