@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg_verbosity_test.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/spec_arg_verbosity_test.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/spec_arg_verbosity_test.cc \
  /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -146,7 +146,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
@@ -170,6 +170,6 @@ _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h

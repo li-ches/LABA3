@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/3sem/labb/build/_deps/googlebenchmark-src/test/perf_counters_gtest.cc" "_deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.o" "gcc" "_deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.o.d"
+  "/home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/perf_counters_gtest.cc" "_deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.o" "gcc" "_deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/user/3sem/labb
+CXX_INCLUDES = -I/home/chesnokova/LABA3
 
 CXX_FLAGS =  --coverage -std=gnu++17
 

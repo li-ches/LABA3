@@ -1,20 +1,16 @@
 #include "compl.h"
 #include <iostream>
-#include <fstream>      
-#include <string>       
-#include <functional>   
+#include <fstream>
+#include <string>
+#include <functional>
 using namespace std;
 
-
-// Конструктор
 CompleteBinaryTree::CompleteBinaryTree() : root(nullptr), size(0) {}
 
-// Деструктор
 CompleteBinaryTree::~CompleteBinaryTree() {
     clear();
 }
 
-//Рекурсивное удаление дерева
 void CompleteBinaryTree::deleteTreeRecursive(TreeNode* node) {
     if (node == nullptr) {
         return;
@@ -24,7 +20,6 @@ void CompleteBinaryTree::deleteTreeRecursive(TreeNode* node) {
     delete node;
 }
 
-//Поиск узла с минимальным значением
 TreeNode* CompleteBinaryTree::findMin(TreeNode* node) {
     while (node && node->left != nullptr) {
         node = node->left;
@@ -32,29 +27,22 @@ TreeNode* CompleteBinaryTree::findMin(TreeNode* node) {
     return node;
 }
 
-//Рекурсивное удаление узла
 TreeNode* CompleteBinaryTree::deleteNodeRecursive(TreeNode* current, int value) {
     if (current == nullptr) {
         return nullptr;
     }
 
     if (value < current->data) {
-        // Идем влево
         current->left = deleteNodeRecursive(current->left, value);
     } else if (value > current->data) {
-        // Идем вправо
         current->right = deleteNodeRecursive(current->right, value);
     } else {
-        // Узел найден
-        
-        //Нет левого потомка
         if (current->left == nullptr) {
             TreeNode* temp = current->right;
             delete current;
-            size--; 
+            size--;
             return temp;
         }
-        //Нет правого потомка
         else if (current->right == nullptr) {
             TreeNode* temp = current->left;
             delete current;
@@ -67,18 +55,15 @@ TreeNode* CompleteBinaryTree::deleteNodeRecursive(TreeNode* current, int value) 
 
         current->data = successor->data;
 
-      
         current->right = deleteNodeRecursive(current->right, successor->data);
     }
     return current;
 }
 
-// Проверка на пустоту
 bool CompleteBinaryTree::isEmpty() const {
     return root == nullptr;
 }
 
-// Очистка дерева
 void CompleteBinaryTree::clear() {
     if (root != nullptr) {
         deleteTreeRecursive(root);
@@ -87,7 +72,6 @@ void CompleteBinaryTree::clear() {
     }
 }
 
-// Вставка элемента
 void CompleteBinaryTree::insert(int value) {
     TreeNode* newNode = new TreeNode(value);
 
@@ -120,7 +104,6 @@ void CompleteBinaryTree::insert(int value) {
     }
 }
 
-// Удаление элемента 
 void CompleteBinaryTree::remove(int value) {
     if (isEmpty()) {
         std::cout << "Нельзя удалить из пустого дерева." << std::endl;
@@ -137,7 +120,6 @@ void CompleteBinaryTree::remove(int value) {
     }
 }
 
-// Поиск элемента
 bool CompleteBinaryTree::search(int value) const {
     if (isEmpty()) {
         return false;

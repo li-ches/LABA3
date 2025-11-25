@@ -1,13 +1,11 @@
 #include "queue.h"
 #include "serialize.h"
 
-using namespace std; 
+using namespace std;
 
-//конструктор
 Queue::Queue() : front(nullptr), rear(nullptr) {
 }
 
-//деструктор
 Queue::~Queue() {
     while (!isEmpty()) {
         pop();
@@ -32,7 +30,6 @@ void Queue::push(std::string val) {
     }
 }
 
-//удаление элемента из начала очереди
 string Queue::pop() {
     if (isEmpty()) {
         return "[QUEUE_EMPTY]";
@@ -100,7 +97,6 @@ void Queue::loadFromFile(const string& filename) {
     }
 }
 
-//бинарный
 void Queue::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) return;
@@ -129,6 +125,6 @@ void Queue::loadFromBinaryFile(const string& filename) {
     for (int i = 0; i < count; ++i) {
         string val = readString(file);
         if (file.fail()) break;
-        push(val); 
+        push(val);
     }
 }

@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_error_test.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/skip_with_error_test.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/skip_with_error_test.cc \
  /usr/include/stdc-predef.h /usr/include/c++/13/cassert \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -47,7 +47,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_e
  /usr/include/c++/13/backward/binders.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/check.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -160,12 +160,12 @@ _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_e
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/log.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \

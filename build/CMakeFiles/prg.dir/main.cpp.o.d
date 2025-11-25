@@ -1,4 +1,4 @@
-CMakeFiles/prg.dir/main.cpp.o: /home/user/3sem/labb/main.cpp \
+CMakeFiles/prg.dir/main.cpp.o: /home/chesnokova/LABA3/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -157,13 +157,13 @@ CMakeFiles/prg.dir/main.cpp.o: /home/user/3sem/labb/main.cpp \
  /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
- /usr/include/c++/13/bits/quoted_string.h /home/user/3sem/labb/arr.h \
+ /usr/include/c++/13/bits/quoted_string.h /home/chesnokova/LABA3/arr.h \
  /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /home/user/3sem/labb/list.h \
- /home/user/3sem/labb/dlist.h /home/user/3sem/labb/stack.h \
- /home/user/3sem/labb/queue.h /home/user/3sem/labb/hash.h \
+ /usr/include/c++/13/bits/fstream.tcc /home/chesnokova/LABA3/list.h \
+ /home/chesnokova/LABA3/dlist.h /home/chesnokova/LABA3/stack.h \
+ /home/chesnokova/LABA3/queue.h /home/chesnokova/LABA3/hash.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -186,4 +186,4 @@ CMakeFiles/prg.dir/main.cpp.o: /home/user/3sem/labb/main.cpp \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /home/user/3sem/labb/compl.h
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /home/chesnokova/LABA3/compl.h

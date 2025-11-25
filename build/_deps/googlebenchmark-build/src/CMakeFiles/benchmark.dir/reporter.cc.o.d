@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/reporter.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/reporter.cc \
  /usr/include/stdc-predef.h /usr/include/c++/13/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -157,7 +157,7 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
@@ -171,10 +171,10 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.o: \
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/check.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -185,11 +185,11 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/internal_macros.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/log.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/string_util.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/string_util.h \
  /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/timers.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/timers.h \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
  /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h

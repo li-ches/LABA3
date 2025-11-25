@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/cxx03_test.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/cxx03_test.cc \
  /usr/include/stdc-predef.h /usr/include/c++/13/cassert \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -13,7 +13,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
  /usr/include/assert.h /usr/include/c++/13/cstddef \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -111,4 +111,4 @@ _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h

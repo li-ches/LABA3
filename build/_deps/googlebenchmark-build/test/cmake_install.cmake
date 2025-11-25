@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/3sem/labb/build/_deps/googlebenchmark-src/test
+# Install script for directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

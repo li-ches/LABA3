@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/spec_arg_test.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/spec_arg_test.cc \
  /usr/include/stdc-predef.h /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -158,7 +158,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.o
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/include/c++/13/cstddef /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
@@ -169,6 +169,6 @@ _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.o
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h

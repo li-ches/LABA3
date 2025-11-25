@@ -1,5 +1,5 @@
 #include "hash.h"
-#include "serialize.h" 
+#include "serialize.h"
 #include <iostream>
 #include <cmath>
 
@@ -7,7 +7,7 @@ using namespace std;
 
 auto hash_str(const string& key, int mod) -> int
 {
-    long long hashVal = 0; 
+    long long hashVal = 0;
     for(char character: key)
     {
         hashVal = (hashVal * 31 + std::abs((int)character)) % mod;
@@ -61,7 +61,7 @@ void ChainHash::insert(const string& key, const string& value) {
 auto ChainHash::erase(const string& key) -> bool
 {
     int idx = hash_str(key, cap);
-    
+
     Node* cur = table[idx];
     Node* prv = nullptr;
 
@@ -121,9 +121,8 @@ void ChainHash::saveToFile(const string& filename) const {
     ofstream file(filename);
     if (!file) return;
 
-    file << cap << "\n"; 
+    file << cap << "\n";
 
-    // Считаем количество элементов
     int count = 0;
     for (int i = 0; i < cap; ++i) {
         Node* curr = table[i];
@@ -134,7 +133,6 @@ void ChainHash::saveToFile(const string& filename) const {
     }
     file << count << "\n";
 
-    // Записываем данные
     for (int i = 0; i < cap; ++i) {
         Node* curr = table[i];
         while (curr) {
@@ -149,7 +147,6 @@ void ChainHash::loadFromFile(const string& filename) {
     ifstream file(filename);
     if (!file) return;
 
-    // Очистка текущей таблицы
     for(int i=0; i < cap; i++) {
         Node* cur = table[i];
         while(cur != nullptr) {
@@ -160,10 +157,9 @@ void ChainHash::loadFromFile(const string& filename) {
     }
     delete[] table;
 
-    // Чтение новой
     int newCap;
     file >> newCap;
-    string dummy; getline(file, dummy); 
+    string dummy; getline(file, dummy);
     cap = newCap;
     table = new Node*[cap];
     for(int i = 0; i < cap; i++) table[i] = nullptr;
@@ -184,9 +180,9 @@ void ChainHash::loadFromFile(const string& filename) {
 void ChainHash::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) return;
-    
+
     file.write(reinterpret_cast<const char*>(&cap), sizeof(cap));
-    
+
     int count = 0;
     for (int i = 0; i < cap; ++i) {
         Node* curr = table[i];
@@ -196,7 +192,7 @@ void ChainHash::saveToBinaryFile(const string& filename) const {
         }
     }
     file.write(reinterpret_cast<const char*>(&count), sizeof(count));
-    
+
     for (int i = 0; i < cap; ++i) {
         Node* curr = table[i];
         while (curr) {
@@ -210,8 +206,7 @@ void ChainHash::saveToBinaryFile(const string& filename) const {
 void ChainHash::loadFromBinaryFile(const string& filename) {
     ifstream file(filename, ios::binary);
     if (!file) return;
-    
-    // Очистка
+
     for(int i=0; i < cap; i++) {
         Node* cur = table[i];
         while(cur != nullptr) {
@@ -221,14 +216,14 @@ void ChainHash::loadFromBinaryFile(const string& filename) {
         }
     }
     delete[] table;
-    
+
     file.read(reinterpret_cast<char*>(&cap), sizeof(cap));
     table = new Node*[cap];
     for(int i = 0; i < cap; i++) table[i] = nullptr;
-    
+
     int count;
     file.read(reinterpret_cast<char*>(&count), sizeof(count));
-    
+
     if (file.fail()) return;
     for (int i = 0; i < count; ++i) {
         string key = readString(file);
@@ -260,10 +255,10 @@ void OpenHash::insert(const string& key, const string& value)
 {
     int idx = hash_str(key, cap);
     int start = idx;
-    
+
     while(true)
     {
-        if(!table[idx].used && !table[idx].deleted) 
+        if(!table[idx].used && !table[idx].deleted)
         {
             table[idx].key = key;
             table[idx].val = value;
@@ -284,7 +279,7 @@ void OpenHash::insert(const string& key, const string& value)
         }
 
         idx = (idx+1) % cap;
-        
+
         if(idx == start)
         {
             cout << "Таблица переполнена" << "\n";
@@ -353,7 +348,7 @@ void OpenHash::show() {
 void OpenHash::saveToFile(const string& filename) const {
     ofstream file(filename);
     if (!file) return;
-    
+
     file << cap << "\n";
 
     int count = 0;
@@ -375,14 +370,14 @@ void OpenHash::loadFromFile(const string& filename) {
     if (!file) return;
 
     delete[] table;
-    
+
     int newCap;
     file >> newCap;
     string dummy; getline(file, dummy);
-    
+
     cap = newCap;
     table = new Entry[cap];
-    
+
     int count;
     file >> count;
     getline(file, dummy);
@@ -396,7 +391,6 @@ void OpenHash::loadFromFile(const string& filename) {
     }
 }
 
-//бинар сериализац
 void OpenHash::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) return;
@@ -439,7 +433,6 @@ void parse_cmd(const string& line, string& cmd, string& arg1, string& rest) {
     cmd.clear(); arg1.clear(); rest.clear();
     int lineLength = (int)line.size();
     int idx = 0;
-    
     while (idx < lineLength && is_space_char(line[idx])) { idx++; }
 
     while (idx < lineLength && !is_space_char(line[idx])) {

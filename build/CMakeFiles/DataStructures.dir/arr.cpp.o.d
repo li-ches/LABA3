@@ -1,5 +1,5 @@
-CMakeFiles/DataStructures.dir/arr.cpp.o: /home/user/3sem/labb/arr.cpp \
- /usr/include/stdc-predef.h /home/user/3sem/labb/arr.h \
+CMakeFiles/DataStructures.dir/arr.cpp.o: /home/chesnokova/LABA3/arr.cpp \
+ /usr/include/stdc-predef.h /home/chesnokova/LABA3/arr.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -154,4 +154,4 @@ CMakeFiles/DataStructures.dir/arr.cpp.o: /home/user/3sem/labb/arr.cpp \
  /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /home/user/3sem/labb/serialize.h
+ /usr/include/c++/13/bits/fstream.tcc /home/chesnokova/LABA3/serialize.h

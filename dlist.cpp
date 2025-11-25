@@ -2,11 +2,9 @@
 #include "serialize.h"
 using namespace std;
 
-// конструктор
 DList::DList() : head(nullptr), tail(nullptr) {
 }
 
-// Деструктор
 DList::~DList() {
     while (head != nullptr) {
         DNode* tmp = head;
@@ -16,34 +14,29 @@ DList::~DList() {
     tail = nullptr;
 }
 
-// добавление элемента в начало
 void DList::addHead(const string& val) {
     auto node = new DNode(val, head, nullptr);
 
-    if (head != nullptr) 
+    if (head != nullptr)
     {
         head->prev = node;
     } else {
         tail = node;
     }
 
-    head = node; //новая голова
+    head = node;
 }
 
-//добавление элемента в хвост
 void DList::addTail(const string& val) {
     auto node = new DNode(val, nullptr, tail);
     if (tail != nullptr) {
-        // если список не пустой то хвост указывает на новый узел
         tail->next = node;
     } else {
         head = node;
     }
-    // указатель перемещаем на новый узел
     tail = node;
 }
 
-//вставка нового узла перед элементом
 void DList::addBefore(const string& target, const string& val) {
     if (head == nullptr) {
         return;
@@ -81,7 +74,7 @@ void DList::addAfter(const string& target, const string& val) {
 }
 
 void DList::delHead() {
-    if (head == nullptr) { // проверка на пустоту
+    if (head == nullptr) {
         return;
     }
     DNode* tmp = head;
@@ -110,7 +103,7 @@ void DList::delTail() {
 }
 
 void DList::delByVal(const string& val) {
-    DNode* curr = findValue(val); 
+    DNode* curr = findValue(val);
     if (curr == nullptr) {
         return;
     }
@@ -130,7 +123,6 @@ void DList::delByVal(const string& val) {
     delete curr;
 }
 
-// Приватный метод
 auto DList::findValue(const string& val) const -> DNode* {
     for (DNode* curr = head; curr != nullptr; curr = curr->next) {
         if (curr->value == val) {
@@ -220,7 +212,6 @@ void DList::loadFromFile(const string& filename) {
     }
 }
 
-// --- BINARY ---
 void DList::saveToBinaryFile(const string& filename) const {
     ofstream file(filename, ios::binary | ios::trunc);
     if (!file) {
@@ -259,6 +250,6 @@ void DList::loadFromBinaryFile(const string& filename) {
         if (file.fail()) {
             break;
         }
-        addTail(val); 
+        addTail(val);
     }
 }

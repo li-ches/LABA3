@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include <sstream> 
-#include <iomanip> 
+#include <sstream>
+#include <iomanip>
 
 #include "arr.h"
 #include "list.h"
@@ -9,7 +9,7 @@
 #include "stack.h"
 #include "queue.h"
 #include "hash.h"
-#include "compl.h" 
+#include "compl.h"
 
 using namespace std;
 
@@ -77,7 +77,7 @@ void parseLine(const string& line, string& cmd, string& arg1, string& arg2) {
     ss >> arg1;
     string temp;
     if (getline(ss, temp)) {
-        if (!temp.empty() && temp[0] == ' ') 
+        if (!temp.empty() && temp[0] == ' ')
             arg2 = temp.substr(1);
         else arg2 = temp;
     }
@@ -88,25 +88,25 @@ int safe_stoi(const string& s) {
         return stoi(s);
     } catch (...) {
         cout << "ОШИБКА: Ожидалось число, но получено '" << s << "'" << "\n";
-        return -1; 
+        return -1;
     }
 }
 
 
 int main() {
     MyArr arr;
-    MyList slist; 
+    MyList slist;
     DList dlist;
     Queue queue;
     Stack stack;
-    CompleteBinaryTree cbt; 
+    CompleteBinaryTree cbt;
 
     string line, cmd, arg1, arg2;
-    showComm(); 
+    showComm();
 
     while (true) {
-        cout << "\n>> "; 
-        if (!getline(cin, line)) break; 
+        cout << "\n>> ";
+        if (!getline(cin, line)) break;
         if (line.empty()) continue;
 
         parseLine(line, cmd, arg1, arg2);
@@ -126,7 +126,7 @@ int main() {
             cout << setw(10) << left << "Дв.Список:" << " "; dlist.readForward();
             cout << setw(10) << left << "Стек:" << " "; stack.readStack();
             cout << setw(10) << left << "Очередь:" << " "; queue.print();
-            cout << setw(10) << left << "CBT:" << "\n"; cbt.print(); 
+            cout << setw(10) << left << "CBT:" << "\n"; cbt.print();
             cout << "---------------------------" << "\n";
             continue;
         }
@@ -149,7 +149,7 @@ int main() {
             stack.loadFromFile(arg1 + ".stack");
             queue.loadFromFile(arg1 + ".queue");
             cout << "Структуры (кроме CBT) загружены с базовым именем: " << arg1 << "\n";
-            cmd = "PRINT"; 
+            cmd = "PRINT";
         }
 
         if (cmd == "M_PUSH_END") {
@@ -168,10 +168,10 @@ int main() {
             if (arg1.empty()) { cout << "Ошибка: команда требует индекс." << "\n"; continue; }
             arr.delAt(safe_stoi(arg1));
             arr.readArray();
-        } else if (cmd == "M_DEL_HEAD") {             
+        } else if (cmd == "M_DEL_HEAD") {
             arr.delHead();
             arr.readArray();
-        } else if (cmd == "M_DEL_TAIL") {        
+        } else if (cmd == "M_DEL_TAIL") {
             arr.delEnd();
             arr.readArray();
         } else if (cmd == "M_GET_AT") {
@@ -204,7 +204,7 @@ int main() {
         else if (cmd == "L_DEL_HEAD") { dlist.delHead(); dlist.readForward(); }
         else if (cmd == "L_DEL_TAIL") { dlist.delTail(); dlist.readForward(); }
         else if (cmd == "L_DEL_VAL") { dlist.delByVal(arg1); dlist.readForward(); }
-        else if (cmd == "L_GET_VAL") { 
+        else if (cmd == "L_GET_VAL") {
             if (arg1.empty()) { cout << "Ошибка: команда требует значение." << "\n"; continue; }
             cout << "Элемент \"" << arg1 << "\" найден: " << (dlist.contains(arg1) ? "Да" : "Нет") << "\n";
         }
@@ -235,7 +235,7 @@ int main() {
         else if (cmd == "CBT_INSERT") {
             if (arg1.empty()) { cout << "Ошибка: команда требует число." << "\n"; continue; }
             cbt.insert(safe_stoi(arg1));
-        } 
+        }
         else if (cmd == "CBT_REMOVE") {
             if (arg1.empty()) { cout << "Ошибка: команда требует число." << "\n"; continue; }
             cbt.remove(safe_stoi(arg1));
@@ -260,7 +260,7 @@ int main() {
             cout << "--- Выход из подсистемы Хеш-таблиц ---" << "\n";
         }
 
-        else if (cmd != "PRINT" && cmd != "SAVE" && cmd != "LOAD") { 
+        else if (cmd != "PRINT" && cmd != "SAVE" && cmd != "LOAD") {
             cout << "Неизвестная команда: '" << cmd << "'. Введите HELP для списка команд." << "\n";
         }
     }

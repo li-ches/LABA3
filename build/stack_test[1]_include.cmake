@@ -1,5 +1,5 @@
-if(EXISTS "/home/user/3sem/labb/build/stack_test[1]_tests.cmake")
-  include("/home/user/3sem/labb/build/stack_test[1]_tests.cmake")
+if(EXISTS "/home/chesnokova/LABA3/build/stack_test[1]_tests.cmake")
+  include("/home/chesnokova/LABA3/build/stack_test[1]_tests.cmake")
 else()
   add_test(stack_test_NOT_BUILT stack_test_NOT_BUILT)
 endif()

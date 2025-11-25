@@ -1,7 +1,7 @@
 _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/sysinfo.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/sysinfo.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/sysinfo.cc \
  /usr/include/stdc-predef.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/internal_macros.h \
  /usr/include/c++/13/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -223,7 +223,7 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/sysinfo.cc.o: \
  /usr/include/c++/13/bits/stl_numeric.h /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/include/c++/13/cassert /usr/include/assert.h \
  /usr/include/c++/13/cstddef /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
@@ -231,12 +231,12 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/sysinfo.cc.o: \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/set \
  /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/check.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/log.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/cycleclock.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/string_util.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/timers.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/cycleclock.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/string_util.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/timers.h \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/bits/parse_numbers.h

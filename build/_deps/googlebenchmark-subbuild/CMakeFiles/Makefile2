@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/3sem/labb/build/_deps/googlebenchmark-subbuild
+CMAKE_SOURCE_DIR = /home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/3sem/labb/build/_deps/googlebenchmark-subbuild
+CMAKE_BINARY_DIR = /home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/googlebenchmark-populate.dir/clean
 CMakeFiles/googlebenchmark-populate.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/googlebenchmark-populate.dir/build.make CMakeFiles/googlebenchmark-populate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/googlebenchmark-populate.dir/build.make CMakeFiles/googlebenchmark-populate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/user/3sem/labb/build/_deps/googlebenchmark-subbuild/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target googlebenchmark-populate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target googlebenchmark-populate"
 .PHONY : CMakeFiles/googlebenchmark-populate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/googlebenchmark-populate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/3sem/labb/build/_deps/googlebenchmark-subbuild/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/googlebenchmark-populate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/3sem/labb/build/_deps/googlebenchmark-subbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild/CMakeFiles 0
 .PHONY : CMakeFiles/googlebenchmark-populate.dir/rule
 
 # Convenience name for target.

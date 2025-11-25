@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_helper.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/output_test_helper.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/output_test_helper.cc \
  /usr/include/stdc-predef.h /usr/include/c++/13/cstdio \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -192,8 +192,8 @@ _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_h
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/benchmark_api_internal.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/benchmark_api_internal.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h /usr/include/c++/13/cassert \
@@ -201,14 +201,14 @@ _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_h
  /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/commandlineflags.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/check.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/log.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/log.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/re.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/commandlineflags.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/re.h \
  /usr/include/c++/13/regex /usr/include/c++/13/bitset \
  /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
@@ -230,6 +230,6 @@ _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_h
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/check.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/output_test.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/output_test.h \
  /usr/include/c++/13/functional

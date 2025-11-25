@@ -1,7 +1,7 @@
 _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/statistics.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/statistics.cc \
  /usr/include/stdc-predef.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/statistics.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/statistics.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -47,7 +47,7 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.o: \
  /usr/include/c++/13/backward/binders.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -132,7 +132,7 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
@@ -146,7 +146,7 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/13/numeric /usr/include/c++/13/bits/stl_numeric.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/check.h \
  /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
@@ -182,7 +182,7 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/internal_macros.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/log.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc

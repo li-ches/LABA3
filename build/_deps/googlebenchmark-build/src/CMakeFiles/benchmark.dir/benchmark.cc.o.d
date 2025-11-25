@@ -1,7 +1,7 @@
 _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/benchmark.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/benchmark.cc \
  /usr/include/stdc-predef.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -130,10 +130,10 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/benchmark_api_internal.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/benchmark_api_internal.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -173,18 +173,18 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o: \
  /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/backward/auto_ptr.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/commandlineflags.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/commandlineflags.h \
  /usr/include/c++/13/cstdint \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/benchmark_runner.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/benchmark_runner.h \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
  /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/internal_macros.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/perf_counters.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/perf_counters.h \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/check.h \
  /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
@@ -202,10 +202,10 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/log.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/mutex.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/mutex.h \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/mutex \
@@ -216,7 +216,7 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/thread_manager.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/thread_manager.h \
  /usr/include/x86_64-linux-gnu/sys/resource.h \
  /usr/include/x86_64-linux-gnu/bits/resource.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
@@ -229,11 +229,11 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/colorprint.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/colorprint.h \
  /usr/include/c++/13/cstdarg \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/complexity.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/counter.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/re.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/complexity.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/counter.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/re.h \
  /usr/include/c++/13/regex /usr/include/c++/13/bitset \
  /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h \
@@ -256,8 +256,8 @@ _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.o: \
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/statistics.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/string_util.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/thread_timer.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/src/timers.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/statistics.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/string_util.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/thread_timer.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/src/timers.h \
  /usr/include/c++/13/chrono

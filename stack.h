@@ -10,11 +10,11 @@ class Stack {
 private:
     class SNode {
     public:
-        string value;  // значение элемента
-        SNode* next;   // ссылка на следующий элемент
+        string value;
+        SNode* next;
     };
 
-    SNode* top;  //указатель на верхушку стека
+    SNode* top;
 
 public:
     Stack();
@@ -42,7 +42,7 @@ public:
     void saveToBinaryFile(const string& filename) const;
     void loadFromBinaryFile(const string& filename);
 
-    SNode* getTop_test() const  
+    SNode* getTop_test() const
     {
         return top;
     }

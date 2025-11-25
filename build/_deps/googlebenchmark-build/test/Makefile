@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/3sem/labb
+CMAKE_SOURCE_DIR = /home/chesnokova/LABA3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/3sem/labb/build
+CMAKE_BINARY_DIR = /home/chesnokova/LABA3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/3sem/labb/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/3sem/labb/build/CMakeFiles /home/user/3sem/labb/build/_deps/googlebenchmark-build/test//CMakeFiles/progress.marks
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/3sem/labb/build/CMakeFiles 0
+	cd /home/chesnokova/LABA3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chesnokova/LABA3/build/CMakeFiles /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test//CMakeFiles/progress.marks
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chesnokova/LABA3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/clean
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/preinstall
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/preinstall
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/3sem/labb/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chesnokova/LABA3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ output_test_helper: _deps/googlebenchmark-build/test/CMakeFiles/output_test_help
 
 # fast build rule for target.
 output_test_helper/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build
 .PHONY : output_test_helper/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ benchmark_test: _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/r
 
 # fast build rule for target.
 benchmark_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build
 .PHONY : benchmark_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ spec_arg_test: _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/rul
 
 # fast build rule for target.
 spec_arg_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build
 .PHONY : spec_arg_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ spec_arg_verbosity_test: _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_ve
 
 # fast build rule for target.
 spec_arg_verbosity_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build
 .PHONY : spec_arg_verbosity_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/rule
 
 # Convenience name for target.
@@ -238,12 +238,12 @@ benchmark_setup_teardown_test: _deps/googlebenchmark-build/test/CMakeFiles/bench
 
 # fast build rule for target.
 benchmark_setup_teardown_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build
 .PHONY : benchmark_setup_teardown_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ filter_test: _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/rule
 
 # fast build rule for target.
 filter_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build
 .PHONY : filter_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/rule
 
 # Convenience name for target.
@@ -266,12 +266,12 @@ benchmark_min_time_flag_time_test: _deps/googlebenchmark-build/test/CMakeFiles/b
 
 # fast build rule for target.
 benchmark_min_time_flag_time_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build
 .PHONY : benchmark_min_time_flag_time_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/rule
 
 # Convenience name for target.
@@ -280,12 +280,12 @@ benchmark_min_time_flag_iters_test: _deps/googlebenchmark-build/test/CMakeFiles/
 
 # fast build rule for target.
 benchmark_min_time_flag_iters_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build
 .PHONY : benchmark_min_time_flag_iters_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/rule
 
 # Convenience name for target.
@@ -294,12 +294,12 @@ options_test: _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/rule
 
 # fast build rule for target.
 options_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build
 .PHONY : options_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/rule
 
 # Convenience name for target.
@@ -308,12 +308,12 @@ basic_test: _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/rule
 
 # fast build rule for target.
 basic_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build
 .PHONY : basic_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/rule
 
 # Convenience name for target.
@@ -322,12 +322,12 @@ repetitions_test: _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.d
 
 # fast build rule for target.
 repetitions_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build
 .PHONY : repetitions_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/rule
 
 # Convenience name for target.
@@ -336,12 +336,12 @@ diagnostics_test: _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.d
 
 # fast build rule for target.
 diagnostics_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build
 .PHONY : diagnostics_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/rule
 
 # Convenience name for target.
@@ -350,12 +350,12 @@ skip_with_error_test: _deps/googlebenchmark-build/test/CMakeFiles/skip_with_erro
 
 # fast build rule for target.
 skip_with_error_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build
 .PHONY : skip_with_error_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/rule
 
 # Convenience name for target.
@@ -364,12 +364,12 @@ donotoptimize_test: _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_te
 
 # fast build rule for target.
 donotoptimize_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build
 .PHONY : donotoptimize_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/rule
 
 # Convenience name for target.
@@ -378,12 +378,12 @@ fixture_test: _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/rule
 
 # fast build rule for target.
 fixture_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build
 .PHONY : fixture_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/rule
 
 # Convenience name for target.
@@ -392,12 +392,12 @@ register_benchmark_test: _deps/googlebenchmark-build/test/CMakeFiles/register_be
 
 # fast build rule for target.
 register_benchmark_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build
 .PHONY : register_benchmark_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/rule
 
 # Convenience name for target.
@@ -406,12 +406,12 @@ map_test: _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/rule
 
 # fast build rule for target.
 map_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build
 .PHONY : map_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/rule
 
 # Convenience name for target.
@@ -420,12 +420,12 @@ multiple_ranges_test: _deps/googlebenchmark-build/test/CMakeFiles/multiple_range
 
 # fast build rule for target.
 multiple_ranges_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build
 .PHONY : multiple_ranges_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ args_product_test: _deps/googlebenchmark-build/test/CMakeFiles/args_product_test
 
 # fast build rule for target.
 args_product_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build
 .PHONY : args_product_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/rule
 
 # Convenience name for target.
@@ -448,12 +448,12 @@ link_main_test: _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/r
 
 # fast build rule for target.
 link_main_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build
 .PHONY : link_main_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/rule
 
 # Convenience name for target.
@@ -462,12 +462,12 @@ reporter_output_test: _deps/googlebenchmark-build/test/CMakeFiles/reporter_outpu
 
 # fast build rule for target.
 reporter_output_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build
 .PHONY : reporter_output_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/rule
 
 # Convenience name for target.
@@ -476,12 +476,12 @@ templated_fixture_test: _deps/googlebenchmark-build/test/CMakeFiles/templated_fi
 
 # fast build rule for target.
 templated_fixture_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build
 .PHONY : templated_fixture_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/rule
 
 # Convenience name for target.
@@ -490,12 +490,12 @@ user_counters_test: _deps/googlebenchmark-build/test/CMakeFiles/user_counters_te
 
 # fast build rule for target.
 user_counters_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build
 .PHONY : user_counters_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/rule
 
 # Convenience name for target.
@@ -504,12 +504,12 @@ perf_counters_test: _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_te
 
 # fast build rule for target.
 perf_counters_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build
 .PHONY : perf_counters_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/rule
 
 # Convenience name for target.
@@ -518,12 +518,12 @@ internal_threading_test: _deps/googlebenchmark-build/test/CMakeFiles/internal_th
 
 # fast build rule for target.
 internal_threading_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build
 .PHONY : internal_threading_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/rule
 
 # Convenience name for target.
@@ -532,12 +532,12 @@ report_aggregates_only_test: _deps/googlebenchmark-build/test/CMakeFiles/report_
 
 # fast build rule for target.
 report_aggregates_only_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build
 .PHONY : report_aggregates_only_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/rule
 
 # Convenience name for target.
@@ -546,12 +546,12 @@ display_aggregates_only_test: _deps/googlebenchmark-build/test/CMakeFiles/displa
 
 # fast build rule for target.
 display_aggregates_only_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build
 .PHONY : display_aggregates_only_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/rule
 
 # Convenience name for target.
@@ -560,12 +560,12 @@ user_counters_tabular_test: _deps/googlebenchmark-build/test/CMakeFiles/user_cou
 
 # fast build rule for target.
 user_counters_tabular_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build
 .PHONY : user_counters_tabular_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/rule
 
 # Convenience name for target.
@@ -574,12 +574,12 @@ user_counters_thousands_test: _deps/googlebenchmark-build/test/CMakeFiles/user_c
 
 # fast build rule for target.
 user_counters_thousands_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build
 .PHONY : user_counters_thousands_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/rule
 
 # Convenience name for target.
@@ -588,12 +588,12 @@ memory_manager_test: _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_
 
 # fast build rule for target.
 memory_manager_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build
 .PHONY : memory_manager_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/rule
 
 # Convenience name for target.
@@ -602,12 +602,12 @@ cxx03_test: _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/rule
 
 # fast build rule for target.
 cxx03_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build
 .PHONY : cxx03_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/rule
 
 # Convenience name for target.
@@ -616,12 +616,12 @@ complexity_test: _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir
 
 # fast build rule for target.
 complexity_test/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build
 .PHONY : complexity_test/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/rule
 
 # Convenience name for target.
@@ -630,12 +630,12 @@ benchmark_gtest: _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir
 
 # fast build rule for target.
 benchmark_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build
 .PHONY : benchmark_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ benchmark_name_gtest: _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name
 
 # fast build rule for target.
 benchmark_name_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build
 .PHONY : benchmark_name_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/rule
 
 # Convenience name for target.
@@ -658,12 +658,12 @@ benchmark_random_interleaving_gtest: _deps/googlebenchmark-build/test/CMakeFiles
 
 # fast build rule for target.
 benchmark_random_interleaving_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build
 .PHONY : benchmark_random_interleaving_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/rule
 
 # Convenience name for target.
@@ -672,12 +672,12 @@ commandlineflags_gtest: _deps/googlebenchmark-build/test/CMakeFiles/commandlinef
 
 # fast build rule for target.
 commandlineflags_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build
 .PHONY : commandlineflags_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/rule
 
 # Convenience name for target.
@@ -686,12 +686,12 @@ statistics_gtest: _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.d
 
 # fast build rule for target.
 statistics_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build
 .PHONY : statistics_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/rule
 
 # Convenience name for target.
@@ -700,12 +700,12 @@ string_util_gtest: _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest
 
 # fast build rule for target.
 string_util_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build
 .PHONY : string_util_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/rule
 
 # Convenience name for target.
@@ -714,12 +714,12 @@ perf_counters_gtest: _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_g
 
 # fast build rule for target.
 perf_counters_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build
 .PHONY : perf_counters_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/rule
 
 # Convenience name for target.
@@ -728,12 +728,12 @@ time_unit_gtest: _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir
 
 # fast build rule for target.
 time_unit_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build
 .PHONY : time_unit_gtest/fast
 
 # Convenience name for target.
 _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/rule:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/rule
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/rule
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/rule
 
 # Convenience name for target.
@@ -742,7 +742,7 @@ min_time_parse_gtest: _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse
 
 # fast build rule for target.
 min_time_parse_gtest/fast:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build
 .PHONY : min_time_parse_gtest/fast
 
 args_product_test.o: args_product_test.cc.o
@@ -750,7 +750,7 @@ args_product_test.o: args_product_test.cc.o
 
 # target to build an object file
 args_product_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/args_product_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/args_product_test.cc.o
 .PHONY : args_product_test.cc.o
 
 args_product_test.i: args_product_test.cc.i
@@ -758,7 +758,7 @@ args_product_test.i: args_product_test.cc.i
 
 # target to preprocess a source file
 args_product_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/args_product_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/args_product_test.cc.i
 .PHONY : args_product_test.cc.i
 
 args_product_test.s: args_product_test.cc.s
@@ -766,7 +766,7 @@ args_product_test.s: args_product_test.cc.s
 
 # target to generate assembly for a file
 args_product_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/args_product_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/args_product_test.dir/args_product_test.cc.s
 .PHONY : args_product_test.cc.s
 
 basic_test.o: basic_test.cc.o
@@ -774,7 +774,7 @@ basic_test.o: basic_test.cc.o
 
 # target to build an object file
 basic_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/basic_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/basic_test.cc.o
 .PHONY : basic_test.cc.o
 
 basic_test.i: basic_test.cc.i
@@ -782,7 +782,7 @@ basic_test.i: basic_test.cc.i
 
 # target to preprocess a source file
 basic_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/basic_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/basic_test.cc.i
 .PHONY : basic_test.cc.i
 
 basic_test.s: basic_test.cc.s
@@ -790,7 +790,7 @@ basic_test.s: basic_test.cc.s
 
 # target to generate assembly for a file
 basic_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/basic_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/basic_test.dir/basic_test.cc.s
 .PHONY : basic_test.cc.s
 
 benchmark_gtest.o: benchmark_gtest.cc.o
@@ -798,7 +798,7 @@ benchmark_gtest.o: benchmark_gtest.cc.o
 
 # target to build an object file
 benchmark_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/benchmark_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/benchmark_gtest.cc.o
 .PHONY : benchmark_gtest.cc.o
 
 benchmark_gtest.i: benchmark_gtest.cc.i
@@ -806,7 +806,7 @@ benchmark_gtest.i: benchmark_gtest.cc.i
 
 # target to preprocess a source file
 benchmark_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/benchmark_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/benchmark_gtest.cc.i
 .PHONY : benchmark_gtest.cc.i
 
 benchmark_gtest.s: benchmark_gtest.cc.s
@@ -814,7 +814,7 @@ benchmark_gtest.s: benchmark_gtest.cc.s
 
 # target to generate assembly for a file
 benchmark_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/benchmark_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_gtest.dir/benchmark_gtest.cc.s
 .PHONY : benchmark_gtest.cc.s
 
 benchmark_min_time_flag_iters_test.o: benchmark_min_time_flag_iters_test.cc.o
@@ -822,7 +822,7 @@ benchmark_min_time_flag_iters_test.o: benchmark_min_time_flag_iters_test.cc.o
 
 # target to build an object file
 benchmark_min_time_flag_iters_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/benchmark_min_time_flag_iters_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/benchmark_min_time_flag_iters_test.cc.o
 .PHONY : benchmark_min_time_flag_iters_test.cc.o
 
 benchmark_min_time_flag_iters_test.i: benchmark_min_time_flag_iters_test.cc.i
@@ -830,7 +830,7 @@ benchmark_min_time_flag_iters_test.i: benchmark_min_time_flag_iters_test.cc.i
 
 # target to preprocess a source file
 benchmark_min_time_flag_iters_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/benchmark_min_time_flag_iters_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/benchmark_min_time_flag_iters_test.cc.i
 .PHONY : benchmark_min_time_flag_iters_test.cc.i
 
 benchmark_min_time_flag_iters_test.s: benchmark_min_time_flag_iters_test.cc.s
@@ -838,7 +838,7 @@ benchmark_min_time_flag_iters_test.s: benchmark_min_time_flag_iters_test.cc.s
 
 # target to generate assembly for a file
 benchmark_min_time_flag_iters_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/benchmark_min_time_flag_iters_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_iters_test.dir/benchmark_min_time_flag_iters_test.cc.s
 .PHONY : benchmark_min_time_flag_iters_test.cc.s
 
 benchmark_min_time_flag_time_test.o: benchmark_min_time_flag_time_test.cc.o
@@ -846,7 +846,7 @@ benchmark_min_time_flag_time_test.o: benchmark_min_time_flag_time_test.cc.o
 
 # target to build an object file
 benchmark_min_time_flag_time_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/benchmark_min_time_flag_time_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/benchmark_min_time_flag_time_test.cc.o
 .PHONY : benchmark_min_time_flag_time_test.cc.o
 
 benchmark_min_time_flag_time_test.i: benchmark_min_time_flag_time_test.cc.i
@@ -854,7 +854,7 @@ benchmark_min_time_flag_time_test.i: benchmark_min_time_flag_time_test.cc.i
 
 # target to preprocess a source file
 benchmark_min_time_flag_time_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/benchmark_min_time_flag_time_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/benchmark_min_time_flag_time_test.cc.i
 .PHONY : benchmark_min_time_flag_time_test.cc.i
 
 benchmark_min_time_flag_time_test.s: benchmark_min_time_flag_time_test.cc.s
@@ -862,7 +862,7 @@ benchmark_min_time_flag_time_test.s: benchmark_min_time_flag_time_test.cc.s
 
 # target to generate assembly for a file
 benchmark_min_time_flag_time_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/benchmark_min_time_flag_time_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_min_time_flag_time_test.dir/benchmark_min_time_flag_time_test.cc.s
 .PHONY : benchmark_min_time_flag_time_test.cc.s
 
 benchmark_name_gtest.o: benchmark_name_gtest.cc.o
@@ -870,7 +870,7 @@ benchmark_name_gtest.o: benchmark_name_gtest.cc.o
 
 # target to build an object file
 benchmark_name_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/benchmark_name_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/benchmark_name_gtest.cc.o
 .PHONY : benchmark_name_gtest.cc.o
 
 benchmark_name_gtest.i: benchmark_name_gtest.cc.i
@@ -878,7 +878,7 @@ benchmark_name_gtest.i: benchmark_name_gtest.cc.i
 
 # target to preprocess a source file
 benchmark_name_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/benchmark_name_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/benchmark_name_gtest.cc.i
 .PHONY : benchmark_name_gtest.cc.i
 
 benchmark_name_gtest.s: benchmark_name_gtest.cc.s
@@ -886,7 +886,7 @@ benchmark_name_gtest.s: benchmark_name_gtest.cc.s
 
 # target to generate assembly for a file
 benchmark_name_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/benchmark_name_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_name_gtest.dir/benchmark_name_gtest.cc.s
 .PHONY : benchmark_name_gtest.cc.s
 
 benchmark_random_interleaving_gtest.o: benchmark_random_interleaving_gtest.cc.o
@@ -894,7 +894,7 @@ benchmark_random_interleaving_gtest.o: benchmark_random_interleaving_gtest.cc.o
 
 # target to build an object file
 benchmark_random_interleaving_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/benchmark_random_interleaving_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/benchmark_random_interleaving_gtest.cc.o
 .PHONY : benchmark_random_interleaving_gtest.cc.o
 
 benchmark_random_interleaving_gtest.i: benchmark_random_interleaving_gtest.cc.i
@@ -902,7 +902,7 @@ benchmark_random_interleaving_gtest.i: benchmark_random_interleaving_gtest.cc.i
 
 # target to preprocess a source file
 benchmark_random_interleaving_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/benchmark_random_interleaving_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/benchmark_random_interleaving_gtest.cc.i
 .PHONY : benchmark_random_interleaving_gtest.cc.i
 
 benchmark_random_interleaving_gtest.s: benchmark_random_interleaving_gtest.cc.s
@@ -910,7 +910,7 @@ benchmark_random_interleaving_gtest.s: benchmark_random_interleaving_gtest.cc.s
 
 # target to generate assembly for a file
 benchmark_random_interleaving_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/benchmark_random_interleaving_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_random_interleaving_gtest.dir/benchmark_random_interleaving_gtest.cc.s
 .PHONY : benchmark_random_interleaving_gtest.cc.s
 
 benchmark_setup_teardown_test.o: benchmark_setup_teardown_test.cc.o
@@ -918,7 +918,7 @@ benchmark_setup_teardown_test.o: benchmark_setup_teardown_test.cc.o
 
 # target to build an object file
 benchmark_setup_teardown_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/benchmark_setup_teardown_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/benchmark_setup_teardown_test.cc.o
 .PHONY : benchmark_setup_teardown_test.cc.o
 
 benchmark_setup_teardown_test.i: benchmark_setup_teardown_test.cc.i
@@ -926,7 +926,7 @@ benchmark_setup_teardown_test.i: benchmark_setup_teardown_test.cc.i
 
 # target to preprocess a source file
 benchmark_setup_teardown_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/benchmark_setup_teardown_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/benchmark_setup_teardown_test.cc.i
 .PHONY : benchmark_setup_teardown_test.cc.i
 
 benchmark_setup_teardown_test.s: benchmark_setup_teardown_test.cc.s
@@ -934,7 +934,7 @@ benchmark_setup_teardown_test.s: benchmark_setup_teardown_test.cc.s
 
 # target to generate assembly for a file
 benchmark_setup_teardown_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/benchmark_setup_teardown_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_setup_teardown_test.dir/benchmark_setup_teardown_test.cc.s
 .PHONY : benchmark_setup_teardown_test.cc.s
 
 benchmark_test.o: benchmark_test.cc.o
@@ -942,7 +942,7 @@ benchmark_test.o: benchmark_test.cc.o
 
 # target to build an object file
 benchmark_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.o
 .PHONY : benchmark_test.cc.o
 
 benchmark_test.i: benchmark_test.cc.i
@@ -950,7 +950,7 @@ benchmark_test.i: benchmark_test.cc.i
 
 # target to preprocess a source file
 benchmark_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.i
 .PHONY : benchmark_test.cc.i
 
 benchmark_test.s: benchmark_test.cc.s
@@ -958,7 +958,7 @@ benchmark_test.s: benchmark_test.cc.s
 
 # target to generate assembly for a file
 benchmark_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.s
 .PHONY : benchmark_test.cc.s
 
 commandlineflags_gtest.o: commandlineflags_gtest.cc.o
@@ -966,7 +966,7 @@ commandlineflags_gtest.o: commandlineflags_gtest.cc.o
 
 # target to build an object file
 commandlineflags_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/commandlineflags_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/commandlineflags_gtest.cc.o
 .PHONY : commandlineflags_gtest.cc.o
 
 commandlineflags_gtest.i: commandlineflags_gtest.cc.i
@@ -974,7 +974,7 @@ commandlineflags_gtest.i: commandlineflags_gtest.cc.i
 
 # target to preprocess a source file
 commandlineflags_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/commandlineflags_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/commandlineflags_gtest.cc.i
 .PHONY : commandlineflags_gtest.cc.i
 
 commandlineflags_gtest.s: commandlineflags_gtest.cc.s
@@ -982,7 +982,7 @@ commandlineflags_gtest.s: commandlineflags_gtest.cc.s
 
 # target to generate assembly for a file
 commandlineflags_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/commandlineflags_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/commandlineflags_gtest.dir/commandlineflags_gtest.cc.s
 .PHONY : commandlineflags_gtest.cc.s
 
 complexity_test.o: complexity_test.cc.o
@@ -990,7 +990,7 @@ complexity_test.o: complexity_test.cc.o
 
 # target to build an object file
 complexity_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/complexity_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/complexity_test.cc.o
 .PHONY : complexity_test.cc.o
 
 complexity_test.i: complexity_test.cc.i
@@ -998,7 +998,7 @@ complexity_test.i: complexity_test.cc.i
 
 # target to preprocess a source file
 complexity_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/complexity_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/complexity_test.cc.i
 .PHONY : complexity_test.cc.i
 
 complexity_test.s: complexity_test.cc.s
@@ -1006,7 +1006,7 @@ complexity_test.s: complexity_test.cc.s
 
 # target to generate assembly for a file
 complexity_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/complexity_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/complexity_test.dir/complexity_test.cc.s
 .PHONY : complexity_test.cc.s
 
 cxx03_test.o: cxx03_test.cc.o
@@ -1014,7 +1014,7 @@ cxx03_test.o: cxx03_test.cc.o
 
 # target to build an object file
 cxx03_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.o
 .PHONY : cxx03_test.cc.o
 
 cxx03_test.i: cxx03_test.cc.i
@@ -1022,7 +1022,7 @@ cxx03_test.i: cxx03_test.cc.i
 
 # target to preprocess a source file
 cxx03_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.i
 .PHONY : cxx03_test.cc.i
 
 cxx03_test.s: cxx03_test.cc.s
@@ -1030,7 +1030,7 @@ cxx03_test.s: cxx03_test.cc.s
 
 # target to generate assembly for a file
 cxx03_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/cxx03_test.dir/cxx03_test.cc.s
 .PHONY : cxx03_test.cc.s
 
 diagnostics_test.o: diagnostics_test.cc.o
@@ -1038,7 +1038,7 @@ diagnostics_test.o: diagnostics_test.cc.o
 
 # target to build an object file
 diagnostics_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o
 .PHONY : diagnostics_test.cc.o
 
 diagnostics_test.i: diagnostics_test.cc.i
@@ -1046,7 +1046,7 @@ diagnostics_test.i: diagnostics_test.cc.i
 
 # target to preprocess a source file
 diagnostics_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.i
 .PHONY : diagnostics_test.cc.i
 
 diagnostics_test.s: diagnostics_test.cc.s
@@ -1054,7 +1054,7 @@ diagnostics_test.s: diagnostics_test.cc.s
 
 # target to generate assembly for a file
 diagnostics_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.s
 .PHONY : diagnostics_test.cc.s
 
 display_aggregates_only_test.o: display_aggregates_only_test.cc.o
@@ -1062,7 +1062,7 @@ display_aggregates_only_test.o: display_aggregates_only_test.cc.o
 
 # target to build an object file
 display_aggregates_only_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.o
 .PHONY : display_aggregates_only_test.cc.o
 
 display_aggregates_only_test.i: display_aggregates_only_test.cc.i
@@ -1070,7 +1070,7 @@ display_aggregates_only_test.i: display_aggregates_only_test.cc.i
 
 # target to preprocess a source file
 display_aggregates_only_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.i
 .PHONY : display_aggregates_only_test.cc.i
 
 display_aggregates_only_test.s: display_aggregates_only_test.cc.s
@@ -1078,7 +1078,7 @@ display_aggregates_only_test.s: display_aggregates_only_test.cc.s
 
 # target to generate assembly for a file
 display_aggregates_only_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.s
 .PHONY : display_aggregates_only_test.cc.s
 
 donotoptimize_test.o: donotoptimize_test.cc.o
@@ -1086,7 +1086,7 @@ donotoptimize_test.o: donotoptimize_test.cc.o
 
 # target to build an object file
 donotoptimize_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/donotoptimize_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/donotoptimize_test.cc.o
 .PHONY : donotoptimize_test.cc.o
 
 donotoptimize_test.i: donotoptimize_test.cc.i
@@ -1094,7 +1094,7 @@ donotoptimize_test.i: donotoptimize_test.cc.i
 
 # target to preprocess a source file
 donotoptimize_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/donotoptimize_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/donotoptimize_test.cc.i
 .PHONY : donotoptimize_test.cc.i
 
 donotoptimize_test.s: donotoptimize_test.cc.s
@@ -1102,7 +1102,7 @@ donotoptimize_test.s: donotoptimize_test.cc.s
 
 # target to generate assembly for a file
 donotoptimize_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/donotoptimize_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/donotoptimize_test.dir/donotoptimize_test.cc.s
 .PHONY : donotoptimize_test.cc.s
 
 filter_test.o: filter_test.cc.o
@@ -1110,7 +1110,7 @@ filter_test.o: filter_test.cc.o
 
 # target to build an object file
 filter_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/filter_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/filter_test.cc.o
 .PHONY : filter_test.cc.o
 
 filter_test.i: filter_test.cc.i
@@ -1118,7 +1118,7 @@ filter_test.i: filter_test.cc.i
 
 # target to preprocess a source file
 filter_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/filter_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/filter_test.cc.i
 .PHONY : filter_test.cc.i
 
 filter_test.s: filter_test.cc.s
@@ -1126,7 +1126,7 @@ filter_test.s: filter_test.cc.s
 
 # target to generate assembly for a file
 filter_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/filter_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/filter_test.dir/filter_test.cc.s
 .PHONY : filter_test.cc.s
 
 fixture_test.o: fixture_test.cc.o
@@ -1134,7 +1134,7 @@ fixture_test.o: fixture_test.cc.o
 
 # target to build an object file
 fixture_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/fixture_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/fixture_test.cc.o
 .PHONY : fixture_test.cc.o
 
 fixture_test.i: fixture_test.cc.i
@@ -1142,7 +1142,7 @@ fixture_test.i: fixture_test.cc.i
 
 # target to preprocess a source file
 fixture_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/fixture_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/fixture_test.cc.i
 .PHONY : fixture_test.cc.i
 
 fixture_test.s: fixture_test.cc.s
@@ -1150,7 +1150,7 @@ fixture_test.s: fixture_test.cc.s
 
 # target to generate assembly for a file
 fixture_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/fixture_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/fixture_test.dir/fixture_test.cc.s
 .PHONY : fixture_test.cc.s
 
 internal_threading_test.o: internal_threading_test.cc.o
@@ -1158,7 +1158,7 @@ internal_threading_test.o: internal_threading_test.cc.o
 
 # target to build an object file
 internal_threading_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/internal_threading_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/internal_threading_test.cc.o
 .PHONY : internal_threading_test.cc.o
 
 internal_threading_test.i: internal_threading_test.cc.i
@@ -1166,7 +1166,7 @@ internal_threading_test.i: internal_threading_test.cc.i
 
 # target to preprocess a source file
 internal_threading_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/internal_threading_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/internal_threading_test.cc.i
 .PHONY : internal_threading_test.cc.i
 
 internal_threading_test.s: internal_threading_test.cc.s
@@ -1174,7 +1174,7 @@ internal_threading_test.s: internal_threading_test.cc.s
 
 # target to generate assembly for a file
 internal_threading_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/internal_threading_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/internal_threading_test.dir/internal_threading_test.cc.s
 .PHONY : internal_threading_test.cc.s
 
 link_main_test.o: link_main_test.cc.o
@@ -1182,7 +1182,7 @@ link_main_test.o: link_main_test.cc.o
 
 # target to build an object file
 link_main_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/link_main_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/link_main_test.cc.o
 .PHONY : link_main_test.cc.o
 
 link_main_test.i: link_main_test.cc.i
@@ -1190,7 +1190,7 @@ link_main_test.i: link_main_test.cc.i
 
 # target to preprocess a source file
 link_main_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/link_main_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/link_main_test.cc.i
 .PHONY : link_main_test.cc.i
 
 link_main_test.s: link_main_test.cc.s
@@ -1198,7 +1198,7 @@ link_main_test.s: link_main_test.cc.s
 
 # target to generate assembly for a file
 link_main_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/link_main_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/link_main_test.dir/link_main_test.cc.s
 .PHONY : link_main_test.cc.s
 
 map_test.o: map_test.cc.o
@@ -1206,7 +1206,7 @@ map_test.o: map_test.cc.o
 
 # target to build an object file
 map_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/map_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/map_test.cc.o
 .PHONY : map_test.cc.o
 
 map_test.i: map_test.cc.i
@@ -1214,7 +1214,7 @@ map_test.i: map_test.cc.i
 
 # target to preprocess a source file
 map_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/map_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/map_test.cc.i
 .PHONY : map_test.cc.i
 
 map_test.s: map_test.cc.s
@@ -1222,7 +1222,7 @@ map_test.s: map_test.cc.s
 
 # target to generate assembly for a file
 map_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/map_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/map_test.dir/map_test.cc.s
 .PHONY : map_test.cc.s
 
 memory_manager_test.o: memory_manager_test.cc.o
@@ -1230,7 +1230,7 @@ memory_manager_test.o: memory_manager_test.cc.o
 
 # target to build an object file
 memory_manager_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/memory_manager_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/memory_manager_test.cc.o
 .PHONY : memory_manager_test.cc.o
 
 memory_manager_test.i: memory_manager_test.cc.i
@@ -1238,7 +1238,7 @@ memory_manager_test.i: memory_manager_test.cc.i
 
 # target to preprocess a source file
 memory_manager_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/memory_manager_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/memory_manager_test.cc.i
 .PHONY : memory_manager_test.cc.i
 
 memory_manager_test.s: memory_manager_test.cc.s
@@ -1246,7 +1246,7 @@ memory_manager_test.s: memory_manager_test.cc.s
 
 # target to generate assembly for a file
 memory_manager_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/memory_manager_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/memory_manager_test.dir/memory_manager_test.cc.s
 .PHONY : memory_manager_test.cc.s
 
 min_time_parse_gtest.o: min_time_parse_gtest.cc.o
@@ -1254,7 +1254,7 @@ min_time_parse_gtest.o: min_time_parse_gtest.cc.o
 
 # target to build an object file
 min_time_parse_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/min_time_parse_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/min_time_parse_gtest.cc.o
 .PHONY : min_time_parse_gtest.cc.o
 
 min_time_parse_gtest.i: min_time_parse_gtest.cc.i
@@ -1262,7 +1262,7 @@ min_time_parse_gtest.i: min_time_parse_gtest.cc.i
 
 # target to preprocess a source file
 min_time_parse_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/min_time_parse_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/min_time_parse_gtest.cc.i
 .PHONY : min_time_parse_gtest.cc.i
 
 min_time_parse_gtest.s: min_time_parse_gtest.cc.s
@@ -1270,7 +1270,7 @@ min_time_parse_gtest.s: min_time_parse_gtest.cc.s
 
 # target to generate assembly for a file
 min_time_parse_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/min_time_parse_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/min_time_parse_gtest.dir/min_time_parse_gtest.cc.s
 .PHONY : min_time_parse_gtest.cc.s
 
 multiple_ranges_test.o: multiple_ranges_test.cc.o
@@ -1278,7 +1278,7 @@ multiple_ranges_test.o: multiple_ranges_test.cc.o
 
 # target to build an object file
 multiple_ranges_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/multiple_ranges_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/multiple_ranges_test.cc.o
 .PHONY : multiple_ranges_test.cc.o
 
 multiple_ranges_test.i: multiple_ranges_test.cc.i
@@ -1286,7 +1286,7 @@ multiple_ranges_test.i: multiple_ranges_test.cc.i
 
 # target to preprocess a source file
 multiple_ranges_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/multiple_ranges_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/multiple_ranges_test.cc.i
 .PHONY : multiple_ranges_test.cc.i
 
 multiple_ranges_test.s: multiple_ranges_test.cc.s
@@ -1294,7 +1294,7 @@ multiple_ranges_test.s: multiple_ranges_test.cc.s
 
 # target to generate assembly for a file
 multiple_ranges_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/multiple_ranges_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/multiple_ranges_test.dir/multiple_ranges_test.cc.s
 .PHONY : multiple_ranges_test.cc.s
 
 options_test.o: options_test.cc.o
@@ -1302,7 +1302,7 @@ options_test.o: options_test.cc.o
 
 # target to build an object file
 options_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/options_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/options_test.cc.o
 .PHONY : options_test.cc.o
 
 options_test.i: options_test.cc.i
@@ -1310,7 +1310,7 @@ options_test.i: options_test.cc.i
 
 # target to preprocess a source file
 options_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/options_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/options_test.cc.i
 .PHONY : options_test.cc.i
 
 options_test.s: options_test.cc.s
@@ -1318,7 +1318,7 @@ options_test.s: options_test.cc.s
 
 # target to generate assembly for a file
 options_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/options_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/options_test.dir/options_test.cc.s
 .PHONY : options_test.cc.s
 
 output_test_helper.o: output_test_helper.cc.o
@@ -1326,7 +1326,7 @@ output_test_helper.o: output_test_helper.cc.o
 
 # target to build an object file
 output_test_helper.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_helper.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_helper.cc.o
 .PHONY : output_test_helper.cc.o
 
 output_test_helper.i: output_test_helper.cc.i
@@ -1334,7 +1334,7 @@ output_test_helper.i: output_test_helper.cc.i
 
 # target to preprocess a source file
 output_test_helper.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_helper.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_helper.cc.i
 .PHONY : output_test_helper.cc.i
 
 output_test_helper.s: output_test_helper.cc.s
@@ -1342,7 +1342,7 @@ output_test_helper.s: output_test_helper.cc.s
 
 # target to generate assembly for a file
 output_test_helper.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_helper.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/output_test_helper.dir/output_test_helper.cc.s
 .PHONY : output_test_helper.cc.s
 
 perf_counters_gtest.o: perf_counters_gtest.cc.o
@@ -1350,7 +1350,7 @@ perf_counters_gtest.o: perf_counters_gtest.cc.o
 
 # target to build an object file
 perf_counters_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.o
 .PHONY : perf_counters_gtest.cc.o
 
 perf_counters_gtest.i: perf_counters_gtest.cc.i
@@ -1358,7 +1358,7 @@ perf_counters_gtest.i: perf_counters_gtest.cc.i
 
 # target to preprocess a source file
 perf_counters_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.i
 .PHONY : perf_counters_gtest.cc.i
 
 perf_counters_gtest.s: perf_counters_gtest.cc.s
@@ -1366,7 +1366,7 @@ perf_counters_gtest.s: perf_counters_gtest.cc.s
 
 # target to generate assembly for a file
 perf_counters_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_gtest.dir/perf_counters_gtest.cc.s
 .PHONY : perf_counters_gtest.cc.s
 
 perf_counters_test.o: perf_counters_test.cc.o
@@ -1374,7 +1374,7 @@ perf_counters_test.o: perf_counters_test.cc.o
 
 # target to build an object file
 perf_counters_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/perf_counters_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/perf_counters_test.cc.o
 .PHONY : perf_counters_test.cc.o
 
 perf_counters_test.i: perf_counters_test.cc.i
@@ -1382,7 +1382,7 @@ perf_counters_test.i: perf_counters_test.cc.i
 
 # target to preprocess a source file
 perf_counters_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/perf_counters_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/perf_counters_test.cc.i
 .PHONY : perf_counters_test.cc.i
 
 perf_counters_test.s: perf_counters_test.cc.s
@@ -1390,7 +1390,7 @@ perf_counters_test.s: perf_counters_test.cc.s
 
 # target to generate assembly for a file
 perf_counters_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/perf_counters_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/perf_counters_test.dir/perf_counters_test.cc.s
 .PHONY : perf_counters_test.cc.s
 
 register_benchmark_test.o: register_benchmark_test.cc.o
@@ -1398,7 +1398,7 @@ register_benchmark_test.o: register_benchmark_test.cc.o
 
 # target to build an object file
 register_benchmark_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/register_benchmark_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/register_benchmark_test.cc.o
 .PHONY : register_benchmark_test.cc.o
 
 register_benchmark_test.i: register_benchmark_test.cc.i
@@ -1406,7 +1406,7 @@ register_benchmark_test.i: register_benchmark_test.cc.i
 
 # target to preprocess a source file
 register_benchmark_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/register_benchmark_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/register_benchmark_test.cc.i
 .PHONY : register_benchmark_test.cc.i
 
 register_benchmark_test.s: register_benchmark_test.cc.s
@@ -1414,7 +1414,7 @@ register_benchmark_test.s: register_benchmark_test.cc.s
 
 # target to generate assembly for a file
 register_benchmark_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/register_benchmark_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/register_benchmark_test.dir/register_benchmark_test.cc.s
 .PHONY : register_benchmark_test.cc.s
 
 repetitions_test.o: repetitions_test.cc.o
@@ -1422,7 +1422,7 @@ repetitions_test.o: repetitions_test.cc.o
 
 # target to build an object file
 repetitions_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/repetitions_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/repetitions_test.cc.o
 .PHONY : repetitions_test.cc.o
 
 repetitions_test.i: repetitions_test.cc.i
@@ -1430,7 +1430,7 @@ repetitions_test.i: repetitions_test.cc.i
 
 # target to preprocess a source file
 repetitions_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/repetitions_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/repetitions_test.cc.i
 .PHONY : repetitions_test.cc.i
 
 repetitions_test.s: repetitions_test.cc.s
@@ -1438,7 +1438,7 @@ repetitions_test.s: repetitions_test.cc.s
 
 # target to generate assembly for a file
 repetitions_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/repetitions_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/repetitions_test.dir/repetitions_test.cc.s
 .PHONY : repetitions_test.cc.s
 
 report_aggregates_only_test.o: report_aggregates_only_test.cc.o
@@ -1446,7 +1446,7 @@ report_aggregates_only_test.o: report_aggregates_only_test.cc.o
 
 # target to build an object file
 report_aggregates_only_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/report_aggregates_only_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/report_aggregates_only_test.cc.o
 .PHONY : report_aggregates_only_test.cc.o
 
 report_aggregates_only_test.i: report_aggregates_only_test.cc.i
@@ -1454,7 +1454,7 @@ report_aggregates_only_test.i: report_aggregates_only_test.cc.i
 
 # target to preprocess a source file
 report_aggregates_only_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/report_aggregates_only_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/report_aggregates_only_test.cc.i
 .PHONY : report_aggregates_only_test.cc.i
 
 report_aggregates_only_test.s: report_aggregates_only_test.cc.s
@@ -1462,7 +1462,7 @@ report_aggregates_only_test.s: report_aggregates_only_test.cc.s
 
 # target to generate assembly for a file
 report_aggregates_only_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/report_aggregates_only_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/report_aggregates_only_test.cc.s
 .PHONY : report_aggregates_only_test.cc.s
 
 reporter_output_test.o: reporter_output_test.cc.o
@@ -1470,7 +1470,7 @@ reporter_output_test.o: reporter_output_test.cc.o
 
 # target to build an object file
 reporter_output_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/reporter_output_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/reporter_output_test.cc.o
 .PHONY : reporter_output_test.cc.o
 
 reporter_output_test.i: reporter_output_test.cc.i
@@ -1478,7 +1478,7 @@ reporter_output_test.i: reporter_output_test.cc.i
 
 # target to preprocess a source file
 reporter_output_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/reporter_output_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/reporter_output_test.cc.i
 .PHONY : reporter_output_test.cc.i
 
 reporter_output_test.s: reporter_output_test.cc.s
@@ -1486,7 +1486,7 @@ reporter_output_test.s: reporter_output_test.cc.s
 
 # target to generate assembly for a file
 reporter_output_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/reporter_output_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/reporter_output_test.dir/reporter_output_test.cc.s
 .PHONY : reporter_output_test.cc.s
 
 skip_with_error_test.o: skip_with_error_test.cc.o
@@ -1494,7 +1494,7 @@ skip_with_error_test.o: skip_with_error_test.cc.o
 
 # target to build an object file
 skip_with_error_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_error_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_error_test.cc.o
 .PHONY : skip_with_error_test.cc.o
 
 skip_with_error_test.i: skip_with_error_test.cc.i
@@ -1502,7 +1502,7 @@ skip_with_error_test.i: skip_with_error_test.cc.i
 
 # target to preprocess a source file
 skip_with_error_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_error_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_error_test.cc.i
 .PHONY : skip_with_error_test.cc.i
 
 skip_with_error_test.s: skip_with_error_test.cc.s
@@ -1510,7 +1510,7 @@ skip_with_error_test.s: skip_with_error_test.cc.s
 
 # target to generate assembly for a file
 skip_with_error_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_error_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/skip_with_error_test.dir/skip_with_error_test.cc.s
 .PHONY : skip_with_error_test.cc.s
 
 spec_arg_test.o: spec_arg_test.cc.o
@@ -1518,7 +1518,7 @@ spec_arg_test.o: spec_arg_test.cc.o
 
 # target to build an object file
 spec_arg_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.o
 .PHONY : spec_arg_test.cc.o
 
 spec_arg_test.i: spec_arg_test.cc.i
@@ -1526,7 +1526,7 @@ spec_arg_test.i: spec_arg_test.cc.i
 
 # target to preprocess a source file
 spec_arg_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.i
 .PHONY : spec_arg_test.cc.i
 
 spec_arg_test.s: spec_arg_test.cc.s
@@ -1534,7 +1534,7 @@ spec_arg_test.s: spec_arg_test.cc.s
 
 # target to generate assembly for a file
 spec_arg_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_test.dir/spec_arg_test.cc.s
 .PHONY : spec_arg_test.cc.s
 
 spec_arg_verbosity_test.o: spec_arg_verbosity_test.cc.o
@@ -1542,7 +1542,7 @@ spec_arg_verbosity_test.o: spec_arg_verbosity_test.cc.o
 
 # target to build an object file
 spec_arg_verbosity_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg_verbosity_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg_verbosity_test.cc.o
 .PHONY : spec_arg_verbosity_test.cc.o
 
 spec_arg_verbosity_test.i: spec_arg_verbosity_test.cc.i
@@ -1550,7 +1550,7 @@ spec_arg_verbosity_test.i: spec_arg_verbosity_test.cc.i
 
 # target to preprocess a source file
 spec_arg_verbosity_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg_verbosity_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg_verbosity_test.cc.i
 .PHONY : spec_arg_verbosity_test.cc.i
 
 spec_arg_verbosity_test.s: spec_arg_verbosity_test.cc.s
@@ -1558,7 +1558,7 @@ spec_arg_verbosity_test.s: spec_arg_verbosity_test.cc.s
 
 # target to generate assembly for a file
 spec_arg_verbosity_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg_verbosity_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/spec_arg_verbosity_test.dir/spec_arg_verbosity_test.cc.s
 .PHONY : spec_arg_verbosity_test.cc.s
 
 statistics_gtest.o: statistics_gtest.cc.o
@@ -1566,7 +1566,7 @@ statistics_gtest.o: statistics_gtest.cc.o
 
 # target to build an object file
 statistics_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/statistics_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/statistics_gtest.cc.o
 .PHONY : statistics_gtest.cc.o
 
 statistics_gtest.i: statistics_gtest.cc.i
@@ -1574,7 +1574,7 @@ statistics_gtest.i: statistics_gtest.cc.i
 
 # target to preprocess a source file
 statistics_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/statistics_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/statistics_gtest.cc.i
 .PHONY : statistics_gtest.cc.i
 
 statistics_gtest.s: statistics_gtest.cc.s
@@ -1582,7 +1582,7 @@ statistics_gtest.s: statistics_gtest.cc.s
 
 # target to generate assembly for a file
 statistics_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/statistics_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/statistics_gtest.dir/statistics_gtest.cc.s
 .PHONY : statistics_gtest.cc.s
 
 string_util_gtest.o: string_util_gtest.cc.o
@@ -1590,7 +1590,7 @@ string_util_gtest.o: string_util_gtest.cc.o
 
 # target to build an object file
 string_util_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o
 .PHONY : string_util_gtest.cc.o
 
 string_util_gtest.i: string_util_gtest.cc.i
@@ -1598,7 +1598,7 @@ string_util_gtest.i: string_util_gtest.cc.i
 
 # target to preprocess a source file
 string_util_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.i
 .PHONY : string_util_gtest.cc.i
 
 string_util_gtest.s: string_util_gtest.cc.s
@@ -1606,7 +1606,7 @@ string_util_gtest.s: string_util_gtest.cc.s
 
 # target to generate assembly for a file
 string_util_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.s
 .PHONY : string_util_gtest.cc.s
 
 templated_fixture_test.o: templated_fixture_test.cc.o
@@ -1614,7 +1614,7 @@ templated_fixture_test.o: templated_fixture_test.cc.o
 
 # target to build an object file
 templated_fixture_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/templated_fixture_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/templated_fixture_test.cc.o
 .PHONY : templated_fixture_test.cc.o
 
 templated_fixture_test.i: templated_fixture_test.cc.i
@@ -1622,7 +1622,7 @@ templated_fixture_test.i: templated_fixture_test.cc.i
 
 # target to preprocess a source file
 templated_fixture_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/templated_fixture_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/templated_fixture_test.cc.i
 .PHONY : templated_fixture_test.cc.i
 
 templated_fixture_test.s: templated_fixture_test.cc.s
@@ -1630,7 +1630,7 @@ templated_fixture_test.s: templated_fixture_test.cc.s
 
 # target to generate assembly for a file
 templated_fixture_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/templated_fixture_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/templated_fixture_test.dir/templated_fixture_test.cc.s
 .PHONY : templated_fixture_test.cc.s
 
 time_unit_gtest.o: time_unit_gtest.cc.o
@@ -1638,7 +1638,7 @@ time_unit_gtest.o: time_unit_gtest.cc.o
 
 # target to build an object file
 time_unit_gtest.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/time_unit_gtest.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/time_unit_gtest.cc.o
 .PHONY : time_unit_gtest.cc.o
 
 time_unit_gtest.i: time_unit_gtest.cc.i
@@ -1646,7 +1646,7 @@ time_unit_gtest.i: time_unit_gtest.cc.i
 
 # target to preprocess a source file
 time_unit_gtest.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/time_unit_gtest.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/time_unit_gtest.cc.i
 .PHONY : time_unit_gtest.cc.i
 
 time_unit_gtest.s: time_unit_gtest.cc.s
@@ -1654,7 +1654,7 @@ time_unit_gtest.s: time_unit_gtest.cc.s
 
 # target to generate assembly for a file
 time_unit_gtest.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/time_unit_gtest.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/time_unit_gtest.dir/time_unit_gtest.cc.s
 .PHONY : time_unit_gtest.cc.s
 
 user_counters_tabular_test.o: user_counters_tabular_test.cc.o
@@ -1662,7 +1662,7 @@ user_counters_tabular_test.o: user_counters_tabular_test.cc.o
 
 # target to build an object file
 user_counters_tabular_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/user_counters_tabular_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/user_counters_tabular_test.cc.o
 .PHONY : user_counters_tabular_test.cc.o
 
 user_counters_tabular_test.i: user_counters_tabular_test.cc.i
@@ -1670,7 +1670,7 @@ user_counters_tabular_test.i: user_counters_tabular_test.cc.i
 
 # target to preprocess a source file
 user_counters_tabular_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/user_counters_tabular_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/user_counters_tabular_test.cc.i
 .PHONY : user_counters_tabular_test.cc.i
 
 user_counters_tabular_test.s: user_counters_tabular_test.cc.s
@@ -1678,7 +1678,7 @@ user_counters_tabular_test.s: user_counters_tabular_test.cc.s
 
 # target to generate assembly for a file
 user_counters_tabular_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/user_counters_tabular_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_tabular_test.dir/user_counters_tabular_test.cc.s
 .PHONY : user_counters_tabular_test.cc.s
 
 user_counters_test.o: user_counters_test.cc.o
@@ -1686,7 +1686,7 @@ user_counters_test.o: user_counters_test.cc.o
 
 # target to build an object file
 user_counters_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/user_counters_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/user_counters_test.cc.o
 .PHONY : user_counters_test.cc.o
 
 user_counters_test.i: user_counters_test.cc.i
@@ -1694,7 +1694,7 @@ user_counters_test.i: user_counters_test.cc.i
 
 # target to preprocess a source file
 user_counters_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/user_counters_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/user_counters_test.cc.i
 .PHONY : user_counters_test.cc.i
 
 user_counters_test.s: user_counters_test.cc.s
@@ -1702,7 +1702,7 @@ user_counters_test.s: user_counters_test.cc.s
 
 # target to generate assembly for a file
 user_counters_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/user_counters_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_test.dir/user_counters_test.cc.s
 .PHONY : user_counters_test.cc.s
 
 user_counters_thousands_test.o: user_counters_thousands_test.cc.o
@@ -1710,7 +1710,7 @@ user_counters_thousands_test.o: user_counters_thousands_test.cc.o
 
 # target to build an object file
 user_counters_thousands_test.cc.o:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/user_counters_thousands_test.cc.o
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/user_counters_thousands_test.cc.o
 .PHONY : user_counters_thousands_test.cc.o
 
 user_counters_thousands_test.i: user_counters_thousands_test.cc.i
@@ -1718,7 +1718,7 @@ user_counters_thousands_test.i: user_counters_thousands_test.cc.i
 
 # target to preprocess a source file
 user_counters_thousands_test.cc.i:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/user_counters_thousands_test.cc.i
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/user_counters_thousands_test.cc.i
 .PHONY : user_counters_thousands_test.cc.i
 
 user_counters_thousands_test.s: user_counters_thousands_test.cc.s
@@ -1726,7 +1726,7 @@ user_counters_thousands_test.s: user_counters_thousands_test.cc.s
 
 # target to generate assembly for a file
 user_counters_thousands_test.cc.s:
-	cd /home/user/3sem/labb/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/user_counters_thousands_test.cc.s
+	cd /home/chesnokova/LABA3/build && $(MAKE) $(MAKESILENT) -f _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/build.make _deps/googlebenchmark-build/test/CMakeFiles/user_counters_thousands_test.dir/user_counters_thousands_test.cc.s
 .PHONY : user_counters_thousands_test.cc.s
 
 # Help Target
@@ -1917,6 +1917,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/3sem/labb/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chesnokova/LABA3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

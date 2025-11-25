@@ -1,5 +1,5 @@
-CMakeFiles/DataStructures.dir/list.cpp.o: /home/user/3sem/labb/list.cpp \
- /usr/include/stdc-predef.h /home/user/3sem/labb/serialize.h \
+CMakeFiles/DataStructures.dir/list.cpp.o: /home/chesnokova/LABA3/list.cpp \
+ /usr/include/stdc-predef.h /home/chesnokova/LABA3/serialize.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -154,4 +154,4 @@ CMakeFiles/DataStructures.dir/list.cpp.o: /home/user/3sem/labb/list.cpp \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \
- /home/user/3sem/labb/list.h
+ /home/chesnokova/LABA3/list.h

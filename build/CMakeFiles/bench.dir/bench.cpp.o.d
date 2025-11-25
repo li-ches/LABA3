@@ -1,6 +1,6 @@
-CMakeFiles/bench.dir/bench.cpp.o: /home/user/3sem/labb/bench.cpp \
+CMakeFiles/bench.dir/bench.cpp.o: /home/chesnokova/LABA3/bench.cpp \
  /usr/include/stdc-predef.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -136,10 +136,10 @@ CMakeFiles/bench.dir/bench.cpp.o: /home/user/3sem/labb/bench.cpp \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /home/user/3sem/labb/arr.h /usr/include/c++/13/iostream \
+ /home/chesnokova/LABA3/arr.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
@@ -179,9 +179,9 @@ CMakeFiles/bench.dir/bench.cpp.o: /home/user/3sem/labb/bench.cpp \
  /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /home/user/3sem/labb/list.h \
- /home/user/3sem/labb/dlist.h /home/user/3sem/labb/stack.h \
- /home/user/3sem/labb/queue.h /home/user/3sem/labb/hash.h \
+ /usr/include/c++/13/bits/fstream.tcc /home/chesnokova/LABA3/list.h \
+ /home/chesnokova/LABA3/dlist.h /home/chesnokova/LABA3/stack.h \
+ /home/chesnokova/LABA3/queue.h /home/chesnokova/LABA3/hash.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -203,4 +203,4 @@ CMakeFiles/bench.dir/bench.cpp.o: /home/user/3sem/labb/bench.cpp \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /home/user/3sem/labb/compl.h
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /home/chesnokova/LABA3/compl.h

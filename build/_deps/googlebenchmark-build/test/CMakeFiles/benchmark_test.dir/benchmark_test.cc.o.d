@@ -1,7 +1,7 @@
 _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/benchmark_test.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/benchmark_test.cc \
  /usr/include/stdc-predef.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -130,7 +130,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/benchmark_test.dir/benchmark_test.cc
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/math.h /usr/include/c++/13/cmath /usr/include/math.h \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/3sem/labb
+CMAKE_SOURCE_DIR = /home/chesnokova/LABA3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/3sem/labb/build
+CMAKE_BINARY_DIR = /home/chesnokova/LABA3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DataStructures.dir/depend.make
@@ -70,102 +70,102 @@ include CMakeFiles/DataStructures.dir/progress.make
 include CMakeFiles/DataStructures.dir/flags.make
 
 CMakeFiles/DataStructures.dir/arr.cpp.o: CMakeFiles/DataStructures.dir/flags.make
-CMakeFiles/DataStructures.dir/arr.cpp.o: /home/user/3sem/labb/arr.cpp
+CMakeFiles/DataStructures.dir/arr.cpp.o: /home/chesnokova/LABA3/arr.cpp
 CMakeFiles/DataStructures.dir/arr.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataStructures.dir/arr.cpp.o"
-	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/usr/bin/clang-tidy;--extra-arg-before=--driver-mode=g++" --source=/home/user/3sem/labb/arr.cpp -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/arr.cpp.o -MF CMakeFiles/DataStructures.dir/arr.cpp.o.d -o CMakeFiles/DataStructures.dir/arr.cpp.o -c /home/user/3sem/labb/arr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataStructures.dir/arr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/arr.cpp.o -MF CMakeFiles/DataStructures.dir/arr.cpp.o.d -o CMakeFiles/DataStructures.dir/arr.cpp.o -c /home/chesnokova/LABA3/arr.cpp
 
 CMakeFiles/DataStructures.dir/arr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/arr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/arr.cpp > CMakeFiles/DataStructures.dir/arr.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/arr.cpp > CMakeFiles/DataStructures.dir/arr.cpp.i
 
 CMakeFiles/DataStructures.dir/arr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/arr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/arr.cpp -o CMakeFiles/DataStructures.dir/arr.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/arr.cpp -o CMakeFiles/DataStructures.dir/arr.cpp.s
 
 CMakeFiles/DataStructures.dir/list.cpp.o: CMakeFiles/DataStructures.dir/flags.make
-CMakeFiles/DataStructures.dir/list.cpp.o: /home/user/3sem/labb/list.cpp
+CMakeFiles/DataStructures.dir/list.cpp.o: /home/chesnokova/LABA3/list.cpp
 CMakeFiles/DataStructures.dir/list.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataStructures.dir/list.cpp.o"
-	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/usr/bin/clang-tidy;--extra-arg-before=--driver-mode=g++" --source=/home/user/3sem/labb/list.cpp -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/list.cpp.o -MF CMakeFiles/DataStructures.dir/list.cpp.o.d -o CMakeFiles/DataStructures.dir/list.cpp.o -c /home/user/3sem/labb/list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataStructures.dir/list.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/list.cpp.o -MF CMakeFiles/DataStructures.dir/list.cpp.o.d -o CMakeFiles/DataStructures.dir/list.cpp.o -c /home/chesnokova/LABA3/list.cpp
 
 CMakeFiles/DataStructures.dir/list.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/list.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/list.cpp > CMakeFiles/DataStructures.dir/list.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/list.cpp > CMakeFiles/DataStructures.dir/list.cpp.i
 
 CMakeFiles/DataStructures.dir/list.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/list.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/list.cpp -o CMakeFiles/DataStructures.dir/list.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/list.cpp -o CMakeFiles/DataStructures.dir/list.cpp.s
 
 CMakeFiles/DataStructures.dir/dlist.cpp.o: CMakeFiles/DataStructures.dir/flags.make
-CMakeFiles/DataStructures.dir/dlist.cpp.o: /home/user/3sem/labb/dlist.cpp
+CMakeFiles/DataStructures.dir/dlist.cpp.o: /home/chesnokova/LABA3/dlist.cpp
 CMakeFiles/DataStructures.dir/dlist.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataStructures.dir/dlist.cpp.o"
-	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/usr/bin/clang-tidy;--extra-arg-before=--driver-mode=g++" --source=/home/user/3sem/labb/dlist.cpp -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/dlist.cpp.o -MF CMakeFiles/DataStructures.dir/dlist.cpp.o.d -o CMakeFiles/DataStructures.dir/dlist.cpp.o -c /home/user/3sem/labb/dlist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataStructures.dir/dlist.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/dlist.cpp.o -MF CMakeFiles/DataStructures.dir/dlist.cpp.o.d -o CMakeFiles/DataStructures.dir/dlist.cpp.o -c /home/chesnokova/LABA3/dlist.cpp
 
 CMakeFiles/DataStructures.dir/dlist.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/dlist.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/dlist.cpp > CMakeFiles/DataStructures.dir/dlist.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/dlist.cpp > CMakeFiles/DataStructures.dir/dlist.cpp.i
 
 CMakeFiles/DataStructures.dir/dlist.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/dlist.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/dlist.cpp -o CMakeFiles/DataStructures.dir/dlist.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/dlist.cpp -o CMakeFiles/DataStructures.dir/dlist.cpp.s
 
 CMakeFiles/DataStructures.dir/stack.cpp.o: CMakeFiles/DataStructures.dir/flags.make
-CMakeFiles/DataStructures.dir/stack.cpp.o: /home/user/3sem/labb/stack.cpp
+CMakeFiles/DataStructures.dir/stack.cpp.o: /home/chesnokova/LABA3/stack.cpp
 CMakeFiles/DataStructures.dir/stack.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DataStructures.dir/stack.cpp.o"
-	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/usr/bin/clang-tidy;--extra-arg-before=--driver-mode=g++" --source=/home/user/3sem/labb/stack.cpp -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/stack.cpp.o -MF CMakeFiles/DataStructures.dir/stack.cpp.o.d -o CMakeFiles/DataStructures.dir/stack.cpp.o -c /home/user/3sem/labb/stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DataStructures.dir/stack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/stack.cpp.o -MF CMakeFiles/DataStructures.dir/stack.cpp.o.d -o CMakeFiles/DataStructures.dir/stack.cpp.o -c /home/chesnokova/LABA3/stack.cpp
 
 CMakeFiles/DataStructures.dir/stack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/stack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/stack.cpp > CMakeFiles/DataStructures.dir/stack.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/stack.cpp > CMakeFiles/DataStructures.dir/stack.cpp.i
 
 CMakeFiles/DataStructures.dir/stack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/stack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/stack.cpp -o CMakeFiles/DataStructures.dir/stack.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/stack.cpp -o CMakeFiles/DataStructures.dir/stack.cpp.s
 
 CMakeFiles/DataStructures.dir/queue.cpp.o: CMakeFiles/DataStructures.dir/flags.make
-CMakeFiles/DataStructures.dir/queue.cpp.o: /home/user/3sem/labb/queue.cpp
+CMakeFiles/DataStructures.dir/queue.cpp.o: /home/chesnokova/LABA3/queue.cpp
 CMakeFiles/DataStructures.dir/queue.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DataStructures.dir/queue.cpp.o"
-	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/usr/bin/clang-tidy;--extra-arg-before=--driver-mode=g++" --source=/home/user/3sem/labb/queue.cpp -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/queue.cpp.o -MF CMakeFiles/DataStructures.dir/queue.cpp.o.d -o CMakeFiles/DataStructures.dir/queue.cpp.o -c /home/user/3sem/labb/queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DataStructures.dir/queue.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/queue.cpp.o -MF CMakeFiles/DataStructures.dir/queue.cpp.o.d -o CMakeFiles/DataStructures.dir/queue.cpp.o -c /home/chesnokova/LABA3/queue.cpp
 
 CMakeFiles/DataStructures.dir/queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/queue.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/queue.cpp > CMakeFiles/DataStructures.dir/queue.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/queue.cpp > CMakeFiles/DataStructures.dir/queue.cpp.i
 
 CMakeFiles/DataStructures.dir/queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/queue.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/queue.cpp -o CMakeFiles/DataStructures.dir/queue.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/queue.cpp -o CMakeFiles/DataStructures.dir/queue.cpp.s
 
 CMakeFiles/DataStructures.dir/compl.cpp.o: CMakeFiles/DataStructures.dir/flags.make
-CMakeFiles/DataStructures.dir/compl.cpp.o: /home/user/3sem/labb/compl.cpp
+CMakeFiles/DataStructures.dir/compl.cpp.o: /home/chesnokova/LABA3/compl.cpp
 CMakeFiles/DataStructures.dir/compl.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DataStructures.dir/compl.cpp.o"
-	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/usr/bin/clang-tidy;--extra-arg-before=--driver-mode=g++" --source=/home/user/3sem/labb/compl.cpp -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/compl.cpp.o -MF CMakeFiles/DataStructures.dir/compl.cpp.o.d -o CMakeFiles/DataStructures.dir/compl.cpp.o -c /home/user/3sem/labb/compl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DataStructures.dir/compl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/compl.cpp.o -MF CMakeFiles/DataStructures.dir/compl.cpp.o.d -o CMakeFiles/DataStructures.dir/compl.cpp.o -c /home/chesnokova/LABA3/compl.cpp
 
 CMakeFiles/DataStructures.dir/compl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/compl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/compl.cpp > CMakeFiles/DataStructures.dir/compl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/compl.cpp > CMakeFiles/DataStructures.dir/compl.cpp.i
 
 CMakeFiles/DataStructures.dir/compl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/compl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/compl.cpp -o CMakeFiles/DataStructures.dir/compl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/compl.cpp -o CMakeFiles/DataStructures.dir/compl.cpp.s
 
 CMakeFiles/DataStructures.dir/hash.cpp.o: CMakeFiles/DataStructures.dir/flags.make
-CMakeFiles/DataStructures.dir/hash.cpp.o: /home/user/3sem/labb/hash.cpp
+CMakeFiles/DataStructures.dir/hash.cpp.o: /home/chesnokova/LABA3/hash.cpp
 CMakeFiles/DataStructures.dir/hash.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DataStructures.dir/hash.cpp.o"
-	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/usr/bin/clang-tidy;--extra-arg-before=--driver-mode=g++" --source=/home/user/3sem/labb/hash.cpp -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/hash.cpp.o -MF CMakeFiles/DataStructures.dir/hash.cpp.o.d -o CMakeFiles/DataStructures.dir/hash.cpp.o -c /home/user/3sem/labb/hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DataStructures.dir/hash.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/hash.cpp.o -MF CMakeFiles/DataStructures.dir/hash.cpp.o.d -o CMakeFiles/DataStructures.dir/hash.cpp.o -c /home/chesnokova/LABA3/hash.cpp
 
 CMakeFiles/DataStructures.dir/hash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/hash.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/hash.cpp > CMakeFiles/DataStructures.dir/hash.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/hash.cpp > CMakeFiles/DataStructures.dir/hash.cpp.i
 
 CMakeFiles/DataStructures.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/hash.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/hash.cpp -o CMakeFiles/DataStructures.dir/hash.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/hash.cpp -o CMakeFiles/DataStructures.dir/hash.cpp.s
 
 # Object files for target DataStructures
 DataStructures_OBJECTS = \
@@ -189,7 +189,7 @@ libDataStructures.a: CMakeFiles/DataStructures.dir/compl.cpp.o
 libDataStructures.a: CMakeFiles/DataStructures.dir/hash.cpp.o
 libDataStructures.a: CMakeFiles/DataStructures.dir/build.make
 libDataStructures.a: CMakeFiles/DataStructures.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libDataStructures.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libDataStructures.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/DataStructures.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DataStructures.dir/link.txt --verbose=$(VERBOSE)
 
@@ -202,6 +202,6 @@ CMakeFiles/DataStructures.dir/clean:
 .PHONY : CMakeFiles/DataStructures.dir/clean
 
 CMakeFiles/DataStructures.dir/depend:
-	cd /home/user/3sem/labb/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/3sem/labb /home/user/3sem/labb /home/user/3sem/labb/build /home/user/3sem/labb/build /home/user/3sem/labb/build/CMakeFiles/DataStructures.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chesnokova/LABA3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chesnokova/LABA3 /home/chesnokova/LABA3 /home/chesnokova/LABA3/build /home/chesnokova/LABA3/build /home/chesnokova/LABA3/build/CMakeFiles/DataStructures.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/DataStructures.dir/depend
 

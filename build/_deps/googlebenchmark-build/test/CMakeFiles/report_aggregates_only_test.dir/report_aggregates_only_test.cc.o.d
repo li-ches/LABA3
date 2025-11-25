@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/report_aggregates_only_test.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/report_aggregates_only_test.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/report_aggregates_only_test.cc \
  /usr/include/stdc-predef.h /usr/include/c++/13/cstdio \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -109,7 +109,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/repo
  /usr/include/c++/13/bits/functional_hash.h \
  /usr/include/c++/13/bits/hash_bytes.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
@@ -133,10 +133,10 @@ _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/repo
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/output_test.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/output_test.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
@@ -186,8 +186,8 @@ _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/repo
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/re.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/re.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
  /usr/include/c++/13/regex /usr/include/c++/13/bitset \
  /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
@@ -209,7 +209,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/repo
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/check.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -220,5 +220,5 @@ _deps/googlebenchmark-build/test/CMakeFiles/report_aggregates_only_test.dir/repo
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/log.h \
  /usr/include/c++/13/iostream

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/3sem/labb
+CMAKE_SOURCE_DIR = /home/chesnokova/LABA3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/3sem/labb/build
+CMAKE_BINARY_DIR = /home/chesnokova/LABA3/build
 
 # Include any dependencies generated for this target.
 include _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/flags.m
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o: _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/flags.make
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o: _deps/googlebenchmark-src/test/diagnostics_test.cc
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o: _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o -MF CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o.d -o CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o -c /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/diagnostics_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o"
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o -MF CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o.d -o CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/diagnostics_test.cc
 
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.i"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/diagnostics_test.cc > CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.i
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/diagnostics_test.cc > CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.i
 
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.s"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/diagnostics_test.cc -o CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.s
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/diagnostics_test.cc -o CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.s
 
 # Object files for target diagnostics_test
 diagnostics_test_OBJECTS = \
@@ -94,18 +94,18 @@ _deps/googlebenchmark-build/test/diagnostics_test: _deps/googlebenchmark-build/t
 _deps/googlebenchmark-build/test/diagnostics_test: _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build.make
 _deps/googlebenchmark-build/test/diagnostics_test: _deps/googlebenchmark-build/src/libbenchmark.a
 _deps/googlebenchmark-build/test/diagnostics_test: _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable diagnostics_test"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/diagnostics_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable diagnostics_test"
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/diagnostics_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build: _deps/googlebenchmark-build/test/diagnostics_test
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/build
 
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/clean:
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -P CMakeFiles/diagnostics_test.dir/cmake_clean.cmake
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -P CMakeFiles/diagnostics_test.dir/cmake_clean.cmake
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/clean
 
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/depend:
-	cd /home/user/3sem/labb/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/3sem/labb /home/user/3sem/labb/build/_deps/googlebenchmark-src/test /home/user/3sem/labb/build /home/user/3sem/labb/build/_deps/googlebenchmark-build/test /home/user/3sem/labb/build/_deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chesnokova/LABA3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chesnokova/LABA3 /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test /home/chesnokova/LABA3/build /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/depend
 

@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/usr/bin/cmake;-P;/home/user/3sem/labb/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/download-googlebenchmark-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/user/3sem/labb/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/verify-googlebenchmark-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/user/3sem/labb/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/extract-googlebenchmark-populate.cmake
-source_dir=/home/user/3sem/labb/build/_deps/googlebenchmark-src
-work_dir=/home/user/3sem/labb/build/_deps
+command=/usr/bin/cmake;-P;/home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/download-googlebenchmark-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/verify-googlebenchmark-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/googlebenchmark-populate-stamp/extract-googlebenchmark-populate.cmake
+source_dir=/home/chesnokova/LABA3/build/_deps/googlebenchmark-src
+work_dir=/home/chesnokova/LABA3/build/_deps
 url(s)=https://github.com/google/benchmark/archive/refs/tags/v1.8.3.zip
 hash=
 no_extract=

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/3sem/labb/build/_deps/googlebenchmark-src/test/display_aggregates_only_test.cc" "_deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.o" "gcc" "_deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.o.d"
+  "/home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/display_aggregates_only_test.cc" "_deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.o" "gcc" "_deps/googlebenchmark-build/test/CMakeFiles/display_aggregates_only_test.dir/display_aggregates_only_test.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

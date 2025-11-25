@@ -5,19 +5,19 @@
 #include <iostream>
 #include <fstream>
 
-using namespace std; 
+using namespace std;
 
 class MyList {
 private:
     class Node {
     public:
-        string value; 
-        Node* next;   
+        string value;
+        Node* next;
 
         Node(const string& v, Node* n) : value(v), next(n) {}
     };
 
-    Node* head; 
+    Node* head;
 
     void printBack(Node* node) const;
 
@@ -37,7 +37,7 @@ public:
     void addBefore(const string& target, const string& val);
     void delTail();
     void delByValue(const string& val);
-    bool findValue(const string& val) const; 
+    bool findValue(const string& val) const;
     void readForward() const;
     void readBack() const;
     void delAfterValue(const string& val);
@@ -45,7 +45,6 @@ public:
     void saveToFile(const string& filename) const;
     void loadFromFile(const string& filename);
 
-    // Бинарный
     void saveToBinaryFile(const string& filename) const;
     void loadFromBinaryFile(const string& filename);
     Node* getHead_test() const {

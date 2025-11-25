@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/3sem/labb
+CMAKE_SOURCE_DIR = /home/chesnokova/LABA3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/3sem/labb/build
+CMAKE_BINARY_DIR = /home/chesnokova/LABA3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/serialization_test.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/serialization_test.dir/progress.make
 include CMakeFiles/serialization_test.dir/flags.make
 
 CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o: CMakeFiles/serialization_test.dir/flags.make
-CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o: /home/user/3sem/labb/tests/serialization_test.cpp
+CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o: /home/chesnokova/LABA3/tests/serialization_test.cpp
 CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o: CMakeFiles/serialization_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o -MF CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o.d -o CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o -c /home/user/3sem/labb/tests/serialization_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o -MF CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o.d -o CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o -c /home/chesnokova/LABA3/tests/serialization_test.cpp
 
 CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/tests/serialization_test.cpp > CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/tests/serialization_test.cpp > CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.i
 
 CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/tests/serialization_test.cpp -o CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/tests/serialization_test.cpp -o CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.s
 
 # Object files for target serialization_test
 serialization_test_OBJECTS = \
@@ -97,9 +97,9 @@ serialization_test: lib/libgtest.a
 serialization_test: lib/libgtest_main.a
 serialization_test: lib/libgtest.a
 serialization_test: CMakeFiles/serialization_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable serialization_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable serialization_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/serialization_test.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D TEST_TARGET=serialization_test -D TEST_EXECUTABLE=/home/user/3sem/labb/build/serialization_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/user/3sem/labb/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=serialization_test_TESTS -D CTEST_FILE=/home/user/3sem/labb/build/serialization_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+	/usr/bin/cmake -D TEST_TARGET=serialization_test -D TEST_EXECUTABLE=/home/chesnokova/LABA3/build/serialization_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/chesnokova/LABA3/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=serialization_test_TESTS -D CTEST_FILE=/home/chesnokova/LABA3/build/serialization_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/serialization_test.dir/build: serialization_test
@@ -110,6 +110,6 @@ CMakeFiles/serialization_test.dir/clean:
 .PHONY : CMakeFiles/serialization_test.dir/clean
 
 CMakeFiles/serialization_test.dir/depend:
-	cd /home/user/3sem/labb/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/3sem/labb /home/user/3sem/labb /home/user/3sem/labb/build /home/user/3sem/labb/build /home/user/3sem/labb/build/CMakeFiles/serialization_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chesnokova/LABA3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chesnokova/LABA3 /home/chesnokova/LABA3 /home/chesnokova/LABA3/build /home/chesnokova/LABA3/build /home/chesnokova/LABA3/build/CMakeFiles/serialization_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/serialization_test.dir/depend
 

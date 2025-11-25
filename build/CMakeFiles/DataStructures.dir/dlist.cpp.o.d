@@ -1,6 +1,7 @@
-CMakeFiles/DataStructures.dir/dlist.cpp.o: /home/user/3sem/labb/dlist.cpp \
- /usr/include/stdc-predef.h /home/user/3sem/labb/dlist.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
+CMakeFiles/DataStructures.dir/dlist.cpp.o: \
+ /home/chesnokova/LABA3/dlist.cpp /usr/include/stdc-predef.h \
+ /home/chesnokova/LABA3/dlist.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -152,4 +153,4 @@ CMakeFiles/DataStructures.dir/dlist.cpp.o: /home/user/3sem/labb/dlist.cpp \
  /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /home/user/3sem/labb/serialize.h
+ /usr/include/c++/13/bits/fstream.tcc /home/chesnokova/LABA3/serialize.h

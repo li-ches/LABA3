@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBENCHMARK_STATIC_DEFINE
 
-CXX_INCLUDES = -I/home/user/3sem/labb -I/home/user/3sem/labb/build/_deps/googlebenchmark-src/include
+CXX_INCLUDES = -I/home/chesnokova/LABA3 -I/home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include
 
 CXX_FLAGS =  --coverage -std=gnu++17
 

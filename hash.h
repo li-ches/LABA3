@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <fstream> 
+#include <fstream>
 
 using namespace std;
 
@@ -18,12 +18,12 @@ private:
         string val;
         Node* next;
 
-        Node(const string& keyArg, const string& valArg) 
+        Node(const string& keyArg, const string& valArg)
             : key(keyArg), val(valArg), next(nullptr) {}
     };
 
-    Node** table; // массив списков
-    int cap;      // количество бакетов
+    Node** table;
+    int cap;
 
 public:
     explicit ChainHash(int buckCount);
@@ -41,11 +41,9 @@ public:
 
     void show();
 
-    // Текстовая
     void saveToFile(const string& filename) const;
     void loadFromFile(const string& filename);
-    
-    // Бинарная
+
     void saveToBinaryFile(const string& filename) const;
     void loadFromBinaryFile(const string& filename);
 };
@@ -56,14 +54,14 @@ private:
     public:
         string key;
         string val;
-        bool used;    // ячейка занята значением
-        bool deleted; // было значение, но удалено
+        bool used;
+        bool deleted;
 
         Entry() : used(false), deleted(false) {}
     };
 
-    Entry* table; // массив ячеек
-    int cap;      // размер таблицы
+    Entry* table;
+    int cap;
 
 public:
     explicit OpenHash(int size);
@@ -79,7 +77,6 @@ public:
     void saveToFile(const string& filename) const;
     void loadFromFile(const string& filename);
 
-    // Бинарный
     void saveToBinaryFile(const string& filename) const;
     void loadFromBinaryFile(const string& filename);
 };

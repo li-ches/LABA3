@@ -2,11 +2,9 @@
 #include "serialize.h"
 using namespace std;
 
-// Конструктор
 Stack::Stack() : top(nullptr) {
 }
 
-// Деструктор
 Stack::~Stack() {
     while (top) {
         SNode* tmp = top;
@@ -22,7 +20,6 @@ void Stack::push(string val) {
     top = node;
 }
 
-//извлекает элмент из стека и возвращает его тому, кто вызвал
 string Stack::pop() {
     if (!top) {
         return "[STACK_EMPTY]";
@@ -34,7 +31,6 @@ string Stack::pop() {
     return val;
 }
 
-//чтение без удаления
 string Stack::peek() const {
     if (!top) {
         return "[STACK_EMPTY]";
@@ -42,7 +38,7 @@ string Stack::peek() const {
     return top->value;
 }
 
-bool Stack::isEmpty() const { 
+bool Stack::isEmpty() const {
     return top == nullptr;
 }
 
@@ -70,7 +66,6 @@ void Stack::saveToFile(const string& filename) const {
     }
     file << count << "\n";
 
-    // Сохраняем в обратном порядке, чтобы при загрузке порядок восстановился
     SNode* curr = top;
     string* tempArr = new string[count];
     for (int i = count - 1; i >= 0; --i) {
@@ -135,6 +130,6 @@ void Stack::loadFromBinaryFile(const string& filename) {
     for (int i = 0; i < count; ++i) {
         string val = readString(file);
         if (file.fail()) break;
-        push(val); 
+        push(val);
     }
 }

@@ -1,5 +1,5 @@
 CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o: \
- /home/user/3sem/labb/tests/serialization_test.cpp \
+ /home/chesnokova/LABA3/tests/serialization_test.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -154,13 +154,13 @@ CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/cassert \
- /usr/include/assert.h /home/user/3sem/labb/tests/../arr.h \
- /home/user/3sem/labb/tests/../list.h \
- /home/user/3sem/labb/tests/../dlist.h \
- /home/user/3sem/labb/tests/../stack.h \
- /home/user/3sem/labb/tests/../queue.h \
- /home/user/3sem/labb/tests/../compl.h \
- /home/user/3sem/labb/tests/../hash.h /usr/include/c++/13/cmath \
+ /usr/include/assert.h /home/chesnokova/LABA3/tests/../arr.h \
+ /home/chesnokova/LABA3/tests/../list.h \
+ /home/chesnokova/LABA3/tests/../dlist.h \
+ /home/chesnokova/LABA3/tests/../stack.h \
+ /home/chesnokova/LABA3/tests/../queue.h \
+ /home/chesnokova/LABA3/tests/../compl.h \
+ /home/chesnokova/LABA3/tests/../hash.h /usr/include/c++/13/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \

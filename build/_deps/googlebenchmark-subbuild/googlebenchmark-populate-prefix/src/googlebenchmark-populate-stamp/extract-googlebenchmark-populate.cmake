@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/user/3sem/labb/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/v1.8.3.zip" ABSOLUTE)
-get_filename_component(directory "/home/user/3sem/labb/build/_deps/googlebenchmark-src" ABSOLUTE)
+get_filename_component(filename "/home/chesnokova/LABA3/build/_deps/googlebenchmark-subbuild/googlebenchmark-populate-prefix/src/v1.8.3.zip" ABSOLUTE)
+get_filename_component(directory "/home/chesnokova/LABA3/build/_deps/googlebenchmark-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

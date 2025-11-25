@@ -3,7 +3,7 @@
 
 #include <string>
 #include <iostream>
-#include <fstream> 
+#include <fstream>
 
 using namespace std;
 
@@ -24,9 +24,9 @@ public:
     MyArr(MyArr&&) = delete;
     MyArr& operator=(MyArr&&) = delete;
 
-    void addHead(const string& val); // добавление в начало
-    void delHead();                   // удаление из начала
-    void delEnd();                    // удаление из конца
+    void addHead(const string& val);
+    void delHead();
+    void delEnd();
 
     void addEnd(const string& val);
     string getAt(int idx) const;
@@ -34,17 +34,16 @@ public:
     void readArray() const;
     void addAt(int idx, const string& val);
     void repArr(int idx, const string& val);
-    
+
     auto lenArr() const -> int;
 
     void saveToFile(const string& filename) const;
     void loadFromFile(const string& filename);
 
-    // Бинарная
     void saveToBinaryFile(const string& filename) const;
     void loadFromBinaryFile(const string& filename);
 
-    string* getData_test() const //хелпер для тестов
+    string* getData_test() const
     {   return data;
     }
 };

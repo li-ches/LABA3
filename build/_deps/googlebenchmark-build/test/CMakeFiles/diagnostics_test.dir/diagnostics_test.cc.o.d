@@ -1,5 +1,5 @@
 _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_test.cc.o: \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/diagnostics_test.cc \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/diagnostics_test.cc \
  /usr/include/stdc-predef.h /usr/include/c++/13/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -114,7 +114,7 @@ _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_tes
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/functional_hash.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/check.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/check.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -156,12 +156,12 @@ _deps/googlebenchmark-build/test/CMakeFiles/diagnostics_test.dir/diagnostics_tes
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/export.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/../src/log.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/export.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/internal_macros.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/../src/log.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/user/3sem/labb/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
+ /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/include/benchmark/benchmark.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \

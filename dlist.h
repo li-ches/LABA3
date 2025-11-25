@@ -8,28 +8,23 @@ using namespace std;
 
 class DList {
 private:
-    // cтруктура узла двусвязного списка 
     class DNode {
     public:
-        string value;   // значение узла
-        DNode* next;    // указатель на следующий элемент
-        DNode* prev;    // указатель на предыдущий элемент
+        string value;
+        DNode* next;
+        DNode* prev;
 
         DNode(const string& v, DNode* n, DNode* p) : value(v), next(n), prev(p) {}
     };
 
-    DNode* head; // указатель на первый элемент
-    DNode* tail; // указатель на последний элемент
+    DNode* head;
+    DNode* tail;
 
     auto findValue(const string& val) const -> DNode*;
 
 public:
-    //конструктор 
     DList();
-
-    // Деструктор 
     ~DList();
-
 
     DList(const DList&) = delete;
     DList& operator=(const DList&) = delete;
@@ -64,13 +59,12 @@ public:
 
     void saveToBinaryFile(const string& filename) const;
     void loadFromBinaryFile(const string& filename);
-  
-  
+
     DNode* getHead_Test() const
     {
         return head;
     }
-    DNode* getTail_Test()const 
+    DNode* getTail_Test()const
     {
         return tail;
     }

@@ -5,7 +5,7 @@
 #include <string>
 #include <fstream>
 
-using namespace std; 
+using namespace std;
 
 class Queue {
 private:
@@ -15,8 +15,8 @@ private:
         QNode* next;
     };
 
-    QNode* front; //указатель на начало
-    QNode* rear;  //указатель на конец
+    QNode* front;
+    QNode* rear;
 
 public:
     Queue();
@@ -30,7 +30,6 @@ public:
 
     bool isEmpty() const;
 
-    // Добавление в конец
     void push(string val);
 
     string pop();
@@ -41,7 +40,6 @@ public:
     void saveToFile(const string& filename) const;
     void loadFromFile(const string& filename);
 
-    // Бинарный
     void saveToBinaryFile(const string& filename) const;
     void loadFromBinaryFile(const string& filename);
 

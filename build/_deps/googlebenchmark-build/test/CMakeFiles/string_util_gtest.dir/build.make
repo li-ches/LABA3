@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/3sem/labb
+CMAKE_SOURCE_DIR = /home/chesnokova/LABA3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/3sem/labb/build
+CMAKE_BINARY_DIR = /home/chesnokova/LABA3/build
 
 # Include any dependencies generated for this target.
 include _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/flags.
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o: _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/flags.make
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o: _deps/googlebenchmark-src/test/string_util_gtest.cc
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o: _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o -MF CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o.d -o CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o -c /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/string_util_gtest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o"
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o -MF CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o.d -o CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/string_util_gtest.cc
 
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.i"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/string_util_gtest.cc > CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.i
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/string_util_gtest.cc > CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.i
 
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.s"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/3sem/labb/build/_deps/googlebenchmark-src/test/string_util_gtest.cc -o CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.s
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test/string_util_gtest.cc -o CMakeFiles/string_util_gtest.dir/string_util_gtest.cc.s
 
 # Object files for target string_util_gtest
 string_util_gtest_OBJECTS = \
@@ -97,18 +97,18 @@ _deps/googlebenchmark-build/test/string_util_gtest: lib/libgmock_main.a
 _deps/googlebenchmark-build/test/string_util_gtest: lib/libgmock.a
 _deps/googlebenchmark-build/test/string_util_gtest: lib/libgtest.a
 _deps/googlebenchmark-build/test/string_util_gtest: _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user/3sem/labb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable string_util_gtest"
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/string_util_gtest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable string_util_gtest"
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/string_util_gtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build: _deps/googlebenchmark-build/test/string_util_gtest
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/build
 
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/clean:
-	cd /home/user/3sem/labb/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -P CMakeFiles/string_util_gtest.dir/cmake_clean.cmake
+	cd /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test && $(CMAKE_COMMAND) -P CMakeFiles/string_util_gtest.dir/cmake_clean.cmake
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/clean
 
 _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/depend:
-	cd /home/user/3sem/labb/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/3sem/labb /home/user/3sem/labb/build/_deps/googlebenchmark-src/test /home/user/3sem/labb/build /home/user/3sem/labb/build/_deps/googlebenchmark-build/test /home/user/3sem/labb/build/_deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chesnokova/LABA3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chesnokova/LABA3 /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/test /home/chesnokova/LABA3/build /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/googlebenchmark-build/test/CMakeFiles/string_util_gtest.dir/depend
 

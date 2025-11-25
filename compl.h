@@ -5,18 +5,15 @@
 #include <string>
 #include <fstream>
 
-// Класс узла дерева
 class TreeNode {
 public:
     int data;
     TreeNode* left;
     TreeNode* right;
 
-    //конструктор узла
     TreeNode(int val) : data(val), left(nullptr), right(nullptr) {}
 };
 
-// Основной класс дерева
 class CompleteBinaryTree {
 private:
     TreeNode* root;
@@ -28,15 +25,13 @@ private:
     void printTreeUtil(TreeNode* node, const std::string& prefix, bool isLast) const;
 
 public:
-    // Конструктор и деструктор
     CompleteBinaryTree();
     ~CompleteBinaryTree();
 
-    // Публичные методы интерфейса
     bool isEmpty() const;
     void clear();
     void insert(int value);
-    void remove(int value); 
+    void remove(int value);
     bool search(int value) const;
     void print() const;
     int getSize() const;

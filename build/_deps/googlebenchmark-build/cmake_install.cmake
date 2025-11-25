@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/3sem/labb/build/_deps/googlebenchmark-src
+# Install script for directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/user/3sem/labb/build/_deps/googlebenchmark-build/src/cmake_install.cmake")
+  include("/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/user/3sem/labb/build/_deps/googlebenchmark-build/test/cmake_install.cmake")
+  include("/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/cmake_install.cmake")
 endif()
 
