@@ -475,9 +475,9 @@ datastructures/ds/queue.go:47.17,49.3 1 1
 datastructures/ds/queue.go:50.2,50.21 1 1
 datastructures/ds/queue.go:53.25,54.17 1 1
 datastructures/ds/queue.go:54.17,57.3 2 1
-datastructures/ds/queue.go:58.2,59.49 2 0
-datastructures/ds/queue.go:59.49,61.3 1 0
-datastructures/ds/queue.go:62.2,62.15 1 0
+datastructures/ds/queue.go:58.2,59.49 2 1
+datastructures/ds/queue.go:59.49,61.3 1 1
+datastructures/ds/queue.go:62.2,62.15 1 1
 datastructures/ds/queue_serialize.go:5.44,7.2 1 1
 datastructures/ds/queue_serialize.go:9.36,11.49 2 1
 datastructures/ds/queue_serialize.go:11.49,13.3 1 1

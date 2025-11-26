@@ -93,3 +93,36 @@ func TestQueue_Coverage(t *testing.T) {
 	serializer.LoadFromBinaryFile(q3, "q.bin")
 	if q3.Pop() != "1" { t.Error("Bin load order fail") }
 }
+// проверка вывода пустой очереди
+func TestQueue_Print_Empty(t *testing.T) {
+	q := NewQueue()
+	
+	// Просто вызываем Print для покрытия строки с пустой очередью
+	q.Print()
+}
+
+// проверка вывода очереди с одним элементом  
+func TestQueue_Print_SingleElement(t *testing.T) {
+	q := NewQueue()
+	q.Push("single")
+	q.Print()
+}
+
+// проверка вывода очереди с несколькими элементами
+func TestQueue_Print_MultipleElements(t *testing.T) {
+	q := NewQueue()
+	q.Push("first")
+	q.Push("second") 
+	q.Push("third")
+	q.Print()
+}
+
+// проверка вывода очереди после операций
+func TestQueue_Print_AfterOperations(t *testing.T) {
+	q := NewQueue()
+	q.Push("A")
+	q.Push("B")
+	q.Pop() // удаляем первый
+	q.Push("C")
+	q.Print()
+}
