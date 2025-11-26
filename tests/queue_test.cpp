@@ -138,3 +138,173 @@ TEST(QueueTest, Coverage_IO) {
     QueueSerializer::loadFromBinaryFile(q, "trunc.bin");
     remove("trunc.bin");
 }
+// проверка вывода очереди с одним элементом
+TEST(QueueTest, Print_SingleElement) {
+    Queue q;
+    q.push("single");
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь:"), string::npos);
+    EXPECT_NE(output.find("single"), string::npos);
+    EXPECT_EQ(output.find(" -> "), string::npos); // не должно быть стрелок для одного элемента
+}
+
+// проверка вывода очереди с несколькими элементами
+TEST(QueueTest, Print_MultipleElements) {
+    Queue q;
+    q.push("first");
+    q.push("second");
+    q.push("third");
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь:"), string::npos);
+    EXPECT_NE(output.find("first"), string::npos);
+    EXPECT_NE(output.find("second"), string::npos);
+    EXPECT_NE(output.find("third"), string::npos);
+    EXPECT_NE(output.find(" -> "), string::npos); // должны быть стрелки между элементами
+    
+    // Проверяем порядок элементов (FIFO)
+    size_t first_pos = output.find("first");
+    size_t second_pos = output.find("second");
+    size_t third_pos = output.find("third");
+    EXPECT_LT(first_pos, second_pos); // first должен быть перед second
+    EXPECT_LT(second_pos, third_pos); // second должен быть перед third
+}
+
+// проверка вывода пустой очереди
+TEST(QueueTest, Print_EmptyQueue) {
+    Queue q;
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь пуста."), string::npos);
+    EXPECT_EQ(output.find("Очередь:"), string::npos); // не должно быть заголовка для пустой очереди
+}
+
+// проверка вывода очереди с двумя элементами (граничный случай для стрелок)
+TEST(QueueTest, Print_TwoElements) {
+    Queue q;
+    q.push("first");
+    q.push("last");
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь:"), string::npos);
+    EXPECT_NE(output.find("first -> last"), string::npos); // должна быть одна стрелка
+}
+
+// проверка вывода очереди после операций pop
+TEST(QueueTest, Print_AfterPopOperations) {
+    Queue q;
+    q.push("A");
+    q.push("B");
+    q.push("C");
+    
+    q.pop(); // удаляем A (первый элемент)
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь:"), string::npos);
+    EXPECT_NE(output.find("B -> C"), string::npos);
+    EXPECT_EQ(output.find("A"), string::npos); // A не должно быть в выводе
+}
+
+// проверка вывода очереди с элементами содержащими специальные символы
+TEST(QueueTest, Print_SpecialCharacters) {
+    Queue q;
+    q.push("element with spaces");
+    q.push("element->with->arrows");
+    q.push("normal");
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь:"), string::npos);
+    EXPECT_NE(output.find("element with spaces"), string::npos);
+    EXPECT_NE(output.find("element->with->arrows"), string::npos);
+    EXPECT_NE(output.find("normal"), string::npos);
+}
+
+// проверка вывода очереди после полной очистки
+TEST(QueueTest, Print_AfterClear) {
+    Queue q;
+    q.push("A");
+    q.push("B");
+    
+    q.pop();
+    q.pop();
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь пуста."), string::npos);
+    EXPECT_EQ(output.find("Очередь:"), string::npos);
+}
+
+// проверка вывода очереди после последовательных push/pop операций
+TEST(QueueTest, Print_AfterMixedOperations) {
+    Queue q;
+    q.push("A");
+    q.push("B");
+    q.pop(); // удаляем A
+    q.push("C");
+    q.push("D");
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь:"), string::npos);
+    // Ожидаемый порядок: B -> C -> D
+    EXPECT_NE(output.find("B -> C -> D"), string::npos);
+    EXPECT_EQ(output.find("A"), string::npos); // A не должно быть в выводе
+}
+
+// проверка вывода очереди с длинными строками
+TEST(QueueTest, Print_LongStrings) {
+    Queue q;
+    q.push("very long string that might affect formatting");
+    q.push("short");
+    q.push("another long string with different content");
+    
+    OutputCapture cap;
+    q.print();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Очередь:"), string::npos);
+    EXPECT_NE(output.find("very long string"), string::npos);
+    EXPECT_NE(output.find("short"), string::npos);
+    EXPECT_NE(output.find("another long string"), string::npos);
+}
+
+// проверка вывода очереди после добавления в пустую очередь
+TEST(QueueTest, Print_AfterPushToEmpty) {
+    Queue q;
+    
+    OutputCapture cap1;
+    q.print();
+    string empty_output = cap1.str();
+    EXPECT_NE(empty_output.find("Очередь пуста."), string::npos);
+    
+    q.push("new element");
+    
+    OutputCapture cap2;
+    q.print();
+    string non_empty_output = cap2.str();
+    EXPECT_NE(non_empty_output.find("Очередь:"), string::npos);
+    EXPECT_NE(non_empty_output.find("new element"), string::npos);
+}

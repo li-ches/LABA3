@@ -147,3 +147,156 @@ TEST(DListTest, Coverage_IO) {
     DListSerializer::loadFromBinaryFile(d, "bad.bin");
     remove("bad.bin");
 }
+// проверка вывода обратного списка с одним элементом
+TEST(DListTest, ReadBackward_SingleElement) {
+    DList d;
+    d.addTail("single");
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список (обратный):"), string::npos);
+    EXPECT_NE(output.find("single"), string::npos);
+    EXPECT_EQ(output.find(" <-> "), string::npos); // не должно быть стрелок для одного элемента
+}
+
+// проверка вывода обратного списка с несколькими элементами
+TEST(DListTest, ReadBackward_MultipleElements) {
+    DList d;
+    d.addTail("first");
+    d.addTail("second");
+    d.addTail("third");
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список (обратный):"), string::npos);
+    EXPECT_NE(output.find("third"), string::npos);
+    EXPECT_NE(output.find("second"), string::npos);
+    EXPECT_NE(output.find("first"), string::npos);
+    EXPECT_NE(output.find(" <-> "), string::npos); // должны быть стрелки между элементами
+    
+    // Проверяем обратный порядок элементов
+    size_t third_pos = output.find("third");
+    size_t second_pos = output.find("second");
+    size_t first_pos = output.find("first");
+    EXPECT_LT(third_pos, second_pos); // third должен быть перед second (обратный порядок)
+    EXPECT_LT(second_pos, first_pos); // second должен быть перед first
+}
+
+// проверка вывода пустого обратного списка
+TEST(DListTest, ReadBackward_EmptyList) {
+    DList d;
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список пуст."), string::npos);
+    EXPECT_EQ(output.find("Список (обратный):"), string::npos); // не должно быть заголовка для пустого списка
+}
+
+// проверка вывода обратного списка с двумя элементами (граничный случай для стрелок)
+TEST(DListTest, ReadBackward_TwoElements) {
+    DList d;
+    d.addTail("first");
+    d.addTail("last");
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список (обратный):"), string::npos);
+    EXPECT_NE(output.find("last <-> first"), string::npos); // должна быть одна стрелка в обратном порядке
+}
+
+// проверка вывода обратного списка после операций удаления
+TEST(DListTest, ReadBackward_AfterDeleteOperations) {
+    DList d;
+    d.addTail("A");
+    d.addTail("B");
+    d.addTail("C");
+    d.addTail("D");
+    
+    d.delByVal("C"); // удаляем средний элемент
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список (обратный):"), string::npos);
+    EXPECT_NE(output.find("D <-> B <-> A"), string::npos);
+    EXPECT_EQ(output.find("C"), string::npos); // C не должно быть в выводе
+}
+
+// проверка вывода обратного списка с элементами содержащими специальные символы
+TEST(DListTest, ReadBackward_SpecialCharacters) {
+    DList d;
+    d.addTail("element with spaces");
+    d.addTail("element<->with<->arrows");
+    d.addTail("normal");
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список (обратный):"), string::npos);
+    EXPECT_NE(output.find("element with spaces"), string::npos);
+    EXPECT_NE(output.find("element<->with<->arrows"), string::npos);
+    EXPECT_NE(output.find("normal"), string::npos);
+}
+
+// проверка вывода обратного списка после полной очистки
+TEST(DListTest, ReadBackward_AfterClear) {
+    DList d;
+    d.addTail("A");
+    d.addTail("B");
+    
+    d.delHead();
+    d.delHead();
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список пуст."), string::npos);
+    EXPECT_EQ(output.find("Список (обратный):"), string::npos);
+}
+
+// проверка корректности обратного порядка после добавления в голову
+TEST(DListTest, ReadBackward_AfterAddHead) {
+    DList d;
+    d.addHead("C");
+    d.addHead("B");
+    d.addHead("A");
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список (обратный):"), string::npos);
+    // При добавлении в голову порядок в обратном списке должен быть: C -> B -> A
+    EXPECT_NE(output.find("C <-> B <-> A"), string::npos);
+}
+
+// проверка корректности обратного порядка после смешанных операций
+TEST(DListTest, ReadBackward_MixedOperations) {
+    DList d;
+    d.addTail("A");
+    d.addHead("Start");
+    d.addTail("Z");
+    d.addAfter("A", "Middle");
+    
+    OutputCapture cap;
+    d.readBackward();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Список (обратный):"), string::npos);
+    // Ожидаемый обратный порядок: Z -> Middle -> A -> Start
+    EXPECT_NE(output.find("Z"), string::npos);
+    EXPECT_NE(output.find("Middle"), string::npos);
+    EXPECT_NE(output.find("A"), string::npos);
+    EXPECT_NE(output.find("Start"), string::npos);
+}

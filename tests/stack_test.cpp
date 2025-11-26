@@ -113,3 +113,119 @@ TEST(StackTest, Coverage_IO) {
     StackSerializer::loadFromBinaryFile(s, "bad_stack.bin");
     remove("bad_stack.bin");
 }
+// проверка вывода стека с одним элементом
+TEST(StackTest, ReadStack_SingleElement) {
+    Stack s;
+    s.push("single");
+    
+    OutputCapture cap;
+    s.readStack();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Стек (верх -> низ):"), string::npos);
+    EXPECT_NE(output.find("single"), string::npos);
+    EXPECT_EQ(output.find(" -> "), string::npos); // не должно быть стрелок для одного элемента
+}
+
+// проверка вывода стека с несколькими элементами
+TEST(StackTest, ReadStack_MultipleElements) {
+    Stack s;
+    s.push("first");
+    s.push("second");
+    s.push("third");
+    
+    OutputCapture cap;
+    s.readStack();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Стек (верх -> низ):"), string::npos);
+    EXPECT_NE(output.find("third"), string::npos);
+    EXPECT_NE(output.find("second"), string::npos);
+    EXPECT_NE(output.find("first"), string::npos);
+    EXPECT_NE(output.find(" -> "), string::npos); // должны быть стрелки между элементами
+    
+    // Проверяем порядок элементов (LIFO)
+    size_t third_pos = output.find("third");
+    size_t second_pos = output.find("second");
+    size_t first_pos = output.find("first");
+    EXPECT_LT(third_pos, second_pos); // third должен быть перед second
+    EXPECT_LT(second_pos, first_pos); // second должен быть перед first
+}
+
+// проверка вывода пустого стека
+TEST(StackTest, ReadStack_EmptyStack) {
+    Stack s;
+    
+    OutputCapture cap;
+    s.readStack();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Стек пуст."), string::npos);
+    EXPECT_EQ(output.find("Стек (верх -> низ):"), string::npos); // не должно быть заголовка для пустого стека
+}
+
+// проверка вывода стека с двумя элементами (граничный случай для стрелок)
+TEST(StackTest, ReadStack_TwoElements) {
+    Stack s;
+    s.push("bottom");
+    s.push("top");
+    
+    OutputCapture cap;
+    s.readStack();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Стек (верх -> низ):"), string::npos);
+    EXPECT_NE(output.find("top -> bottom"), string::npos); // должна быть одна стрелка
+}
+
+// проверка вывода стека после операций pop
+TEST(StackTest, ReadStack_AfterPopOperations) {
+    Stack s;
+    s.push("A");
+    s.push("B");
+    s.push("C");
+    
+    s.pop(); // удаляем C
+    
+    OutputCapture cap;
+    s.readStack();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Стек (верх -> низ):"), string::npos);
+    EXPECT_NE(output.find("B -> A"), string::npos);
+    EXPECT_EQ(output.find("C"), string::npos); // C не должно быть в выводе
+}
+
+// проверка вывода стека с элементами содержащими специальные символы
+TEST(StackTest, ReadStack_SpecialCharacters) {
+    Stack s;
+    s.push("element with spaces");
+    s.push("element->with->arrows");
+    s.push("normal");
+    
+    OutputCapture cap;
+    s.readStack();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Стек (верх -> низ):"), string::npos);
+    EXPECT_NE(output.find("element with spaces"), string::npos);
+    EXPECT_NE(output.find("element->with->arrows"), string::npos);
+    EXPECT_NE(output.find("normal"), string::npos);
+}
+
+// проверка вывода стека после полной очистки
+TEST(StackTest, ReadStack_AfterClear) {
+    Stack s;
+    s.push("A");
+    s.push("B");
+    
+    s.pop();
+    s.pop();
+    
+    OutputCapture cap;
+    s.readStack();
+    
+    string output = cap.str();
+    EXPECT_NE(output.find("Стек пуст."), string::npos);
+    EXPECT_EQ(output.find("Стек (верх -> низ):"), string::npos);
+}

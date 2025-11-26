@@ -31,13 +31,13 @@
             <td class="headerValue">coverage_cleaned.info</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntryMed">82.1&nbsp;%</td>
+            <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
             <td class="headerCovTableEntry">39</td>
-            <td class="headerCovTableEntry">32</td>
+            <td class="headerCovTableEntry">39</td>
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2025-11-26 13:32:40</td>
+            <td class="headerValue">2025-11-26 19:33:15</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
@@ -66,57 +66,57 @@
 <span id="L4"><span class="lineNum">       4</span>              : </span>
 <span id="L5"><span class="lineNum">       5</span>              : using namespace std;</span>
 <span id="L6"><span class="lineNum">       6</span>              : </span>
-<span id="L7"><span class="lineNum">       7</span> <span class="tlaGNC tlaBgGNC">         142 : Queue::Queue() : head(nullptr), tail(nullptr) {}</span></span>
+<span id="L7"><span class="lineNum">       7</span> <span class="tlaGNC tlaBgGNC">         152 : Queue::Queue() : head(nullptr), tail(nullptr) {}</span></span>
 <span id="L8"><span class="lineNum">       8</span>              : </span>
-<span id="L9"><span class="lineNum">       9</span> <span class="tlaGNC">         142 : Queue::~Queue() {</span></span>
-<span id="L10"><span class="lineNum">      10</span> <span class="tlaGNC">         420 :     while (head) {</span></span>
-<span id="L11"><span class="lineNum">      11</span> <span class="tlaGNC">         136 :         QNode* temp = head;</span></span>
-<span id="L12"><span class="lineNum">      12</span> <span class="tlaGNC">         136 :         head = head-&gt;next;</span></span>
-<span id="L13"><span class="lineNum">      13</span> <span class="tlaGNC">         136 :         delete temp;</span></span>
+<span id="L9"><span class="lineNum">       9</span> <span class="tlaGNC">         152 : Queue::~Queue() {</span></span>
+<span id="L10"><span class="lineNum">      10</span> <span class="tlaGNC">         458 :     while (head) {</span></span>
+<span id="L11"><span class="lineNum">      11</span> <span class="tlaGNC">         154 :         QNode* temp = head;</span></span>
+<span id="L12"><span class="lineNum">      12</span> <span class="tlaGNC">         154 :         head = head-&gt;next;</span></span>
+<span id="L13"><span class="lineNum">      13</span> <span class="tlaGNC">         154 :         delete temp;</span></span>
 <span id="L14"><span class="lineNum">      14</span>              :     }</span>
-<span id="L15"><span class="lineNum">      15</span> <span class="tlaGNC">         142 : }</span></span>
+<span id="L15"><span class="lineNum">      15</span> <span class="tlaGNC">         152 : }</span></span>
 <span id="L16"><span class="lineNum">      16</span>              : </span>
-<span id="L17"><span class="lineNum">      17</span> <span class="tlaGNC">         409 : void Queue::push(string val) {</span></span>
-<span id="L18"><span class="lineNum">      18</span> <span class="tlaGNC">         409 :     QNode* newNode = new QNode{val, nullptr};</span></span>
-<span id="L19"><span class="lineNum">      19</span> <span class="tlaGNC">         409 :     if (!head) {</span></span>
-<span id="L20"><span class="lineNum">      20</span> <span class="tlaGNC">         139 :         head = tail = newNode;</span></span>
+<span id="L17"><span class="lineNum">      17</span> <span class="tlaGNC">         431 : void Queue::push(string val) {</span></span>
+<span id="L18"><span class="lineNum">      18</span> <span class="tlaGNC">         431 :     QNode* newNode = new QNode{val, nullptr};</span></span>
+<span id="L19"><span class="lineNum">      19</span> <span class="tlaGNC">         431 :     if (!head) {</span></span>
+<span id="L20"><span class="lineNum">      20</span> <span class="tlaGNC">         148 :         head = tail = newNode;</span></span>
 <span id="L21"><span class="lineNum">      21</span>              :     } else {</span>
-<span id="L22"><span class="lineNum">      22</span> <span class="tlaGNC">         270 :         tail-&gt;next = newNode;</span></span>
-<span id="L23"><span class="lineNum">      23</span> <span class="tlaGNC">         270 :         tail = newNode;</span></span>
+<span id="L22"><span class="lineNum">      22</span> <span class="tlaGNC">         283 :         tail-&gt;next = newNode;</span></span>
+<span id="L23"><span class="lineNum">      23</span> <span class="tlaGNC">         283 :         tail = newNode;</span></span>
 <span id="L24"><span class="lineNum">      24</span>              :     }</span>
-<span id="L25"><span class="lineNum">      25</span> <span class="tlaGNC">         409 : }</span></span>
+<span id="L25"><span class="lineNum">      25</span> <span class="tlaGNC">         431 : }</span></span>
 <span id="L26"><span class="lineNum">      26</span>              : </span>
-<span id="L27"><span class="lineNum">      27</span> <span class="tlaGNC">         275 : string Queue::pop() {</span></span>
-<span id="L28"><span class="lineNum">      28</span> <span class="tlaGNC">         279 :     if (!head) return &quot;[QUEUE_EMPTY]&quot;;</span></span>
-<span id="L29"><span class="lineNum">      29</span> <span class="tlaGNC">         273 :     QNode* temp = head;</span></span>
-<span id="L30"><span class="lineNum">      30</span> <span class="tlaGNC">         273 :     string val = head-&gt;value;</span></span>
-<span id="L31"><span class="lineNum">      31</span> <span class="tlaGNC">         273 :     head = head-&gt;next;</span></span>
-<span id="L32"><span class="lineNum">      32</span> <span class="tlaGNC">         273 :     if (!head) tail = nullptr;</span></span>
-<span id="L33"><span class="lineNum">      33</span> <span class="tlaGNC">         273 :     delete temp;</span></span>
-<span id="L34"><span class="lineNum">      34</span> <span class="tlaGNC">         273 :     return val;</span></span>
-<span id="L35"><span class="lineNum">      35</span> <span class="tlaGNC">         273 : }</span></span>
+<span id="L27"><span class="lineNum">      27</span> <span class="tlaGNC">         279 : string Queue::pop() {</span></span>
+<span id="L28"><span class="lineNum">      28</span> <span class="tlaGNC">         283 :     if (!head) return &quot;[QUEUE_EMPTY]&quot;;</span></span>
+<span id="L29"><span class="lineNum">      29</span> <span class="tlaGNC">         277 :     QNode* temp = head;</span></span>
+<span id="L30"><span class="lineNum">      30</span> <span class="tlaGNC">         277 :     string val = head-&gt;value;</span></span>
+<span id="L31"><span class="lineNum">      31</span> <span class="tlaGNC">         277 :     head = head-&gt;next;</span></span>
+<span id="L32"><span class="lineNum">      32</span> <span class="tlaGNC">         277 :     if (!head) tail = nullptr;</span></span>
+<span id="L33"><span class="lineNum">      33</span> <span class="tlaGNC">         277 :     delete temp;</span></span>
+<span id="L34"><span class="lineNum">      34</span> <span class="tlaGNC">         277 :     return val;</span></span>
+<span id="L35"><span class="lineNum">      35</span> <span class="tlaGNC">         277 : }</span></span>
 <span id="L36"><span class="lineNum">      36</span>              : </span>
 <span id="L37"><span class="lineNum">      37</span> <span class="tlaGNC">           5 : string Queue::peek() const {</span></span>
 <span id="L38"><span class="lineNum">      38</span> <span class="tlaGNC">           9 :     if (!head) return &quot;[QUEUE_EMPTY]&quot;;</span></span>
 <span id="L39"><span class="lineNum">      39</span> <span class="tlaGNC">           3 :     return head-&gt;value;</span></span>
 <span id="L40"><span class="lineNum">      40</span>              : }</span>
 <span id="L41"><span class="lineNum">      41</span>              : </span>
-<span id="L42"><span class="lineNum">      42</span> <span class="tlaGNC">           2 : void Queue::print() const {</span></span>
-<span id="L43"><span class="lineNum">      43</span> <span class="tlaGNC">           2 :     if (!head) {</span></span>
-<span id="L44"><span class="lineNum">      44</span> <span class="tlaGNC">           2 :         cout &lt;&lt; &quot;Очередь пуста.&quot; &lt;&lt; endl;</span></span>
-<span id="L45"><span class="lineNum">      45</span> <span class="tlaGNC">           2 :         return;</span></span>
+<span id="L42"><span class="lineNum">      42</span> <span class="tlaGNC">          13 : void Queue::print() const {</span></span>
+<span id="L43"><span class="lineNum">      43</span> <span class="tlaGNC">          13 :     if (!head) {</span></span>
+<span id="L44"><span class="lineNum">      44</span> <span class="tlaGNC">           5 :         cout &lt;&lt; &quot;Очередь пуста.&quot; &lt;&lt; endl;</span></span>
+<span id="L45"><span class="lineNum">      45</span> <span class="tlaGNC">           5 :         return;</span></span>
 <span id="L46"><span class="lineNum">      46</span>              :     }</span>
-<span id="L47"><span class="lineNum">      47</span> <span class="tlaUNC tlaBgUNC">           0 :     cout &lt;&lt; &quot;Очередь: &quot;;</span></span>
-<span id="L48"><span class="lineNum">      48</span> <span class="tlaUNC">           0 :     QNode* curr = head;</span></span>
-<span id="L49"><span class="lineNum">      49</span> <span class="tlaUNC">           0 :     while (curr) {</span></span>
-<span id="L50"><span class="lineNum">      50</span> <span class="tlaUNC">           0 :         cout &lt;&lt; curr-&gt;value;</span></span>
-<span id="L51"><span class="lineNum">      51</span> <span class="tlaUNC">           0 :         if (curr-&gt;next) cout &lt;&lt; &quot; -&gt; &quot;;</span></span>
-<span id="L52"><span class="lineNum">      52</span> <span class="tlaUNC">           0 :         curr = curr-&gt;next;</span></span>
+<span id="L47"><span class="lineNum">      47</span> <span class="tlaGNC">           8 :     cout &lt;&lt; &quot;Очередь: &quot;;</span></span>
+<span id="L48"><span class="lineNum">      48</span> <span class="tlaGNC">           8 :     QNode* curr = head;</span></span>
+<span id="L49"><span class="lineNum">      49</span> <span class="tlaGNC">          26 :     while (curr) {</span></span>
+<span id="L50"><span class="lineNum">      50</span> <span class="tlaGNC">          18 :         cout &lt;&lt; curr-&gt;value;</span></span>
+<span id="L51"><span class="lineNum">      51</span> <span class="tlaGNC">          18 :         if (curr-&gt;next) cout &lt;&lt; &quot; -&gt; &quot;;</span></span>
+<span id="L52"><span class="lineNum">      52</span> <span class="tlaGNC">          18 :         curr = curr-&gt;next;</span></span>
 <span id="L53"><span class="lineNum">      53</span>              :     }</span>
-<span id="L54"><span class="lineNum">      54</span> <span class="tlaUNC">           0 :     cout &lt;&lt; endl;</span></span>
+<span id="L54"><span class="lineNum">      54</span> <span class="tlaGNC">           8 :     cout &lt;&lt; endl;</span></span>
 <span id="L55"><span class="lineNum">      55</span>              : }</span>
 <span id="L56"><span class="lineNum">      56</span>              : </span>
-<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC tlaBgGNC">          95 : bool Queue::isEmpty() const {</span></span>
+<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC">          95 : bool Queue::isEmpty() const {</span></span>
 <span id="L58"><span class="lineNum">      58</span> <span class="tlaGNC">          95 :     return head == nullptr;</span></span>
 <span id="L59"><span class="lineNum">      59</span>              : }</span>
         </pre>
