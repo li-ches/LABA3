@@ -18,7 +18,7 @@ func TestMyArr_GetOperations(t *testing.T) {
 	}
 
 	arr.AddEnd("first")
-	arr.AddEnd("second") 
+	arr.AddEnd("second")
 	arr.AddEnd("third")
 
 	if val := arr.GetAt(0); val != "first" {
@@ -260,5 +260,69 @@ func TestHash_GetOperations(t *testing.T) {
 
 	if val := oh.Find("k4"); val != "" {
 		t.Errorf("Expected empty string for k4, got %s", val)
+	}
+}
+
+func TestMyArr_EdgeCases(t *testing.T) {
+	arr := NewMyArr()
+
+	arr.AddEnd("single")
+	if val := arr.GetAt(0); val != "single" {
+		t.Errorf("Expected 'single' at index 0, got %s", val)
+	}
+
+	arr.DelHead()
+	if val := arr.GetAt(0); val != "[INVALID_INDEX]" {
+		t.Errorf("Expected [INVALID_INDEX] after deletion, got %s", val)
+	}
+
+	arr.AddHead("new")
+	if val := arr.GetAt(0); val != "new" {
+		t.Errorf("Expected 'new' at index 0 after AddHead, got %s", val)
+	}
+}
+
+func TestMyList_EdgeCases(t *testing.T) {
+	list := NewMyList()
+
+	list.AddHead("only")
+	if !list.FindValue("only") {
+		t.Error("Should find the only element")
+	}
+
+	list.DelHead()
+	if list.FindValue("only") {
+		t.Error("Should not find element after deletion")
+	}
+
+	list.AddTail("last")
+	if !list.FindValue("last") {
+		t.Error("Should find element added to tail")
+	}
+}
+
+func TestStack_EdgeCases(t *testing.T) {
+	stack := NewStack()
+
+	stack.Push("single")
+	if val := stack.Pop(); val != "single" {
+		t.Errorf("Expected 'single', got %s", val)
+	}
+
+	if val := stack.Pop(); val != "[STACK_EMPTY]" {
+		t.Errorf("Expected [STACK_EMPTY], got %s", val)
+	}
+}
+
+func TestQueue_EdgeCases(t *testing.T) {
+	queue := NewQueue()
+
+	queue.Push("single")
+	if val := queue.Pop(); val != "single" {
+		t.Errorf("Expected 'single', got %s", val)
+	}
+
+	if val := queue.Pop(); val != "[QUEUE_EMPTY]" {
+		t.Errorf("Expected [QUEUE_EMPTY], got %s", val)
 	}
 }

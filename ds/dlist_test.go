@@ -12,7 +12,6 @@ func TestDList_Branch_AllCases(t *testing.T) {
 	dl.ReadForward()
 	dl.ReadBackward()
 	
-	// Empty add checks
 	dl.AddBefore("A", "B")
 	dl.AddAfter("A", "B")
 
@@ -50,10 +49,13 @@ func TestDList_SaveAndLoad(t *testing.T) {
 	dl.AddTail("X")
 	dl.AddTail("Y")
 	filename := "dlist_test.bin"
-	dl.SaveToFile(filename)
+	
+	serializer := NewDListSerializer()
+	serializer.SaveToFile(dl, filename)
 	defer os.Remove(filename)
+	
 	dl2 := NewDList()
-	dl2.LoadFromFile(filename)
+	serializer.LoadFromFile(dl2, filename)
 	if !dl2.Contains("X") || !dl2.Contains("Y") {
 		t.Errorf("DList load failed")
 	}
@@ -98,14 +100,16 @@ func TestDList_FullCoverage(t *testing.T) {
 	if dl.Contains("1") { t.Error("DelBefore failed") }
 
 	dl.AddTail("X")
-	dl.SaveToFile("dl.txt")
+	
+	serializer := NewDListSerializer()
+	serializer.SaveToFile(dl, "dl.txt")
 	defer os.Remove("dl.txt")
 	dl2 := NewDList()
-	dl2.LoadFromFile("dl.txt")
+	serializer.LoadFromFile(dl2, "dl.txt")
 	
-	dl.SaveToBinaryFile("dl.bin")
+	serializer.SaveToBinaryFile(dl, "dl.bin")
 	defer os.Remove("dl.bin")
 	dl3 := NewDList()
-	dl3.LoadFromBinaryFile("dl.bin")
+	serializer.LoadFromBinaryFile(dl3, "dl.bin")
 	if !dl3.Contains("X") { t.Error("Bin load failed") }
 }

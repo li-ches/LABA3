@@ -72,7 +72,6 @@ func TestMyArr_Branch_EdgeCases(t *testing.T) {
 		t.Errorf("Expected Mid at 1")
 	}
 	
-	// Специфичный тест для ветки: if idx == len(a.data) { a.AddEnd(val) }
 	arr.AddAt(arr.LenArr(), "TailAppend")
 	if arr.GetAt(arr.LenArr()-1) != "TailAppend" {
 		t.Error("AddAt at end failed")
@@ -85,13 +84,14 @@ func TestMyArr_SaveAndLoad(t *testing.T) {
 	arr.AddEnd("two")
 	filename := "arr_test.bin"
 	
-	if err := arr.SaveToFile(filename); err != nil {
+	serializer := NewArrSerializer()
+	if err := serializer.SaveToFile(arr, filename); err != nil {
 		t.Fatalf("Save failed: %v", err)
 	}
 	defer os.Remove(filename)
 
 	arr2 := NewMyArr()
-	if err := arr2.LoadFromFile(filename); err != nil {
+	if err := serializer.LoadFromFile(arr2, filename); err != nil {
 		t.Fatalf("Load failed: %v", err)
 	}
 
@@ -118,7 +118,7 @@ func TestMyArr_FullCoverage(t *testing.T) {
 
 	arr.DelAt(-1) 
 	arr.DelAt(100) 
-	arr.DelAt(1)   // Удаляем "A" (середина)
+	arr.DelAt(1)
 	if arr.LenArr() != 2 { t.Error("DelAt failed") }
 
 	arr.RepArr(-1, "X")
@@ -134,15 +134,16 @@ func TestMyArr_FullCoverage(t *testing.T) {
 	empty.DelEnd()  
 	empty.ReadArray() 
 
-	arr.SaveToFile("arr_cov.txt")
+	serializer := NewArrSerializer()
+	serializer.SaveToFile(arr, "arr_cov.txt")
 	defer os.Remove("arr_cov.txt")
 	arr2 := NewMyArr()
-	arr2.LoadFromFile("arr_cov.txt")
+	serializer.LoadFromFile(arr2, "arr_cov.txt")
 	if arr2.LenArr() != arr.LenArr() { t.Error("Text Save/Load size mismatch") }
 
-	arr.SaveToBinaryFile("arr_cov.bin")
+	serializer.SaveToBinaryFile(arr, "arr_cov.bin")
 	defer os.Remove("arr_cov.bin")
 	arr3 := NewMyArr()
-	arr3.LoadFromBinaryFile("arr_cov.bin")
+	serializer.LoadFromBinaryFile(arr3, "arr_cov.bin")
 	if arr3.GetAt(0) != "NewHead" { t.Error("Binary Save/Load val mismatch") }
 }

@@ -20,7 +20,6 @@ func TestHash_ChainHash_Coverage(t *testing.T) {
 		t.Errorf("Find failed at end of chain. Expected 3, got %s", val)
 	}
 
-	// Обновление значения
 	ch.Insert("B", "222")
 	if val := ch.Find("B"); val != "222" {
 		t.Errorf("Update failed. Expected 222, got %s", val)
@@ -31,42 +30,35 @@ func TestHash_ChainHash_Coverage(t *testing.T) {
 	if ch.Find("B") != "" {
 		t.Error("B should be erased")
 	}
-	// Проверяем, что цепочка не порвалась
+
 	if ch.Find("A") != "1" || ch.Find("C") != "3" {
 		t.Error("Chain broken after erase")
 	}
 
-	// Удаление головы
 	ch.Erase("C")
 	if ch.Find("C") != "" {
 		t.Error("C (head) should be erased")
 	}
 	
-	// Удаление последнего
 	ch.Erase("A")
 	if ch.Find("A") != "" {
 		t.Error("A should be erased")
 	}
 
-	// Удаление несуществующего
 	if ch.Erase("Z") {
 		t.Error("Erase Z should return false")
 	}
 }
 
 func TestHash_OpenHash_Coverage(t *testing.T) {
-	// Маленький размер для коллизий
 	oh := NewOpenHash(2)
 	oh.Show()
 
-	// Заполняем полностью
 	oh.Insert("A", "1")
 	oh.Insert("B", "2")
 	
-	// Попытка вставить в переполненную таблицу
 	oh.Insert("C", "3") 
 
-	// Проверка поиска
 	if oh.Find("A") != "1" || oh.Find("B") != "2" {
 		t.Error("Find basic failed")
 	}
@@ -74,7 +66,6 @@ func TestHash_OpenHash_Coverage(t *testing.T) {
 		t.Error("Found non-existent Z")
 	}
 
-	// Проверка обновления
 	oh.Insert("A", "111")
 	if oh.Find("A") != "111" {
 		t.Error("Update failed")
@@ -100,20 +91,22 @@ func TestHash_SaveLoad(t *testing.T) {
 
 	ch := NewChainHash(5)
 	ch.Insert("key1", "val1")
-	ch.SaveToFile(filename)
+	
+	hashSerializer := NewHashSerializer()
+	hashSerializer.SaveToFile(ch, filename)
 	
 	ch2 := NewChainHash(1)
-	ch2.LoadFromFile(filename)
+	hashSerializer.LoadFromFile(ch2, filename)
 	if ch2.Find("key1") != "val1" {
 		t.Error("ChainHash Save/Load failed")
 	}
 
 	oh := NewOpenHash(5)
 	oh.Insert("k1", "v1")
-	oh.SaveToFile(filename)
+	hashSerializer.SaveToFile(oh, filename)
 
 	oh2 := NewOpenHash(1)
-	oh2.LoadFromFile(filename)
+	hashSerializer.LoadFromFile(oh2, filename)
 	if oh2.Find("k1") != "v1" {
 		t.Error("OpenHash Save/Load failed")
 	}
@@ -153,16 +146,17 @@ func TestHash_Chain_Coverage(t *testing.T) {
 
 	if ch.Erase("Z") { t.Error("Erase Z should be false") }
 
-	ch.SaveToFile("ch.txt")
+	hashSerializer := NewHashSerializer()
+	hashSerializer.SaveToFile(ch, "ch.txt")
 	defer os.Remove("ch.txt")
 	ch2 := NewChainHash(1)
-	ch2.LoadFromFile("ch.txt")
+	hashSerializer.LoadFromFile(ch2, "ch.txt")
 	if ch2.Find("A") != "11" { t.Error("Load txt failed") }
 
-	ch.SaveToBinaryFile("ch.bin")
+	hashSerializer.SaveToBinaryFile(ch, "ch.bin")
 	defer os.Remove("ch.bin")
 	ch3 := NewChainHash(1)
-	ch3.LoadFromBinaryFile("ch.bin")
+	hashSerializer.LoadFromBinaryFile(ch3, "ch.bin")
 	if ch3.Find("A") != "11" { t.Error("Load bin failed") }
 }
 
@@ -189,16 +183,17 @@ func TestHash_Open_Coverage(t *testing.T) {
 
 	if oh.Erase("ZZ") { t.Error("Erase missing fail") }
 
-	oh.SaveToFile("oh.txt")
+	hashSerializer := NewHashSerializer()
+	hashSerializer.SaveToFile(oh, "oh.txt")
 	defer os.Remove("oh.txt")
 	oh2 := NewOpenHash(2)
-	oh2.LoadFromFile("oh.txt")
+	hashSerializer.LoadFromFile(oh2, "oh.txt")
 	if oh2.Find("B") != "2" { t.Error("Load txt fail") }
 
-	oh.SaveToBinaryFile("oh.bin")
+	hashSerializer.SaveToBinaryFile(oh, "oh.bin")
 	defer os.Remove("oh.bin")
 	oh3 := NewOpenHash(2)
-	oh3.LoadFromBinaryFile("oh.bin")
+	hashSerializer.LoadFromBinaryFile(oh3, "oh.bin")
 	if oh3.Find("B") != "2" { t.Error("Load bin fail") }
 	
 	bad := NewOpenHash(0)

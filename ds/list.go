@@ -1,9 +1,6 @@
 package ds
 
-import (
-	"fmt"
-)
-
+import "fmt"
 
 type ListNode struct {
 	Value string
@@ -189,41 +186,4 @@ func (l *MyList) ReadBack() {
 	fmt.Print("Список (назад): ")
 	l.printBackRec(l.Head)
 	fmt.Println()
-}
-
-func (l *MyList) SaveToFile(filename string) error {
-    return SaveStringsText(filename, l.toSlice())
-}
-
-func (l *MyList) toSlice() []string {
-    out := []string{}
-    for cur := l.Head; cur != nil; cur = cur.Next {
-        out = append(out, cur.Value)
-    }
-    return out
-}
-
-
-func (l *MyList) LoadFromFile(filename string) error {
-    vals, err := LoadStringsText(filename)
-    if err != nil { return err }
-    l.Head = nil
-    for _, v := range vals {
-        l.AddTail(v)
-    }
-    return nil
-}
-
-func (l *MyList) SaveToBinaryFile(filename string) error {
-    return SaveStringsBinary(filename, l.toSlice())
-}
-
-func (l *MyList) LoadFromBinaryFile(filename string) error {
-    vals, err := LoadStringsBinary(filename)
-    if err != nil { return err }
-    l.Head = nil
-    for _, v := range vals {
-        l.AddTail(v)
-    }
-    return nil
 }

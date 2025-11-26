@@ -9,10 +9,11 @@ import (
 	"strings"
 )
 
-
 func SaveStringsText(filename string, data []string) error {
 	file, err := os.Create(filename)
-	if err != nil { return err }
+	if err != nil {
+		return err
+	}
 	defer file.Close()
 
 	fmt.Fprintln(file, len(data))
@@ -24,7 +25,9 @@ func SaveStringsText(filename string, data []string) error {
 
 func LoadStringsText(filename string) ([]string, error) {
 	file, err := os.Open(filename)
-	if err != nil { return nil, err }
+	if err != nil {
+		return nil, err
+	}
 	defer file.Close()
 
 	sc := bufio.NewScanner(file)
@@ -34,8 +37,8 @@ func LoadStringsText(filename string) ([]string, error) {
 
 	var count int
 	if _, err := fmt.Sscanf(sc.Text(), "%d", &count); err != nil {
-        return nil, err
-    }
+		return nil, err
+	}
 
 	result := make([]string, 0, count)
 	for i := 0; i < count; i++ {
@@ -58,10 +61,11 @@ func ReadStringText(scanner *bufio.Scanner) string {
 	return ""
 }
 
-
 func SaveStringsBinary(filename string, data []string) error {
 	file, err := os.Create(filename)
-	if err != nil { return err }
+	if err != nil {
+		return err
+	}
 	defer file.Close()
 
 	if err := binary.Write(file, binary.LittleEndian, int32(len(data))); err != nil {
@@ -78,7 +82,9 @@ func SaveStringsBinary(filename string, data []string) error {
 
 func LoadStringsBinary(filename string) ([]string, error) {
 	file, err := os.Open(filename)
-	if err != nil { return nil, err }
+	if err != nil {
+		return nil, err
+	}
 	defer file.Close()
 
 	var count int32
@@ -97,7 +103,6 @@ func LoadStringsBinary(filename string) ([]string, error) {
 	return result, nil
 }
 
-
 func WriteInt32(w io.Writer, v int32) error {
 	return binary.Write(w, binary.LittleEndian, v)
 }
@@ -109,11 +114,9 @@ func ReadInt32(r io.Reader) (int32, error) {
 }
 
 func WriteString(w io.Writer, s string) error {
-	//Пишем длину
 	if err := WriteInt32(w, int32(len(s))); err != nil {
 		return err
 	}
-	//Пишем байты
 	_, err := w.Write([]byte(s))
 	return err
 }
@@ -134,10 +137,11 @@ func ReadString(r io.Reader) (string, error) {
 	return string(buf), nil
 }
 
-
 func SaveCBTText(filename string, root *CBTNode) error {
 	file, err := os.Create(filename)
-	if err != nil { return err }
+	if err != nil {
+		return err
+	}
 	defer file.Close()
 
 	var dfs func(n *CBTNode)
@@ -156,7 +160,9 @@ func SaveCBTText(filename string, root *CBTNode) error {
 
 func LoadCBTText(filename string) (*CBTNode, error) {
 	file, err := os.Open(filename)
-	if err != nil { return nil, err }
+	if err != nil {
+		return nil, err
+	}
 	defer file.Close()
 
 	sc := bufio.NewScanner(file)
@@ -168,10 +174,14 @@ func LoadCBTText(filename string) (*CBTNode, error) {
 	pos := 0
 	var dfs func() *CBTNode
 	dfs = func() *CBTNode {
-		if pos >= len(tokens) { return nil }
+		if pos >= len(tokens) {
+			return nil
+		}
 		t := tokens[pos]
 		pos++
-		if t == "#" { return nil }
+		if t == "#" {
+			return nil
+		}
 		var val int32
 		fmt.Sscanf(t, "%d", &val)
 		n := &CBTNode{Data: val}

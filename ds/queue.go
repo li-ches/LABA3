@@ -2,7 +2,6 @@ package ds
 
 import "fmt"
 
-
 type QNode struct {
 	Data string
 	Next *QNode
@@ -61,44 +60,4 @@ func (q *Queue) Print() {
 		fmt.Printf("\"%s\" ", cur.Data)
 	}
 	fmt.Println()
-}
-
-// toSlice - Вспомогательная функция для сериализации
-func (q *Queue) toSlice() []string {
-    out := []string{}
-    for cur := q.Front; cur != nil; cur = cur.Next {
-        out = append(out, cur.Data)
-    }
-    return out
-}
-
-
-func (q *Queue) SaveToFile(filename string) error {
-    return SaveStringsText(filename, q.toSlice())
-}
-
-func (q *Queue) LoadFromFile(filename string) error {
-    vals, err := LoadStringsText(filename)
-    if err != nil { return err }
-    q.Front = nil
-    q.Rear = nil
-    for _, v := range vals {
-        q.Push(v)
-    }
-    return nil
-}
-
-func (q *Queue) SaveToBinaryFile(filename string) error {
-    return SaveStringsBinary(filename, q.toSlice())
-}
-
-func (q *Queue) LoadFromBinaryFile(filename string) error {
-    vals, err := LoadStringsBinary(filename)
-    if err != nil { return err }
-    q.Front = nil
-    q.Rear = nil
-    for _, v := range vals {
-        q.Push(v)
-    }
-    return nil
 }

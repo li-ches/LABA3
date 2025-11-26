@@ -1,9 +1,6 @@
 package ds
 
-import (
-
-	"fmt"
-)
+import "fmt"
 
 type DNode struct {
 	Value string
@@ -168,43 +165,4 @@ func (d *DList) DelBeforeValue(val string) {
 		return
 	}
 	d.DelByVal(targetNode.Prev.Value)
-}
-
-func (d *DList) toSlice() []string {
-	out := []string{}
-	for cur := d.Head; cur != nil; cur = cur.Next {
-		out = append(out, cur.Value)
-	}
-	return out
-}
-
-
-func (d *DList) SaveToFile(filename string) error {
-    return SaveStringsText(filename, d.toSlice())
-}
-
-func (d *DList) LoadFromFile(filename string) error {
-    vals, err := LoadStringsText(filename)
-    if err != nil { return err }
-    d.Head = nil
-    d.Tail = nil
-    for _, v := range vals {
-        d.AddTail(v)
-    }
-    return nil
-}
-
-func (d *DList) SaveToBinaryFile(filename string) error {
-    return SaveStringsBinary(filename, d.toSlice())
-}
-
-func (d *DList) LoadFromBinaryFile(filename string) error {
-    vals, err := LoadStringsBinary(filename)
-    if err != nil { return err }
-    d.Head = nil
-    d.Tail = nil
-    for _, v := range vals {
-        d.AddTail(v)
-    }
-    return nil
 }

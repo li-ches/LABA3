@@ -88,8 +88,15 @@ func main() {
 	dlist := ds.NewDList()
 	queue := ds.NewQueue()
 	stack := ds.NewStack()
-	// Заменили BST на CBT
 	tree := ds.NewCBT()
+
+	// Создаем сериализаторы
+	arrSerializer := ds.NewArrSerializer()
+	listSerializer := ds.NewListSerializer()
+	dlistSerializer := ds.NewDListSerializer()
+	stackSerializer := ds.NewStackSerializer()
+	queueSerializer := ds.NewQueueSerializer()
+	cbtSerializer := ds.NewCbtSerializer()
 
 	scanner := bufio.NewScanner(os.Stdin)
 	showComm()
@@ -142,13 +149,27 @@ func main() {
 				fmt.Println("Ошибка: нужно имя файла-основы.")
 				continue
 			}
-			arr.SaveToFile(arg1 + ".arr")
-			slist.SaveToFile(arg1 + ".list")
-			dlist.SaveToFile(arg1 + ".dlist")
-			stack.SaveToFile(arg1 + ".stack")
-			queue.SaveToFile(arg1 + ".queue")
-			// Используем расширение .cbt
-			tree.SaveToFile(arg1 + ".cbt")
+			
+			// Используем сериализаторы вместо встроенных методов
+			if err := arrSerializer.SaveToFile(arr, arg1+".arr"); err != nil {
+				fmt.Printf("Ошибка сохранения массива: %v\n", err)
+			}
+			if err := listSerializer.SaveToFile(slist, arg1+".list"); err != nil {
+				fmt.Printf("Ошибка сохранения списка: %v\n", err)
+			}
+			if err := dlistSerializer.SaveToFile(dlist, arg1+".dlist"); err != nil {
+				fmt.Printf("Ошибка сохранения двусвязного списка: %v\n", err)
+			}
+			if err := stackSerializer.SaveToFile(stack, arg1+".stack"); err != nil {
+				fmt.Printf("Ошибка сохранения стека: %v\n", err)
+			}
+			if err := queueSerializer.SaveToFile(queue, arg1+".queue"); err != nil {
+				fmt.Printf("Ошибка сохранения очереди: %v\n", err)
+			}
+			if err := cbtSerializer.SaveToFile(tree, arg1+".cbt"); err != nil {
+				fmt.Printf("Ошибка сохранения дерева: %v\n", err)
+			}
+			
 			fmt.Printf("Структуры сохранены с базовым именем: %s\n", arg1)
 
 		case "LOAD":
@@ -156,12 +177,27 @@ func main() {
 				fmt.Println("Ошибка: нужно имя файла-основы.")
 				continue
 			}
-			arr.LoadFromFile(arg1 + ".arr")
-			slist.LoadFromFile(arg1 + ".list")
-			dlist.LoadFromFile(arg1 + ".dlist")
-			stack.LoadFromFile(arg1 + ".stack")
-			queue.LoadFromFile(arg1 + ".queue")
-			tree.LoadFromFile(arg1 + ".cbt")
+			
+			// Используем сериализаторы вместо встроенных методов
+			if err := arrSerializer.LoadFromFile(arr, arg1+".arr"); err != nil {
+				fmt.Printf("Ошибка загрузки массива: %v\n", err)
+			}
+			if err := listSerializer.LoadFromFile(slist, arg1+".list"); err != nil {
+				fmt.Printf("Ошибка загрузки списка: %v\n", err)
+			}
+			if err := dlistSerializer.LoadFromFile(dlist, arg1+".dlist"); err != nil {
+				fmt.Printf("Ошибка загрузки двусвязного списка: %v\n", err)
+			}
+			if err := stackSerializer.LoadFromFile(stack, arg1+".stack"); err != nil {
+				fmt.Printf("Ошибка загрузки стека: %v\n", err)
+			}
+			if err := queueSerializer.LoadFromFile(queue, arg1+".queue"); err != nil {
+				fmt.Printf("Ошибка загрузки очереди: %v\n", err)
+			}
+			if err := cbtSerializer.LoadFromFile(tree, arg1+".cbt"); err != nil {
+				fmt.Printf("Ошибка загрузки дерева: %v\n", err)
+			}
+			
 			fmt.Printf("Структуры загружены с базовым именем: %s\n", arg1)
 
 		// Массив
@@ -191,6 +227,7 @@ func main() {
 		case "M_LENGTH":
 			fmt.Printf("Длина массива: %d\n", arr.LenArr())
 
+		// Односвязный список
 		case "F_PUSH_HEAD":
 			slist.AddHead(arg1)
 			slist.ReadForward()
@@ -219,6 +256,7 @@ func main() {
 			}
 			fmt.Printf("Элемент \"%s\" найден: %s\n", arg1, found)
 
+		// Двусвязный список
 		case "L_PUSH_HEAD":
 			dlist.AddHead(arg1)
 			dlist.ReadForward()
@@ -249,6 +287,7 @@ func main() {
 		case "L_PRINT_REV":
 			dlist.ReadBackward()
 
+		// Очередь
 		case "Q_PUSH":
 			queue.Push(arg1)
 			queue.Print()
@@ -258,6 +297,7 @@ func main() {
 		case "Q_GET":
 			fmt.Printf("Первый: %s\n", queue.Peek())
 
+		// Стек
 		case "S_PUSH":
 			stack.Push(arg1)
 			stack.ReadStack()
@@ -267,6 +307,7 @@ func main() {
 		case "S_GET":
 			fmt.Printf("Верхний: %s\n", stack.Peek())
 
+		// Дерево
 		case "T_INSERT":
 			tree.Insert(safeStoi(arg1))
 			tree.InorderPrint()
@@ -282,6 +323,7 @@ func main() {
 		case "T_PRINT":
 			tree.InorderPrint()
 
+		// Хеш-таблицы
 		case "HASH":
 			fmt.Println("--- Вход в подсистему Хеш-таблиц ---")
 			ds.HashMan()

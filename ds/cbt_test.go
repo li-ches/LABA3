@@ -8,14 +8,12 @@ import (
 func TestBST_FullCoverage(t *testing.T) {
 	tree := NewCBT() 
 	
-	//Тест пустого дерева
 	tree.Print()
 	tree.Remove(10) 
 	if tree.Search(10) {
 		t.Error("Found in empty tree")
 	}
 
-	//  Вставка и дубликаты
 	tree.Insert(50)
 	tree.Insert(30)
 	tree.Insert(70)
@@ -24,15 +22,13 @@ func TestBST_FullCoverage(t *testing.T) {
 		t.Errorf("Size incorrect after duplicate insert. Expected 3, got %d", tree.Size)
 	}
 
-	// Удаление листа (нет детей)
 	tree.Remove(30)
 	if tree.Contains(30) {
 		t.Error("30 should be removed")
 	}
 
-	//Удаление узла с ОДНИМ ребенком
 	tree.Insert(80)
-	tree.Remove(70) // Удаляем 70, 80 должно подтянуться
+	tree.Remove(70)
 	if tree.Contains(70) {
 		t.Error("70 should be removed")
 	}
@@ -48,7 +44,6 @@ func TestBST_FullCoverage(t *testing.T) {
 	tree.Insert(60)
 	tree.Insert(80)
 
-	// Удаляем 70. Его преемник (минимальный справа) - это 80 =
 	tree.Remove(70)
 	
 	if tree.Contains(70) {
@@ -58,21 +53,18 @@ func TestBST_FullCoverage(t *testing.T) {
 		t.Error("Children should remain")
 	}
 
-	// 6. Удаление КОРНЯ (с двумя детьми)
 	tree.Remove(50)
 	if tree.Contains(50) {
 		t.Error("Root 50 should be removed")
 	}
-	// Проверяем целостность
 	if !tree.Contains(30) || !tree.Contains(60) || !tree.Contains(80) {
 		t.Error("Tree damaged after root removal")
 	}
 
-	// 7. Поиск несуществующего
 	if tree.Search(999) {
 		t.Error("Found 999?")
 	}
-	tree.Remove(999) // Удаление несуществующего
+	tree.Remove(999)
 }
 
 func TestBST_EdgeCases(t *testing.T) {
@@ -102,12 +94,8 @@ func TestBST_Visuals_And_Traversal(t *testing.T) {
 	tree.Insert(20) 
 	tree.Insert(80) 
 
-	// Покрытие метода Search 
-	// Ищем корень
 	if !tree.Search(50) { t.Error("Search 50 failed") }
-	// Ищем слева
 	if !tree.Search(30) { t.Error("Search 30 failed") }
-	// Ищем справа
 	if !tree.Search(70) { t.Error("Search 70 failed") }
 	
 	if !tree.Contains(20) { t.Error("Contains 20 failed") }
@@ -130,12 +118,13 @@ func TestBST_SaveLoad(t *testing.T) {
 	tree.Insert(30)
 	tree.Insert(70)
 
-	if err := tree.SaveToFile(filename); err != nil {
+	serializer := NewCbtSerializer()
+	if err := serializer.SaveToFile(tree, filename); err != nil {
 		t.Fatalf("Save failed: %v", err)
 	}
 
 	tree2 := NewCBT()
-	if err := tree2.LoadFromFile(filename); err != nil {
+	if err := serializer.LoadFromFile(tree2, filename); err != nil {
 		t.Fatalf("Load failed: %v", err)
 	}
 
@@ -155,7 +144,9 @@ func TestCBT_DeepCoverage(t *testing.T) {
 	tree.Remove(100)
 	if tree.Contains(100) { t.Error("Empty tree contains 100?") }
 	if tree.Search(100) { t.Error("Empty tree search failed") }
-	tree.SaveToBinaryFile("cbt_empty.bin") 
+	
+	serializer := NewCbtSerializer()
+	serializer.SaveToBinaryFile(tree, "cbt_empty.bin") 
 	defer os.Remove("cbt_empty.bin")
 
 	tree.Insert(50)
@@ -181,16 +172,16 @@ func TestCBT_DeepCoverage(t *testing.T) {
 	if tree.Contains(50) { t.Error("Remove root failed") }
 	if !tree.Contains(60) || !tree.Contains(70) { t.Error("Tree structure broken") }
 
-	tree.SaveToFile("cbt.txt")
+	serializer.SaveToFile(tree, "cbt.txt")
 	defer os.Remove("cbt.txt")
 	t2 := NewCBT()
-	t2.LoadFromFile("cbt.txt")
+	serializer.LoadFromFile(t2, "cbt.txt")
 	if t2.Size == 0 { t.Error("Load Text failed") } 
 
-	tree.SaveToBinaryFile("cbt.bin")
+	serializer.SaveToBinaryFile(tree, "cbt.bin")
 	defer os.Remove("cbt.bin")
 	t3 := NewCBT()
-	t3.LoadFromBinaryFile("cbt.bin")
+	serializer.LoadFromBinaryFile(t3, "cbt.bin")
 	if !t3.Contains(60) { t.Error("Load Bin failed") }
 }
 

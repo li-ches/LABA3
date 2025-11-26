@@ -71,7 +71,6 @@ func TestMyList_Branch_AdvancedOps(t *testing.T) {
 	l3.AddBefore("Missing", "No")
 	l3.ReadBack()
 	
-	// Empty list checks
 	lEmpty := NewMyList()
 	lEmpty.AddBefore("A", "B")
 	lEmpty.AddAfter("A", "B")
@@ -84,10 +83,13 @@ func TestMyList_SaveAndLoad(t *testing.T) {
 	l.AddTail("A")
 	l.AddTail("B")
 	filename := "list_test.bin"
-	l.SaveToFile(filename)
+	
+	serializer := NewListSerializer()
+	serializer.SaveToFile(l, filename)
 	defer os.Remove(filename)
+	
 	l2 := NewMyList()
-	l2.LoadFromFile(filename)
+	serializer.LoadFromFile(l2, filename)
 	if !l2.FindValue("A") || !l2.FindValue("B") {
 		t.Errorf("List load failed")
 	}
@@ -147,15 +149,16 @@ func TestMyList_Coverage(t *testing.T) {
 
 	l2.ReadBack()
 
-	l2.SaveToFile("list_cov.txt")
+	serializer := NewListSerializer()
+	serializer.SaveToFile(l2, "list_cov.txt")
 	defer os.Remove("list_cov.txt")
 	l3 := NewMyList()
-	l3.LoadFromFile("list_cov.txt")
+	serializer.LoadFromFile(l3, "list_cov.txt")
 	if l3.Head.Value != "B" { t.Error("Load failed") }
 
-	l2.SaveToBinaryFile("list_cov.bin")
+	serializer.SaveToBinaryFile(l2, "list_cov.bin")
 	defer os.Remove("list_cov.bin")
 	l4 := NewMyList()
-	l4.LoadFromBinaryFile("list_cov.bin")
+	serializer.LoadFromBinaryFile(l4, "list_cov.bin")
 	if l4.Head.Value != "B" { t.Error("Bin Load failed") }
 }

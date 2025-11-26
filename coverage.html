@@ -55,21 +55,35 @@
 			<div id="nav">
 				<select id="files">
 				
-				<option value="file0">datastructures/ds/arr.go (91.1%)</option>
+				<option value="file0">datastructures/ds/arr.go (87.9%)</option>
 				
-				<option value="file1">datastructures/ds/cbt.go (91.1%)</option>
+				<option value="file1">datastructures/ds/arr_serialize.go (84.6%)</option>
 				
-				<option value="file2">datastructures/ds/dlist.go (90.1%)</option>
+				<option value="file2">datastructures/ds/cbt.go (100.0%)</option>
 				
-				<option value="file3">datastructures/ds/hash.go (91.1%)</option>
+				<option value="file3">datastructures/ds/cbt_serialize.go (79.5%)</option>
 				
-				<option value="file4">datastructures/ds/list.go (93.6%)</option>
+				<option value="file4">datastructures/ds/dlist.go (89.9%)</option>
 				
-				<option value="file5">datastructures/ds/queue.go (87.2%)</option>
+				<option value="file5">datastructures/ds/dlist_serialize.go (91.3%)</option>
 				
-				<option value="file6">datastructures/ds/serialize.go (88.9%)</option>
+				<option value="file6">datastructures/ds/hash.go (90.1%)</option>
 				
-				<option value="file7">datastructures/ds/stack.go (88.2%)</option>
+				<option value="file7">datastructures/ds/hash_serialize.go (91.2%)</option>
+				
+				<option value="file8">datastructures/ds/list.go (94.3%)</option>
+				
+				<option value="file9">datastructures/ds/list_serialize.go (90.5%)</option>
+				
+				<option value="file10">datastructures/ds/queue.go (84.0%)</option>
+				
+				<option value="file11">datastructures/ds/queue_serialize.go (91.3%)</option>
+				
+				<option value="file12">datastructures/ds/serialize.go (82.4%)</option>
+				
+				<option value="file13">datastructures/ds/stack.go (100.0%)</option>
+				
+				<option value="file14">datastructures/ds/stack_serialize.go (84.6%)</option>
 				
 				</select>
 			</div>
@@ -87,30 +101,24 @@
 
 import "fmt"
 
-
-// MyArr - динамический массив строк
 type MyArr struct {
         data []string
 }
 
-// NewMyArr создает новый массив
 func NewMyArr() *MyArr <span class="cov8" title="1">{
         return &amp;MyArr{
                 data: make([]string, 0),
         }
 }</span>
 
-// AddEnd добавляет элемент в конец
 func (a *MyArr) AddEnd(val string) <span class="cov8" title="1">{
         a.data = append(a.data, val)
 }</span>
 
-// AddHead добавляет элемент в начало
 func (a *MyArr) AddHead(val string) <span class="cov8" title="1">{
         a.data = append([]string{val}, a.data...)
 }</span>
 
-// AddAt добавляет элемент по индексу
 func (a *MyArr) AddAt(idx int, val string) <span class="cov8" title="1">{
         if idx &lt; 0 || idx &gt; len(a.data) </span><span class="cov8" title="1">{
                 return
@@ -123,7 +131,6 @@ func (a *MyArr) AddAt(idx int, val string) <span class="cov8" title="1">{
         a.data[idx] = val</span>
 }
 
-// DelHead удаляет элемент из начала
 func (a *MyArr) DelHead() <span class="cov8" title="1">{
         if len(a.data) == 0 </span><span class="cov8" title="1">{
                 return
@@ -131,7 +138,6 @@ func (a *MyArr) DelHead() <span class="cov8" title="1">{
         <span class="cov8" title="1">a.data = a.data[1:]</span>
 }
 
-// DelEnd удаляет элемент из конца
 func (a *MyArr) DelEnd() <span class="cov8" title="1">{
         if len(a.data) == 0 </span><span class="cov8" title="1">{
                 return
@@ -139,7 +145,6 @@ func (a *MyArr) DelEnd() <span class="cov8" title="1">{
         <span class="cov8" title="1">a.data = a.data[:len(a.data)-1]</span>
 }
 
-// DelAt удаляет элемент по индексу
 func (a *MyArr) DelAt(idx int) <span class="cov8" title="1">{
         if idx &lt; 0 || idx &gt;= len(a.data) </span><span class="cov8" title="1">{
                 return
@@ -147,7 +152,6 @@ func (a *MyArr) DelAt(idx int) <span class="cov8" title="1">{
         <span class="cov8" title="1">a.data = append(a.data[:idx], a.data[idx+1:]...)</span>
 }
 
-// RepArr заменяет элемент по индексу
 func (a *MyArr) RepArr(idx int, val string) <span class="cov8" title="1">{
         if idx &lt; 0 || idx &gt;= len(a.data) </span><span class="cov8" title="1">{
                 return
@@ -155,7 +159,6 @@ func (a *MyArr) RepArr(idx int, val string) <span class="cov8" title="1">{
         <span class="cov8" title="1">a.data[idx] = val</span>
 }
 
-// GetAt возвращает элемент по индексу
 func (a *MyArr) GetAt(idx int) string <span class="cov8" title="1">{
         if idx &gt;= 0 &amp;&amp; idx &lt; len(a.data) </span><span class="cov8" title="1">{
                 return a.data[idx]
@@ -163,12 +166,10 @@ func (a *MyArr) GetAt(idx int) string <span class="cov8" title="1">{
         <span class="cov8" title="1">return "[INVALID_INDEX]"</span>
 }
 
-// LenArr возвращает длину массива
 func (a *MyArr) LenArr() int <span class="cov8" title="1">{
         return len(a.data)
 }</span>
 
-// ReadArray выводит содержимое массива
 func (a *MyArr) ReadArray() <span class="cov8" title="1">{
         if len(a.data) == 0 </span><span class="cov8" title="1">{
                 fmt.Println("Массив пуст.")
@@ -179,245 +180,259 @@ func (a *MyArr) ReadArray() <span class="cov8" title="1">{
                 fmt.Printf("\"%s\" ", val)
         }</span>
         <span class="cov0" title="0">fmt.Println()</span>
-}
-
-
-func (a *MyArr) SaveToFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsText(filename, a.data)
-}</span>
-
-func (a *MyArr) LoadFromFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsText(filename)
-    if err != nil </span><span class="cov8" title="1">{ return err }</span>
-    <span class="cov8" title="1">a.data = vals
-    return nil</span>
-}
-
-func (a *MyArr) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsBinary(filename, a.data)
-}</span>
-
-func (a *MyArr) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsBinary(filename)
-    if err != nil </span><span class="cov8" title="1">{ return err }</span>
-    <span class="cov8" title="1">a.data = vals
-    return nil</span>
-}
-</pre>
+}</pre>
 		
 		<pre class="file" id="file1" style="display: none">package ds
 
-import (
-    "fmt"
-    "os"
-)
+type ArrSerializer struct{}
 
-type CBTNode struct {
-    Data  int32
-    Left  *CBTNode
-    Right *CBTNode
-}
-
-type CompleteBinaryTree struct {
-    Root *CBTNode
-    Size int
-}
-
-
-func NewCBT() *CompleteBinaryTree <span class="cov8" title="1">{
-    return &amp;CompleteBinaryTree{Root: nil, Size: 0}
+func NewArrSerializer() *ArrSerializer <span class="cov8" title="1">{
+        return &amp;ArrSerializer{}
 }</span>
 
-func (t *CompleteBinaryTree) insertRec(node *CBTNode, value int32) *CBTNode <span class="cov8" title="1">{
-    if node == nil </span><span class="cov8" title="1">{
-        t.Size++
-        return &amp;CBTNode{Data: value}
-    }</span>
-    <span class="cov8" title="1">if value &lt; node.Data </span><span class="cov8" title="1">{
-        node.Left = t.insertRec(node.Left, value)
-    }</span> else<span class="cov8" title="1"> if value &gt; node.Data </span><span class="cov8" title="1">{
-        node.Right = t.insertRec(node.Right, value)
-    }</span>
-    <span class="cov8" title="1">return node</span>
-}
-
-func (t *CompleteBinaryTree) Insert(value int) <span class="cov8" title="1">{
-    t.Root = t.insertRec(t.Root, int32(value))
+func (s *ArrSerializer) SaveToFile(arr *MyArr, filename string) error <span class="cov8" title="1">{
+        return SaveStringsText(filename, arr.data)
 }</span>
 
-func (t *CompleteBinaryTree) findMin(node *CBTNode) *CBTNode <span class="cov8" title="1">{
-    for node != nil &amp;&amp; node.Left != nil </span><span class="cov8" title="1">{
-        node = node.Left
-    }</span>
-    <span class="cov8" title="1">return node</span>
-}
-
-func (t *CompleteBinaryTree) deleteNodeRec(node *CBTNode, value int32) *CBTNode <span class="cov8" title="1">{
-    if node == nil </span><span class="cov8" title="1">{
-        return nil
-    }</span>
-
-    <span class="cov8" title="1">if value &lt; node.Data </span><span class="cov8" title="1">{
-        node.Left = t.deleteNodeRec(node.Left, value)
-    }</span> else<span class="cov8" title="1"> if value &gt; node.Data </span><span class="cov8" title="1">{
-        node.Right = t.deleteNodeRec(node.Right, value)
-    }</span> else<span class="cov8" title="1"> {
-        if node.Left == nil </span><span class="cov8" title="1">{
-            t.Size--
-            return node.Right
+func (s *ArrSerializer) LoadFromFile(arr *MyArr, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsText(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
         }</span>
-        <span class="cov8" title="1">if node.Right == nil </span><span class="cov8" title="1">{
-            t.Size--
-            return node.Left
+        <span class="cov8" title="1">arr.data = vals
+        return nil</span>
+}
+
+func (s *ArrSerializer) SaveToBinaryFile(arr *MyArr, filename string) error <span class="cov8" title="1">{
+        return SaveStringsBinary(filename, arr.data)
+}</span>
+
+func (s *ArrSerializer) LoadFromBinaryFile(arr *MyArr, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsBinary(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
         }</span>
-        <span class="cov8" title="1">successor := t.findMin(node.Right)
-        node.Data = successor.Data
-        node.Right = t.deleteNodeRec(node.Right, successor.Data)</span>
-    }
-    <span class="cov8" title="1">return node</span>
-}
-
-func (t *CompleteBinaryTree) Remove(value int) <span class="cov8" title="1">{
-    if t.Root == nil </span><span class="cov8" title="1">{
-        return
-    }</span>
-    <span class="cov8" title="1">t.Root = t.deleteNodeRec(t.Root, int32(value))</span>
-}
-
-func (t *CompleteBinaryTree) Search(value int) bool <span class="cov8" title="1">{
-    val := int32(value)
-    cur := t.Root
-    for cur != nil </span><span class="cov8" title="1">{
-        if cur.Data == val </span><span class="cov8" title="1">{
-            return true
-        }</span>
-        <span class="cov8" title="1">if val &lt; cur.Data </span><span class="cov8" title="1">{
-            cur = cur.Left
-        }</span> else<span class="cov8" title="1"> {
-            cur = cur.Right
-        }</span>
-    }
-    <span class="cov8" title="1">return false</span>
-}
-
-func (t *CompleteBinaryTree) Contains(value int) bool <span class="cov8" title="1">{
-    return t.Search(value)
-}</span>
-
-func (t *CompleteBinaryTree) Print() <span class="cov8" title="1">{
-    if t.Root == nil </span><span class="cov8" title="1">{
-        fmt.Println("Дерево пусто")
-        return
-    }</span>
-    <span class="cov8" title="1">t.inOrderRec(t.Root)
-    fmt.Println()</span>
-}
-
-func (t *CompleteBinaryTree) InorderPrint() <span class="cov8" title="1">{
-    t.Print()
-}</span>
-
-func (t *CompleteBinaryTree) inOrderRec(n *CBTNode) <span class="cov8" title="1">{
-    if n == nil </span><span class="cov8" title="1">{
-        return
-    }</span>
-    <span class="cov8" title="1">t.inOrderRec(n.Left)
-    fmt.Printf("%d ", n.Data)
-    t.inOrderRec(n.Right)</span>
-}
-
-func (t *CompleteBinaryTree) Clear() <span class="cov8" title="1">{
-    t.Root = nil
-    t.Size = 0
-}</span>
-
-// Добавлено: метод для пересчета размера
-func (t *CompleteBinaryTree) countNodes(n *CBTNode) int <span class="cov8" title="1">{
-    if n == nil </span><span class="cov8" title="1">{ return 0 }</span>
-    <span class="cov8" title="1">return 1 + t.countNodes(n.Left) + t.countNodes(n.Right)</span>
-}
-
-
-func (t *CompleteBinaryTree) SaveToFile(filename string) error <span class="cov8" title="1">{
-    return SaveCBTText(filename, t.Root)
-}</span>
-
-func (t *CompleteBinaryTree) LoadFromFile(filename string) error <span class="cov8" title="1">{
-    root, err := LoadCBTText(filename)
-    if err != nil </span><span class="cov0" title="0">{
-        return err
-    }</span>
-    <span class="cov8" title="1">t.Root = root
-    t.Size = t.countNodes(t.Root) // Исправлено: обновляем Size
-    return nil</span>
-}
-
-
-func writeBinaryRec(n *CBTNode, f *os.File) error <span class="cov8" title="1">{
-    if n == nil </span><span class="cov8" title="1">{
-        return WriteInt32(f, -1)
-    }</span>
-    <span class="cov8" title="1">if err := WriteInt32(f, n.Data); err != nil </span><span class="cov0" title="0">{
-        return err
-    }</span>
-    <span class="cov8" title="1">if err := writeBinaryRec(n.Left, f); err != nil </span><span class="cov0" title="0">{
-        return err
-    }</span>
-    <span class="cov8" title="1">return writeBinaryRec(n.Right, f)</span>
-}
-
-func (t *CompleteBinaryTree) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
-    file, err := os.Create(filename)
-    if err != nil </span><span class="cov0" title="0">{
-        return err
-    }</span>
-    <span class="cov8" title="1">defer file.Close()
-    return writeBinaryRec(t.Root, file)</span>
-}
-
-func readBinaryRec(f *os.File) (*CBTNode, error) <span class="cov8" title="1">{
-    val, err := ReadInt32(f)
-    if err != nil </span><span class="cov0" title="0">{
-        return nil, err
-    }</span>
-    <span class="cov8" title="1">if val == -1 </span><span class="cov8" title="1">{
-        return nil, nil
-    }</span>
-    <span class="cov8" title="1">node := &amp;CBTNode{Data: val}
-    node.Left, err = readBinaryRec(f)
-    if err != nil </span><span class="cov0" title="0">{
-        return nil, err
-    }</span>
-    <span class="cov8" title="1">node.Right, err = readBinaryRec(f)
-    if err != nil </span><span class="cov0" title="0">{
-        return nil, err
-    }</span>
-    <span class="cov8" title="1">return node, nil</span>
-}
-
-func (t *CompleteBinaryTree) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
-    file, err := os.Open(filename)
-    if err != nil </span><span class="cov0" title="0">{
-        return err
-    }</span>
-    <span class="cov8" title="1">defer file.Close()
-
-    t.Clear()
-    root, err := readBinaryRec(file)
-    if err != nil </span><span class="cov0" title="0">{
-        return err
-    }</span>
-    <span class="cov8" title="1">t.Root = root
-    t.Size = t.countNodes(t.Root) // Исправлено: обновляем Size
-    return nil</span>
+        <span class="cov8" title="1">arr.data = vals
+        return nil</span>
 }</pre>
 		
 		<pre class="file" id="file2" style="display: none">package ds
 
-import (
+import "fmt"
 
-        "fmt"
+type CBTNode struct {
+        Data  int32
+        Left  *CBTNode
+        Right *CBTNode
+}
+
+type CompleteBinaryTree struct {
+        Root *CBTNode
+        Size int
+}
+
+func NewCBT() *CompleteBinaryTree <span class="cov8" title="1">{
+        return &amp;CompleteBinaryTree{Root: nil, Size: 0}
+}</span>
+
+func (t *CompleteBinaryTree) insertRec(node *CBTNode, value int32) *CBTNode <span class="cov8" title="1">{
+        if node == nil </span><span class="cov8" title="1">{
+                t.Size++
+                return &amp;CBTNode{Data: value}
+        }</span>
+        <span class="cov8" title="1">if value &lt; node.Data </span><span class="cov8" title="1">{
+                node.Left = t.insertRec(node.Left, value)
+        }</span> else<span class="cov8" title="1"> if value &gt; node.Data </span><span class="cov8" title="1">{
+                node.Right = t.insertRec(node.Right, value)
+        }</span>
+        <span class="cov8" title="1">return node</span>
+}
+
+func (t *CompleteBinaryTree) Insert(value int) <span class="cov8" title="1">{
+        t.Root = t.insertRec(t.Root, int32(value))
+}</span>
+
+func (t *CompleteBinaryTree) findMin(node *CBTNode) *CBTNode <span class="cov8" title="1">{
+        for node != nil &amp;&amp; node.Left != nil </span><span class="cov8" title="1">{
+                node = node.Left
+        }</span>
+        <span class="cov8" title="1">return node</span>
+}
+
+func (t *CompleteBinaryTree) deleteNodeRec(node *CBTNode, value int32) *CBTNode <span class="cov8" title="1">{
+        if node == nil </span><span class="cov8" title="1">{
+                return nil
+        }</span>
+
+        <span class="cov8" title="1">if value &lt; node.Data </span><span class="cov8" title="1">{
+                node.Left = t.deleteNodeRec(node.Left, value)
+        }</span> else<span class="cov8" title="1"> if value &gt; node.Data </span><span class="cov8" title="1">{
+                node.Right = t.deleteNodeRec(node.Right, value)
+        }</span> else<span class="cov8" title="1"> {
+                if node.Left == nil </span><span class="cov8" title="1">{
+                        t.Size--
+                        return node.Right
+                }</span>
+                <span class="cov8" title="1">if node.Right == nil </span><span class="cov8" title="1">{
+                        t.Size--
+                        return node.Left
+                }</span>
+                <span class="cov8" title="1">successor := t.findMin(node.Right)
+                node.Data = successor.Data
+                node.Right = t.deleteNodeRec(node.Right, successor.Data)</span>
+        }
+        <span class="cov8" title="1">return node</span>
+}
+
+func (t *CompleteBinaryTree) Remove(value int) <span class="cov8" title="1">{
+        if t.Root == nil </span><span class="cov8" title="1">{
+                return
+        }</span>
+        <span class="cov8" title="1">t.Root = t.deleteNodeRec(t.Root, int32(value))</span>
+}
+
+func (t *CompleteBinaryTree) Search(value int) bool <span class="cov8" title="1">{
+        val := int32(value)
+        cur := t.Root
+        for cur != nil </span><span class="cov8" title="1">{
+                if cur.Data == val </span><span class="cov8" title="1">{
+                        return true
+                }</span>
+                <span class="cov8" title="1">if val &lt; cur.Data </span><span class="cov8" title="1">{
+                        cur = cur.Left
+                }</span> else<span class="cov8" title="1"> {
+                        cur = cur.Right
+                }</span>
+        }
+        <span class="cov8" title="1">return false</span>
+}
+
+func (t *CompleteBinaryTree) Contains(value int) bool <span class="cov8" title="1">{
+        return t.Search(value)
+}</span>
+
+func (t *CompleteBinaryTree) Print() <span class="cov8" title="1">{
+        if t.Root == nil </span><span class="cov8" title="1">{
+                fmt.Println("Дерево пусто")
+                return
+        }</span>
+        <span class="cov8" title="1">t.inOrderRec(t.Root)
+        fmt.Println()</span>
+}
+
+func (t *CompleteBinaryTree) InorderPrint() <span class="cov8" title="1">{
+        t.Print()
+}</span>
+
+func (t *CompleteBinaryTree) inOrderRec(n *CBTNode) <span class="cov8" title="1">{
+        if n == nil </span><span class="cov8" title="1">{
+                return
+        }</span>
+        <span class="cov8" title="1">t.inOrderRec(n.Left)
+        fmt.Printf("%d ", n.Data)
+        t.inOrderRec(n.Right)</span>
+}
+
+func (t *CompleteBinaryTree) Clear() <span class="cov8" title="1">{
+        t.Root = nil
+        t.Size = 0
+}</span>
+
+func (t *CompleteBinaryTree) countNodes(n *CBTNode) int <span class="cov8" title="1">{
+        if n == nil </span><span class="cov8" title="1">{
+                return 0
+        }</span>
+        <span class="cov8" title="1">return 1 + t.countNodes(n.Left) + t.countNodes(n.Right)</span>
+}</pre>
+		
+		<pre class="file" id="file3" style="display: none">package ds
+
+import (
+        "os"
 )
+
+type CbtSerializer struct{}
+
+func NewCbtSerializer() *CbtSerializer <span class="cov8" title="1">{
+        return &amp;CbtSerializer{}
+}</span>
+
+func (s *CbtSerializer) SaveToFile(tree *CompleteBinaryTree, filename string) error <span class="cov8" title="1">{
+        return SaveCBTText(filename, tree.Root)
+}</span>
+
+func (s *CbtSerializer) LoadFromFile(tree *CompleteBinaryTree, filename string) error <span class="cov8" title="1">{
+        root, err := LoadCBTText(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">tree.Root = root
+        tree.Size = tree.countNodes(tree.Root)
+        return nil</span>
+}
+
+func writeBinaryRec(n *CBTNode, f *os.File) error <span class="cov8" title="1">{
+        if n == nil </span><span class="cov8" title="1">{
+                return WriteInt32(f, -1)
+        }</span>
+        <span class="cov8" title="1">if err := WriteInt32(f, n.Data); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">if err := writeBinaryRec(n.Left, f); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">return writeBinaryRec(n.Right, f)</span>
+}
+
+func (s *CbtSerializer) SaveToBinaryFile(tree *CompleteBinaryTree, filename string) error <span class="cov8" title="1">{
+        file, err := os.Create(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+        return writeBinaryRec(tree.Root, file)</span>
+}
+
+func readBinaryRec(f *os.File) (*CBTNode, error) <span class="cov8" title="1">{
+        val, err := ReadInt32(f)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+        <span class="cov8" title="1">if val == -1 </span><span class="cov8" title="1">{
+                return nil, nil
+        }</span>
+        <span class="cov8" title="1">node := &amp;CBTNode{Data: val}
+        node.Left, err = readBinaryRec(f)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+        <span class="cov8" title="1">node.Right, err = readBinaryRec(f)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+        <span class="cov8" title="1">return node, nil</span>
+}
+
+func (s *CbtSerializer) LoadFromBinaryFile(tree *CompleteBinaryTree, filename string) error <span class="cov8" title="1">{
+        file, err := os.Open(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        tree.Clear()
+        root, err := readBinaryRec(file)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">tree.Root = root
+        tree.Size = tree.countNodes(tree.Root)
+        return nil</span>
+}</pre>
+		
+		<pre class="file" id="file4" style="display: none">package ds
+
+import "fmt"
 
 type DNode struct {
         Value string
@@ -582,7 +597,15 @@ func (d *DList) DelBeforeValue(val string) <span class="cov8" title="1">{
                 return
         }</span>
         <span class="cov8" title="1">d.DelByVal(targetNode.Prev.Value)</span>
-}
+}</pre>
+		
+		<pre class="file" id="file5" style="display: none">package ds
+
+type DListSerializer struct{}
+
+func NewDListSerializer() *DListSerializer <span class="cov8" title="1">{
+        return &amp;DListSerializer{}
+}</span>
 
 func (d *DList) toSlice() []string <span class="cov8" title="1">{
         out := []string{}
@@ -592,39 +615,41 @@ func (d *DList) toSlice() []string <span class="cov8" title="1">{
         <span class="cov8" title="1">return out</span>
 }
 
-
-func (d *DList) SaveToFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsText(filename, d.toSlice())
+func (s *DListSerializer) SaveToFile(dlist *DList, filename string) error <span class="cov8" title="1">{
+        return SaveStringsText(filename, dlist.toSlice())
 }</span>
 
-func (d *DList) LoadFromFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsText(filename)
-    if err != nil </span><span class="cov0" title="0">{ return err }</span>
-    <span class="cov8" title="1">d.Head = nil
-    d.Tail = nil
-    for _, v := range vals </span><span class="cov8" title="1">{
-        d.AddTail(v)
-    }</span>
-    <span class="cov8" title="1">return nil</span>
+func (s *DListSerializer) LoadFromFile(dlist *DList, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsText(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">dlist.Head = nil
+        dlist.Tail = nil
+        for _, v := range vals </span><span class="cov8" title="1">{
+                dlist.AddTail(v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
 }
 
-func (d *DList) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsBinary(filename, d.toSlice())
+func (s *DListSerializer) SaveToBinaryFile(dlist *DList, filename string) error <span class="cov8" title="1">{
+        return SaveStringsBinary(filename, dlist.toSlice())
 }</span>
 
-func (d *DList) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsBinary(filename)
-    if err != nil </span><span class="cov0" title="0">{ return err }</span>
-    <span class="cov8" title="1">d.Head = nil
-    d.Tail = nil
-    for _, v := range vals </span><span class="cov8" title="1">{
-        d.AddTail(v)
-    }</span>
-    <span class="cov8" title="1">return nil</span>
-}
-</pre>
+func (s *DListSerializer) LoadFromBinaryFile(dlist *DList, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsBinary(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">dlist.Head = nil
+        dlist.Tail = nil
+        for _, v := range vals </span><span class="cov8" title="1">{
+                dlist.AddTail(v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}</pre>
 		
-		<pre class="file" id="file3" style="display: none">package ds
+		<pre class="file" id="file6" style="display: none">package ds
 
 import (
         "bufio"
@@ -632,7 +657,6 @@ import (
         "os"
         "strings"
 )
-
 
 func hashStr(key string, mod int) int <span class="cov8" title="1">{
         h := 0
@@ -645,7 +669,6 @@ func hashStr(key string, mod int) int <span class="cov8" title="1">{
         }
         <span class="cov8" title="1">return h</span>
 }
-
 
 type ChainNode struct {
         Key  string
@@ -707,10 +730,8 @@ func (c *ChainHash) Erase(key string) bool <span class="cov8" title="1">{
         for cur != nil </span><span class="cov8" title="1">{
                 if cur.Key == key </span><span class="cov8" title="1">{
                         if prev == nil </span><span class="cov8" title="1">{
-                                // Удаление головы цепочки
                                 c.Table[idx] = cur.Next
                         }</span> else<span class="cov8" title="1"> {
-                                // Удаление из середины
                                 prev.Next = cur.Next
                         }</span>
                         <span class="cov8" title="1">return true</span>
@@ -734,95 +755,6 @@ func (c *ChainHash) Show() <span class="cov8" title="1">{
         }
 }
 
-
-func (c *ChainHash) SaveToFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        fmt.Fprintln(file, c.Cap)
-        cnt := 0
-        for _, n := range c.Table </span><span class="cov8" title="1">{
-                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
-                        cnt++
-                }</span>
-        }
-        <span class="cov8" title="1">fmt.Fprintln(file, cnt)
-
-        for _, n := range c.Table </span><span class="cov8" title="1">{
-                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
-                        WriteStringText(file, cur.Key)
-                        WriteStringText(file, cur.Val)
-                }</span>
-        }
-        <span class="cov8" title="1">return nil</span>
-}
-
-func (c *ChainHash) LoadFromFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        sc := bufio.NewScanner(file)
-        var capVal, count int
-        if sc.Scan() </span><span class="cov8" title="1">{ fmt.Sscanf(sc.Text(), "%d", &amp;capVal) }</span>
-
-        <span class="cov8" title="1">c.Cap = capVal
-        c.Table = make([]*ChainNode, c.Cap)
-
-        if sc.Scan() </span><span class="cov8" title="1">{ fmt.Sscanf(sc.Text(), "%d", &amp;count) }</span>
-
-        <span class="cov8" title="1">for i := 0; i &lt; count; i++ </span><span class="cov8" title="1">{
-                k := ReadStringText(sc)
-                v := ReadStringText(sc)
-                c.Insert(k, v)
-        }</span>
-        <span class="cov8" title="1">return nil</span>
-}
-
-
-func (c *ChainHash) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        WriteInt32(file, int32(c.Cap))
-        count := 0
-        for _, n := range c.Table </span><span class="cov8" title="1">{
-                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
-                        count++
-                }</span>
-        }
-        <span class="cov8" title="1">WriteInt32(file, int32(count))
-
-        for _, n := range c.Table </span><span class="cov8" title="1">{
-                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
-                        WriteString(file, cur.Key)
-                        WriteString(file, cur.Val)
-                }</span>
-        }
-        <span class="cov8" title="1">return nil</span>
-}
-
-func (c *ChainHash) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        capVal, _ := ReadInt32(file)
-        c.Cap = int(capVal)
-        c.Table = make([]*ChainNode, c.Cap)
-
-        count, _ := ReadInt32(file)
-        for i := 0; i &lt; int(count); i++ </span><span class="cov8" title="1">{
-                k, _ := ReadString(file)
-                v, _ := ReadString(file)
-                c.Insert(k, v)
-        }</span>
-        <span class="cov8" title="1">return nil</span>
-}
-
-
 type OpenEntry struct {
         Key     string
         Val     string
@@ -842,7 +774,7 @@ func NewOpenHash(size int) *OpenHash <span class="cov8" title="1">{
         <span class="cov8" title="1">return &amp;OpenHash{
                 Table: make([]OpenEntry, size),
                 Cap:   size,
-    }</span>
+        }</span>
 }
 
 func (o *OpenHash) Insert(k, v string) <span class="cov8" title="1">{
@@ -888,8 +820,7 @@ func (o *OpenHash) Find(k string) string <span class="cov8" title="1">{
                 if e.Used &amp;&amp; e.Key == k </span><span class="cov8" title="1">{
                         return e.Val
                 }</span>
-                // Если слот пуст и не удален, значит элемента точно нет
-                <span class="cov8" title="1">if !e.Used &amp;&amp; !e.Deleted </span><span class="cov0" title="0">{
+                <span class="cov8" title="1">if !e.Used &amp;&amp; !e.Deleted </span><span class="cov8" title="1">{
                         return ""
                 }</span>
 
@@ -909,10 +840,10 @@ func (o *OpenHash) Erase(k string) bool <span class="cov8" title="1">{
 
                 if e.Used &amp;&amp; e.Key == k </span><span class="cov8" title="1">{
                         e.Used = false
-                        e.Deleted = true // Важно для линейного пробирования
+                        e.Deleted = true
                         return true
                 }</span>
-                
+
                 <span class="cov8" title="1">if !e.Used &amp;&amp; !e.Deleted </span><span class="cov0" title="0">{
                         return false
                 }</span>
@@ -937,97 +868,15 @@ func (o *OpenHash) Show() <span class="cov8" title="1">{
         }
 }
 
-
-func (o *OpenHash) SaveToFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        fmt.Fprintln(file, o.Cap)
-        count := 0
-        for _, e := range o.Table </span><span class="cov8" title="1">{
-                if e.Used </span><span class="cov8" title="1">{ count++ }</span>
-        }
-        <span class="cov8" title="1">fmt.Fprintln(file, count)
-
-        for _, e := range o.Table </span><span class="cov8" title="1">{
-                if e.Used </span><span class="cov8" title="1">{
-                        WriteStringText(file, e.Key)
-                        WriteStringText(file, e.Val)
-                }</span>
-        }
-        <span class="cov8" title="1">return nil</span>
-}
-
-func (o *OpenHash) LoadFromFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        sc := bufio.NewScanner(file)
-        var capVal, count int
-        if sc.Scan() </span><span class="cov8" title="1">{ fmt.Sscanf(sc.Text(), "%d", &amp;capVal) }</span>
-        <span class="cov8" title="1">o.Cap = capVal
-        o.Table = make([]OpenEntry, capVal)
-
-        if sc.Scan() </span><span class="cov8" title="1">{ fmt.Sscanf(sc.Text(), "%d", &amp;count) }</span>
-
-        <span class="cov8" title="1">for i := 0; i &lt; count; i++ </span><span class="cov8" title="1">{
-                k := ReadStringText(sc)
-                v := ReadStringText(sc)
-                o.Insert(k, v)
-        }</span>
-        <span class="cov8" title="1">return nil</span>
-}
-
-func (o *OpenHash) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        WriteInt32(file, int32(o.Cap))
-        count := 0
-        for _, e := range o.Table </span><span class="cov8" title="1">{
-                if e.Used </span><span class="cov8" title="1">{ count++ }</span>
-        }
-        <span class="cov8" title="1">WriteInt32(file, int32(count))
-
-        for _, e := range o.Table </span><span class="cov8" title="1">{
-                if e.Used </span><span class="cov8" title="1">{
-                        WriteString(file, e.Key)
-                        WriteString(file, e.Val)
-                }</span>
-        }
-        <span class="cov8" title="1">return nil</span>
-}
-
-func (o *OpenHash) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
-        file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
-        <span class="cov8" title="1">defer file.Close()
-
-        capVal, _ := ReadInt32(file)
-        o.Cap = int(capVal)
-        o.Table = make([]OpenEntry, o.Cap)
-
-        count, _ := ReadInt32(file)
-        for i := 0; i &lt; int(count); i++ </span><span class="cov8" title="1">{
-                k, _ := ReadString(file)
-                v, _ := ReadString(file)
-                o.Insert(k, v)
-        }</span>
-        <span class="cov8" title="1">return nil</span>
-}
-
 func HashMan() <span class="cov8" title="1">{
         scanner := bufio.NewScanner(os.Stdin)
         ch := NewChainHash(10)
         oh := NewOpenHash(10)
-        
-        currentMode := "chain" 
+
+        currentMode := "chain"
 
         fmt.Println("Хеш-менеджер. Команды: CHAIN, OPEN, INSERT k v, SEARCH k, DELETE k, SHOW, BACK")
-        
+
         for </span><span class="cov8" title="1">{
                 fmt.Printf("[%s] &gt;&gt; ", currentMode)
                 if !scanner.Scan() </span><span class="cov0" title="0">{
@@ -1035,10 +884,12 @@ func HashMan() <span class="cov8" title="1">{
                 }
                 <span class="cov8" title="1">line := scanner.Text()
                 parts := strings.Fields(line)
-                if len(parts) == 0 </span><span class="cov0" title="0">{ continue</span> }
+                if len(parts) == 0 </span><span class="cov0" title="0">{
+                        continue</span>
+                }
 
                 <span class="cov8" title="1">cmd := parts[0]
-                
+
                 switch cmd </span>{
                 case "BACK":<span class="cov8" title="1">
                         return</span>
@@ -1049,32 +900,315 @@ func HashMan() <span class="cov8" title="1">{
                         currentMode = "open"
                         fmt.Println("Переключено на OpenHash")</span>
                 case "SHOW":<span class="cov8" title="1">
-                        if currentMode == "chain" </span><span class="cov8" title="1">{ ch.Show() }</span> else<span class="cov0" title="0"> { oh.Show() }</span>
+                        if currentMode == "chain" </span><span class="cov8" title="1">{
+                                ch.Show()
+                        }</span> else<span class="cov0" title="0"> {
+                                oh.Show()
+                        }</span>
                 case "INSERT":<span class="cov8" title="1">
-                        if len(parts) &lt; 3 </span><span class="cov0" title="0">{ fmt.Println("Нужен ключ и значение"); continue</span> }
-                        <span class="cov8" title="1">if currentMode == "chain" </span><span class="cov8" title="1">{ ch.Insert(parts[1], parts[2]) }</span> else<span class="cov8" title="1"> { oh.Insert(parts[1], parts[2]) }</span>
+                        if len(parts) &lt; 3 </span><span class="cov0" title="0">{
+                                fmt.Println("Нужен ключ и значение")
+                                continue</span>
+                        }
+                        <span class="cov8" title="1">if currentMode == "chain" </span><span class="cov8" title="1">{
+                                ch.Insert(parts[1], parts[2])
+                        }</span> else<span class="cov8" title="1"> {
+                                oh.Insert(parts[1], parts[2])
+                        }</span>
                 case "SEARCH":<span class="cov8" title="1">
-                        if len(parts) &lt; 2 </span><span class="cov0" title="0">{ fmt.Println("Нужен ключ"); continue</span> }
+                        if len(parts) &lt; 2 </span><span class="cov0" title="0">{
+                                fmt.Println("Нужен ключ")
+                                continue</span>
+                        }
                         <span class="cov8" title="1">res := ""
-                        if currentMode == "chain" </span><span class="cov8" title="1">{ res = ch.Find(parts[1]) }</span> else<span class="cov8" title="1"> { res = oh.Find(parts[1]) }</span>
-                        <span class="cov8" title="1">if res == "" </span><span class="cov8" title="1">{ fmt.Println("Не найдено") }</span> else<span class="cov8" title="1"> { fmt.Println("Найдено:", res) }</span>
+                        if currentMode == "chain" </span><span class="cov8" title="1">{
+                                res = ch.Find(parts[1])
+                        }</span> else<span class="cov8" title="1"> {
+                                res = oh.Find(parts[1])
+                        }</span>
+                        <span class="cov8" title="1">if res == "" </span><span class="cov8" title="1">{
+                                fmt.Println("Не найдено")
+                        }</span> else<span class="cov8" title="1"> {
+                                fmt.Println("Найдено:", res)
+                        }</span>
                 case "DELETE":<span class="cov8" title="1">
-                        if len(parts) &lt; 2 </span><span class="cov0" title="0">{ fmt.Println("Нужен ключ"); continue</span> }
+                        if len(parts) &lt; 2 </span><span class="cov0" title="0">{
+                                fmt.Println("Нужен ключ")
+                                continue</span>
+                        }
                         <span class="cov8" title="1">ok := false
-                        if currentMode == "chain" </span><span class="cov8" title="1">{ ok = ch.Erase(parts[1]) }</span> else<span class="cov8" title="1"> { ok = oh.Erase(parts[1]) }</span>
-                        <span class="cov8" title="1">if ok </span><span class="cov8" title="1">{ fmt.Println("Удалено") }</span> else<span class="cov0" title="0"> { fmt.Println("Не найдено для удаления") }</span>
+                        if currentMode == "chain" </span><span class="cov8" title="1">{
+                                ok = ch.Erase(parts[1])
+                        }</span> else<span class="cov8" title="1"> {
+                                ok = oh.Erase(parts[1])
+                        }</span>
+                        <span class="cov8" title="1">if ok </span><span class="cov8" title="1">{
+                                fmt.Println("Удалено")
+                        }</span> else<span class="cov0" title="0"> {
+                                fmt.Println("Не найдено для удаления")
+                        }</span>
                 default:<span class="cov8" title="1">
                         fmt.Println("Неизвестная команда")</span>
                 }
         }
 }</pre>
 		
-		<pre class="file" id="file4" style="display: none">package ds
+		<pre class="file" id="file7" style="display: none">package ds
 
 import (
+        "bufio"
         "fmt"
+        "os"
 )
 
+type HashSerializer struct{}
+
+func NewHashSerializer() *HashSerializer <span class="cov8" title="1">{
+        return &amp;HashSerializer{}
+}</span>
+
+func (s *HashSerializer) SaveToFile(hash interface{}, filename string) error <span class="cov8" title="1">{
+        switch h := hash.(type) </span>{
+        case *ChainHash:<span class="cov8" title="1">
+                return s.saveChainHash(h, filename)</span>
+        case *OpenHash:<span class="cov8" title="1">
+                return s.saveOpenHash(h, filename)</span>
+        default:<span class="cov0" title="0">
+                return fmt.Errorf("unsupported hash type")</span>
+        }
+}
+
+func (s *HashSerializer) LoadFromFile(hash interface{}, filename string) error <span class="cov8" title="1">{
+        switch h := hash.(type) </span>{
+        case *ChainHash:<span class="cov8" title="1">
+                return s.loadChainHash(h, filename)</span>
+        case *OpenHash:<span class="cov8" title="1">
+                return s.loadOpenHash(h, filename)</span>
+        default:<span class="cov0" title="0">
+                return fmt.Errorf("unsupported hash type")</span>
+        }
+}
+
+func (s *HashSerializer) SaveToBinaryFile(hash interface{}, filename string) error <span class="cov8" title="1">{
+        switch h := hash.(type) </span>{
+        case *ChainHash:<span class="cov8" title="1">
+                return s.saveChainHashBinary(h, filename)</span>
+        case *OpenHash:<span class="cov8" title="1">
+                return s.saveOpenHashBinary(h, filename)</span>
+        default:<span class="cov0" title="0">
+                return fmt.Errorf("unsupported hash type")</span>
+        }
+}
+
+func (s *HashSerializer) LoadFromBinaryFile(hash interface{}, filename string) error <span class="cov8" title="1">{
+        switch h := hash.(type) </span>{
+        case *ChainHash:<span class="cov8" title="1">
+                return s.loadChainHashBinary(h, filename)</span>
+        case *OpenHash:<span class="cov8" title="1">
+                return s.loadOpenHashBinary(h, filename)</span>
+        default:<span class="cov0" title="0">
+                return fmt.Errorf("unsupported hash type")</span>
+        }
+}
+
+func (s *HashSerializer) saveChainHash(ch *ChainHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Create(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        fmt.Fprintln(file, ch.Cap)
+        count := 0
+        for _, n := range ch.Table </span><span class="cov8" title="1">{
+                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
+                        count++
+                }</span>
+        }
+        <span class="cov8" title="1">fmt.Fprintln(file, count)
+
+        for _, n := range ch.Table </span><span class="cov8" title="1">{
+                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
+                        WriteStringText(file, cur.Key)
+                        WriteStringText(file, cur.Val)
+                }</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *HashSerializer) loadChainHash(ch *ChainHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Open(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        sc := bufio.NewScanner(file)
+        var capVal, count int
+        if sc.Scan() </span><span class="cov8" title="1">{
+                fmt.Sscanf(sc.Text(), "%d", &amp;capVal)
+        }</span>
+
+        <span class="cov8" title="1">ch.Cap = capVal
+        ch.Table = make([]*ChainNode, ch.Cap)
+
+        if sc.Scan() </span><span class="cov8" title="1">{
+                fmt.Sscanf(sc.Text(), "%d", &amp;count)
+        }</span>
+
+        <span class="cov8" title="1">for i := 0; i &lt; count; i++ </span><span class="cov8" title="1">{
+                k := ReadStringText(sc)
+                v := ReadStringText(sc)
+                ch.Insert(k, v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *HashSerializer) saveChainHashBinary(ch *ChainHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Create(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        WriteInt32(file, int32(ch.Cap))
+        count := 0
+        for _, n := range ch.Table </span><span class="cov8" title="1">{
+                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
+                        count++
+                }</span>
+        }
+        <span class="cov8" title="1">WriteInt32(file, int32(count))
+
+        for _, n := range ch.Table </span><span class="cov8" title="1">{
+                for cur := n; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
+                        WriteString(file, cur.Key)
+                        WriteString(file, cur.Val)
+                }</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *HashSerializer) loadChainHashBinary(ch *ChainHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Open(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        capVal, _ := ReadInt32(file)
+        ch.Cap = int(capVal)
+        ch.Table = make([]*ChainNode, ch.Cap)
+
+        count, _ := ReadInt32(file)
+        for i := 0; i &lt; int(count); i++ </span><span class="cov8" title="1">{
+                k, _ := ReadString(file)
+                v, _ := ReadString(file)
+                ch.Insert(k, v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *HashSerializer) saveOpenHash(oh *OpenHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Create(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        fmt.Fprintln(file, oh.Cap)
+        count := 0
+        for _, e := range oh.Table </span><span class="cov8" title="1">{
+                if e.Used </span><span class="cov8" title="1">{
+                        count++
+                }</span>
+        }
+        <span class="cov8" title="1">fmt.Fprintln(file, count)
+
+        for _, e := range oh.Table </span><span class="cov8" title="1">{
+                if e.Used </span><span class="cov8" title="1">{
+                        WriteStringText(file, e.Key)
+                        WriteStringText(file, e.Val)
+                }</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *HashSerializer) loadOpenHash(oh *OpenHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Open(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        sc := bufio.NewScanner(file)
+        var capVal, count int
+        if sc.Scan() </span><span class="cov8" title="1">{
+                fmt.Sscanf(sc.Text(), "%d", &amp;capVal)
+        }</span>
+        <span class="cov8" title="1">oh.Cap = capVal
+        oh.Table = make([]OpenEntry, capVal)
+
+        if sc.Scan() </span><span class="cov8" title="1">{
+                fmt.Sscanf(sc.Text(), "%d", &amp;count)
+        }</span>
+
+        <span class="cov8" title="1">for i := 0; i &lt; count; i++ </span><span class="cov8" title="1">{
+                k := ReadStringText(sc)
+                v := ReadStringText(sc)
+                oh.Insert(k, v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *HashSerializer) saveOpenHashBinary(oh *OpenHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Create(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        WriteInt32(file, int32(oh.Cap))
+        count := 0
+        for _, e := range oh.Table </span><span class="cov8" title="1">{
+                if e.Used </span><span class="cov8" title="1">{
+                        count++
+                }</span>
+        }
+        <span class="cov8" title="1">WriteInt32(file, int32(count))
+
+        for _, e := range oh.Table </span><span class="cov8" title="1">{
+                if e.Used </span><span class="cov8" title="1">{
+                        WriteString(file, e.Key)
+                        WriteString(file, e.Val)
+                }</span>
+        }
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *HashSerializer) loadOpenHashBinary(oh *OpenHash, filename string) error <span class="cov8" title="1">{
+        file, err := os.Open(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">defer file.Close()
+
+        capVal, _ := ReadInt32(file)
+        oh.Cap = int(capVal)
+        oh.Table = make([]OpenEntry, oh.Cap)
+
+        count, _ := ReadInt32(file)
+        for i := 0; i &lt; int(count); i++ </span><span class="cov8" title="1">{
+                k, _ := ReadString(file)
+                v, _ := ReadString(file)
+                oh.Insert(k, v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}</pre>
+		
+		<pre class="file" id="file8" style="display: none">package ds
+
+import "fmt"
 
 type ListNode struct {
         Value string
@@ -1260,50 +1394,59 @@ func (l *MyList) ReadBack() <span class="cov8" title="1">{
         <span class="cov8" title="1">fmt.Print("Список (назад): ")
         l.printBackRec(l.Head)
         fmt.Println()</span>
-}
+}</pre>
+		
+		<pre class="file" id="file9" style="display: none">package ds
 
-func (l *MyList) SaveToFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsText(filename, l.toSlice())
+type ListSerializer struct{}
+
+func NewListSerializer() *ListSerializer <span class="cov8" title="1">{
+        return &amp;ListSerializer{}
 }</span>
 
 func (l *MyList) toSlice() []string <span class="cov8" title="1">{
-    out := []string{}
-    for cur := l.Head; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
-        out = append(out, cur.Value)
-    }</span>
-    <span class="cov8" title="1">return out</span>
+        out := []string{}
+        for cur := l.Head; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
+                out = append(out, cur.Value)
+        }</span>
+        <span class="cov8" title="1">return out</span>
 }
 
-
-func (l *MyList) LoadFromFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsText(filename)
-    if err != nil </span><span class="cov0" title="0">{ return err }</span>
-    <span class="cov8" title="1">l.Head = nil
-    for _, v := range vals </span><span class="cov8" title="1">{
-        l.AddTail(v)
-    }</span>
-    <span class="cov8" title="1">return nil</span>
-}
-
-func (l *MyList) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsBinary(filename, l.toSlice())
+func (s *ListSerializer) SaveToFile(list *MyList, filename string) error <span class="cov8" title="1">{
+        return SaveStringsText(filename, list.toSlice())
 }</span>
 
-func (l *MyList) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsBinary(filename)
-    if err != nil </span><span class="cov0" title="0">{ return err }</span>
-    <span class="cov8" title="1">l.Head = nil
-    for _, v := range vals </span><span class="cov8" title="1">{
-        l.AddTail(v)
-    }</span>
-    <span class="cov8" title="1">return nil</span>
+func (s *ListSerializer) LoadFromFile(list *MyList, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsText(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">list.Head = nil
+        for _, v := range vals </span><span class="cov8" title="1">{
+                list.AddTail(v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
 }
-</pre>
+
+func (s *ListSerializer) SaveToBinaryFile(list *MyList, filename string) error <span class="cov8" title="1">{
+        return SaveStringsBinary(filename, list.toSlice())
+}</span>
+
+func (s *ListSerializer) LoadFromBinaryFile(list *MyList, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsBinary(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">list.Head = nil
+        for _, v := range vals </span><span class="cov8" title="1">{
+                list.AddTail(v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}</pre>
 		
-		<pre class="file" id="file5" style="display: none">package ds
+		<pre class="file" id="file10" style="display: none">package ds
 
 import "fmt"
-
 
 type QNode struct {
         Data string
@@ -1363,49 +1506,59 @@ func (q *Queue) Print() <span class="cov8" title="1">{
                 fmt.Printf("\"%s\" ", cur.Data)
         }</span>
         <span class="cov0" title="0">fmt.Println()</span>
-}
-
-// toSlice - Вспомогательная функция для сериализации
-func (q *Queue) toSlice() []string <span class="cov8" title="1">{
-    out := []string{}
-    for cur := q.Front; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
-        out = append(out, cur.Data)
-    }</span>
-    <span class="cov8" title="1">return out</span>
-}
-
-
-func (q *Queue) SaveToFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsText(filename, q.toSlice())
-}</span>
-
-func (q *Queue) LoadFromFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsText(filename)
-    if err != nil </span><span class="cov0" title="0">{ return err }</span>
-    <span class="cov8" title="1">q.Front = nil
-    q.Rear = nil
-    for _, v := range vals </span><span class="cov8" title="1">{
-        q.Push(v)
-    }</span>
-    <span class="cov8" title="1">return nil</span>
-}
-
-func (q *Queue) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
-    return SaveStringsBinary(filename, q.toSlice())
-}</span>
-
-func (q *Queue) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
-    vals, err := LoadStringsBinary(filename)
-    if err != nil </span><span class="cov0" title="0">{ return err }</span>
-    <span class="cov8" title="1">q.Front = nil
-    q.Rear = nil
-    for _, v := range vals </span><span class="cov8" title="1">{
-        q.Push(v)
-    }</span>
-    <span class="cov8" title="1">return nil</span>
 }</pre>
 		
-		<pre class="file" id="file6" style="display: none">package ds
+		<pre class="file" id="file11" style="display: none">package ds
+
+type QueueSerializer struct{}
+
+func NewQueueSerializer() *QueueSerializer <span class="cov8" title="1">{
+        return &amp;QueueSerializer{}
+}</span>
+
+func (q *Queue) toSlice() []string <span class="cov8" title="1">{
+        out := []string{}
+        for cur := q.Front; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
+                out = append(out, cur.Data)
+        }</span>
+        <span class="cov8" title="1">return out</span>
+}
+
+func (s *QueueSerializer) SaveToFile(queue *Queue, filename string) error <span class="cov8" title="1">{
+        return SaveStringsText(filename, queue.toSlice())
+}</span>
+
+func (s *QueueSerializer) LoadFromFile(queue *Queue, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsText(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">queue.Front = nil
+        queue.Rear = nil
+        for _, v := range vals </span><span class="cov8" title="1">{
+                queue.Push(v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}
+
+func (s *QueueSerializer) SaveToBinaryFile(queue *Queue, filename string) error <span class="cov8" title="1">{
+        return SaveStringsBinary(filename, queue.toSlice())
+}</span>
+
+func (s *QueueSerializer) LoadFromBinaryFile(queue *Queue, filename string) error <span class="cov8" title="1">{
+        vals, err := LoadStringsBinary(filename)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">queue.Front = nil
+        queue.Rear = nil
+        for _, v := range vals </span><span class="cov8" title="1">{
+                queue.Push(v)
+        }</span>
+        <span class="cov8" title="1">return nil</span>
+}</pre>
+		
+		<pre class="file" id="file12" style="display: none">package ds
 
 import (
         "bufio"
@@ -1416,10 +1569,11 @@ import (
         "strings"
 )
 
-
 func SaveStringsText(filename string, data []string) error <span class="cov8" title="1">{
         file, err := os.Create(filename)
-        if err != nil </span><span class="cov8" title="1">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
         fmt.Fprintln(file, len(data))
@@ -1431,18 +1585,20 @@ func SaveStringsText(filename string, data []string) error <span class="cov8" ti
 
 func LoadStringsText(filename string) ([]string, error) <span class="cov8" title="1">{
         file, err := os.Open(filename)
-        if err != nil </span><span class="cov8" title="1">{ return nil, err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
         sc := bufio.NewScanner(file)
-        if !sc.Scan() </span><span class="cov8" title="1">{
+        if !sc.Scan() </span><span class="cov0" title="0">{
                 return nil, fmt.Errorf("empty file")
         }</span>
 
         <span class="cov8" title="1">var count int
-        if _, err := fmt.Sscanf(sc.Text(), "%d", &amp;count); err != nil </span><span class="cov8" title="1">{
-        return nil, err
-    }</span>
+        if _, err := fmt.Sscanf(sc.Text(), "%d", &amp;count); err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
 
         <span class="cov8" title="1">result := make([]string, 0, count)
         for i := 0; i &lt; count; i++ </span><span class="cov8" title="1">{
@@ -1465,10 +1621,11 @@ func ReadStringText(scanner *bufio.Scanner) string <span class="cov8" title="1">
         <span class="cov0" title="0">return ""</span>
 }
 
-
 func SaveStringsBinary(filename string, data []string) error <span class="cov8" title="1">{
         file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
         if err := binary.Write(file, binary.LittleEndian, int32(len(data))); err != nil </span><span class="cov0" title="0">{
@@ -1485,25 +1642,26 @@ func SaveStringsBinary(filename string, data []string) error <span class="cov8" 
 
 func LoadStringsBinary(filename string) ([]string, error) <span class="cov8" title="1">{
         file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return nil, err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
         var count int32
-        if err := binary.Read(file, binary.LittleEndian, &amp;count); err != nil </span><span class="cov8" title="1">{
+        if err := binary.Read(file, binary.LittleEndian, &amp;count); err != nil </span><span class="cov0" title="0">{
                 return nil, err
         }</span>
 
         <span class="cov8" title="1">result := make([]string, 0, count)
         for i := int32(0); i &lt; count; i++ </span><span class="cov8" title="1">{
                 v, err := ReadString(file)
-                if err != nil </span><span class="cov8" title="1">{
+                if err != nil </span><span class="cov0" title="0">{
                         return nil, err
                 }</span>
                 <span class="cov8" title="1">result = append(result, v)</span>
         }
         <span class="cov8" title="1">return result, nil</span>
 }
-
 
 func WriteInt32(w io.Writer, v int32) error <span class="cov8" title="1">{
         return binary.Write(w, binary.LittleEndian, v)
@@ -1516,18 +1674,16 @@ func ReadInt32(r io.Reader) (int32, error) <span class="cov8" title="1">{
 }</span>
 
 func WriteString(w io.Writer, s string) error <span class="cov8" title="1">{
-        //Пишем длину
         if err := WriteInt32(w, int32(len(s))); err != nil </span><span class="cov0" title="0">{
                 return err
         }</span>
-        //Пишем байты
         <span class="cov8" title="1">_, err := w.Write([]byte(s))
         return err</span>
 }
 
 func ReadString(r io.Reader) (string, error) <span class="cov8" title="1">{
         ln, err := ReadInt32(r)
-        if err != nil </span><span class="cov8" title="1">{
+        if err != nil </span><span class="cov0" title="0">{
                 return "", err
         }</span>
         <span class="cov8" title="1">buf := make([]byte, ln)
@@ -1541,10 +1697,11 @@ func ReadString(r io.Reader) (string, error) <span class="cov8" title="1">{
         <span class="cov8" title="1">return string(buf), nil</span>
 }
 
-
 func SaveCBTText(filename string, root *CBTNode) error <span class="cov8" title="1">{
         file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
         var dfs func(n *CBTNode)
@@ -1563,7 +1720,9 @@ func SaveCBTText(filename string, root *CBTNode) error <span class="cov8" title=
 
 func LoadCBTText(filename string) (*CBTNode, error) <span class="cov8" title="1">{
         file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return nil, err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
         sc := bufio.NewScanner(file)
@@ -1575,10 +1734,14 @@ func LoadCBTText(filename string) (*CBTNode, error) <span class="cov8" title="1"
         <span class="cov8" title="1">pos := 0
         var dfs func() *CBTNode
         dfs = func() *CBTNode </span><span class="cov8" title="1">{
-                if pos &gt;= len(tokens) </span><span class="cov0" title="0">{ return nil }</span>
+                if pos &gt;= len(tokens) </span><span class="cov0" title="0">{
+                        return nil
+                }</span>
                 <span class="cov8" title="1">t := tokens[pos]
                 pos++
-                if t == "#" </span><span class="cov8" title="1">{ return nil }</span>
+                if t == "#" </span><span class="cov8" title="1">{
+                        return nil
+                }</span>
                 <span class="cov8" title="1">var val int32
                 fmt.Sscanf(t, "%d", &amp;val)
                 n := &amp;CBTNode{Data: val}
@@ -1589,14 +1752,9 @@ func LoadCBTText(filename string) (*CBTNode, error) <span class="cov8" title="1"
         <span class="cov8" title="1">return dfs(), nil</span>
 }</pre>
 		
-		<pre class="file" id="file7" style="display: none">package ds
+		<pre class="file" id="file13" style="display: none">package ds
 
-import (
-    "bufio"
-    "fmt"
-    "os"
-)
-
+import "fmt"
 
 type SNode struct {
         Value string
@@ -1644,76 +1802,107 @@ func (s *Stack) ReadStack() <span class="cov8" title="1">{
         for cur := s.Top; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
                 fmt.Printf("  %s\n", cur.Value)
         }</span>
-}
+}</pre>
+		
+		<pre class="file" id="file14" style="display: none">package ds
+
+import (
+        "bufio"
+        "fmt"
+        "os"
+)
+
+type StackSerializer struct{}
+
+func NewStackSerializer() *StackSerializer <span class="cov8" title="1">{
+        return &amp;StackSerializer{}
+}</span>
 
 func (s *Stack) toSlice() []string <span class="cov8" title="1">{
-    out := []string{}
-    for cur := s.Top; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
-        out = append(out, cur.Value)
-    }</span>
-    <span class="cov8" title="1">return out</span>
+        out := []string{}
+        for cur := s.Top; cur != nil; cur = cur.Next </span><span class="cov8" title="1">{
+                out = append(out, cur.Value)
+        }</span>
+        <span class="cov8" title="1">return out</span>
 }
 
-
-func (s *Stack) SaveToFile(filename string) error <span class="cov8" title="1">{
+func (s *StackSerializer) SaveToFile(stack *Stack, filename string) error <span class="cov8" title="1">{
+        arr := stack.toSlice()
         file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
-        arr := s.toSlice()
         fmt.Fprintln(file, len(arr))
-        // Сохраняем снизу вверх (reverse), чтобы при Load Push восстановил порядок
         for i := len(arr) - 1; i &gt;= 0; i-- </span><span class="cov8" title="1">{
                 WriteStringText(file, arr[i])
         }</span>
         <span class="cov8" title="1">return nil</span>
 }
 
-func (s *Stack) LoadFromFile(filename string) error <span class="cov8" title="1">{
+func (s *StackSerializer) LoadFromFile(stack *Stack, filename string) error <span class="cov8" title="1">{
         file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
-        s.Top = nil
+
+        stack.Top = nil
         scanner := bufio.NewScanner(file)
 
         var count int
-        if scanner.Scan() </span><span class="cov8" title="1">{ fmt.Sscanf(scanner.Text(), "%d", &amp;count) }</span>
+        if scanner.Scan() </span><span class="cov8" title="1">{
+                fmt.Sscanf(scanner.Text(), "%d", &amp;count)
+        }</span>
 
         <span class="cov8" title="1">for i := 0; i &lt; count; i++ </span><span class="cov8" title="1">{
                 val := ReadStringText(scanner)
-                s.Push(val)
+                stack.Push(val)
         }</span>
         <span class="cov8" title="1">return nil</span>
 }
 
-// --- БИНАРНАЯ ---
-func (s *Stack) SaveToBinaryFile(filename string) error <span class="cov8" title="1">{
+func (s *StackSerializer) SaveToBinaryFile(stack *Stack, filename string) error <span class="cov8" title="1">{
+        arr := stack.toSlice()
         file, err := os.Create(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
 
-        arr := s.toSlice()
-        if err := WriteInt32(file, int32(len(arr))); err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err := WriteInt32(file, int32(len(arr))); err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
 
         <span class="cov8" title="1">for i := len(arr) - 1; i &gt;= 0; i-- </span><span class="cov8" title="1">{
-                if err := WriteString(file, arr[i]); err != nil </span><span class="cov0" title="0">{ return err }</span>
+                if err := WriteString(file, arr[i]); err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
         }
         <span class="cov8" title="1">return nil</span>
 }
 
-func (s *Stack) LoadFromBinaryFile(filename string) error <span class="cov8" title="1">{
+func (s *StackSerializer) LoadFromBinaryFile(stack *Stack, filename string) error <span class="cov8" title="1">{
         file, err := os.Open(filename)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
         <span class="cov8" title="1">defer file.Close()
-        s.Top = nil
+
+        stack.Top = nil
 
         count, err := ReadInt32(file)
-        if err != nil </span><span class="cov0" title="0">{ return err }</span>
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
 
         <span class="cov8" title="1">for i := 0; i &lt; int(count); i++ </span><span class="cov8" title="1">{
                 val, err := ReadString(file)
-                if err != nil </span><span class="cov0" title="0">{ return err }</span>
-                <span class="cov8" title="1">s.Push(val)</span>
+                if err != nil </span><span class="cov0" title="0">{
+                        return err
+                }</span>
+                <span class="cov8" title="1">stack.Push(val)</span>
         }
         <span class="cov8" title="1">return nil</span>
 }</pre>

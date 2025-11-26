@@ -16,7 +16,7 @@ func TestStack_Branch_Coverage(t *testing.T) {
 	if s.Peek() != "[STACK_EMPTY]" {
 		t.Errorf("Expected empty")
 	}
-	s.ReadStack() // Empty print
+	s.ReadStack()
 
 	s.Push("A")
 	if s.Peek() != "A" {
@@ -32,11 +32,13 @@ func TestStack_SaveAndLoad(t *testing.T) {
 	s := NewStack()
 	s.Push("hello")
 	s.Push("world")
-	s.SaveToFile("stack_test.dat")
+	
+	serializer := NewStackSerializer()
+	serializer.SaveToFile(s, "stack_test.dat")
 	defer os.Remove("stack_test.dat")
 
 	s2 := NewStack()
-	s2.LoadFromFile("stack_test.dat")
+	serializer.LoadFromFile(s2, "stack_test.dat")
 	if s2.Pop() != "world" {
 		t.Errorf("Expected world")
 	}
@@ -65,17 +67,18 @@ func TestStack_Coverage(t *testing.T) {
 	s.Push("Bottom")
 	s.Push("Top")
 	
-	s.SaveToFile("st.txt")
+	serializer := NewStackSerializer()
+	serializer.SaveToFile(s, "st.txt")
 	defer os.Remove("st.txt")
 	
 	s2 := NewStack()
-	s2.LoadFromFile("st.txt")
+	serializer.LoadFromFile(s2, "st.txt")
 	if s2.Pop() != "Top" { t.Error("Order lost in Text Save/Load") }
 	
-	s.SaveToBinaryFile("st.bin")
+	serializer.SaveToBinaryFile(s, "st.bin")
 	defer os.Remove("st.bin")
 	
 	s3 := NewStack()
-	s3.LoadFromBinaryFile("st.bin")
+	serializer.LoadFromBinaryFile(s3, "st.bin")
 	if s3.Pop() != "Top" { t.Error("Order lost in Bin Save/Load") }
 }

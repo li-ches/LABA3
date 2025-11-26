@@ -16,7 +16,7 @@ func TestQueue_Branch_Coverage(t *testing.T) {
 	if val := q.Peek(); val != "[QUEUE_EMPTY]" {
 		t.Errorf("Expected empty msg")
 	}
-	q.Print() // Empty print
+	q.Print()
 
 	q.Push("A")
 	if q.Peek() != "A" {
@@ -40,11 +40,13 @@ func TestQueue_SaveAndLoad(t *testing.T) {
 	q := NewQueue()
 	q.Push("first")
 	q.Push("second")
-	q.SaveToFile("queue_test.dat")
+	
+	serializer := NewQueueSerializer()
+	serializer.SaveToFile(q, "queue_test.dat")
 	defer os.Remove("queue_test.dat")
 
 	q2 := NewQueue()
-	q2.LoadFromFile("queue_test.dat")
+	serializer.LoadFromFile(q2, "queue_test.dat")
 	if q2.Pop() != "first" {
 		t.Errorf("Expected first")
 	}
@@ -75,17 +77,19 @@ func TestQueue_Coverage(t *testing.T) {
 
 	q.Push("1")
 	q.Push("2")
-	q.SaveToFile("q.txt")
+	
+	serializer := NewQueueSerializer()
+	serializer.SaveToFile(q, "q.txt")
 	defer os.Remove("q.txt")
 	
 	q2 := NewQueue()
-	q2.LoadFromFile("q.txt")
+	serializer.LoadFromFile(q2, "q.txt")
 	if q2.Pop() != "1" { t.Error("Load order fail") }
 
-	q.SaveToBinaryFile("q.bin")
+	serializer.SaveToBinaryFile(q, "q.bin")
 	defer os.Remove("q.bin")
 	
 	q3 := NewQueue()
-	q3.LoadFromBinaryFile("q.bin")
+	serializer.LoadFromBinaryFile(q3, "q.bin")
 	if q3.Pop() != "1" { t.Error("Bin load order fail") }
 }
