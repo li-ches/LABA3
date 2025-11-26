@@ -311,4 +311,16 @@ CMakeFiles/serialization_test.dir/tests/serialization_test.cpp.o: \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
  /home/chesnokova/LABA3/tests/../hash_serialize.h \
- /home/chesnokova/LABA3/tests/../hash.h
+ /home/chesnokova/LABA3/tests/../hash.h \
+ /home/chesnokova/LABA3/tests/../arr_serialize.h \
+ /home/chesnokova/LABA3/tests/../arr.h \
+ /home/chesnokova/LABA3/tests/../list_serialize.h \
+ /home/chesnokova/LABA3/tests/../list.h \
+ /home/chesnokova/LABA3/tests/../dlist_serialize.h \
+ /home/chesnokova/LABA3/tests/../dlist.h \
+ /home/chesnokova/LABA3/tests/../stack_serialize.h \
+ /home/chesnokova/LABA3/tests/../stack.h \
+ /home/chesnokova/LABA3/tests/../queue_serialize.h \
+ /home/chesnokova/LABA3/tests/../queue.h \
+ /home/chesnokova/LABA3/tests/../cbt_serialize.h \
+ /home/chesnokova/LABA3/tests/../compl.h

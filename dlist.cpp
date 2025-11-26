@@ -1,135 +1,97 @@
 #include "dlist.h"
-#include "serialize.h"
+#include <iostream>
+#include <fstream>
+
 using namespace std;
 
-DList::DList() : head(nullptr), tail(nullptr) {
-}
+DList::DList() : head(nullptr), tail(nullptr) {}
 
 DList::~DList() {
-    while (head != nullptr) {
-        DNode* tmp = head;
-        head = head->next;
-        delete tmp;
-    }
-    tail = nullptr;
+    while (head) delHead();
 }
 
 void DList::addHead(const string& val) {
-    auto node = new DNode(val, head, nullptr);
-
-    if (head != nullptr)
-    {
-        head->prev = node;
-    } else {
-        tail = node;
-    }
-
-    head = node;
+    DNode* newNode = new DNode(val, head, nullptr);
+    if (head) head->prev = newNode;
+    head = newNode;
+    if (!tail) tail = newNode;
 }
 
 void DList::addTail(const string& val) {
-    auto node = new DNode(val, nullptr, tail);
-    if (tail != nullptr) {
-        tail->next = node;
-    } else {
-        head = node;
-    }
-    tail = node;
-}
-
-void DList::addBefore(const string& target, const string& val) {
-    if (head == nullptr) {
-        return;
-    }
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        if (curr->value == target) {
-            auto node = new DNode(val, curr, curr->prev);
-            if (curr->prev != nullptr) {
-                curr->prev->next = node;
-            } else {
-                head = node;
-            }
-            curr->prev = node;
-            return;
-        }
-    }
-}
-
-void DList::addAfter(const string& target, const string& val) {
-    if (head == nullptr) {
-        return;
-    }
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        if (curr->value == target) {
-            auto node = new DNode(val, curr->next, curr);
-            if (curr->next != nullptr) {
-                curr->next->prev = node;
-            } else {
-                tail = node;
-            }
-            curr->next = node;
-            return;
-        }
-    }
-}
-
-void DList::delHead() {
-    if (head == nullptr) {
-        return;
-    }
-    DNode* tmp = head;
-    head = head->next;
-    if (head != nullptr) {
-        head->prev = nullptr;
-    } else {
-        tail = nullptr;
-    }
-    delete tmp;
-}
-
-
-void DList::delTail() {
-    if (tail == nullptr) {
-        return;
-    }
-    DNode* tmp = tail;
-    tail = tail->prev;
-    if (tail != nullptr) {
-        tail->next = nullptr;
-    } else {
-        head = nullptr;
-    }
-    delete tmp;
-}
-
-void DList::delByVal(const string& val) {
-    DNode* curr = findValue(val);
-    if (curr == nullptr) {
-        return;
-    }
-
-    if (curr->prev != nullptr) {
-        curr->prev->next = curr->next;
-    } else {
-        head = curr->next;
-    }
-
-    if (curr->next != nullptr) {
-        curr->next->prev = curr->prev;
-    } else {
-        tail = curr->prev;
-    }
-
-    delete curr;
+    DNode* newNode = new DNode(val, nullptr, tail);
+    if (tail) tail->next = newNode;
+    tail = newNode;
+    if (!head) head = newNode;
 }
 
 auto DList::findValue(const string& val) const -> DNode* {
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        if (curr->value == val) {
-            return curr;
-        }
+    DNode* curr = head;
+    while (curr) {
+        if (curr->value == val) return curr;
+        curr = curr->next;
     }
     return nullptr;
+}
+
+void DList::addBefore(const string& target, const string& val) {
+    DNode* targetNode = findValue(target);
+    if (!targetNode) {
+        cout << "Элемент '" << target << "' не найден." << endl;
+        return;
+    }
+    DNode* newNode = new DNode(val, targetNode, targetNode->prev);
+    if (targetNode->prev) targetNode->prev->next = newNode;
+    else head = newNode;
+    targetNode->prev = newNode;
+}
+
+void DList::addAfter(const string& target, const string& val) {
+    DNode* targetNode = findValue(target);
+    if (!targetNode) {
+        cout << "Элемент '" << target << "' не найден." << endl;
+        return;
+    }
+    DNode* newNode = new DNode(val, targetNode->next, targetNode);
+    if (targetNode->next) targetNode->next->prev = newNode;
+    else tail = newNode;
+    targetNode->next = newNode;
+}
+
+void DList::delHead() {
+    if (!head) {
+        cout << "Список пуст. Удаление невозможно." << endl;
+        return;
+    }
+    DNode* temp = head;
+    head = head->next;
+    if (head) head->prev = nullptr;
+    else tail = nullptr;
+    delete temp;
+}
+
+void DList::delTail() {
+    if (!tail) {
+        cout << "Список пуст. Удаление невозможно." << endl;
+        return;
+    }
+    DNode* temp = tail;
+    tail = tail->prev;
+    if (tail) tail->next = nullptr;
+    else head = nullptr;
+    delete temp;
+}
+
+void DList::delByVal(const string& val) {
+    DNode* targetNode = findValue(val);
+    if (!targetNode) {
+        cout << "Элемент '" << val << "' не найден." << endl;
+        return;
+    }
+    if (targetNode->prev) targetNode->prev->next = targetNode->next;
+    else head = targetNode->next;
+    if (targetNode->next) targetNode->next->prev = targetNode->prev;
+    else tail = targetNode->prev;
+    delete targetNode;
 }
 
 auto DList::contains(const string& val) const -> bool {
@@ -137,119 +99,57 @@ auto DList::contains(const string& val) const -> bool {
 }
 
 void DList::readForward() const {
-    if (head == nullptr) {
-        cout << "Список пуст" << "\n";
+    if (!head) {
+        cout << "Список пуст." << endl;
         return;
     }
-    cout << "Список вперед: ";
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        cout << " " << curr->value << " ";
+    cout << "Список: ";
+    DNode* curr = head;
+    while (curr) {
+        cout << curr->value;
+        if (curr->next) cout << " <-> ";
+        curr = curr->next;
     }
-    cout << "\n";
+    cout << endl;
 }
 
 void DList::readBackward() const {
-    if (tail == nullptr) {
-        cout << "Список пуст" << "\n";
+    if (!tail) {
+        cout << "Список пуст." << endl;
         return;
     }
-
-    cout << "Список назад: ";
-    for (DNode* curr = tail; curr != nullptr; curr = curr->prev) {
-        cout << "\"" << curr->value << "\" ";
+    cout << "Список (обратный): ";
+    DNode* curr = tail;
+    while (curr) {
+        cout << curr->value;
+        if (curr->prev) cout << " <-> ";
+        curr = curr->prev;
     }
-    cout << "\n";
+    cout << endl;
 }
 
 void DList::delAfterValue(const string& val) {
     DNode* targetNode = findValue(val);
-    if (targetNode == nullptr || targetNode->next == nullptr) {
+    if (!targetNode || !targetNode->next) {
+        cout << "Невозможно удалить элемент после '" << val << "'." << endl;
         return;
     }
-    delByVal(targetNode->next->value);
+    DNode* toDelete = targetNode->next;
+    targetNode->next = toDelete->next;
+    if (toDelete->next) toDelete->next->prev = targetNode;
+    else tail = targetNode;
+    delete toDelete;
 }
 
 void DList::delBeforeValue(const string& val) {
     DNode* targetNode = findValue(val);
-    if (targetNode == nullptr || targetNode->prev == nullptr) {
+    if (!targetNode || !targetNode->prev) {
+        cout << "Невозможно удалить элемент перед '" << val << "'." << endl;
         return;
     }
-    delByVal(targetNode->prev->value);
-}
-
-void DList::saveToFile(const string& filename) const {
-    ofstream file(filename);
-    if (!file) return;
-
-    int count = 0;
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        count++;
-    }
-    file << count << "\n";
-
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        writeStringText(file, curr->value);
-    }
-}
-
-void DList::loadFromFile(const string& filename) {
-    ifstream file(filename);
-    if (!file) return;
-
-    while (head != nullptr) {
-        delHead();
-    }
-
-    int count;
-    file >> count;
-    string dummy; getline(file, dummy);
-
-    if (file.fail()) return;
-
-    for (int i = 0; i < count; ++i) {
-        string val = readStringText(file);
-        addTail(val);
-    }
-}
-
-void DList::saveToBinaryFile(const string& filename) const {
-    ofstream file(filename, ios::binary | ios::trunc);
-    if (!file) {
-        return;
-    }
-
-    int count = 0;
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        count++;
-    }
-    file.write(reinterpret_cast<const char*>(&count), sizeof(count));
-
-    for (DNode* curr = head; curr != nullptr; curr = curr->next) {
-        writeString(file, curr->value);
-    }
-}
-
-void DList::loadFromBinaryFile(const string& filename) {
-    ifstream file(filename, ios::binary);
-    if (!file) {
-        return;
-    }
-
-    while (head != nullptr) {
-        delHead();
-    }
-
-    int count;
-    file.read(reinterpret_cast<char*>(&count), sizeof(count));
-    if (file.fail()) {
-        return;
-    }
-
-    for (int i = 0; i < count; ++i) {
-        string val = readString(file);
-        if (file.fail()) {
-            break;
-        }
-        addTail(val);
-    }
+    DNode* toDelete = targetNode->prev;
+    targetNode->prev = toDelete->prev;
+    if (toDelete->prev) toDelete->prev->next = targetNode;
+    else head = targetNode;
+    delete toDelete;
 }

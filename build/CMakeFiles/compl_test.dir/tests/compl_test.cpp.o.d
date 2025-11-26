@@ -281,4 +281,6 @@ CMakeFiles/compl_test.dir/tests/compl_test.cpp.o: \
  /home/chesnokova/LABA3/tests/../compl.h /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc
+ /usr/include/c++/13/bits/fstream.tcc \
+ /home/chesnokova/LABA3/tests/../cbt_serialize.h \
+ /home/chesnokova/LABA3/tests/../compl.h

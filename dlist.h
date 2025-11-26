@@ -6,6 +6,8 @@
 #include <fstream>
 using namespace std;
 
+class DListSerializer;
+
 class DList {
 private:
     class DNode {
@@ -32,42 +34,23 @@ public:
     DList& operator=(DList&&) = delete;
 
     void addHead(const string& val);
-
     void addTail(const string& val);
-
     void addBefore(const string& target, const string& val);
-
     void addAfter(const string& target, const string& val);
-
     void delHead();
-
     void delTail();
-
     void delByVal(const string& val);
     auto contains(const string& val) const -> bool;
-
     void readForward() const;
-
     void readBackward() const;
-
     void delAfterValue(const string& val);
-
     void delBeforeValue(const string& val);
 
-    void saveToFile(const string& filename) const;
-    void loadFromFile(const string& filename);
+    DNode* getHead_Test() const { return head; }
+    DNode* getTail_Test() const { return tail; }
 
-    void saveToBinaryFile(const string& filename) const;
-    void loadFromBinaryFile(const string& filename);
-
-    DNode* getHead_Test() const
-    {
-        return head;
-    }
-    DNode* getTail_Test()const
-    {
-        return tail;
-    }
+private:
+    friend class DListSerializer;
 };
 
 #endif

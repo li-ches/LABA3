@@ -9,13 +9,20 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/chesnokova/LABA3/arr.cpp" "CMakeFiles/DataStructures.dir/arr.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/arr.cpp.o.d"
+  "/home/chesnokova/LABA3/arr_serialize.cpp" "CMakeFiles/DataStructures.dir/arr_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/arr_serialize.cpp.o.d"
+  "/home/chesnokova/LABA3/cbt_serialize.cpp" "CMakeFiles/DataStructures.dir/cbt_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/cbt_serialize.cpp.o.d"
   "/home/chesnokova/LABA3/compl.cpp" "CMakeFiles/DataStructures.dir/compl.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/compl.cpp.o.d"
   "/home/chesnokova/LABA3/dlist.cpp" "CMakeFiles/DataStructures.dir/dlist.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/dlist.cpp.o.d"
+  "/home/chesnokova/LABA3/dlist_serialize.cpp" "CMakeFiles/DataStructures.dir/dlist_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/dlist_serialize.cpp.o.d"
   "/home/chesnokova/LABA3/hash.cpp" "CMakeFiles/DataStructures.dir/hash.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/hash.cpp.o.d"
   "/home/chesnokova/LABA3/hash_serialize.cpp" "CMakeFiles/DataStructures.dir/hash_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/hash_serialize.cpp.o.d"
   "/home/chesnokova/LABA3/list.cpp" "CMakeFiles/DataStructures.dir/list.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/list.cpp.o.d"
+  "/home/chesnokova/LABA3/list_serialize.cpp" "CMakeFiles/DataStructures.dir/list_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/list_serialize.cpp.o.d"
   "/home/chesnokova/LABA3/queue.cpp" "CMakeFiles/DataStructures.dir/queue.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/queue.cpp.o.d"
+  "/home/chesnokova/LABA3/queue_serialize.cpp" "CMakeFiles/DataStructures.dir/queue_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/queue_serialize.cpp.o.d"
+  "/home/chesnokova/LABA3/serialize.cpp" "CMakeFiles/DataStructures.dir/serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/serialize.cpp.o.d"
   "/home/chesnokova/LABA3/stack.cpp" "CMakeFiles/DataStructures.dir/stack.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/stack.cpp.o.d"
+  "/home/chesnokova/LABA3/stack_serialize.cpp" "CMakeFiles/DataStructures.dir/stack_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/stack_serialize.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

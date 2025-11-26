@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "../list.h"
+#include "../list_serialize.h"
 #include "../serialize.h"
 #include <string>
 #include <sstream>
@@ -170,9 +171,9 @@ TEST(MyListTest, Coverage_DelHeadEmpty) {
 TEST(MyListTest, Coverage_Serialization_Fail) {
     MyList l;
     
-    l.saveToFile(""); 
+    ListSerializer::saveToFile(l, ""); 
 
-    l.loadFromFile("non_existent_file_123.dat");
+    ListSerializer::loadFromFile(l, "non_existent_file_123.dat");
 }
 
 // проверка на загрузку поврежденных файлов
@@ -186,7 +187,7 @@ TEST(MyListTest, Coverage_Load_Corrupted) {
         f.close();
     }
     
-    l.loadFromFile("corrupted_list.dat");
+    ListSerializer::loadFromFile(l, "corrupted_list.dat");
     
     remove("corrupted_list.dat");
 }
@@ -295,10 +296,10 @@ TEST(MyListTest, Coverage_DelAfter_DelBefore) {
 TEST(MyListTest, Coverage_IO_Failures) {
     MyList list;
     // Запись в недоступный файл
-    list.saveToFile("");
+    ListSerializer::saveToFile(list, "");
     
     // Чтение из несуществующего
-    list.loadFromFile("does_not_exist.txt");
+    ListSerializer::loadFromFile(list, "does_not_exist.txt");
     EXPECT_EQ(list.getHead_test(), nullptr);
     
     // Чтение битого файла
@@ -307,7 +308,7 @@ TEST(MyListTest, Coverage_IO_Failures) {
         f << "NotANumber";
         f.close();
     }
-    list.loadFromFile("broken_list.txt");
+    ListSerializer::loadFromFile(list, "broken_list.txt");
     remove("broken_list.txt");
 }
 
@@ -328,7 +329,7 @@ TEST(MyListTest, Coverage_Load_Overwrite) {
         }
     }
     
-    l.loadFromFile("good_list.dat");
+    ListSerializer::loadFromFile(l, "good_list.dat");
     
    
     ASSERT_NE(l.getHead_test(), nullptr);

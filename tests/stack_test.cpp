@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "../stack.h"
+#include "../stack_serialize.h"
 #include <string>
 #include <sstream>
 #include <fstream>
@@ -53,10 +54,10 @@ TEST(StackTest, SaveAndLoadFile) {
     
     s.push("hello");
     s.push("world");
-    s.saveToFile("stack_test.dat");
+    StackSerializer::saveToFile(s, "stack_test.dat");
     
     Stack s2;
-    s2.loadFromFile("stack_test.dat");
+    StackSerializer::loadFromFile(s2, "stack_test.dat");
     EXPECT_EQ(s2.pop(), "world");
     EXPECT_EQ(s2.pop(), "hello");
     
@@ -67,11 +68,11 @@ TEST(StackTest, SaveAndLoadFile) {
 TEST(StackTest, LoadFromBadFile) {
     OutputCapture cap;
     Stack s;
-    s.loadFromFile("nonexistent_file.dat");
+    StackSerializer::loadFromFile(s, "nonexistent_file.dat");
     EXPECT_TRUE(s.isEmpty());
     
     { ofstream f("bad_stack.dat", ios::binary); f << "x"; }
-    s.loadFromFile("bad_stack.dat");
+    StackSerializer::loadFromFile(s, "bad_stack.dat");
     remove("bad_stack.dat");
 }
 
@@ -100,8 +101,8 @@ TEST(StackTest, Coverage_EmptyOps) {
 // проверка на обработку ошибок ввода-вывода
 TEST(StackTest, Coverage_IO) {
     Stack s;
-    s.saveToFile("");
-    s.loadFromFile("missing.dat");
+    StackSerializer::saveToFile(s, "");
+    StackSerializer::loadFromFile(s, "missing.dat");
     
     {
         ofstream f("bad_stack.bin", ios::binary);
@@ -109,6 +110,6 @@ TEST(StackTest, Coverage_IO) {
         f.write((char*)&c, sizeof(c));
         f.close();
     }
-    s.loadFromBinaryFile("bad_stack.bin");
+    StackSerializer::loadFromBinaryFile(s, "bad_stack.bin");
     remove("bad_stack.bin");
 }

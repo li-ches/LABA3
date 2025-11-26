@@ -7,6 +7,12 @@
 #include "../compl.h"
 #include "../hash.h"
 #include "../hash_serialize.h"
+#include "../arr_serialize.h"
+#include "../list_serialize.h"
+#include "../dlist_serialize.h"
+#include "../stack_serialize.h"
+#include "../queue_serialize.h"
+#include "../cbt_serialize.h"
 #include <sstream>
 #include <iostream>
 #include <cstdio>
@@ -34,11 +40,11 @@ void testMyArr() {
     
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в myarr.txt (Text)" << endl;
-    arr1.saveToFile("myarr.txt"); 
+    ArrSerializer::saveToFile(arr1, "myarr.txt"); 
     
     cout << "Загрузка из файла..." << endl;
     MyArr arrText;
-    arrText.loadFromFile("myarr.txt");
+    ArrSerializer::loadFromFile(arrText, "myarr.txt");
     
     cout << "Проверка данных..." << endl;
     assert(arrText.lenArr() == 4);
@@ -52,11 +58,11 @@ void testMyArr() {
 
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: myarr.bin (Binary)" << endl;
-    arr1.saveToBinaryFile("myarr.bin"); 
+    ArrSerializer::saveToBinaryFile(arr1, "myarr.bin"); 
     
     cout << "Загрузка из файла..." << endl;
     MyArr arrBin;
-    arrBin.loadFromBinaryFile("myarr.bin");
+    ArrSerializer::loadFromBinaryFile(arrBin, "myarr.bin");
     
     cout << "Проверка данных..." << endl;
     assert(arrBin.lenArr() == 4);
@@ -82,11 +88,11 @@ void testMyList() {
     
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в mylist.txt (Text)" << endl;
-    list1.saveToFile("mylist.txt");
+    ListSerializer::saveToFile(list1, "mylist.txt");
     
     cout << "Загрузка из файла..." << endl;
     MyList listText;
-    listText.loadFromFile("mylist.txt");
+    ListSerializer::loadFromFile(listText, "mylist.txt");
     
     cout << "Проверка наличия значений..." << endl;
     assert(listText.findValue("Берлин"));
@@ -99,11 +105,11 @@ void testMyList() {
 
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: mylist_test.bin (Binary)" << endl;
-    list1.saveToBinaryFile("mylist_test.bin");
+    ListSerializer::saveToBinaryFile(list1, "mylist_test.bin");
     
     cout << "Загрузка из файла..." << endl;
     MyList listBin;
-    listBin.loadFromBinaryFile("mylist_test.bin");
+    ListSerializer::loadFromBinaryFile(listBin, "mylist_test.bin");
     
     cout << "Проверка наличия значений..." << endl;
     assert(listBin.findValue("Берлин"));
@@ -128,11 +134,11 @@ void testDList() {
     
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в dlist_test.txt (Text)" << endl;
-    list1.saveToFile("dlist_test.txt");
+    DListSerializer::saveToFile(list1, "dlist_test.txt");
     
     cout << "Загрузка из файла..." << endl;
     DList listText;
-    listText.loadFromFile("dlist_test.txt");
+    DListSerializer::loadFromFile(listText, "dlist_test.txt");
     
     cout << "Проверка наличия значений..." << endl;
     assert(listText.contains("Пекин"));
@@ -145,11 +151,11 @@ void testDList() {
 
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: dlist_test.bin (Binary)" << endl;
-    list1.saveToBinaryFile("dlist_test.bin");
+    DListSerializer::saveToBinaryFile(list1, "dlist_test.bin");
     
     cout << "Загрузка из файла..." << endl;
     DList listBin;
-    listBin.loadFromBinaryFile("dlist_test.bin");
+    DListSerializer::loadFromBinaryFile(listBin, "dlist_test.bin");
     
     cout << "Проверка наличия значений..." << endl;
     assert(listBin.contains("Пекин"));
@@ -174,11 +180,11 @@ void testStack() {
     
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в stack_test.txt (Text)" << endl;
-    stack1.saveToFile("stack_test.txt");
+    StackSerializer::saveToFile(stack1, "stack_test.txt");
     
     cout << "Загрузка из файла..." << endl;
     Stack stackText;
-    stackText.loadFromFile("stack_test.txt");
+    StackSerializer::loadFromFile(stackText, "stack_test.txt");
     
     cout << "Проверка порядка (LIFO)..." << endl;
     string valT1 = stackText.pop();
@@ -194,11 +200,11 @@ void testStack() {
 
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: stack_test.bin (Binary)" << endl;
-    stack1.saveToBinaryFile("stack_test.bin");
+    StackSerializer::saveToBinaryFile(stack1, "stack_test.bin");
     
     cout << "Загрузка из файла..." << endl;
     Stack stackBin;
-    stackBin.loadFromBinaryFile("stack_test.bin");
+    StackSerializer::loadFromBinaryFile(stackBin, "stack_test.bin");
     
     cout << "Проверка порядка (LIFO)..." << endl;
     string valB1 = stackBin.pop();
@@ -226,11 +232,11 @@ void testQueue() {
     
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в queue_test.txt (Text)" << endl;
-    queue1.saveToFile("queue_test.txt");
+    QueueSerializer::saveToFile(queue1, "queue_test.txt");
     
     cout << "Загрузка из файла..." << endl;
     Queue queueText;
-    queueText.loadFromFile("queue_test.txt");
+    QueueSerializer::loadFromFile(queueText, "queue_test.txt");
     
     cout << "Проверка порядка (FIFO)..." << endl;
     string valT1 = queueText.pop();
@@ -246,11 +252,11 @@ void testQueue() {
 
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: queue_test.bin (Binary)" << endl;
-    queue1.saveToBinaryFile("queue_test.bin");
+    QueueSerializer::saveToBinaryFile(queue1, "queue_test.bin");
     
     cout << "Загрузка из файла..." << endl;
     Queue queueBin;
-    queueBin.loadFromBinaryFile("queue_test.bin");
+    QueueSerializer::loadFromBinaryFile(queueBin, "queue_test.bin");
     
     cout << "Проверка порядка (FIFO)..." << endl;
     string valB1 = queueBin.pop();
@@ -278,11 +284,11 @@ void testCBT() {
     
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в cbt.txt (Text)" << endl;
-    tree1.saveToFile("cbt.txt"); 
+    CbtSerializer::saveToFile(tree1, "cbt.txt"); 
     
     cout << "Загрузка из cbt.txt..." << endl;
     CompleteBinaryTree treeText;
-    treeText.loadFromFile("cbt.txt");
+    CbtSerializer::loadFromFile(treeText, "cbt.txt");
     
     cout << " Поиск узлов..." << endl;
     assert(treeText.search(50) == true);
@@ -295,11 +301,11 @@ void testCBT() {
 
     cout << "\n Тест бинарного формата ---" << endl;
     cout << "Сохранение в cbt.bin (Binary)" << endl;
-    tree1.saveToBinaryFile("cbt.bin"); 
+    CbtSerializer::saveToBinaryFile(tree1, "cbt.bin"); 
     
     cout << "Загрузка из cbt.bin..." << endl;
     CompleteBinaryTree treeBin;
-    treeBin.loadFromBinaryFile("cbt.bin");
+    CbtSerializer::loadFromBinaryFile(treeBin, "cbt.bin");
     
     cout << "Поиск узлов..." << endl;
     assert(treeBin.search(50) == true);

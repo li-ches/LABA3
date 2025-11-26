@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "../compl.h"
+#include "../cbt_serialize.h"
 #include <sstream>
 #include <iostream>
 #include <fstream>
@@ -156,16 +157,10 @@ TEST(TreeTest, SaveLoadTextFile) {
 
     string fname = "tree_test.txt";
     
-    {
-        ofstream out(fname);
-        t.saveToFile(out);
-    }
+    CbtSerializer::saveToFile(t, fname);
 
     CompleteBinaryTree t2;
-    {
-        ifstream in(fname);
-        t2.loadFromFile(in);
-    }
+    CbtSerializer::loadFromFile(t2, fname);
 
     EXPECT_EQ(t2.getSize(), 3);
     EXPECT_TRUE(t2.search(10));
@@ -184,16 +179,10 @@ TEST(TreeTest, SaveLoadBinaryFile) {
 
     string fname = "tree_test.bin";
     
-    {
-        ofstream out(fname, ios::binary);
-        t.saveToBinaryFile(out);
-    }
+    CbtSerializer::saveToBinaryFile(t, fname);
 
     CompleteBinaryTree t2;
-    {
-        ifstream in(fname, ios::binary);
-        t2.loadFromBinaryFile(in);
-    }
+    CbtSerializer::loadFromBinaryFile(t2, fname);
 
     EXPECT_EQ(t2.getSize(), 3);
     EXPECT_TRUE(t2.search(100));
@@ -257,11 +246,11 @@ TEST(TreeTest, Coverage_Insert_Duplicates) {
 // проверка на обработку ошибок ввода-вывода
 TEST(TreeTest, Coverage_IO_Errors) {
     CompleteBinaryTree t;
-    t.saveToFile("");
-    t.loadFromFile("missing.txt");
+    CbtSerializer::saveToFile(t, "");
+    CbtSerializer::loadFromFile(t, "missing.txt");
     
-    t.saveToBinaryFile("");
-    t.loadFromBinaryFile("missing.bin");
+    CbtSerializer::saveToBinaryFile(t, "");
+    CbtSerializer::loadFromBinaryFile(t, "missing.bin");
     
     // Бинарный файл с маркером конца (-1) сразу
     {
@@ -270,7 +259,7 @@ TEST(TreeTest, Coverage_IO_Errors) {
         f.write((char*)&m, sizeof(m));
         f.close();
     }
-    t.loadFromBinaryFile("empty_tree.bin");
+    CbtSerializer::loadFromBinaryFile(t, "empty_tree.bin");
     EXPECT_EQ(t.getSize(), 0);
     remove("empty_tree.bin");
 }
@@ -282,20 +271,14 @@ TEST(TreeTest, LoadFromEmptyFiles) {
     {
         ofstream out("empty.txt");
     }
-    {
-        ifstream in("empty.txt");
-        t.loadFromFile(in);
-    }
+    CbtSerializer::loadFromFile(t, "empty.txt");
     EXPECT_EQ(t.getSize(), 0);
     remove("empty.txt");
 
     {
         ofstream out("empty.bin", ios::binary);
     }
-    {
-        ifstream in("empty.bin", ios::binary);
-        t.loadFromBinaryFile(in);
-    }
+    CbtSerializer::loadFromBinaryFile(t, "empty.bin");
     EXPECT_EQ(t.getSize(), 0);
     remove("empty.bin");
 }

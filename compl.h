@@ -1,50 +1,54 @@
-#ifndef TREE_H
-#define TREE_H
+#ifndef COMPL_H
+#define COMPL_H
 
 #include <iostream>
 #include <string>
 #include <fstream>
+using namespace std;
 
-class TreeNode {
-public:
-    int data;
-    TreeNode* left;
-    TreeNode* right;
-
-    TreeNode(int val) : data(val), left(nullptr), right(nullptr) {}
-};
+class CbtSerializer;
 
 class CompleteBinaryTree {
+public:
+    struct TreeNode {
+        int data;
+        TreeNode* left;
+        TreeNode* right;
+        
+        TreeNode(int val) : data(val), left(nullptr), right(nullptr) {}
+    };
+
 private:
     TreeNode* root;
-    int size;
+    int treeSize;
 
-    void deleteTreeRecursive(TreeNode* node);
-    TreeNode* findMin(TreeNode* node);
-    TreeNode* deleteNodeRecursive(TreeNode* current, int value);
-    void printTreeUtil(TreeNode* node, const std::string& prefix, bool isLast) const;
+    bool searchRecursive(TreeNode* node, int value) const;
+    void printRecursive(TreeNode* node, int level, int maxLevel) const;
+    void clearRecursive(TreeNode* node);
+    int countTreeSize(TreeNode* node) const;
 
 public:
     CompleteBinaryTree();
     ~CompleteBinaryTree();
 
-    bool isEmpty() const;
-    void clear();
+    CompleteBinaryTree(const CompleteBinaryTree&) = delete;
+    CompleteBinaryTree& operator=(const CompleteBinaryTree&) = delete;
+    CompleteBinaryTree(CompleteBinaryTree&&) = delete;
+    CompleteBinaryTree& operator=(CompleteBinaryTree&&) = delete;
+
     void insert(int value);
-    void remove(int value);
     bool search(int value) const;
+    void remove(int value);
     void print() const;
+    void clear();
+    bool isEmpty() const;
     int getSize() const;
 
-    void saveToFile(std::ofstream& out) const;
-    void loadFromFile(std::ifstream& in);
-    void saveToBinaryFile(std::ofstream& out) const;
-    void loadFromBinaryFile(std::ifstream& in);
+    TreeNode* getRoot_test() const { return root; }
+    void setRoot(TreeNode* newRoot);
 
-    void saveToFile(const std::string& filename) const;
-    void loadFromFile(const std::string& filename);
-    void saveToBinaryFile(const std::string& filename) const;
-    void loadFromBinaryFile(const std::string& filename);
+private:
+    friend class CbtSerializer;
 };
 
 #endif

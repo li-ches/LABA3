@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "../queue.h"
+#include "../queue_serialize.h"
 #include "../serialize.h" 
 #include <string>
 #include <sstream>
@@ -55,10 +56,10 @@ TEST(QueueTest, SaveAndLoadFile) {
     
     q.push("first");
     q.push("second");
-    q.saveToFile("queue_test.dat");
+    QueueSerializer::saveToFile(q, "queue_test.dat");
     
     Queue q2;
-    q2.loadFromFile("queue_test.dat");
+    QueueSerializer::loadFromFile(q2, "queue_test.dat");
     EXPECT_EQ(q2.pop(), "first");
     EXPECT_EQ(q2.pop(), "second");
     
@@ -69,7 +70,7 @@ TEST(QueueTest, SaveAndLoadFile) {
 TEST(QueueTest, LoadFromBadFile) {
     OutputCapture cap;
     Queue q;
-    q.loadFromFile("nonexistent_queue.dat");
+    QueueSerializer::loadFromFile(q, "nonexistent_queue.dat");
     EXPECT_TRUE(q.isEmpty());
 }
 
@@ -81,7 +82,7 @@ TEST(QueueTest, TruncatedFile) {
     writeString(out, string("only"));
     out.close();
 
-    Queue q; q.loadFromFile("q_trunc.dat");
+    Queue q; QueueSerializer::loadFromFile(q, "q_trunc.dat");
     remove("q_trunc.dat");
 }
 
@@ -125,8 +126,8 @@ TEST(QueueTest, Coverage_FullCycle) {
 // проверка на обработку ошибок ввода-вывода
 TEST(QueueTest, Coverage_IO) {
     Queue q;
-    q.saveToFile("");
-    q.loadFromFile("missing.dat");
+    QueueSerializer::saveToFile(q, "");
+    QueueSerializer::loadFromFile(q, "missing.dat");
     
     {
         ofstream f("trunc.bin", ios::binary);
@@ -134,6 +135,6 @@ TEST(QueueTest, Coverage_IO) {
         f.write((char*)&c, sizeof(c));
         f.close();
     }
-    q.loadFromBinaryFile("trunc.bin");
+    QueueSerializer::loadFromBinaryFile(q, "trunc.bin");
     remove("trunc.bin");
 }

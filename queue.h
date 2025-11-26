@@ -4,23 +4,23 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-
 using namespace std;
+
+class QueueSerializer;
 
 class Queue {
 private:
     class QNode {
     public:
-        string data;
+        string value;
         QNode* next;
     };
 
-    QNode* front;
-    QNode* rear;
+    QNode* head;
+    QNode* tail;
 
 public:
     Queue();
-
     ~Queue();
 
     Queue(const Queue&) = delete;
@@ -28,26 +28,17 @@ public:
     Queue(Queue&&) = delete;
     Queue& operator=(Queue&&) = delete;
 
-    bool isEmpty() const;
-
     void push(string val);
-
     string pop();
     string peek() const;
-
     void print() const;
+    bool isEmpty() const;
 
-    void saveToFile(const string& filename) const;
-    void loadFromFile(const string& filename);
+    QNode* getHead_test() const { return head; }
+    QNode* getTail_test() const { return tail; }
 
-    void saveToBinaryFile(const string& filename) const;
-    void loadFromBinaryFile(const string& filename);
-
-    QNode* getFront_test() const
-    {
-        return front;
-    }
+private:
+    friend class QueueSerializer;
 };
-
 
 #endif

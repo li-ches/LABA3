@@ -282,4 +282,6 @@ CMakeFiles/dlist_test.dir/tests/dlist_test.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
+ /home/chesnokova/LABA3/tests/../dlist_serialize.h \
+ /home/chesnokova/LABA3/tests/../dlist.h \
  /home/chesnokova/LABA3/tests/../serialize.h

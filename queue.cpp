@@ -1,130 +1,59 @@
 #include "queue.h"
-#include "serialize.h"
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
-Queue::Queue() : front(nullptr), rear(nullptr) {
-}
+Queue::Queue() : head(nullptr), tail(nullptr) {}
 
 Queue::~Queue() {
-    while (!isEmpty()) {
-        pop();
+    while (head) {
+        QNode* temp = head;
+        head = head->next;
+        delete temp;
     }
 }
 
-bool Queue::isEmpty() const {
-    return front == nullptr;
-}
-
-void Queue::push(std::string val) {
-    QNode* newNode = new QNode;
-    newNode->data = val;
-    newNode->next = nullptr;
-
-    if (isEmpty()) {
-        front = newNode;
-        rear = newNode;
+void Queue::push(string val) {
+    QNode* newNode = new QNode{val, nullptr};
+    if (!head) {
+        head = tail = newNode;
     } else {
-        rear->next = newNode;
-        rear = newNode;
+        tail->next = newNode;
+        tail = newNode;
     }
 }
 
 string Queue::pop() {
-    if (isEmpty()) {
-        return "[QUEUE_EMPTY]";
-    }
-    QNode* tmp = front;
-    string value = tmp->data;
-
-    front = front->next;
-    delete tmp;
-
-    if (front == nullptr) {
-        rear = nullptr;
-    }
-    return value;
+    if (!head) return "[QUEUE_EMPTY]";
+    QNode* temp = head;
+    string val = head->value;
+    head = head->next;
+    if (!head) tail = nullptr;
+    delete temp;
+    return val;
 }
 
 string Queue::peek() const {
-    if (isEmpty()) {
-        return "[QUEUE_EMPTY]";
-    }
-    return front->data;
+    if (!head) return "[QUEUE_EMPTY]";
+    return head->value;
 }
 
 void Queue::print() const {
-    if (isEmpty()) {
+    if (!head) {
         cout << "Очередь пуста." << endl;
         return;
     }
-    cout << "Очередь (начало -> конец): ";
-    for (QNode* curr = front; curr; curr = curr->next) {
-        cout << "\"" << curr->data << "\" ";
+    cout << "Очередь: ";
+    QNode* curr = head;
+    while (curr) {
+        cout << curr->value;
+        if (curr->next) cout << " -> ";
+        curr = curr->next;
     }
-    cout << "\n";
+    cout << endl;
 }
 
-
-
-void Queue::saveToFile(const string& filename) const {
-    ofstream file(filename);
-    if (!file) return;
-
-    int count = 0;
-    for (QNode* curr = front; curr; curr = curr->next) {
-        count++;
-    }
-    file << count << "\n";
-
-    for (QNode* curr = front; curr; curr = curr->next) {
-        writeStringText(file, curr->data);
-    }
-}
-
-void Queue::loadFromFile(const string& filename) {
-    ifstream file(filename);
-    if (!file) return;
-
-    while (!isEmpty()) pop();
-
-    int count;
-    file >> count;
-    string dummy; getline(file, dummy);
-
-    for (int i = 0; i < count; ++i) {
-        push(readStringText(file));
-    }
-}
-
-void Queue::saveToBinaryFile(const string& filename) const {
-    ofstream file(filename, ios::binary | ios::trunc);
-    if (!file) return;
-
-    int count = 0;
-    for (QNode* curr = front; curr; curr = curr->next) {
-        count++;
-    }
-    file.write(reinterpret_cast<const char*>(&count), sizeof(count));
-
-    for (QNode* curr = front; curr; curr = curr->next) {
-        writeString(file, curr->data);
-    }
-}
-
-void Queue::loadFromBinaryFile(const string& filename) {
-    ifstream file(filename, ios::binary);
-    if (!file) return;
-
-    while (!isEmpty()) pop();
-
-    int count;
-    file.read(reinterpret_cast<char*>(&count), sizeof(count));
-    if (file.fail()) return;
-
-    for (int i = 0; i < count; ++i) {
-        string val = readString(file);
-        if (file.fail()) break;
-        push(val);
-    }
+bool Queue::isEmpty() const {
+    return head == nullptr;
 }

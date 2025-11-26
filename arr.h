@@ -7,6 +7,8 @@
 
 using namespace std;
 
+class ArrSerializer;
+
 class MyArr {
 private:
     string* data;
@@ -37,15 +39,10 @@ public:
 
     auto lenArr() const -> int;
 
-    void saveToFile(const string& filename) const;
-    void loadFromFile(const string& filename);
+    string* getData_test() const { return data; }
 
-    void saveToBinaryFile(const string& filename) const;
-    void loadFromBinaryFile(const string& filename);
-
-    string* getData_test() const
-    {   return data;
-    }
+private:
+    friend class ArrSerializer;
 };
 
 #endif

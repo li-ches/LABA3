@@ -949,6 +949,30 @@ arr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/arr.cpp.s
 .PHONY : arr.cpp.s
 
+arr_serialize.o: arr_serialize.cpp.o
+.PHONY : arr_serialize.o
+
+# target to build an object file
+arr_serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/arr_serialize.cpp.o
+.PHONY : arr_serialize.cpp.o
+
+arr_serialize.i: arr_serialize.cpp.i
+.PHONY : arr_serialize.i
+
+# target to preprocess a source file
+arr_serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/arr_serialize.cpp.i
+.PHONY : arr_serialize.cpp.i
+
+arr_serialize.s: arr_serialize.cpp.s
+.PHONY : arr_serialize.s
+
+# target to generate assembly for a file
+arr_serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/arr_serialize.cpp.s
+.PHONY : arr_serialize.cpp.s
+
 bench.o: bench.cpp.o
 .PHONY : bench.o
 
@@ -972,6 +996,30 @@ bench.s: bench.cpp.s
 bench.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/bench.cpp.s
 .PHONY : bench.cpp.s
+
+cbt_serialize.o: cbt_serialize.cpp.o
+.PHONY : cbt_serialize.o
+
+# target to build an object file
+cbt_serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/cbt_serialize.cpp.o
+.PHONY : cbt_serialize.cpp.o
+
+cbt_serialize.i: cbt_serialize.cpp.i
+.PHONY : cbt_serialize.i
+
+# target to preprocess a source file
+cbt_serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/cbt_serialize.cpp.i
+.PHONY : cbt_serialize.cpp.i
+
+cbt_serialize.s: cbt_serialize.cpp.s
+.PHONY : cbt_serialize.s
+
+# target to generate assembly for a file
+cbt_serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/cbt_serialize.cpp.s
+.PHONY : cbt_serialize.cpp.s
 
 compl.o: compl.cpp.o
 .PHONY : compl.o
@@ -1020,6 +1068,30 @@ dlist.s: dlist.cpp.s
 dlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/dlist.cpp.s
 .PHONY : dlist.cpp.s
+
+dlist_serialize.o: dlist_serialize.cpp.o
+.PHONY : dlist_serialize.o
+
+# target to build an object file
+dlist_serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/dlist_serialize.cpp.o
+.PHONY : dlist_serialize.cpp.o
+
+dlist_serialize.i: dlist_serialize.cpp.i
+.PHONY : dlist_serialize.i
+
+# target to preprocess a source file
+dlist_serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/dlist_serialize.cpp.i
+.PHONY : dlist_serialize.cpp.i
+
+dlist_serialize.s: dlist_serialize.cpp.s
+.PHONY : dlist_serialize.s
+
+# target to generate assembly for a file
+dlist_serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/dlist_serialize.cpp.s
+.PHONY : dlist_serialize.cpp.s
 
 hash.o: hash.cpp.o
 .PHONY : hash.o
@@ -1093,6 +1165,30 @@ list.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/list.cpp.s
 .PHONY : list.cpp.s
 
+list_serialize.o: list_serialize.cpp.o
+.PHONY : list_serialize.o
+
+# target to build an object file
+list_serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/list_serialize.cpp.o
+.PHONY : list_serialize.cpp.o
+
+list_serialize.i: list_serialize.cpp.i
+.PHONY : list_serialize.i
+
+# target to preprocess a source file
+list_serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/list_serialize.cpp.i
+.PHONY : list_serialize.cpp.i
+
+list_serialize.s: list_serialize.cpp.s
+.PHONY : list_serialize.s
+
+# target to generate assembly for a file
+list_serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/list_serialize.cpp.s
+.PHONY : list_serialize.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -1141,6 +1237,54 @@ queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/queue.cpp.s
 .PHONY : queue.cpp.s
 
+queue_serialize.o: queue_serialize.cpp.o
+.PHONY : queue_serialize.o
+
+# target to build an object file
+queue_serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/queue_serialize.cpp.o
+.PHONY : queue_serialize.cpp.o
+
+queue_serialize.i: queue_serialize.cpp.i
+.PHONY : queue_serialize.i
+
+# target to preprocess a source file
+queue_serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/queue_serialize.cpp.i
+.PHONY : queue_serialize.cpp.i
+
+queue_serialize.s: queue_serialize.cpp.s
+.PHONY : queue_serialize.s
+
+# target to generate assembly for a file
+queue_serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/queue_serialize.cpp.s
+.PHONY : queue_serialize.cpp.s
+
+serialize.o: serialize.cpp.o
+.PHONY : serialize.o
+
+# target to build an object file
+serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/serialize.cpp.o
+.PHONY : serialize.cpp.o
+
+serialize.i: serialize.cpp.i
+.PHONY : serialize.i
+
+# target to preprocess a source file
+serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/serialize.cpp.i
+.PHONY : serialize.cpp.i
+
+serialize.s: serialize.cpp.s
+.PHONY : serialize.s
+
+# target to generate assembly for a file
+serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/serialize.cpp.s
+.PHONY : serialize.cpp.s
+
 stack.o: stack.cpp.o
 .PHONY : stack.o
 
@@ -1164,6 +1308,30 @@ stack.s: stack.cpp.s
 stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/stack.cpp.s
 .PHONY : stack.cpp.s
+
+stack_serialize.o: stack_serialize.cpp.o
+.PHONY : stack_serialize.o
+
+# target to build an object file
+stack_serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/stack_serialize.cpp.o
+.PHONY : stack_serialize.cpp.o
+
+stack_serialize.i: stack_serialize.cpp.i
+.PHONY : stack_serialize.i
+
+# target to preprocess a source file
+stack_serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/stack_serialize.cpp.i
+.PHONY : stack_serialize.cpp.i
+
+stack_serialize.s: stack_serialize.cpp.s
+.PHONY : stack_serialize.s
+
+# target to generate assembly for a file
+stack_serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/stack_serialize.cpp.s
+.PHONY : stack_serialize.cpp.s
 
 tests/arr_test.o: tests/arr_test.cpp.o
 .PHONY : tests/arr_test.o
@@ -1431,15 +1599,24 @@ help:
 	@echo "... arr.o"
 	@echo "... arr.i"
 	@echo "... arr.s"
+	@echo "... arr_serialize.o"
+	@echo "... arr_serialize.i"
+	@echo "... arr_serialize.s"
 	@echo "... bench.o"
 	@echo "... bench.i"
 	@echo "... bench.s"
+	@echo "... cbt_serialize.o"
+	@echo "... cbt_serialize.i"
+	@echo "... cbt_serialize.s"
 	@echo "... compl.o"
 	@echo "... compl.i"
 	@echo "... compl.s"
 	@echo "... dlist.o"
 	@echo "... dlist.i"
 	@echo "... dlist.s"
+	@echo "... dlist_serialize.o"
+	@echo "... dlist_serialize.i"
+	@echo "... dlist_serialize.s"
 	@echo "... hash.o"
 	@echo "... hash.i"
 	@echo "... hash.s"
@@ -1449,15 +1626,27 @@ help:
 	@echo "... list.o"
 	@echo "... list.i"
 	@echo "... list.s"
+	@echo "... list_serialize.o"
+	@echo "... list_serialize.i"
+	@echo "... list_serialize.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... queue.o"
 	@echo "... queue.i"
 	@echo "... queue.s"
+	@echo "... queue_serialize.o"
+	@echo "... queue_serialize.i"
+	@echo "... queue_serialize.s"
+	@echo "... serialize.o"
+	@echo "... serialize.i"
+	@echo "... serialize.s"
 	@echo "... stack.o"
 	@echo "... stack.i"
 	@echo "... stack.s"
+	@echo "... stack_serialize.o"
+	@echo "... stack_serialize.i"
+	@echo "... stack_serialize.s"
 	@echo "... tests/arr_test.o"
 	@echo "... tests/arr_test.i"
 	@echo "... tests/arr_test.s"

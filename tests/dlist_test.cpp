@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "../dlist.h"
+#include "../dlist_serialize.h"
 #include "../serialize.h"
 #include <string>
 #include <sstream>
@@ -20,20 +21,16 @@ public:
 TEST(DListTest, Branch_Killer) {
     DList d;
 
-
     d.addHead("A"); 
     d.addHead("B"); 
 
-
     d.delHead(); 
     EXPECT_EQ(d.getHead_Test()->value, "A");
-
 
     d.addTail("Z"); 
     d.delTail();
     EXPECT_EQ(d.getTail_Test()->value, "A");
 
-    
     d.addTail("C"); 
     d.addAfter("A", "B"); 
 
@@ -135,11 +132,11 @@ TEST(DListTest, Coverage_DelAfter_DelBefore_Boundary) {
 // проверка на обработку ошибок ввода-вывода
 TEST(DListTest, Coverage_IO) {
     DList d;
-    d.saveToFile(""); 
-    d.saveToBinaryFile("");
+    DListSerializer::saveToFile(d, ""); 
+    DListSerializer::saveToBinaryFile(d, "");
     
-    d.loadFromFile("missing.txt");
-    d.loadFromBinaryFile("missing.bin");
+    DListSerializer::loadFromFile(d, "missing.txt");
+    DListSerializer::loadFromBinaryFile(d, "missing.bin");
     
     {
         ofstream f("bad.bin", ios::binary);
@@ -147,6 +144,6 @@ TEST(DListTest, Coverage_IO) {
         f.write((char*)&count, sizeof(count));
         f.close();
     }
-    d.loadFromBinaryFile("bad.bin");
+    DListSerializer::loadFromBinaryFile(d, "bad.bin");
     remove("bad.bin");
 }

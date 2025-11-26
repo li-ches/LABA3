@@ -1,53 +1,30 @@
 #include "arr.h"
-#include "serialize.h"
+#include <iostream>
+#include <fstream>
+#include <cassert>
 
 using namespace std;
 
-MyArr::MyArr() : data(nullptr), size(0), capacity(0) {
-}
-
-MyArr::~MyArr() {
-    delete[] data;
-}
-
 void MyArr::ensureCapacity(int newSize) {
-    if (newSize <= capacity) {
-        return;
-    }
-
-    int newCapacity = (capacity == 0) ? 1 : capacity;
-    while (newCapacity < newSize) {
-        newCapacity *= 2;
-    }
-
-    auto* newData = new string[newCapacity];
+    if (newSize <= capacity) return;
+    
+    int newCapacity = (capacity == 0) ? 4 : capacity * 2;
+    while (newCapacity < newSize) newCapacity *= 2;
+    
+    string* newData = new string[newCapacity];
     for (int i = 0; i < size; ++i) {
         newData[i] = data[i];
     }
-
+    
     delete[] data;
     data = newData;
     capacity = newCapacity;
 }
 
-void MyArr::addEnd(const string& val) {
-    ensureCapacity(size + 1);
-    data[size++] = val;
-}
+MyArr::MyArr() : data(nullptr), size(0), capacity(0) {}
 
-void MyArr::addAt(int idx, const string& val) {
-    if (idx < 0 || idx > size) {
-        return;
-    }
-
-    ensureCapacity(size + 1);
-
-    for (int i = size; i > idx; --i) {
-        data[i] = data[i - 1];
-    }
-
-    data[idx] = val;
-    size++;
+MyArr::~MyArr() {
+    delete[] data;
 }
 
 void MyArr::addHead(const string& val) {
@@ -60,168 +37,65 @@ void MyArr::addHead(const string& val) {
 }
 
 void MyArr::delHead() {
-    if (size == 0) {
-        return;
-    }
+    if (size == 0) return;
     for (int i = 0; i < size - 1; ++i) {
         data[i] = data[i + 1];
     }
     --size;
-
-    if (size > 0 && size * 4 <= capacity && capacity > 1) {
-        int newCapacity = capacity / 2;
-        auto* newData = new string[newCapacity];
-        for (int i = 0; i < size; ++i) {
-            newData[i] = data[i];
-        }
-        delete[] data;
-        data = newData;
-        capacity = newCapacity;
-    }
 }
 
 void MyArr::delEnd() {
-    if (size == 0) {
-        return;
-    }
+    if (size == 0) return;
     --size;
+}
 
-    if (size > 0 && size * 4 <= capacity && capacity > 1) {
-        int newCapacity = capacity / 2;
-        auto* newData = new string[newCapacity];
-        for (int i = 0; i < size; ++i) {
-            newData[i] = data[i];
-        }
-        delete[] data;
-        data = newData;
-        capacity = newCapacity;
-    }
+void MyArr::addEnd(const string& val) {
+    ensureCapacity(size + 1);
+    data[size] = val;
+    ++size;
+}
+
+string MyArr::getAt(int idx) const {
+    if (idx < 0 || idx >= size) return "[INVALID_INDEX]";
+    return data[idx];
 }
 
 void MyArr::delAt(int idx) {
-    if (idx < 0 || idx >= size) {
-        return;
-    }
-
+    if (idx < 0 || idx >= size) return;
     for (int i = idx; i < size - 1; ++i) {
         data[i] = data[i + 1];
     }
-
-    size--;
-
-    if (size > 0 && size * 4 <= capacity && capacity > 1) {
-        int newCapacity = capacity / 2;
-        auto* newData = new string[newCapacity];
-        for (int i = 0; i < size; ++i) {
-            newData[i] = data[i];
-        }
-        delete[] data;
-        data = newData;
-        capacity = newCapacity;
-    }
-}
-
-void MyArr::repArr(int idx, const string& val) {
-    if (idx < 0 || idx >= size) {
-        return;
-    }
-    data[idx] = val;
+    --size;
 }
 
 void MyArr::readArray() const {
     if (size == 0) {
-        cout << "Массив пуст.\n";
+        cout << "Массив пуст." << endl;
         return;
     }
-    cout << "Содержимое массива (" << size << "/" << capacity << "): ";
+    cout << "Массив [" << size << "]: ";
     for (int i = 0; i < size; ++i) {
-        cout << "\"" << data[i] << "\" ";
+        cout << data[i];
+        if (i < size - 1) cout << " -> ";
     }
-    cout << "\n";
+    cout << endl;
 }
 
-auto MyArr::getAt(int idx) const -> string {
-    if (idx >= 0 && idx < size) {
-        return data[idx];
+void MyArr::addAt(int idx, const string& val) {
+    if (idx < 0 || idx > size) return;
+    ensureCapacity(size + 1);
+    for (int i = size; i > idx; --i) {
+        data[i] = data[i - 1];
     }
-    return "[INVALID_INDEX]";
+    data[idx] = val;
+    ++size;
+}
+
+void MyArr::repArr(int idx, const string& val) {
+    if (idx < 0 || idx >= size) return;
+    data[idx] = val;
 }
 
 auto MyArr::lenArr() const -> int {
     return size;
-}
-
-
-void MyArr::saveToFile(const string& filename) const {
-    ofstream file(filename);
-    if (!file) return;
-
-    file << size << "\n";
-    for (int i = 0; i < size; ++i) {
-        writeStringText(file, data[i]);
-    }
-}
-
-void MyArr::loadFromFile(const string& filename) {
-    ifstream file(filename);
-    if (!file) return;
-
-    delete[] data;
-    data = nullptr;
-    size = 0;
-    capacity = 0;
-
-    int newSize;
-    file >> newSize;
-    string dummy; getline(file, dummy);
-
-    if (file.fail()) return;
-
-    ensureCapacity(newSize);
-    size = newSize;
-
-    for (int i = 0; i < size; ++i) {
-        data[i] = readStringText(file);
-    }
-}
-
-void MyArr::saveToBinaryFile(const string& filename) const {
-    ofstream file(filename, ios::binary | ios::trunc);
-    if (!file) {
-        return;
-    }
-
-    file.write(reinterpret_cast<const char*>(&size), sizeof(size));
-    for (int i = 0; i < size; ++i) {
-        writeString(file, data[i]);
-    }
-}
-
-void MyArr::loadFromBinaryFile(const string& filename) {
-    ifstream file(filename, ios::binary);
-    if (!file) {
-        return;
-    }
-
-    delete[] data;
-    data = nullptr;
-    size = 0;
-    capacity = 0;
-
-    int newSize;
-    file.read(reinterpret_cast<char*>(&newSize), sizeof(newSize));
-    if (file.fail()) {
-        return;
-    }
-
-    ensureCapacity(newSize);
-    size = newSize;
-
-    for (int i = 0; i < size; ++i) {
-        data[i] = readString(file);
-        if (file.fail()) {
-            size = i;
-            break;
-        }
-    }
 }

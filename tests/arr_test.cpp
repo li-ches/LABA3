@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "../arr.h"
+#include "../arr_serialize.h"
 #include "../serialize.h"
 #include <string>
 #include <sstream>
@@ -79,15 +80,14 @@ TEST(MyArrTest, Branch_EdgeCases) {
 TEST(MyArrTest, IO_Errors_Coverage) {
     MyArr arr;
     
-    arr.loadFromFile("no_such_file.arr");
-    arr.loadFromBinaryFile("no_such_file.bin");
-
+    ArrSerializer::loadFromFile(arr, "no_such_file.arr");
+    ArrSerializer::loadFromBinaryFile(arr, "no_such_file.bin");
 
     {
         ofstream f("corrupt.arr");
         f << "NotANumber"; 
     }
-    arr.loadFromFile("corrupt.arr");
+    ArrSerializer::loadFromFile(arr, "corrupt.arr");
     remove("corrupt.arr");
 
     {
@@ -96,12 +96,12 @@ TEST(MyArrTest, IO_Errors_Coverage) {
         f.write((char*)&size, sizeof(size));
         // данные не пишем
     }
-    arr.loadFromBinaryFile("corrupt.bin");
+    ArrSerializer::loadFromBinaryFile(arr, "corrupt.bin");
     remove("corrupt.bin");
     
 
-    arr.saveToFile(""); 
-    arr.saveToBinaryFile("");
+    ArrSerializer::saveToFile(arr, ""); 
+    ArrSerializer::saveToBinaryFile(arr, "");
 }
 
 // проверка на корректную работу сериализации и десериализации
@@ -110,16 +110,16 @@ TEST(MyArrTest, SaveAndLoad_HappyPath) {
     arr.addEnd("1");
     arr.addEnd("2");
     
-    arr.saveToFile("good.arr");
+    ArrSerializer::saveToFile(arr, "good.arr");
     MyArr arr2;
-    arr2.loadFromFile("good.arr");
+    ArrSerializer::loadFromFile(arr2, "good.arr");
     EXPECT_EQ(arr2.lenArr(), 2);
     EXPECT_EQ(arr2.getAt(0), "1");
     remove("good.arr");
 
-    arr.saveToBinaryFile("good.bin");
+    ArrSerializer::saveToBinaryFile(arr, "good.bin");
     MyArr arr3;
-    arr3.loadFromBinaryFile("good.bin");
+    ArrSerializer::loadFromBinaryFile(arr3, "good.bin");
     EXPECT_EQ(arr3.lenArr(), 2);
     remove("good.bin");
 }

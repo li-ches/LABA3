@@ -9,8 +9,15 @@
 #include "stack.h"
 #include "queue.h"
 #include "hash.h"
-#include "hash_serialize.h"
 #include "compl.h"
+
+#include "arr_serialize.h"
+#include "list_serialize.h"
+#include "dlist_serialize.h"
+#include "stack_serialize.h"
+#include "queue_serialize.h"
+#include "cbt_serialize.h"
+#include "hash_serialize.h"
 
 using namespace std;
 
@@ -138,11 +145,13 @@ int main() {
 
         if (cmd == "SAVE") {
             if (arg1.empty()) { cout << "Ошибка: нужно имя файла-основы." << "\n"; continue; }
-            arr.saveToFile(arg1 + ".arr");
-            slist.saveToFile(arg1 + ".list");
-            dlist.saveToFile(arg1 + ".dlist");
-            stack.saveToFile(arg1 + ".stack");
-            queue.saveToFile(arg1 + ".queue");
+            // Используем сериализаторы вместо методов классов
+            ArrSerializer::saveToFile(arr, arg1 + ".arr");
+            ListSerializer::saveToFile(slist, arg1 + ".list");
+            DListSerializer::saveToFile(dlist, arg1 + ".dlist");
+            StackSerializer::saveToFile(stack, arg1 + ".stack");
+            QueueSerializer::saveToFile(queue, arg1 + ".queue");
+            CbtSerializer::saveToFile(cbt, arg1 + ".cbt");
             HashSerializer::saveToFile(htChain, arg1 + ".chainhash");
             HashSerializer::saveToFile(htOpen, arg1 + ".openhash");
             cout << "Структуры сохранены с базовым именем: " << arg1 << "\n";
@@ -150,11 +159,13 @@ int main() {
         }
         if (cmd == "LOAD") {
             if (arg1.empty()) { cout << "Ошибка: нужно имя файла-основы." << "\n"; continue; }
-            arr.loadFromFile(arg1 + ".arr");
-            slist.loadFromFile(arg1 + ".list");
-            dlist.loadFromFile(arg1 + ".dlist");
-            stack.loadFromFile(arg1 + ".stack");
-            queue.loadFromFile(arg1 + ".queue");
+            // Используем сериализаторы вместо методов классов
+            ArrSerializer::loadFromFile(arr, arg1 + ".arr");
+            ListSerializer::loadFromFile(slist, arg1 + ".list");
+            DListSerializer::loadFromFile(dlist, arg1 + ".dlist");
+            StackSerializer::loadFromFile(stack, arg1 + ".stack");
+            QueueSerializer::loadFromFile(queue, arg1 + ".queue");
+            CbtSerializer::loadFromFile(cbt, arg1 + ".cbt");
             HashSerializer::loadFromFile(htChain, arg1 + ".chainhash");
             HashSerializer::loadFromFile(htOpen, arg1 + ".openhash");
             cout << "Структуры загружены с базовым именем: " << arg1 << "\n";

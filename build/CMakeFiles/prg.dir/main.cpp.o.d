@@ -186,5 +186,11 @@ CMakeFiles/prg.dir/main.cpp.o: /home/chesnokova/LABA3/main.cpp \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/chesnokova/LABA3/hash_serialize.h /home/chesnokova/LABA3/compl.h
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /home/chesnokova/LABA3/compl.h \
+ /home/chesnokova/LABA3/arr_serialize.h \
+ /home/chesnokova/LABA3/list_serialize.h \
+ /home/chesnokova/LABA3/dlist_serialize.h \
+ /home/chesnokova/LABA3/stack_serialize.h \
+ /home/chesnokova/LABA3/queue_serialize.h \
+ /home/chesnokova/LABA3/cbt_serialize.h \
+ /home/chesnokova/LABA3/hash_serialize.h
