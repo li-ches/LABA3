@@ -8,6 +8,8 @@
 
 using namespace std;
 
+class HashSerializer;
+
 auto hash_str(const string& key, int mod) -> int;
 
 class ChainHash {
@@ -17,7 +19,6 @@ private:
         string key;
         string val;
         Node* next;
-
         Node(const string& keyArg, const string& valArg)
             : key(keyArg), val(valArg), next(nullptr) {}
     };
@@ -28,24 +29,19 @@ private:
 public:
     explicit ChainHash(int buckCount);
     ~ChainHash();
-
     ChainHash(const ChainHash&) = delete;
     ChainHash& operator=(const ChainHash&) = delete;
     ChainHash(ChainHash&&) = delete;
     ChainHash& operator=(ChainHash&&) = delete;
 
     void insert(const string& key, const string& val);
-
     auto erase(const string& key) -> bool;
     auto find(const string& key) -> string;
-
     void show();
 
-    void saveToFile(const string& filename) const;
-    void loadFromFile(const string& filename);
-
-    void saveToBinaryFile(const string& filename) const;
-    void loadFromBinaryFile(const string& filename);
+private:
+    friend class HashSerializer;
+    void clearAndResize(int newCap);
 };
 
 class OpenHash {
@@ -56,7 +52,6 @@ private:
         string val;
         bool used;
         bool deleted;
-
         Entry() : used(false), deleted(false) {}
     };
 
@@ -66,19 +61,14 @@ private:
 public:
     explicit OpenHash(int size);
     ~OpenHash();
-
     void insert(const string& key, const string& value);
-
     auto erase(const string& key) -> bool;
     auto find(const string& key) const -> string;
-
     void show();
 
-    void saveToFile(const string& filename) const;
-    void loadFromFile(const string& filename);
-
-    void saveToBinaryFile(const string& filename) const;
-    void loadFromBinaryFile(const string& filename);
+private:
+    friend class HashSerializer;
+    void clearAndResize(int newCap);
 };
 
 void hash_man();

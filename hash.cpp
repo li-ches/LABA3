@@ -15,7 +15,6 @@ auto hash_str(const string& key, int mod) -> int
     return (int)hashVal;
 }
 
-
 ChainHash::ChainHash(int buckCount) : table(nullptr), cap(buckCount)
 {
     if(cap < 1) cap=1;
@@ -117,37 +116,8 @@ void ChainHash::show() {
     cout << "\n";
 }
 
-void ChainHash::saveToFile(const string& filename) const {
-    ofstream file(filename);
-    if (!file) return;
-
-    file << cap << "\n";
-
-    int count = 0;
-    for (int i = 0; i < cap; ++i) {
-        Node* curr = table[i];
-        while (curr) {
-            count++;
-            curr = curr->next;
-        }
-    }
-    file << count << "\n";
-
-    for (int i = 0; i < cap; ++i) {
-        Node* curr = table[i];
-        while (curr) {
-            writeStringText(file, curr->key);
-            writeStringText(file, curr->val);
-            curr = curr->next;
-        }
-    }
-}
-
-void ChainHash::loadFromFile(const string& filename) {
-    ifstream file(filename);
-    if (!file) return;
-
-    for(int i=0; i < cap; i++) {
+void ChainHash::clearAndResize(int newCap) {
+    for(int i = 0; i < cap; i++) {
         Node* cur = table[i];
         while(cur != nullptr) {
             Node* nxt = cur->next;
@@ -156,83 +126,10 @@ void ChainHash::loadFromFile(const string& filename) {
         }
     }
     delete[] table;
-
-    int newCap;
-    file >> newCap;
-    string dummy; getline(file, dummy);
     cap = newCap;
     table = new Node*[cap];
     for(int i = 0; i < cap; i++) table[i] = nullptr;
-
-    int count;
-    file >> count;
-    getline(file, dummy);
-
-    if (file.fail()) return;
-    for (int i = 0; i < count; ++i) {
-        string key = readStringText(file);
-        string val = readStringText(file);
-        if (file.fail()) break;
-        insert(key, val);
-    }
 }
-
-void ChainHash::saveToBinaryFile(const string& filename) const {
-    ofstream file(filename, ios::binary | ios::trunc);
-    if (!file) return;
-
-    file.write(reinterpret_cast<const char*>(&cap), sizeof(cap));
-
-    int count = 0;
-    for (int i = 0; i < cap; ++i) {
-        Node* curr = table[i];
-        while (curr) {
-            count++;
-            curr = curr->next;
-        }
-    }
-    file.write(reinterpret_cast<const char*>(&count), sizeof(count));
-
-    for (int i = 0; i < cap; ++i) {
-        Node* curr = table[i];
-        while (curr) {
-            writeString(file, curr->key);
-            writeString(file, curr->val);
-            curr = curr->next;
-        }
-    }
-}
-
-void ChainHash::loadFromBinaryFile(const string& filename) {
-    ifstream file(filename, ios::binary);
-    if (!file) return;
-
-    for(int i=0; i < cap; i++) {
-        Node* cur = table[i];
-        while(cur != nullptr) {
-            Node* nxt = cur->next;
-            delete cur;
-            cur = nxt;
-        }
-    }
-    delete[] table;
-
-    file.read(reinterpret_cast<char*>(&cap), sizeof(cap));
-    table = new Node*[cap];
-    for(int i = 0; i < cap; i++) table[i] = nullptr;
-
-    int count;
-    file.read(reinterpret_cast<char*>(&count), sizeof(count));
-
-    if (file.fail()) return;
-    for (int i = 0; i < count; ++i) {
-        string key = readString(file);
-        string val = readString(file);
-        if (file.fail()) break;
-        insert(key, val);
-    }
-}
-
 
 OpenHash::OpenHash(int size) : table(nullptr), cap(size)
 {
@@ -345,83 +242,13 @@ void OpenHash::show() {
     cout << "\n";
 }
 
-void OpenHash::saveToFile(const string& filename) const {
-    ofstream file(filename);
-    if (!file) return;
-
-    file << cap << "\n";
-
-    int count = 0;
-    for (int i = 0; i < cap; ++i) {
-        if (table[i].used) count++;
-    }
-    file << count << "\n";
-
-    for (int i = 0; i < cap; ++i) {
-        if (table[i].used) {
-            writeStringText(file, table[i].key);
-            writeStringText(file, table[i].val);
-        }
-    }
-}
-
-void OpenHash::loadFromFile(const string& filename) {
-    ifstream file(filename);
-    if (!file) return;
-
+void OpenHash::clearAndResize(int newCap) {
     delete[] table;
-
-    int newCap;
-    file >> newCap;
-    string dummy; getline(file, dummy);
-
     cap = newCap;
     table = new Entry[cap];
-
-    int count;
-    file >> count;
-    getline(file, dummy);
-
-    if (file.fail()) return;
-    for (int i = 0; i < count; ++i) {
-        string key = readStringText(file);
-        string val = readStringText(file);
-        if (file.fail()) break;
-        insert(key, val);
-    }
-}
-
-void OpenHash::saveToBinaryFile(const string& filename) const {
-    ofstream file(filename, ios::binary | ios::trunc);
-    if (!file) return;
-    file.write(reinterpret_cast<const char*>(&cap), sizeof(cap));
-    int count = 0;
     for (int i = 0; i < cap; ++i) {
-        if (table[i].used) count++;
-    }
-    file.write(reinterpret_cast<const char*>(&count), sizeof(count));
-    for (int i = 0; i < cap; ++i) {
-        if (table[i].used) {
-            writeString(file, table[i].key);
-            writeString(file, table[i].val);
-        }
-    }
-}
-
-void OpenHash::loadFromBinaryFile(const string& filename) {
-    ifstream file(filename, ios::binary);
-    if (!file) return;
-    delete[] table;
-    file.read(reinterpret_cast<char*>(&cap), sizeof(cap));
-    table = new Entry[cap];
-    int count;
-    file.read(reinterpret_cast<char*>(&count), sizeof(count));
-    if (file.fail()) return;
-    for (int i = 0; i < count; ++i) {
-        string key = readString(file);
-        string val = readString(file);
-        if (file.fail()) break;
-        insert(key, val);
+        table[i].used = false;
+        table[i].deleted = false;
     }
 }
 

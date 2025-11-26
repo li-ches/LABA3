@@ -7,7 +7,6 @@
 
 using namespace std; 
 
-//бинарный
 inline void writeString(ofstream& file, const string& s) {
     size_t len = s.length();
     file.write(reinterpret_cast<const char*>(&len), sizeof(len));
@@ -25,9 +24,7 @@ inline string readString(ifstream& file) {
     return s;
 }
 
-//текстовый
 inline void writeStringText(ofstream& file, const string& s) {
-    // Записываем строку и перенос
     file << s << "\n";
 }
 

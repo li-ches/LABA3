@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/chesnokova/LABA3/compl.cpp" "CMakeFiles/DataStructures.dir/compl.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/compl.cpp.o.d"
   "/home/chesnokova/LABA3/dlist.cpp" "CMakeFiles/DataStructures.dir/dlist.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/dlist.cpp.o.d"
   "/home/chesnokova/LABA3/hash.cpp" "CMakeFiles/DataStructures.dir/hash.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/hash.cpp.o.d"
+  "/home/chesnokova/LABA3/hash_serialize.cpp" "CMakeFiles/DataStructures.dir/hash_serialize.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/hash_serialize.cpp.o.d"
   "/home/chesnokova/LABA3/list.cpp" "CMakeFiles/DataStructures.dir/list.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/list.cpp.o.d"
   "/home/chesnokova/LABA3/queue.cpp" "CMakeFiles/DataStructures.dir/queue.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/queue.cpp.o.d"
   "/home/chesnokova/LABA3/stack.cpp" "CMakeFiles/DataStructures.dir/stack.cpp.o" "gcc" "CMakeFiles/DataStructures.dir/stack.cpp.o.d"

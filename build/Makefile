@@ -1045,6 +1045,30 @@ hash.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/hash.cpp.s
 .PHONY : hash.cpp.s
 
+hash_serialize.o: hash_serialize.cpp.o
+.PHONY : hash_serialize.o
+
+# target to build an object file
+hash_serialize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/hash_serialize.cpp.o
+.PHONY : hash_serialize.cpp.o
+
+hash_serialize.i: hash_serialize.cpp.i
+.PHONY : hash_serialize.i
+
+# target to preprocess a source file
+hash_serialize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/hash_serialize.cpp.i
+.PHONY : hash_serialize.cpp.i
+
+hash_serialize.s: hash_serialize.cpp.s
+.PHONY : hash_serialize.s
+
+# target to generate assembly for a file
+hash_serialize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DataStructures.dir/build.make CMakeFiles/DataStructures.dir/hash_serialize.cpp.s
+.PHONY : hash_serialize.cpp.s
+
 list.o: list.cpp.o
 .PHONY : list.o
 
@@ -1419,6 +1443,9 @@ help:
 	@echo "... hash.o"
 	@echo "... hash.i"
 	@echo "... hash.s"
+	@echo "... hash_serialize.o"
+	@echo "... hash_serialize.i"
+	@echo "... hash_serialize.s"
 	@echo "... list.o"
 	@echo "... list.i"
 	@echo "... list.s"

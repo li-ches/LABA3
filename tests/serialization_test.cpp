@@ -1,17 +1,26 @@
-#include <iostream>
-#include <fstream>
-#include <cassert>
-#include <string>
-
+#include "gtest/gtest.h"
 #include "../arr.h"
 #include "../list.h"
 #include "../dlist.h"
 #include "../stack.h"
 #include "../queue.h"
 #include "../compl.h"
-#include "../hash.h" 
+#include "../hash.h"
+#include "../hash_serialize.h"
+#include <sstream>
+#include <iostream>
+#include <cstdio>
 
 using namespace std;
+
+class OutputCapture {
+    stringstream buffer;
+    streambuf* old;
+public:
+    OutputCapture() : old(cout.rdbuf(buffer.rdbuf())) {}
+    ~OutputCapture() { cout.rdbuf(old); }
+    string str() const { return buffer.str(); }
+};
 
 void testMyArr() {
     cout << "=== Тестирование MyArr (Массив) ===" << endl;
@@ -71,7 +80,6 @@ void testMyList() {
     list1.addTail("Мадрид");
     list1.addTail("Рим");
     
-    //ТЕКСТ
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в mylist.txt (Text)" << endl;
     list1.saveToFile("mylist.txt");
@@ -89,7 +97,6 @@ void testMyList() {
     cout << "  - Найдено: Рим" << endl;
     cout << "Сериализация (Text): ПРОЙДЕНА" << endl;
 
-    //бин
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: mylist_test.bin (Binary)" << endl;
     list1.saveToBinaryFile("mylist_test.bin");
@@ -119,7 +126,6 @@ void testDList() {
     list1.addTail("Сеул");
     list1.addTail("Бангкок");
     
-    //ТЕКС
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в dlist_test.txt (Text)" << endl;
     list1.saveToFile("dlist_test.txt");
@@ -137,7 +143,6 @@ void testDList() {
     cout << "  - Найдено: Бангкок" << endl;
     cout << "Сериализация (Text): ПРОЙДЕНА" << endl;
 
-    // BINARY
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: dlist_test.bin (Binary)" << endl;
     list1.saveToBinaryFile("dlist_test.bin");
@@ -167,7 +172,6 @@ void testStack() {
     stack1.push("Стокгольм");
     stack1.push("Копенгаген");
     
-    //  ТЕКС
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в stack_test.txt (Text)" << endl;
     stack1.saveToFile("stack_test.txt");
@@ -188,7 +192,6 @@ void testStack() {
     assert(valT3 == "Осло");
     cout << "Сериализация (Text): ПРОЙДЕНА" << endl;
 
-    // BIN
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: stack_test.bin (Binary)" << endl;
     stack1.saveToBinaryFile("stack_test.bin");
@@ -221,7 +224,6 @@ void testQueue() {
     queue1.push("Мумбаи");
     queue1.push("Калькутта");
     
-    // ТЕКС
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в queue_test.txt (Text)" << endl;
     queue1.saveToFile("queue_test.txt");
@@ -242,7 +244,6 @@ void testQueue() {
     assert(valT3 == "Калькутта");
     cout << "Сериализация (Text): ПРОЙДЕНА" << endl;
 
-    // бин
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сериализация в файл: queue_test.bin (Binary)" << endl;
     queue1.saveToBinaryFile("queue_test.bin");
@@ -275,7 +276,6 @@ void testCBT() {
     tree1.insert(30);
     tree1.insert(70);
     
-    //текст
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в cbt.txt (Text)" << endl;
     tree1.saveToFile("cbt.txt"); 
@@ -293,7 +293,6 @@ void testCBT() {
     cout << "  - 70 найдено" << endl;
     cout << "Текстовая сериализация: ПРОЙДЕНА" << endl;
 
-    // бин
     cout << "\n Тест бинарного формата ---" << endl;
     cout << "Сохранение в cbt.bin (Binary)" << endl;
     tree1.saveToBinaryFile("cbt.bin"); 
@@ -323,13 +322,12 @@ void testHashTable() {
     ch1.insert("key1", "value1");
     ch1.insert("key2", "value2");
     
-    // текст
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в chain.txt" << endl;
-    ch1.saveToFile("chain.txt");
+    HashSerializer::saveToFile(ch1, "chain.txt");
     
     ChainHash chText(10);
-    chText.loadFromFile("chain.txt");
+    HashSerializer::loadFromFile(chText, "chain.txt");
     
     cout << " Проверка значений..." << endl;
     assert(chText.find("key1") == "value1");
@@ -340,10 +338,10 @@ void testHashTable() {
 
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сохранение в chain.bin" << endl;
-    ch1.saveToBinaryFile("chain.bin");
+    HashSerializer::saveToBinaryFile(ch1, "chain.bin");
     
     ChainHash chBin(10);
-    chBin.loadFromBinaryFile("chain.bin");
+    HashSerializer::loadFromBinaryFile(chBin, "chain.bin");
     
     cout << " Проверка значений..." << endl;
     assert(chBin.find("key1") == "value1");
@@ -351,7 +349,6 @@ void testHashTable() {
     assert(chBin.find("key2") == "value2");
     cout << "  - key2 -> " << chBin.find("key2") << endl;
     cout << "ChainHash Бинарная Сериализация: ПРОЙДЕНА" << endl;
-
 
     cout << "\n[ OpenHash ---" << endl;
     OpenHash oh1(10);
@@ -361,10 +358,10 @@ void testHashTable() {
     
     cout << "\nТест текстового формата ---" << endl;
     cout << "Сохранение в openhash_test.txt" << endl;
-    oh1.saveToFile("openhash_test.txt");
+    HashSerializer::saveToFile(oh1, "openhash_test.txt");
     
     OpenHash ohText(10);
-    ohText.loadFromFile("openhash_test.txt");
+    HashSerializer::loadFromFile(ohText, "openhash_test.txt");
     
     cout << "Проверка значений..." << endl;
     assert(ohText.find("k1") == "v1");
@@ -375,10 +372,10 @@ void testHashTable() {
 
     cout << "\nТест бинарного формата ---" << endl;
     cout << "Сохранение в openhash_test.bin" << endl;
-    oh1.saveToBinaryFile("openhash_test.bin");
+    HashSerializer::saveToBinaryFile(oh1, "openhash_test.bin");
     
     OpenHash ohBin(10);
-    ohBin.loadFromBinaryFile("openhash_test.bin");
+    HashSerializer::loadFromBinaryFile(ohBin, "openhash_test.bin");
     
     cout << "Проверка значений..." << endl;
     assert(ohBin.find("k1") == "v1");

@@ -302,4 +302,6 @@ CMakeFiles/hash_test.dir/tests/hash_test.cpp.o: \
  /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc
+ /usr/include/c++/13/bits/fstream.tcc \
+ /home/chesnokova/LABA3/tests/../hash_serialize.h \
+ /home/chesnokova/LABA3/tests/../hash.h

@@ -43,6 +43,7 @@ add_library(DataStructures
     queue.cpp queue.h
     compl.cpp compl.h
     hash.cpp hash.h
+    hash_serialize.cpp hash_serialize.h  # ИСПРАВЛЕНО ИМЯ
     serialize.h
 )
 target_include_directories(DataStructures PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

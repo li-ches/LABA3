@@ -9,6 +9,7 @@
 #include "stack.h"
 #include "queue.h"
 #include "hash.h"
+#include "hash_serialize.h"
 #include "compl.h"
 
 using namespace std;
@@ -100,6 +101,8 @@ int main() {
     Queue queue;
     Stack stack;
     CompleteBinaryTree cbt;
+    ChainHash htChain(10);
+    OpenHash htOpen(10);
 
     string line, cmd, arg1, arg2;
     showComm();
@@ -127,6 +130,8 @@ int main() {
             cout << setw(10) << left << "Стек:" << " "; stack.readStack();
             cout << setw(10) << left << "Очередь:" << " "; queue.print();
             cout << setw(10) << left << "CBT:" << "\n"; cbt.print();
+            cout << setw(10) << left << "ChainHash:" << " "; htChain.show();
+            cout << setw(10) << left << "OpenHash:" << " "; htOpen.show();
             cout << "---------------------------" << "\n";
             continue;
         }
@@ -138,7 +143,9 @@ int main() {
             dlist.saveToFile(arg1 + ".dlist");
             stack.saveToFile(arg1 + ".stack");
             queue.saveToFile(arg1 + ".queue");
-            cout << "Структуры (кроме CBT) сохранены с базовым именем: " << arg1 << "\n";
+            HashSerializer::saveToFile(htChain, arg1 + ".chainhash");
+            HashSerializer::saveToFile(htOpen, arg1 + ".openhash");
+            cout << "Структуры сохранены с базовым именем: " << arg1 << "\n";
             continue;
         }
         if (cmd == "LOAD") {
@@ -148,7 +155,9 @@ int main() {
             dlist.loadFromFile(arg1 + ".dlist");
             stack.loadFromFile(arg1 + ".stack");
             queue.loadFromFile(arg1 + ".queue");
-            cout << "Структуры (кроме CBT) загружены с базовым именем: " << arg1 << "\n";
+            HashSerializer::loadFromFile(htChain, arg1 + ".chainhash");
+            HashSerializer::loadFromFile(htOpen, arg1 + ".openhash");
+            cout << "Структуры загружены с базовым именем: " << arg1 << "\n";
             cmd = "PRINT";
         }
 

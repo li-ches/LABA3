@@ -1,10 +1,10 @@
-Start testing: Nov 26 01:39 +07
+Start testing: Nov 26 11:16 +07
 ----------------------------------------------------------
 1/203 Testing: MyArrTest.Branch_CapacityAndShrink
 1/203 Test: MyArrTest.Branch_CapacityAndShrink
 Command: "/home/chesnokova/LABA3/build/arr_test" "--gtest_filter=MyArrTest.Branch_CapacityAndShrink" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyArrTest.Branch_CapacityAndShrink" start time: Nov 26 01:39 +07
+"MyArrTest.Branch_CapacityAndShrink" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -23,7 +23,7 @@ Note: Google Test filter = MyArrTest.Branch_CapacityAndShrink
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyArrTest.Branch_CapacityAndShrink" end time: Nov 26 01:39 +07
+"MyArrTest.Branch_CapacityAndShrink" end time: Nov 26 11:16 +07
 "MyArrTest.Branch_CapacityAndShrink" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/203 Test: MyArrTest.Branch_EdgeCases
 Command: "/home/chesnokova/LABA3/build/arr_test" "--gtest_filter=MyArrTest.Branch_EdgeCases" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyArrTest.Branch_EdgeCases" start time: Nov 26 01:39 +07
+"MyArrTest.Branch_EdgeCases" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -50,7 +50,7 @@ Note: Google Test filter = MyArrTest.Branch_EdgeCases
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyArrTest.Branch_EdgeCases" end time: Nov 26 01:39 +07
+"MyArrTest.Branch_EdgeCases" end time: Nov 26 11:16 +07
 "MyArrTest.Branch_EdgeCases" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/203 Test: MyArrTest.IO_Errors_Coverage
 Command: "/home/chesnokova/LABA3/build/arr_test" "--gtest_filter=MyArrTest.IO_Errors_Coverage" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyArrTest.IO_Errors_Coverage" start time: Nov 26 01:39 +07
+"MyArrTest.IO_Errors_Coverage" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -74,10 +74,10 @@ Note: Google Test filter = MyArrTest.IO_Errors_Coverage
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyArrTest.IO_Errors_Coverage" end time: Nov 26 01:39 +07
+"MyArrTest.IO_Errors_Coverage" end time: Nov 26 11:16 +07
 "MyArrTest.IO_Errors_Coverage" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/203 Test: MyArrTest.SaveAndLoad_HappyPath
 Command: "/home/chesnokova/LABA3/build/arr_test" "--gtest_filter=MyArrTest.SaveAndLoad_HappyPath" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyArrTest.SaveAndLoad_HappyPath" start time: Nov 26 01:39 +07
+"MyArrTest.SaveAndLoad_HappyPath" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -101,10 +101,10 @@ Note: Google Test filter = MyArrTest.SaveAndLoad_HappyPath
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyArrTest.SaveAndLoad_HappyPath" end time: Nov 26 01:39 +07
+"MyArrTest.SaveAndLoad_HappyPath" end time: Nov 26 11:16 +07
 "MyArrTest.SaveAndLoad_HappyPath" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -112,7 +112,7 @@ Test Passed.
 5/203 Test: TreeTest.EmptySearchPrintRemove
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.EmptySearchPrintRemove" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.EmptySearchPrintRemove" start time: Nov 26 01:39 +07
+"TreeTest.EmptySearchPrintRemove" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -130,10 +130,10 @@ Note: Google Test filter = TreeTest.EmptySearchPrintRemove
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.EmptySearchPrintRemove" end time: Nov 26 01:39 +07
+"TreeTest.EmptySearchPrintRemove" end time: Nov 26 11:16 +07
 "TreeTest.EmptySearchPrintRemove" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -141,7 +141,7 @@ Test Passed.
 6/203 Test: TreeTest.InsertRootAndDuplicate
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.InsertRootAndDuplicate" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.InsertRootAndDuplicate" start time: Nov 26 01:39 +07
+"TreeTest.InsertRootAndDuplicate" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -160,7 +160,7 @@ Note: Google Test filter = TreeTest.InsertRootAndDuplicate
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.InsertRootAndDuplicate" end time: Nov 26 01:39 +07
+"TreeTest.InsertRootAndDuplicate" end time: Nov 26 11:16 +07
 "TreeTest.InsertRootAndDuplicate" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -168,7 +168,7 @@ Test Passed.
 7/203 Test: TreeTest.InsertLeftRightSearch
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.InsertLeftRightSearch" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.InsertLeftRightSearch" start time: Nov 26 01:39 +07
+"TreeTest.InsertLeftRightSearch" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -187,7 +187,7 @@ Note: Google Test filter = TreeTest.InsertLeftRightSearch
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.InsertLeftRightSearch" end time: Nov 26 01:39 +07
+"TreeTest.InsertLeftRightSearch" end time: Nov 26 11:16 +07
 "TreeTest.InsertLeftRightSearch" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -195,7 +195,7 @@ Test Passed.
 8/203 Test: TreeTest.DeleteLeaf
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.DeleteLeaf" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.DeleteLeaf" start time: Nov 26 01:39 +07
+"TreeTest.DeleteLeaf" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -215,7 +215,7 @@ Note: Google Test filter = TreeTest.DeleteLeaf
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.DeleteLeaf" end time: Nov 26 01:39 +07
+"TreeTest.DeleteLeaf" end time: Nov 26 11:16 +07
 "TreeTest.DeleteLeaf" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -223,7 +223,7 @@ Test Passed.
 9/203 Test: TreeTest.DeleteNodeOneChild_LeftOnly
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.DeleteNodeOneChild_LeftOnly" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.DeleteNodeOneChild_LeftOnly" start time: Nov 26 01:39 +07
+"TreeTest.DeleteNodeOneChild_LeftOnly" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -243,7 +243,7 @@ Note: Google Test filter = TreeTest.DeleteNodeOneChild_LeftOnly
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.DeleteNodeOneChild_LeftOnly" end time: Nov 26 01:39 +07
+"TreeTest.DeleteNodeOneChild_LeftOnly" end time: Nov 26 11:16 +07
 "TreeTest.DeleteNodeOneChild_LeftOnly" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -251,7 +251,7 @@ Test Passed.
 10/203 Test: TreeTest.DeleteNodeOneChild_RightOnly
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.DeleteNodeOneChild_RightOnly" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.DeleteNodeOneChild_RightOnly" start time: Nov 26 01:39 +07
+"TreeTest.DeleteNodeOneChild_RightOnly" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -271,7 +271,7 @@ Note: Google Test filter = TreeTest.DeleteNodeOneChild_RightOnly
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.DeleteNodeOneChild_RightOnly" end time: Nov 26 01:39 +07
+"TreeTest.DeleteNodeOneChild_RightOnly" end time: Nov 26 11:16 +07
 "TreeTest.DeleteNodeOneChild_RightOnly" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -279,7 +279,7 @@ Test Passed.
 11/203 Test: TreeTest.DeleteNodeTwoChildren
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.DeleteNodeTwoChildren" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.DeleteNodeTwoChildren" start time: Nov 26 01:39 +07
+"TreeTest.DeleteNodeTwoChildren" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -296,10 +296,10 @@ Note: Google Test filter = TreeTest.DeleteNodeTwoChildren
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.DeleteNodeTwoChildren" end time: Nov 26 01:39 +07
+"TreeTest.DeleteNodeTwoChildren" end time: Nov 26 11:16 +07
 "TreeTest.DeleteNodeTwoChildren" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -307,7 +307,7 @@ Test Passed.
 12/203 Test: TreeTest.RemoveMissing
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.RemoveMissing" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.RemoveMissing" start time: Nov 26 01:39 +07
+"TreeTest.RemoveMissing" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -327,7 +327,7 @@ Note: Google Test filter = TreeTest.RemoveMissing
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.RemoveMissing" end time: Nov 26 01:39 +07
+"TreeTest.RemoveMissing" end time: Nov 26 11:16 +07
 "TreeTest.RemoveMissing" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -335,7 +335,7 @@ Test Passed.
 13/203 Test: TreeTest.ClearTree
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.ClearTree" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.ClearTree" start time: Nov 26 01:39 +07
+"TreeTest.ClearTree" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -354,7 +354,7 @@ Note: Google Test filter = TreeTest.ClearTree
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.ClearTree" end time: Nov 26 01:39 +07
+"TreeTest.ClearTree" end time: Nov 26 11:16 +07
 "TreeTest.ClearTree" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -362,7 +362,7 @@ Test Passed.
 14/203 Test: TreeTest.PrintNonEmpty
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.PrintNonEmpty" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.PrintNonEmpty" start time: Nov 26 01:39 +07
+"TreeTest.PrintNonEmpty" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -386,7 +386,7 @@ Note: Google Test filter = TreeTest.PrintNonEmpty
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.PrintNonEmpty" end time: Nov 26 01:39 +07
+"TreeTest.PrintNonEmpty" end time: Nov 26 11:16 +07
 "TreeTest.PrintNonEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -394,7 +394,7 @@ Test Passed.
 15/203 Test: TreeTest.SaveLoadTextFile
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.SaveLoadTextFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.SaveLoadTextFile" start time: Nov 26 01:39 +07
+"TreeTest.SaveLoadTextFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -410,10 +410,10 @@ Note: Google Test filter = TreeTest.SaveLoadTextFile
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.SaveLoadTextFile" end time: Nov 26 01:39 +07
+"TreeTest.SaveLoadTextFile" end time: Nov 26 11:16 +07
 "TreeTest.SaveLoadTextFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -421,7 +421,7 @@ Test Passed.
 16/203 Test: TreeTest.SaveLoadBinaryFile
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.SaveLoadBinaryFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.SaveLoadBinaryFile" start time: Nov 26 01:39 +07
+"TreeTest.SaveLoadBinaryFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -440,7 +440,7 @@ Note: Google Test filter = TreeTest.SaveLoadBinaryFile
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.SaveLoadBinaryFile" end time: Nov 26 01:39 +07
+"TreeTest.SaveLoadBinaryFile" end time: Nov 26 11:16 +07
 "TreeTest.SaveLoadBinaryFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -448,7 +448,7 @@ Test Passed.
 17/203 Test: TreeTest.Coverage_Remove_Root_TwoChildren
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.Coverage_Remove_Root_TwoChildren" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.Coverage_Remove_Root_TwoChildren" start time: Nov 26 01:39 +07
+"TreeTest.Coverage_Remove_Root_TwoChildren" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -468,7 +468,7 @@ Note: Google Test filter = TreeTest.Coverage_Remove_Root_TwoChildren
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.Coverage_Remove_Root_TwoChildren" end time: Nov 26 01:39 +07
+"TreeTest.Coverage_Remove_Root_TwoChildren" end time: Nov 26 11:16 +07
 "TreeTest.Coverage_Remove_Root_TwoChildren" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -476,7 +476,7 @@ Test Passed.
 18/203 Test: TreeTest.Coverage_Remove_Root_OneChild
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.Coverage_Remove_Root_OneChild" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.Coverage_Remove_Root_OneChild" start time: Nov 26 01:39 +07
+"TreeTest.Coverage_Remove_Root_OneChild" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -496,7 +496,7 @@ Note: Google Test filter = TreeTest.Coverage_Remove_Root_OneChild
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.Coverage_Remove_Root_OneChild" end time: Nov 26 01:39 +07
+"TreeTest.Coverage_Remove_Root_OneChild" end time: Nov 26 11:16 +07
 "TreeTest.Coverage_Remove_Root_OneChild" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -504,7 +504,7 @@ Test Passed.
 19/203 Test: TreeTest.Coverage_Remove_NotExists_And_Empty
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.Coverage_Remove_NotExists_And_Empty" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.Coverage_Remove_NotExists_And_Empty" start time: Nov 26 01:39 +07
+"TreeTest.Coverage_Remove_NotExists_And_Empty" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -523,7 +523,7 @@ Note: Google Test filter = TreeTest.Coverage_Remove_NotExists_And_Empty
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.Coverage_Remove_NotExists_And_Empty" end time: Nov 26 01:39 +07
+"TreeTest.Coverage_Remove_NotExists_And_Empty" end time: Nov 26 11:16 +07
 "TreeTest.Coverage_Remove_NotExists_And_Empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -531,7 +531,7 @@ Test Passed.
 20/203 Test: TreeTest.Coverage_Insert_Duplicates
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.Coverage_Insert_Duplicates" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.Coverage_Insert_Duplicates" start time: Nov 26 01:39 +07
+"TreeTest.Coverage_Insert_Duplicates" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -547,10 +547,10 @@ Note: Google Test filter = TreeTest.Coverage_Insert_Duplicates
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.Coverage_Insert_Duplicates" end time: Nov 26 01:39 +07
+"TreeTest.Coverage_Insert_Duplicates" end time: Nov 26 11:16 +07
 "TreeTest.Coverage_Insert_Duplicates" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -558,7 +558,7 @@ Test Passed.
 21/203 Test: TreeTest.Coverage_IO_Errors
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.Coverage_IO_Errors" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.Coverage_IO_Errors" start time: Nov 26 01:39 +07
+"TreeTest.Coverage_IO_Errors" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -577,7 +577,7 @@ Note: Google Test filter = TreeTest.Coverage_IO_Errors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.Coverage_IO_Errors" end time: Nov 26 01:39 +07
+"TreeTest.Coverage_IO_Errors" end time: Nov 26 11:16 +07
 "TreeTest.Coverage_IO_Errors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -585,7 +585,7 @@ Test Passed.
 22/203 Test: TreeTest.LoadFromEmptyFiles
 Command: "/home/chesnokova/LABA3/build/compl_test" "--gtest_filter=TreeTest.LoadFromEmptyFiles" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"TreeTest.LoadFromEmptyFiles" start time: Nov 26 01:39 +07
+"TreeTest.LoadFromEmptyFiles" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -604,7 +604,7 @@ Note: Google Test filter = TreeTest.LoadFromEmptyFiles
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"TreeTest.LoadFromEmptyFiles" end time: Nov 26 01:39 +07
+"TreeTest.LoadFromEmptyFiles" end time: Nov 26 11:16 +07
 "TreeTest.LoadFromEmptyFiles" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -612,7 +612,7 @@ Test Passed.
 23/203 Test: DListTest.Branch_Killer
 Command: "/home/chesnokova/LABA3/build/dlist_test" "--gtest_filter=DListTest.Branch_Killer" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DListTest.Branch_Killer" start time: Nov 26 01:39 +07
+"DListTest.Branch_Killer" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -631,7 +631,7 @@ Note: Google Test filter = DListTest.Branch_Killer
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DListTest.Branch_Killer" end time: Nov 26 01:39 +07
+"DListTest.Branch_Killer" end time: Nov 26 11:16 +07
 "DListTest.Branch_Killer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -639,7 +639,7 @@ Test Passed.
 24/203 Test: DListTest.Coverage_Empty_Ops
 Command: "/home/chesnokova/LABA3/build/dlist_test" "--gtest_filter=DListTest.Coverage_Empty_Ops" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DListTest.Coverage_Empty_Ops" start time: Nov 26 01:39 +07
+"DListTest.Coverage_Empty_Ops" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -658,7 +658,7 @@ Note: Google Test filter = DListTest.Coverage_Empty_Ops
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DListTest.Coverage_Empty_Ops" end time: Nov 26 01:39 +07
+"DListTest.Coverage_Empty_Ops" end time: Nov 26 11:16 +07
 "DListTest.Coverage_Empty_Ops" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -666,7 +666,7 @@ Test Passed.
 25/203 Test: DListTest.Coverage_SingleElement_Transitions
 Command: "/home/chesnokova/LABA3/build/dlist_test" "--gtest_filter=DListTest.Coverage_SingleElement_Transitions" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DListTest.Coverage_SingleElement_Transitions" start time: Nov 26 01:39 +07
+"DListTest.Coverage_SingleElement_Transitions" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -685,7 +685,7 @@ Note: Google Test filter = DListTest.Coverage_SingleElement_Transitions
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"DListTest.Coverage_SingleElement_Transitions" end time: Nov 26 01:39 +07
+"DListTest.Coverage_SingleElement_Transitions" end time: Nov 26 11:16 +07
 "DListTest.Coverage_SingleElement_Transitions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -693,7 +693,7 @@ Test Passed.
 26/203 Test: DListTest.Coverage_AddBefore_AddAfter_Complex
 Command: "/home/chesnokova/LABA3/build/dlist_test" "--gtest_filter=DListTest.Coverage_AddBefore_AddAfter_Complex" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DListTest.Coverage_AddBefore_AddAfter_Complex" start time: Nov 26 01:39 +07
+"DListTest.Coverage_AddBefore_AddAfter_Complex" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -712,7 +712,7 @@ Note: Google Test filter = DListTest.Coverage_AddBefore_AddAfter_Complex
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DListTest.Coverage_AddBefore_AddAfter_Complex" end time: Nov 26 01:39 +07
+"DListTest.Coverage_AddBefore_AddAfter_Complex" end time: Nov 26 11:16 +07
 "DListTest.Coverage_AddBefore_AddAfter_Complex" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -720,7 +720,7 @@ Test Passed.
 27/203 Test: DListTest.Coverage_DelByVal_Branches
 Command: "/home/chesnokova/LABA3/build/dlist_test" "--gtest_filter=DListTest.Coverage_DelByVal_Branches" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DListTest.Coverage_DelByVal_Branches" start time: Nov 26 01:39 +07
+"DListTest.Coverage_DelByVal_Branches" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -736,10 +736,10 @@ Note: Google Test filter = DListTest.Coverage_DelByVal_Branches
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DListTest.Coverage_DelByVal_Branches" end time: Nov 26 01:39 +07
+"DListTest.Coverage_DelByVal_Branches" end time: Nov 26 11:16 +07
 "DListTest.Coverage_DelByVal_Branches" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -747,7 +747,7 @@ Test Passed.
 28/203 Test: DListTest.Coverage_DelAfter_DelBefore_Boundary
 Command: "/home/chesnokova/LABA3/build/dlist_test" "--gtest_filter=DListTest.Coverage_DelAfter_DelBefore_Boundary" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DListTest.Coverage_DelAfter_DelBefore_Boundary" start time: Nov 26 01:39 +07
+"DListTest.Coverage_DelAfter_DelBefore_Boundary" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -766,7 +766,7 @@ Note: Google Test filter = DListTest.Coverage_DelAfter_DelBefore_Boundary
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DListTest.Coverage_DelAfter_DelBefore_Boundary" end time: Nov 26 01:39 +07
+"DListTest.Coverage_DelAfter_DelBefore_Boundary" end time: Nov 26 11:16 +07
 "DListTest.Coverage_DelAfter_DelBefore_Boundary" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -774,7 +774,7 @@ Test Passed.
 29/203 Test: DListTest.Coverage_IO
 Command: "/home/chesnokova/LABA3/build/dlist_test" "--gtest_filter=DListTest.Coverage_IO" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DListTest.Coverage_IO" start time: Nov 26 01:39 +07
+"DListTest.Coverage_IO" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -790,10 +790,10 @@ Note: Google Test filter = DListTest.Coverage_IO
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"DListTest.Coverage_IO" end time: Nov 26 01:39 +07
+"DListTest.Coverage_IO" end time: Nov 26 11:16 +07
 "DListTest.Coverage_IO" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -801,7 +801,7 @@ Test Passed.
 30/203 Test: HashTest.OpenHash_Insert_Update_DeletedSlot
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.OpenHash_Insert_Update_DeletedSlot" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.OpenHash_Insert_Update_DeletedSlot" start time: Nov 26 01:39 +07
+"HashTest.OpenHash_Insert_Update_DeletedSlot" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -820,7 +820,7 @@ Note: Google Test filter = HashTest.OpenHash_Insert_Update_DeletedSlot
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.OpenHash_Insert_Update_DeletedSlot" end time: Nov 26 01:39 +07
+"HashTest.OpenHash_Insert_Update_DeletedSlot" end time: Nov 26 11:16 +07
 "HashTest.OpenHash_Insert_Update_DeletedSlot" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -828,7 +828,7 @@ Test Passed.
 31/203 Test: HashTest.OpenHash_FindErase_NotFound
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.OpenHash_FindErase_NotFound" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.OpenHash_FindErase_NotFound" start time: Nov 26 01:39 +07
+"HashTest.OpenHash_FindErase_NotFound" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -844,10 +844,10 @@ Note: Google Test filter = HashTest.OpenHash_FindErase_NotFound
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.OpenHash_FindErase_NotFound" end time: Nov 26 01:39 +07
+"HashTest.OpenHash_FindErase_NotFound" end time: Nov 26 11:16 +07
 "HashTest.OpenHash_FindErase_NotFound" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -855,7 +855,7 @@ Test Passed.
 32/203 Test: HashTest.OpenHash_FullTable
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.OpenHash_FullTable" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.OpenHash_FullTable" start time: Nov 26 01:39 +07
+"HashTest.OpenHash_FullTable" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -875,7 +875,7 @@ Note: Google Test filter = HashTest.OpenHash_FullTable
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.OpenHash_FullTable" end time: Nov 26 01:39 +07
+"HashTest.OpenHash_FullTable" end time: Nov 26 11:16 +07
 "HashTest.OpenHash_FullTable" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -883,7 +883,7 @@ Test Passed.
 33/203 Test: HashTest.ChainHash_InsertUpdate
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.ChainHash_InsertUpdate" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.ChainHash_InsertUpdate" start time: Nov 26 01:39 +07
+"HashTest.ChainHash_InsertUpdate" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -899,10 +899,10 @@ Note: Google Test filter = HashTest.ChainHash_InsertUpdate
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.ChainHash_InsertUpdate" end time: Nov 26 01:39 +07
+"HashTest.ChainHash_InsertUpdate" end time: Nov 26 11:16 +07
 "HashTest.ChainHash_InsertUpdate" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -910,7 +910,7 @@ Test Passed.
 34/203 Test: HashTest.ChainHash_CollisionsAndErase
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.ChainHash_CollisionsAndErase" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.ChainHash_CollisionsAndErase" start time: Nov 26 01:39 +07
+"HashTest.ChainHash_CollisionsAndErase" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -926,10 +926,10 @@ Note: Google Test filter = HashTest.ChainHash_CollisionsAndErase
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.ChainHash_CollisionsAndErase" end time: Nov 26 01:39 +07
+"HashTest.ChainHash_CollisionsAndErase" end time: Nov 26 11:16 +07
 "HashTest.ChainHash_CollisionsAndErase" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -937,7 +937,7 @@ Test Passed.
 35/203 Test: HashTest.ChainHash_ShowEmpty
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.ChainHash_ShowEmpty" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.ChainHash_ShowEmpty" start time: Nov 26 01:39 +07
+"HashTest.ChainHash_ShowEmpty" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -957,7 +957,7 @@ Note: Google Test filter = HashTest.ChainHash_ShowEmpty
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.ChainHash_ShowEmpty" end time: Nov 26 01:39 +07
+"HashTest.ChainHash_ShowEmpty" end time: Nov 26 11:16 +07
 "HashTest.ChainHash_ShowEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -965,7 +965,7 @@ Test Passed.
 36/203 Test: HashTest.ChainHash_SaveLoad
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.ChainHash_SaveLoad" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.ChainHash_SaveLoad" start time: Nov 26 01:39 +07
+"HashTest.ChainHash_SaveLoad" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -981,10 +981,10 @@ Note: Google Test filter = HashTest.ChainHash_SaveLoad
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.ChainHash_SaveLoad" end time: Nov 26 01:39 +07
+"HashTest.ChainHash_SaveLoad" end time: Nov 26 11:16 +07
 "HashTest.ChainHash_SaveLoad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -992,7 +992,7 @@ Test Passed.
 37/203 Test: HashTest.OpenHash_SaveLoad
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.OpenHash_SaveLoad" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.OpenHash_SaveLoad" start time: Nov 26 01:39 +07
+"HashTest.OpenHash_SaveLoad" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1011,7 +1011,7 @@ Note: Google Test filter = HashTest.OpenHash_SaveLoad
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.OpenHash_SaveLoad" end time: Nov 26 01:39 +07
+"HashTest.OpenHash_SaveLoad" end time: Nov 26 11:16 +07
 "HashTest.OpenHash_SaveLoad" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1019,7 +1019,7 @@ Test Passed.
 38/203 Test: HashTest.LoadFromBadFile
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.LoadFromBadFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.LoadFromBadFile" start time: Nov 26 01:39 +07
+"HashTest.LoadFromBadFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1035,10 +1035,10 @@ Note: Google Test filter = HashTest.LoadFromBadFile
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.LoadFromBadFile" end time: Nov 26 01:39 +07
+"HashTest.LoadFromBadFile" end time: Nov 26 11:16 +07
 "HashTest.LoadFromBadFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1046,7 +1046,7 @@ Test Passed.
 39/203 Test: HashTest.parse_cmd_CorrectSplits
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.parse_cmd_CorrectSplits" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.parse_cmd_CorrectSplits" start time: Nov 26 01:39 +07
+"HashTest.parse_cmd_CorrectSplits" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1062,10 +1062,10 @@ Note: Google Test filter = HashTest.parse_cmd_CorrectSplits
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.parse_cmd_CorrectSplits" end time: Nov 26 01:39 +07
+"HashTest.parse_cmd_CorrectSplits" end time: Nov 26 11:16 +07
 "HashTest.parse_cmd_CorrectSplits" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1073,7 +1073,7 @@ Test Passed.
 40/203 Test: HashTest.parse_cmd_LeadingSpaces
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.parse_cmd_LeadingSpaces" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.parse_cmd_LeadingSpaces" start time: Nov 26 01:39 +07
+"HashTest.parse_cmd_LeadingSpaces" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1089,10 +1089,10 @@ Note: Google Test filter = HashTest.parse_cmd_LeadingSpaces
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.parse_cmd_LeadingSpaces" end time: Nov 26 01:39 +07
+"HashTest.parse_cmd_LeadingSpaces" end time: Nov 26 11:16 +07
 "HashTest.parse_cmd_LeadingSpaces" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1100,7 +1100,7 @@ Test Passed.
 41/203 Test: HashTest.ChainHash_Collision_DeleteMiddle
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.ChainHash_Collision_DeleteMiddle" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.ChainHash_Collision_DeleteMiddle" start time: Nov 26 01:39 +07
+"HashTest.ChainHash_Collision_DeleteMiddle" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1119,7 +1119,7 @@ Note: Google Test filter = HashTest.ChainHash_Collision_DeleteMiddle
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.ChainHash_Collision_DeleteMiddle" end time: Nov 26 01:39 +07
+"HashTest.ChainHash_Collision_DeleteMiddle" end time: Nov 26 11:16 +07
 "HashTest.ChainHash_Collision_DeleteMiddle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1127,7 +1127,7 @@ Test Passed.
 42/203 Test: HashTest.ChainHash_UpdateValue
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.ChainHash_UpdateValue" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.ChainHash_UpdateValue" start time: Nov 26 01:39 +07
+"HashTest.ChainHash_UpdateValue" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1146,7 +1146,7 @@ Note: Google Test filter = HashTest.ChainHash_UpdateValue
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.ChainHash_UpdateValue" end time: Nov 26 01:39 +07
+"HashTest.ChainHash_UpdateValue" end time: Nov 26 11:16 +07
 "HashTest.ChainHash_UpdateValue" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1154,7 +1154,7 @@ Test Passed.
 43/203 Test: HashTest.ChainHash_EmptyOps
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.ChainHash_EmptyOps" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.ChainHash_EmptyOps" start time: Nov 26 01:39 +07
+"HashTest.ChainHash_EmptyOps" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1170,10 +1170,10 @@ Note: Google Test filter = HashTest.ChainHash_EmptyOps
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.ChainHash_EmptyOps" end time: Nov 26 01:39 +07
+"HashTest.ChainHash_EmptyOps" end time: Nov 26 11:16 +07
 "HashTest.ChainHash_EmptyOps" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1181,7 +1181,7 @@ Test Passed.
 44/203 Test: HashTest.OpenHash_TableFull_WrapAround
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.OpenHash_TableFull_WrapAround" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.OpenHash_TableFull_WrapAround" start time: Nov 26 01:39 +07
+"HashTest.OpenHash_TableFull_WrapAround" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1200,7 +1200,7 @@ Note: Google Test filter = HashTest.OpenHash_TableFull_WrapAround
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.OpenHash_TableFull_WrapAround" end time: Nov 26 01:39 +07
+"HashTest.OpenHash_TableFull_WrapAround" end time: Nov 26 11:16 +07
 "HashTest.OpenHash_TableFull_WrapAround" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1208,7 +1208,7 @@ Test Passed.
 45/203 Test: HashTest.OpenHash_Deleted_Reuse
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.OpenHash_Deleted_Reuse" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.OpenHash_Deleted_Reuse" start time: Nov 26 01:39 +07
+"HashTest.OpenHash_Deleted_Reuse" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1224,10 +1224,10 @@ Note: Google Test filter = HashTest.OpenHash_Deleted_Reuse
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.OpenHash_Deleted_Reuse" end time: Nov 26 01:39 +07
+"HashTest.OpenHash_Deleted_Reuse" end time: Nov 26 11:16 +07
 "HashTest.OpenHash_Deleted_Reuse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1235,7 +1235,7 @@ Test Passed.
 46/203 Test: HashTest.OpenHash_Loop_NotFound
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.OpenHash_Loop_NotFound" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.OpenHash_Loop_NotFound" start time: Nov 26 01:39 +07
+"HashTest.OpenHash_Loop_NotFound" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1251,10 +1251,10 @@ Note: Google Test filter = HashTest.OpenHash_Loop_NotFound
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.OpenHash_Loop_NotFound" end time: Nov 26 01:39 +07
+"HashTest.OpenHash_Loop_NotFound" end time: Nov 26 11:16 +07
 "HashTest.OpenHash_Loop_NotFound" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1262,7 +1262,7 @@ Test Passed.
 47/203 Test: HashTest.Hash_IO_Errors
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.Hash_IO_Errors" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.Hash_IO_Errors" start time: Nov 26 01:39 +07
+"HashTest.Hash_IO_Errors" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1281,7 +1281,7 @@ Note: Google Test filter = HashTest.Hash_IO_Errors
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.Hash_IO_Errors" end time: Nov 26 01:39 +07
+"HashTest.Hash_IO_Errors" end time: Nov 26 11:16 +07
 "HashTest.Hash_IO_Errors" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1289,7 +1289,7 @@ Test Passed.
 48/203 Test: HashTest.Hash_Cmd_Parse
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.Hash_Cmd_Parse" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.Hash_Cmd_Parse" start time: Nov 26 01:39 +07
+"HashTest.Hash_Cmd_Parse" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1308,7 +1308,7 @@ Note: Google Test filter = HashTest.Hash_Cmd_Parse
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.Hash_Cmd_Parse" end time: Nov 26 01:39 +07
+"HashTest.Hash_Cmd_Parse" end time: Nov 26 11:16 +07
 "HashTest.Hash_Cmd_Parse" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1316,7 +1316,7 @@ Test Passed.
 49/203 Test: HashTest.hash_man_scripted
 Command: "/home/chesnokova/LABA3/build/hash_test" "--gtest_filter=HashTest.hash_man_scripted" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"HashTest.hash_man_scripted" start time: Nov 26 01:39 +07
+"HashTest.hash_man_scripted" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1332,10 +1332,10 @@ Note: Google Test filter = HashTest.hash_man_scripted
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"HashTest.hash_man_scripted" end time: Nov 26 01:39 +07
+"HashTest.hash_man_scripted" end time: Nov 26 11:16 +07
 "HashTest.hash_man_scripted" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1343,7 +1343,7 @@ Test Passed.
 50/203 Test: MyListTest.Branch_Deletions
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Branch_Deletions" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Branch_Deletions" start time: Nov 26 01:39 +07
+"MyListTest.Branch_Deletions" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1362,7 +1362,7 @@ Note: Google Test filter = MyListTest.Branch_Deletions
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Branch_Deletions" end time: Nov 26 01:39 +07
+"MyListTest.Branch_Deletions" end time: Nov 26 11:16 +07
 "MyListTest.Branch_Deletions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1370,7 +1370,7 @@ Test Passed.
 51/203 Test: MyListTest.Branch_AdvancedOps
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Branch_AdvancedOps" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Branch_AdvancedOps" start time: Nov 26 01:39 +07
+"MyListTest.Branch_AdvancedOps" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1386,10 +1386,10 @@ Note: Google Test filter = MyListTest.Branch_AdvancedOps
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Branch_AdvancedOps" end time: Nov 26 01:39 +07
+"MyListTest.Branch_AdvancedOps" end time: Nov 26 11:16 +07
 "MyListTest.Branch_AdvancedOps" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1397,7 +1397,7 @@ Test Passed.
 52/203 Test: MyListTest.AddBeforeHeadValue
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.AddBeforeHeadValue" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.AddBeforeHeadValue" start time: Nov 26 01:39 +07
+"MyListTest.AddBeforeHeadValue" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1413,10 +1413,10 @@ Note: Google Test filter = MyListTest.AddBeforeHeadValue
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.AddBeforeHeadValue" end time: Nov 26 01:39 +07
+"MyListTest.AddBeforeHeadValue" end time: Nov 26 11:16 +07
 "MyListTest.AddBeforeHeadValue" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1424,7 +1424,7 @@ Test Passed.
 53/203 Test: MyListTest.AddAfterNotFound
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.AddAfterNotFound" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.AddAfterNotFound" start time: Nov 26 01:39 +07
+"MyListTest.AddAfterNotFound" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1440,10 +1440,10 @@ Note: Google Test filter = MyListTest.AddAfterNotFound
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.AddAfterNotFound" end time: Nov 26 01:39 +07
+"MyListTest.AddAfterNotFound" end time: Nov 26 11:16 +07
 "MyListTest.AddAfterNotFound" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1451,7 +1451,7 @@ Test Passed.
 54/203 Test: MyListTest.DelByValueEmpty
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.DelByValueEmpty" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.DelByValueEmpty" start time: Nov 26 01:39 +07
+"MyListTest.DelByValueEmpty" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1467,10 +1467,10 @@ Note: Google Test filter = MyListTest.DelByValueEmpty
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.DelByValueEmpty" end time: Nov 26 01:39 +07
+"MyListTest.DelByValueEmpty" end time: Nov 26 11:16 +07
 "MyListTest.DelByValueEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1478,7 +1478,7 @@ Test Passed.
 55/203 Test: MyListTest.DelTailMultiple
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.DelTailMultiple" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.DelTailMultiple" start time: Nov 26 01:39 +07
+"MyListTest.DelTailMultiple" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1497,7 +1497,7 @@ Note: Google Test filter = MyListTest.DelTailMultiple
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.DelTailMultiple" end time: Nov 26 01:39 +07
+"MyListTest.DelTailMultiple" end time: Nov 26 11:16 +07
 "MyListTest.DelTailMultiple" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1505,7 +1505,7 @@ Test Passed.
 56/203 Test: MyListTest.Coverage_EmptyPrints
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_EmptyPrints" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_EmptyPrints" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_EmptyPrints" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1521,10 +1521,10 @@ Note: Google Test filter = MyListTest.Coverage_EmptyPrints
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_EmptyPrints" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_EmptyPrints" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_EmptyPrints" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1532,7 +1532,7 @@ Test Passed.
 57/203 Test: MyListTest.Coverage_DelHeadEmpty
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_DelHeadEmpty" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_DelHeadEmpty" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_DelHeadEmpty" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1551,7 +1551,7 @@ Note: Google Test filter = MyListTest.Coverage_DelHeadEmpty
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_DelHeadEmpty" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_DelHeadEmpty" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_DelHeadEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1559,7 +1559,7 @@ Test Passed.
 58/203 Test: MyListTest.Coverage_Serialization_Fail
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_Serialization_Fail" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_Serialization_Fail" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_Serialization_Fail" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1578,7 +1578,7 @@ Note: Google Test filter = MyListTest.Coverage_Serialization_Fail
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_Serialization_Fail" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_Serialization_Fail" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_Serialization_Fail" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1586,7 +1586,7 @@ Test Passed.
 59/203 Test: MyListTest.Coverage_Load_Corrupted
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_Load_Corrupted" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_Load_Corrupted" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_Load_Corrupted" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1605,7 +1605,7 @@ Note: Google Test filter = MyListTest.Coverage_Load_Corrupted
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_Load_Corrupted" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_Load_Corrupted" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_Load_Corrupted" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1613,7 +1613,7 @@ Test Passed.
 60/203 Test: MyListTest.Coverage_Delete_From_Empty
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_Delete_From_Empty" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_Delete_From_Empty" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_Delete_From_Empty" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1632,7 +1632,7 @@ Note: Google Test filter = MyListTest.Coverage_Delete_From_Empty
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_Delete_From_Empty" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_Delete_From_Empty" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_Delete_From_Empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1640,7 +1640,7 @@ Test Passed.
 61/203 Test: MyListTest.Coverage_Add_EdgeCases
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_Add_EdgeCases" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_Add_EdgeCases" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_Add_EdgeCases" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1656,10 +1656,10 @@ Note: Google Test filter = MyListTest.Coverage_Add_EdgeCases
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_Add_EdgeCases" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_Add_EdgeCases" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_Add_EdgeCases" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1667,7 +1667,7 @@ Test Passed.
 62/203 Test: MyListTest.Coverage_Delete_Head_Tail_SingleElement
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_Delete_Head_Tail_SingleElement" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_Delete_Head_Tail_SingleElement" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_Delete_Head_Tail_SingleElement" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1683,10 +1683,10 @@ Note: Google Test filter = MyListTest.Coverage_Delete_Head_Tail_SingleElement
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_Delete_Head_Tail_SingleElement" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_Delete_Head_Tail_SingleElement" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_Delete_Head_Tail_SingleElement" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1694,7 +1694,7 @@ Test Passed.
 63/203 Test: MyListTest.Coverage_DelByValue_Cases
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_DelByValue_Cases" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_DelByValue_Cases" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_DelByValue_Cases" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1713,7 +1713,7 @@ Note: Google Test filter = MyListTest.Coverage_DelByValue_Cases
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_DelByValue_Cases" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_DelByValue_Cases" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_DelByValue_Cases" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1721,7 +1721,7 @@ Test Passed.
 64/203 Test: MyListTest.Coverage_DelAfter_DelBefore
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_DelAfter_DelBefore" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_DelAfter_DelBefore" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_DelAfter_DelBefore" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1737,10 +1737,10 @@ Note: Google Test filter = MyListTest.Coverage_DelAfter_DelBefore
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_DelAfter_DelBefore" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_DelAfter_DelBefore" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_DelAfter_DelBefore" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1748,7 +1748,7 @@ Test Passed.
 65/203 Test: MyListTest.Coverage_IO_Failures
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_IO_Failures" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_IO_Failures" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_IO_Failures" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1767,7 +1767,7 @@ Note: Google Test filter = MyListTest.Coverage_IO_Failures
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_IO_Failures" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_IO_Failures" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_IO_Failures" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1775,7 +1775,7 @@ Test Passed.
 66/203 Test: MyListTest.Coverage_Load_Overwrite
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=MyListTest.Coverage_Load_Overwrite" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"MyListTest.Coverage_Load_Overwrite" start time: Nov 26 01:39 +07
+"MyListTest.Coverage_Load_Overwrite" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1791,10 +1791,10 @@ Note: Google Test filter = MyListTest.Coverage_Load_Overwrite
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MyListTest.Coverage_Load_Overwrite" end time: Nov 26 01:39 +07
+"MyListTest.Coverage_Load_Overwrite" end time: Nov 26 11:16 +07
 "MyListTest.Coverage_Load_Overwrite" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1802,7 +1802,7 @@ Test Passed.
 67/203 Test: ListTest.BranchBooster_ComplexConditions
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=ListTest.BranchBooster_ComplexConditions" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"ListTest.BranchBooster_ComplexConditions" start time: Nov 26 01:39 +07
+"ListTest.BranchBooster_ComplexConditions" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1818,10 +1818,10 @@ Note: Google Test filter = ListTest.BranchBooster_ComplexConditions
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"ListTest.BranchBooster_ComplexConditions" end time: Nov 26 01:39 +07
+"ListTest.BranchBooster_ComplexConditions" end time: Nov 26 11:16 +07
 "ListTest.BranchBooster_ComplexConditions" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1829,7 +1829,7 @@ Test Passed.
 68/203 Test: DestructorTest.MyListCleanup
 Command: "/home/chesnokova/LABA3/build/list_test" "--gtest_filter=DestructorTest.MyListCleanup" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DestructorTest.MyListCleanup" start time: Nov 26 01:39 +07
+"DestructorTest.MyListCleanup" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1848,7 +1848,7 @@ Note: Google Test filter = DestructorTest.MyListCleanup
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DestructorTest.MyListCleanup" end time: Nov 26 01:39 +07
+"DestructorTest.MyListCleanup" end time: Nov 26 11:16 +07
 "DestructorTest.MyListCleanup" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1856,7 +1856,7 @@ Test Passed.
 69/203 Test: QueueTest.Branch_Coverage
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.Branch_Coverage" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.Branch_Coverage" start time: Nov 26 01:39 +07
+"QueueTest.Branch_Coverage" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1872,10 +1872,10 @@ Note: Google Test filter = QueueTest.Branch_Coverage
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.Branch_Coverage" end time: Nov 26 01:39 +07
+"QueueTest.Branch_Coverage" end time: Nov 26 11:16 +07
 "QueueTest.Branch_Coverage" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1883,7 +1883,7 @@ Test Passed.
 70/203 Test: QueueTest.BranchBooster_PopEmpty
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.BranchBooster_PopEmpty" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.BranchBooster_PopEmpty" start time: Nov 26 01:39 +07
+"QueueTest.BranchBooster_PopEmpty" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1902,7 +1902,7 @@ Note: Google Test filter = QueueTest.BranchBooster_PopEmpty
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.BranchBooster_PopEmpty" end time: Nov 26 01:39 +07
+"QueueTest.BranchBooster_PopEmpty" end time: Nov 26 11:16 +07
 "QueueTest.BranchBooster_PopEmpty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1910,7 +1910,7 @@ Test Passed.
 71/203 Test: QueueTest.SaveAndLoadFile
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.SaveAndLoadFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.SaveAndLoadFile" start time: Nov 26 01:39 +07
+"QueueTest.SaveAndLoadFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1926,10 +1926,10 @@ Note: Google Test filter = QueueTest.SaveAndLoadFile
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.SaveAndLoadFile" end time: Nov 26 01:39 +07
+"QueueTest.SaveAndLoadFile" end time: Nov 26 11:16 +07
 "QueueTest.SaveAndLoadFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1937,7 +1937,7 @@ Test Passed.
 72/203 Test: QueueTest.LoadFromBadFile
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.LoadFromBadFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.LoadFromBadFile" start time: Nov 26 01:39 +07
+"QueueTest.LoadFromBadFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1956,7 +1956,7 @@ Note: Google Test filter = QueueTest.LoadFromBadFile
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.LoadFromBadFile" end time: Nov 26 01:39 +07
+"QueueTest.LoadFromBadFile" end time: Nov 26 11:16 +07
 "QueueTest.LoadFromBadFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1964,7 +1964,7 @@ Test Passed.
 73/203 Test: QueueTest.TruncatedFile
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.TruncatedFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.TruncatedFile" start time: Nov 26 01:39 +07
+"QueueTest.TruncatedFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1983,7 +1983,7 @@ Note: Google Test filter = QueueTest.TruncatedFile
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.TruncatedFile" end time: Nov 26 01:39 +07
+"QueueTest.TruncatedFile" end time: Nov 26 11:16 +07
 "QueueTest.TruncatedFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1991,7 +1991,7 @@ Test Passed.
 74/203 Test: QueueTest.Coverage_EmptyOps
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.Coverage_EmptyOps" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.Coverage_EmptyOps" start time: Nov 26 01:39 +07
+"QueueTest.Coverage_EmptyOps" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2010,7 +2010,7 @@ Note: Google Test filter = QueueTest.Coverage_EmptyOps
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.Coverage_EmptyOps" end time: Nov 26 01:39 +07
+"QueueTest.Coverage_EmptyOps" end time: Nov 26 11:16 +07
 "QueueTest.Coverage_EmptyOps" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2018,7 +2018,7 @@ Test Passed.
 75/203 Test: QueueTest.Coverage_FullCycle
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.Coverage_FullCycle" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.Coverage_FullCycle" start time: Nov 26 01:39 +07
+"QueueTest.Coverage_FullCycle" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2034,10 +2034,10 @@ Note: Google Test filter = QueueTest.Coverage_FullCycle
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.Coverage_FullCycle" end time: Nov 26 01:39 +07
+"QueueTest.Coverage_FullCycle" end time: Nov 26 11:16 +07
 "QueueTest.Coverage_FullCycle" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2045,7 +2045,7 @@ Test Passed.
 76/203 Test: QueueTest.Coverage_IO
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=QueueTest.Coverage_IO" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"QueueTest.Coverage_IO" start time: Nov 26 01:39 +07
+"QueueTest.Coverage_IO" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2064,7 +2064,7 @@ Note: Google Test filter = QueueTest.Coverage_IO
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest.Coverage_IO" end time: Nov 26 01:39 +07
+"QueueTest.Coverage_IO" end time: Nov 26 11:16 +07
 "QueueTest.Coverage_IO" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2072,7 +2072,7 @@ Test Passed.
 77/203 Test: DestructorTest.QueueCleanup
 Command: "/home/chesnokova/LABA3/build/queue_test" "--gtest_filter=DestructorTest.QueueCleanup" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DestructorTest.QueueCleanup" start time: Nov 26 01:39 +07
+"DestructorTest.QueueCleanup" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2091,7 +2091,7 @@ Note: Google Test filter = DestructorTest.QueueCleanup
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DestructorTest.QueueCleanup" end time: Nov 26 01:39 +07
+"DestructorTest.QueueCleanup" end time: Nov 26 11:16 +07
 "DestructorTest.QueueCleanup" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2099,7 +2099,7 @@ Test Passed.
 78/203 Test: StackTest.Branch_Coverage
 Command: "/home/chesnokova/LABA3/build/stack_test" "--gtest_filter=StackTest.Branch_Coverage" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"StackTest.Branch_Coverage" start time: Nov 26 01:39 +07
+"StackTest.Branch_Coverage" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2118,7 +2118,7 @@ Note: Google Test filter = StackTest.Branch_Coverage
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.Branch_Coverage" end time: Nov 26 01:39 +07
+"StackTest.Branch_Coverage" end time: Nov 26 11:16 +07
 "StackTest.Branch_Coverage" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2126,7 +2126,7 @@ Test Passed.
 79/203 Test: StackTest.Branch_Killer_And_Extras
 Command: "/home/chesnokova/LABA3/build/stack_test" "--gtest_filter=StackTest.Branch_Killer_And_Extras" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"StackTest.Branch_Killer_And_Extras" start time: Nov 26 01:39 +07
+"StackTest.Branch_Killer_And_Extras" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2145,7 +2145,7 @@ Note: Google Test filter = StackTest.Branch_Killer_And_Extras
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.Branch_Killer_And_Extras" end time: Nov 26 01:39 +07
+"StackTest.Branch_Killer_And_Extras" end time: Nov 26 11:16 +07
 "StackTest.Branch_Killer_And_Extras" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2153,7 +2153,7 @@ Test Passed.
 80/203 Test: StackTest.SaveAndLoadFile
 Command: "/home/chesnokova/LABA3/build/stack_test" "--gtest_filter=StackTest.SaveAndLoadFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"StackTest.SaveAndLoadFile" start time: Nov 26 01:39 +07
+"StackTest.SaveAndLoadFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2172,7 +2172,7 @@ Note: Google Test filter = StackTest.SaveAndLoadFile
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.SaveAndLoadFile" end time: Nov 26 01:39 +07
+"StackTest.SaveAndLoadFile" end time: Nov 26 11:16 +07
 "StackTest.SaveAndLoadFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2180,7 +2180,7 @@ Test Passed.
 81/203 Test: StackTest.LoadFromBadFile
 Command: "/home/chesnokova/LABA3/build/stack_test" "--gtest_filter=StackTest.LoadFromBadFile" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"StackTest.LoadFromBadFile" start time: Nov 26 01:39 +07
+"StackTest.LoadFromBadFile" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2196,10 +2196,10 @@ Note: Google Test filter = StackTest.LoadFromBadFile
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.LoadFromBadFile" end time: Nov 26 01:39 +07
+"StackTest.LoadFromBadFile" end time: Nov 26 11:16 +07
 "StackTest.LoadFromBadFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2207,7 +2207,7 @@ Test Passed.
 82/203 Test: StackTest.Coverage_EmptyOps
 Command: "/home/chesnokova/LABA3/build/stack_test" "--gtest_filter=StackTest.Coverage_EmptyOps" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"StackTest.Coverage_EmptyOps" start time: Nov 26 01:39 +07
+"StackTest.Coverage_EmptyOps" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2226,7 +2226,7 @@ Note: Google Test filter = StackTest.Coverage_EmptyOps
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.Coverage_EmptyOps" end time: Nov 26 01:39 +07
+"StackTest.Coverage_EmptyOps" end time: Nov 26 11:16 +07
 "StackTest.Coverage_EmptyOps" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2234,7 +2234,7 @@ Test Passed.
 83/203 Test: StackTest.Coverage_IO
 Command: "/home/chesnokova/LABA3/build/stack_test" "--gtest_filter=StackTest.Coverage_IO" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"StackTest.Coverage_IO" start time: Nov 26 01:39 +07
+"StackTest.Coverage_IO" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2253,7 +2253,7 @@ Note: Google Test filter = StackTest.Coverage_IO
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"StackTest.Coverage_IO" end time: Nov 26 01:39 +07
+"StackTest.Coverage_IO" end time: Nov 26 11:16 +07
 "StackTest.Coverage_IO" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2261,7 +2261,7 @@ Test Passed.
 84/203 Test: DestructorTest.StackCleanup
 Command: "/home/chesnokova/LABA3/build/stack_test" "--gtest_filter=DestructorTest.StackCleanup" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"DestructorTest.StackCleanup" start time: Nov 26 01:39 +07
+"DestructorTest.StackCleanup" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 Running main() from /home/chesnokova/LABA3/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -2277,10 +2277,10 @@ Note: Google Test filter = DestructorTest.StackCleanup
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DestructorTest.StackCleanup" end time: Nov 26 01:39 +07
+"DestructorTest.StackCleanup" end time: Nov 26 11:16 +07
 "DestructorTest.StackCleanup" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2288,7 +2288,7 @@ Test Passed.
 85/203 Test: Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" start time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -2465,10 +2465,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" end time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" end time: Nov 26 11:16 +07
 "Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2476,7 +2476,7 @@ Test Passed.
 86/203 Test: Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" start time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -2656,7 +2656,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" end time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" end time: Nov 26 11:16 +07
 "Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2664,7 +2664,7 @@ Test Passed.
 87/203 Test: Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" start time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -2844,7 +2844,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" end time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" end time: Nov 26 11:16 +07
 "Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2852,7 +2852,7 @@ Test Passed.
 88/203 Test: Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" start time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -3032,7 +3032,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" end time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" end time: Nov 26 11:16 +07
 "Проверка данных...- Индекс 0: Москва (Ожидалось: Москва)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3040,7 +3040,7 @@ Test Passed.
 89/203 Test: Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" start time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -3220,7 +3220,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" end time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" end time: Nov 26 11:16 +07
 "Проверка данных...- Индекс 1: Лондон (Ожидалось: Лондон)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3228,7 +3228,7 @@ Test Passed.
 90/203 Test: Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" start time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -3405,10 +3405,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" end time: Nov 26 01:39 +07
+"Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" end time: Nov 26 11:16 +07
 "Проверка данных...- Индекс 3: Париж (Ожидалось: Париж)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3416,7 +3416,7 @@ Test Passed.
 91/203 Test: Проверка наличия значений...- Найдено: Берлин
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Берлин" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Берлин" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Берлин" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -3593,10 +3593,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Берлин" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Берлин" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Берлин" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3604,7 +3604,7 @@ Test Passed.
 92/203 Test: Проверка наличия значений...- Найдено: Мадрид
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Мадрид" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Мадрид" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Мадрид" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -3784,7 +3784,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Мадрид" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Мадрид" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Мадрид" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3792,7 +3792,7 @@ Test Passed.
 93/203 Test: Проверка наличия значений...- Найдено: Рим
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Рим" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Рим" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Рим" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -3969,10 +3969,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Рим" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Рим" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Рим" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3980,7 +3980,7 @@ Test Passed.
 94/203 Test: Проверка наличия значений...- Найдено: Берлин
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Берлин" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Берлин" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Берлин" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -4160,7 +4160,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Берлин" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Берлин" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Берлин" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -4168,7 +4168,7 @@ Test Passed.
 95/203 Test: Проверка наличия значений...- Найдено: Мадрид
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Мадрид" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Мадрид" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Мадрид" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -4345,10 +4345,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Мадрид" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Мадрид" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Мадрид" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -4356,7 +4356,7 @@ Test Passed.
 96/203 Test: Проверка наличия значений...- Найдено: Рим
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Рим" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Рим" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Рим" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -4536,7 +4536,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Рим" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Рим" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Рим" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -4544,7 +4544,7 @@ Test Passed.
 97/203 Test: Проверка наличия значений...- Найдено: Пекин
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Пекин" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Пекин" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Пекин" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -4724,7 +4724,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Пекин" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Пекин" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Пекин" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -4732,7 +4732,7 @@ Test Passed.
 98/203 Test: Проверка наличия значений...- Найдено: Сеул
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Сеул" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Сеул" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Сеул" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -4912,7 +4912,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Сеул" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Сеул" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Сеул" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -4920,7 +4920,7 @@ Test Passed.
 99/203 Test: Проверка наличия значений...- Найдено: Бангкок
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Бангкок" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Бангкок" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Бангкок" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -5100,7 +5100,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Бангкок" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Бангкок" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Бангкок" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -5108,7 +5108,7 @@ Test Passed.
 100/203 Test: Проверка наличия значений...- Найдено: Пекин
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Пекин" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Пекин" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Пекин" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -5288,7 +5288,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Пекин" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Пекин" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Пекин" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -5296,7 +5296,7 @@ Test Passed.
 101/203 Test: Проверка наличия значений...- Найдено: Сеул
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Сеул" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Сеул" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Сеул" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -5476,7 +5476,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Сеул" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Сеул" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Сеул" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -5484,7 +5484,7 @@ Test Passed.
 102/203 Test: Проверка наличия значений...- Найдено: Бангкок
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка наличия значений...- Найдено: Бангкок" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка наличия значений...- Найдено: Бангкок" start time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Бангкок" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -5661,10 +5661,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка наличия значений...- Найдено: Бангкок" end time: Nov 26 01:39 +07
+"Проверка наличия значений...- Найдено: Бангкок" end time: Nov 26 11:16 +07
 "Проверка наличия значений...- Найдено: Бангкок" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -5672,7 +5672,7 @@ Test Passed.
 103/203 Test: Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" start time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -5852,7 +5852,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" end time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" end time: Nov 26 11:16 +07
 "Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -5860,7 +5860,7 @@ Test Passed.
 104/203 Test: Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" start time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -6040,7 +6040,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" end time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" end time: Nov 26 11:16 +07
 "Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -6048,7 +6048,7 @@ Test Passed.
 105/203 Test: Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" start time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -6228,7 +6228,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" end time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" end time: Nov 26 11:16 +07
 "Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -6236,7 +6236,7 @@ Test Passed.
 106/203 Test: Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" start time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -6416,7 +6416,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" end time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" end time: Nov 26 11:16 +07
 "Проверка порядка (LIFO)...- Pop 1: Копенгаген (Ожидалось: Копенгаген)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -6424,7 +6424,7 @@ Test Passed.
 107/203 Test: Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" start time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -6604,7 +6604,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" end time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" end time: Nov 26 11:16 +07
 "Проверка порядка (LIFO)...- Pop 2: Стокгольм (Ожидалось: Стокгольм)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -6612,7 +6612,7 @@ Test Passed.
 108/203 Test: Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" start time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -6792,7 +6792,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" end time: Nov 26 01:39 +07
+"Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" end time: Nov 26 11:16 +07
 "Проверка порядка (LIFO)...- Pop 3: Осло (Ожидалось: Осло)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -6800,7 +6800,7 @@ Test Passed.
 109/203 Test: Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" start time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -6980,7 +6980,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" end time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" end time: Nov 26 11:16 +07
 "Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -6988,7 +6988,7 @@ Test Passed.
 110/203 Test: Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" start time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -7168,7 +7168,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" end time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" end time: Nov 26 11:16 +07
 "Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -7176,7 +7176,7 @@ Test Passed.
 111/203 Test: Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" start time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -7356,7 +7356,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" end time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" end time: Nov 26 11:16 +07
 "Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -7364,7 +7364,7 @@ Test Passed.
 112/203 Test: Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" start time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -7544,7 +7544,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" end time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" end time: Nov 26 11:16 +07
 "Проверка порядка (FIFO)...- Pop 1: Дели (Ожидалось: Дели)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -7552,7 +7552,7 @@ Test Passed.
 113/203 Test: Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" start time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -7732,7 +7732,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" end time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" end time: Nov 26 11:16 +07
 "Проверка порядка (FIFO)...- Pop 2: Мумбаи (Ожидалось: Мумбаи)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -7740,7 +7740,7 @@ Test Passed.
 114/203 Test: Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" start time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -7920,7 +7920,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" end time: Nov 26 01:39 +07
+"Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" end time: Nov 26 11:16 +07
 "Проверка порядка (FIFO)...- Pop 3: Калькутта (Ожидалось: Калькутта)" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -7928,7 +7928,7 @@ Test Passed.
 115/203 Test:  Поиск узлов...- 50 найдено
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter= Поиск узлов...- 50 найдено" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-" Поиск узлов...- 50 найдено" start time: Nov 26 01:39 +07
+" Поиск узлов...- 50 найдено" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -8108,7 +8108,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-" Поиск узлов...- 50 найдено" end time: Nov 26 01:39 +07
+" Поиск узлов...- 50 найдено" end time: Nov 26 11:16 +07
 " Поиск узлов...- 50 найдено" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -8116,7 +8116,7 @@ Test Passed.
 116/203 Test:  Поиск узлов...- 30 найдено
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter= Поиск узлов...- 30 найдено" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-" Поиск узлов...- 30 найдено" start time: Nov 26 01:39 +07
+" Поиск узлов...- 30 найдено" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -8296,7 +8296,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-" Поиск узлов...- 30 найдено" end time: Nov 26 01:39 +07
+" Поиск узлов...- 30 найдено" end time: Nov 26 11:16 +07
 " Поиск узлов...- 30 найдено" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -8304,7 +8304,7 @@ Test Passed.
 117/203 Test:  Поиск узлов...- 70 найдено
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter= Поиск узлов...- 70 найдено" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-" Поиск узлов...- 70 найдено" start time: Nov 26 01:39 +07
+" Поиск узлов...- 70 найдено" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -8484,7 +8484,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-" Поиск узлов...- 70 найдено" end time: Nov 26 01:39 +07
+" Поиск узлов...- 70 найдено" end time: Nov 26 11:16 +07
 " Поиск узлов...- 70 найдено" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -8492,7 +8492,7 @@ Test Passed.
 118/203 Test: Поиск узлов...- 50 найдено
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Поиск узлов...- 50 найдено" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Поиск узлов...- 50 найдено" start time: Nov 26 01:39 +07
+"Поиск узлов...- 50 найдено" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -8669,10 +8669,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Поиск узлов...- 50 найдено" end time: Nov 26 01:39 +07
+"Поиск узлов...- 50 найдено" end time: Nov 26 11:16 +07
 "Поиск узлов...- 50 найдено" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -8680,7 +8680,7 @@ Test Passed.
 119/203 Test: Поиск узлов...- 30 найдено
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Поиск узлов...- 30 найдено" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Поиск узлов...- 30 найдено" start time: Nov 26 01:39 +07
+"Поиск узлов...- 30 найдено" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -8857,10 +8857,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Поиск узлов...- 30 найдено" end time: Nov 26 01:39 +07
+"Поиск узлов...- 30 найдено" end time: Nov 26 11:16 +07
 "Поиск узлов...- 30 найдено" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -8868,7 +8868,7 @@ Test Passed.
 120/203 Test: Поиск узлов...- 70 найдено
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Поиск узлов...- 70 найдено" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Поиск узлов...- 70 найдено" start time: Nov 26 01:39 +07
+"Поиск узлов...- 70 найдено" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -9045,10 +9045,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Поиск узлов...- 70 найдено" end time: Nov 26 01:39 +07
+"Поиск узлов...- 70 найдено" end time: Nov 26 11:16 +07
 "Поиск узлов...- 70 найдено" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -9056,7 +9056,7 @@ Test Passed.
 121/203 Test:  Проверка значений...- key1 -> value1
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter= Проверка значений...- key1 -> value1" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-" Проверка значений...- key1 -> value1" start time: Nov 26 01:39 +07
+" Проверка значений...- key1 -> value1" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -9233,10 +9233,10 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!
 =========================================
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-" Проверка значений...- key1 -> value1" end time: Nov 26 01:39 +07
+" Проверка значений...- key1 -> value1" end time: Nov 26 11:16 +07
 " Проверка значений...- key1 -> value1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -9244,7 +9244,7 @@ Test Passed.
 122/203 Test:  Проверка значений...- key2 -> value2
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter= Проверка значений...- key2 -> value2" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-" Проверка значений...- key2 -> value2" start time: Nov 26 01:39 +07
+" Проверка значений...- key2 -> value2" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -9424,7 +9424,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-" Проверка значений...- key2 -> value2" end time: Nov 26 01:39 +07
+" Проверка значений...- key2 -> value2" end time: Nov 26 11:16 +07
 " Проверка значений...- key2 -> value2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -9432,7 +9432,7 @@ Test Passed.
 123/203 Test:  Проверка значений...- key1 -> value1
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter= Проверка значений...- key1 -> value1" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-" Проверка значений...- key1 -> value1" start time: Nov 26 01:39 +07
+" Проверка значений...- key1 -> value1" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -9612,7 +9612,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-" Проверка значений...- key1 -> value1" end time: Nov 26 01:39 +07
+" Проверка значений...- key1 -> value1" end time: Nov 26 11:16 +07
 " Проверка значений...- key1 -> value1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -9620,7 +9620,7 @@ Test Passed.
 124/203 Test:  Проверка значений...- key2 -> value2
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter= Проверка значений...- key2 -> value2" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-" Проверка значений...- key2 -> value2" start time: Nov 26 01:39 +07
+" Проверка значений...- key2 -> value2" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -9800,7 +9800,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-" Проверка значений...- key2 -> value2" end time: Nov 26 01:39 +07
+" Проверка значений...- key2 -> value2" end time: Nov 26 11:16 +07
 " Проверка значений...- key2 -> value2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -9808,7 +9808,7 @@ Test Passed.
 125/203 Test: Проверка значений...- k1 -> v1
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка значений...- k1 -> v1" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка значений...- k1 -> v1" start time: Nov 26 01:39 +07
+"Проверка значений...- k1 -> v1" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -9988,7 +9988,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка значений...- k1 -> v1" end time: Nov 26 01:39 +07
+"Проверка значений...- k1 -> v1" end time: Nov 26 11:16 +07
 "Проверка значений...- k1 -> v1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -9996,7 +9996,7 @@ Test Passed.
 126/203 Test: Проверка значений...- k2 -> v2
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка значений...- k2 -> v2" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка значений...- k2 -> v2" start time: Nov 26 01:39 +07
+"Проверка значений...- k2 -> v2" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -10176,7 +10176,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка значений...- k2 -> v2" end time: Nov 26 01:39 +07
+"Проверка значений...- k2 -> v2" end time: Nov 26 11:16 +07
 "Проверка значений...- k2 -> v2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -10184,7 +10184,7 @@ Test Passed.
 127/203 Test: Проверка значений...- k1 -> v1
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка значений...- k1 -> v1" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка значений...- k1 -> v1" start time: Nov 26 01:39 +07
+"Проверка значений...- k1 -> v1" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -10364,7 +10364,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка значений...- k1 -> v1" end time: Nov 26 01:39 +07
+"Проверка значений...- k1 -> v1" end time: Nov 26 11:16 +07
 "Проверка значений...- k1 -> v1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -10372,7 +10372,7 @@ Test Passed.
 128/203 Test: Проверка значений...- k2 -> v2
 Command: "/home/chesnokova/LABA3/build/serialization_test" "--gtest_filter=Проверка значений...- k2 -> v2" "--gtest_also_run_disabled_tests"
 Directory: /home/chesnokova/LABA3/build
-"Проверка значений...- k2 -> v2" start time: Nov 26 01:39 +07
+"Проверка значений...- k2 -> v2" start time: Nov 26 11:16 +07
 Output:
 ----------------------------------------------------------
 ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ
@@ -10552,1152 +10552,7 @@ HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Проверка значений...- k2 -> v2" end time: Nov 26 01:39 +07
+"Проверка значений...- k2 -> v2" end time: Nov 26 11:16 +07
 "Проверка значений...- k2 -> v2" time elapsed: 00:00:00
-----------------------------------------------------------
-
-129/203 Testing: benchmark
-129/203 Test: benchmark
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_test" "--benchmark_min_time=0.01s"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"benchmark" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:46+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.85, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------------------------------------
-Benchmark                                         Time             CPU   Iterations
------------------------------------------------------------------------------------
-BM_Factorial                                   29.1 ns         22.9 ns       631957 40320
-BM_Factorial/real_time                         23.7 ns         21.9 ns       621008 40320
-BM_CalculatePiRange/1                          10.7 ns         10.5 ns      1355863 0
-BM_CalculatePiRange/8                          29.4 ns         29.4 ns       498092 3.28374
-BM_CalculatePiRange/64                          177 ns          177 ns        79449 3.15746
-BM_CalculatePiRange/512                        1213 ns         1213 ns        11698 3.14355
-BM_CalculatePiRange/4096                       9534 ns         9482 ns         1483 3.14184
-BM_CalculatePiRange/32768                     78816 ns        77075 ns          180 3.14162
-BM_CalculatePiRange/262144                   692840 ns       623982 ns           24 3.1416
-BM_CalculatePiRange/1048576                 2477742 ns      2474577 ns            6 3.14159
-BM_CalculatePi/threads:8                       3849 ns        24683 ns          744
-BM_CalculatePi/threads:1                       2447 ns         2440 ns         5605
-BM_CalculatePi/threads:2                       4864 ns         9728 ns         1292
-BM_CalculatePi/threads:4                       6021 ns        23915 ns          960
-BM_CalculatePi/threads:8                       4682 ns        23617 ns          728
-BM_CalculatePi/threads:16                      2502 ns        19836 ns          768
-BM_CalculatePi/threads:32                       738 ns        19803 ns          576
-BM_CalculatePi/threads:4                       6082 ns        24041 ns          996
-BM_SetInsert/1024/128                         64007 ns        63786 ns          216 bytes_per_second=7.65499Mi/s items_per_second=2.00671M/s
-BM_SetInsert/4096/128                         74531 ns        73120 ns          196 bytes_per_second=6.67785Mi/s items_per_second=1.75056M/s
-BM_SetInsert/8192/128                         80150 ns        78228 ns          182 bytes_per_second=6.24174Mi/s items_per_second=1.63623M/s
-BM_SetInsert/1024/512                        272432 ns       268916 ns           52 bytes_per_second=7.26296Mi/s items_per_second=1.90394M/s
-BM_SetInsert/4096/512                        288197 ns       286988 ns           49 bytes_per_second=6.80561Mi/s items_per_second=1.78405M/s
-BM_SetInsert/8192/512                        314545 ns       309926 ns           46 bytes_per_second=6.30191Mi/s items_per_second=1.65201M/s
-BM_Sequential<std::vector<int>,int>/1          35.7 ns         35.6 ns       396831 bytes_per_second=107.063Mi/s items_per_second=28.066M/s
-BM_Sequential<std::vector<int>,int>/8           608 ns          607 ns        22932 bytes_per_second=50.2764Mi/s items_per_second=13.1797M/s
-BM_Sequential<std::vector<int>,int>/64         1591 ns         1586 ns         8755 bytes_per_second=153.961Mi/s items_per_second=40.3601M/s
-BM_Sequential<std::vector<int>,int>/512        6481 ns         6471 ns         2125 bytes_per_second=301.836Mi/s items_per_second=79.1246M/s
-BM_Sequential<std::vector<int>,int>/1024      11605 ns        11605 ns         1224 bytes_per_second=336.591Mi/s items_per_second=88.2352M/s
-BM_Sequential<std::list<int>>/1                34.9 ns         28.5 ns       489259 bytes_per_second=133.776Mi/s items_per_second=35.0686M/s
-BM_Sequential<std::list<int>>/8                 585 ns          584 ns        24565 bytes_per_second=52.2641Mi/s items_per_second=13.7007M/s
-BM_Sequential<std::list<int>>/64               5710 ns         5693 ns         2382 bytes_per_second=42.8832Mi/s items_per_second=11.2416M/s
-BM_Sequential<std::list<int>>/512             44420 ns        44347 ns          313 bytes_per_second=44.0419Mi/s items_per_second=11.5453M/s
-BM_Sequential<std::list<int>>/1024            91946 ns        90591 ns          148 bytes_per_second=43.1196Mi/s items_per_second=11.3036M/s
-BM_Sequential<std::vector<int>, int>/512       6565 ns         6530 ns         2119 bytes_per_second=299.1Mi/s items_per_second=78.4072M/s
-BM_StringCompare/1                             8.44 ns         8.38 ns      2650749
-BM_StringCompare/8                             5.69 ns         5.68 ns      2499685
-BM_StringCompare/64                            5.35 ns         5.35 ns      2617445
-BM_StringCompare/512                           10.3 ns         10.3 ns      1386976
-BM_StringCompare/4096                          42.2 ns         42.2 ns       331403
-BM_StringCompare/32768                          628 ns          627 ns        22355
-BM_StringCompare/262144                        6836 ns         6816 ns         2067
-BM_StringCompare/1048576                      36047 ns        36048 ns          351
-BM_SetupTeardown/threads:4                     95.9 ns          246 ns        62624
-BM_LongTest/65536                            367207 ns       367205 ns           39
-BM_LongTest/262144                          1474580 ns      1474614 ns            9
-BM_LongTest/2097152                        11254913 ns     11255046 ns            1
-BM_LongTest/16777216                       92126721 ns     92071893 ns            1
-BM_LongTest/134217728                     743786670 ns    742850964 ns            1
-BM_LongTest/268435456                    1483266327 ns   1482075530 ns            1
-BM_ParallelMemset/10485760/threads:1       24957300 ns     24955593 ns            1
-BM_ParallelMemset/10485760/threads:2       96719354 ns    192944915 ns            2
-BM_ParallelMemset/10485760/threads:4       44471896 ns    166120293 ns            4
-BM_ManualTiming/1/real_time                  235577 ns        13898 ns           48 items_per_second=4.2449k/s
-BM_ManualTiming/8/real_time                  170251 ns        17219 ns           69 items_per_second=46.9894k/s
-BM_ManualTiming/64/real_time                 508254 ns        24102 ns           43 items_per_second=125.921k/s
-BM_ManualTiming/512/real_time                985160 ns        14529 ns           12 items_per_second=519.713k/s
-BM_ManualTiming/4096/real_time              4311708 ns        15766 ns            3 items_per_second=949.971k/s
-BM_ManualTiming/16384/real_time            16741134 ns        71253 ns            1 items_per_second=978.667k/s
-BM_ManualTiming/1/manual_time                195462 ns        12395 ns           78 items_per_second=5.1161k/s
-BM_ManualTiming/8/manual_time                211509 ns        17858 ns           84 items_per_second=37.8234k/s
-BM_ManualTiming/64/manual_time               301316 ns        23744 ns           46 items_per_second=212.401k/s
-BM_ManualTiming/512/manual_time             1012314 ns        37789 ns           10 items_per_second=505.772k/s
-BM_ManualTiming/4096/manual_time            4196989 ns        26377 ns            3 items_per_second=975.938k/s
-BM_ManualTiming/16384/manual_time          17140397 ns        62035 ns            1 items_per_second=955.871k/s
-BM_with_args/int_test                          1.68 ns         1.68 ns      8203532
-BM_with_args/string_and_pair_test              1.67 ns         1.67 ns      8322059
-BM_non_template_args/basic_test                3.67 ns         3.67 ns      3901589
-BM_DenseThreadRanges/1/threads:1               2.57 ns         2.56 ns      5171080
-BM_DenseThreadRanges/1/threads:2               26.3 ns         52.5 ns       372508
-BM_DenseThreadRanges/1/threads:3               20.6 ns         61.6 ns       277335
-BM_DenseThreadRanges/2/threads:1               2.57 ns         2.56 ns      5274892
-BM_DenseThreadRanges/2/threads:3               19.8 ns         59.4 ns       249768
-BM_DenseThreadRanges/2/threads:4               11.9 ns         43.7 ns       325352
-BM_DenseThreadRanges/3/threads:5               16.9 ns         69.2 ns       227825
-BM_DenseThreadRanges/3/threads:8               7.92 ns         56.8 ns       223408
-BM_DenseThreadRanges/3/threads:11              7.70 ns         56.2 ns       213301
-BM_DenseThreadRanges/3/threads:14              6.86 ns         59.6 ns       214816
-BM_BenchmarkName                               1.74 ns         1.74 ns      8307319
-BM_templated_test_double                       2.02 ns         2.02 ns      6644064
-<end of output>
-Test time =   4.98 sec
-----------------------------------------------------------
-Test Passed.
-"benchmark" end time: Nov 26 01:39 +07
-"benchmark" time elapsed: 00:00:04
-----------------------------------------------------------
-
-130/203 Testing: spec_arg
-130/203 Test: spec_arg
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/spec_arg_test" "--benchmark_filter=BM_NotChosen"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"spec_arg" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:51+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/spec_arg_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.86, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_Chosen  [m[0;33m      1.73 ns         1.72 ns   [m[0;36m 404378091[m
-[m
-<end of output>
-Test time =   0.90 sec
-----------------------------------------------------------
-Test Passed.
-"spec_arg" end time: Nov 26 01:39 +07
-"spec_arg" time elapsed: 00:00:00
-----------------------------------------------------------
-
-131/203 Testing: spec_arg_verbosity
-131/203 Test: spec_arg_verbosity
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/spec_arg_verbosity_test" "--v=42"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"spec_arg_verbosity" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"spec_arg_verbosity" end time: Nov 26 01:39 +07
-"spec_arg_verbosity" time elapsed: 00:00:00
-----------------------------------------------------------
-
-132/203 Testing: benchmark_setup_teardown
-132/203 Test: benchmark_setup_teardown
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_setup_teardown_test"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"benchmark_setup_teardown" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:52+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_setup_teardown_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.86, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------------------------------------------------------
-Benchmark                                                           Time             CPU   Iterations
------------------------------------------------------------------------------------------------------
-BM_with_setup/1/iterations:100                                   60.4 ns         24.6 ns          100
-BM_with_setup/3/iterations:100                                   10.4 ns         8.26 ns          100
-BM_with_setup/5/iterations:100                                   8.77 ns         7.38 ns          100
-BM_with_setup/7/iterations:100                                   8.44 ns         7.17 ns          100
-BM_concurrent/iterations:100/threads:5                           3.78 ns         13.5 ns          500
-BM_concurrent/iterations:100/threads:10                          1.70 ns         12.6 ns         1000
-BM_concurrent/iterations:100/threads:15                          1.42 ns         19.6 ns         1500
-MyFixture/BM_WithFixture                                         1.59 ns         1.58 ns    441032080
-MyFixture/BM_WithFixture/1/iterations:100/repeats:1              11.8 ns         9.25 ns          100
-MyFixture/BM_WithFixture/3/iterations:100/repeats:1              11.7 ns         8.13 ns          100
-MyFixture/BM_WithFixture/5/iterations:100/repeats:1              8.46 ns         7.06 ns          100
-MyFixture/BM_WithFixture/7/iterations:100/repeats:1              8.05 ns         6.78 ns          100
-BM_WithRep/1/iterations:100/repeats:4                            8.65 ns         7.53 ns          100
-BM_WithRep/1/iterations:100/repeats:4                            7.06 ns         6.39 ns          100
-BM_WithRep/1/iterations:100/repeats:4                            8.07 ns         6.48 ns          100
-BM_WithRep/1/iterations:100/repeats:4                            7.65 ns         6.77 ns          100
-BM_WithRep/1/iterations:100/repeats:4_mean                       7.86 ns         6.79 ns            4
-BM_WithRep/1/iterations:100/repeats:4_median                     7.86 ns         6.63 ns            4
-BM_WithRep/1/iterations:100/repeats:4_stddev                    0.671 ns        0.518 ns            4
-BM_WithRep/1/iterations:100/repeats:4_cv                         8.54 %          7.62 %             4
-BM_WithRep/3/iterations:100/repeats:4                            12.8 ns         9.34 ns          100
-BM_WithRep/3/iterations:100/repeats:4                            6.94 ns         6.22 ns          100
-BM_WithRep/3/iterations:100/repeats:4                            7.57 ns         6.52 ns          100
-BM_WithRep/3/iterations:100/repeats:4                            7.35 ns         6.57 ns          100
-BM_WithRep/3/iterations:100/repeats:4_mean                       8.66 ns         7.16 ns            4
-BM_WithRep/3/iterations:100/repeats:4_median                     7.46 ns         6.54 ns            4
-BM_WithRep/3/iterations:100/repeats:4_stddev                     2.75 ns         1.46 ns            4
-BM_WithRep/3/iterations:100/repeats:4_cv                        31.81 %         20.38 %             4
-BM_WithRep/5/iterations:100/repeats:4                            10.3 ns         8.02 ns          100
-BM_WithRep/5/iterations:100/repeats:4                            6.93 ns         6.79 ns          100
-BM_WithRep/5/iterations:100/repeats:4                            7.28 ns         6.59 ns          100
-BM_WithRep/5/iterations:100/repeats:4                            7.23 ns         6.51 ns          100
-BM_WithRep/5/iterations:100/repeats:4_mean                       7.95 ns         6.98 ns            4
-BM_WithRep/5/iterations:100/repeats:4_median                     7.25 ns         6.69 ns            4
-BM_WithRep/5/iterations:100/repeats:4_stddev                     1.60 ns        0.705 ns            4
-BM_WithRep/5/iterations:100/repeats:4_cv                        20.19 %         10.10 %             4
-BM_WithRep/7/iterations:100/repeats:4                            10.2 ns         8.07 ns          100
-BM_WithRep/7/iterations:100/repeats:4                            7.59 ns         6.47 ns          100
-BM_WithRep/7/iterations:100/repeats:4                            7.08 ns         6.51 ns          100
-BM_WithRep/7/iterations:100/repeats:4                            7.10 ns         6.44 ns          100
-BM_WithRep/7/iterations:100/repeats:4_mean                       7.99 ns         6.87 ns            4
-BM_WithRep/7/iterations:100/repeats:4_median                     7.35 ns         6.49 ns            4
-BM_WithRep/7/iterations:100/repeats:4_stddev                     1.50 ns        0.799 ns            4
-BM_WithRep/7/iterations:100/repeats:4_cv                        18.70 %         11.62 %             4
-<end of output>
-Test time =   0.89 sec
-----------------------------------------------------------
-Test Passed.
-"benchmark_setup_teardown" end time: Nov 26 01:39 +07
-"benchmark_setup_teardown" time elapsed: 00:00:00
-----------------------------------------------------------
-
-133/203 Testing: min_time_flag_time
-133/203 Test: min_time_flag_time
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_min_time_flag_time_test"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"min_time_flag_time" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:53+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_min_time_flag_time_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.86, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
--- LOG(0): Value passed to --benchmark_min_time should have a suffix. Eg., `30s` for 30-seconds.-----------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_MyBench [m[0;33m      1.63 ns         1.63 ns   [m[0;36m1000000000[m
-[m2025-11-26T01:39:54+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_min_time_flag_time_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.86, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
--- LOG(0): Value passed to --benchmark_min_time should have a suffix. Eg., `30s` for 30-seconds.-----------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_MyBench [m[0;33m      1.57 ns         1.57 ns   [m[0;36m1000000000[m
-[m
-<end of output>
-Test time =   3.57 sec
-----------------------------------------------------------
-Test Passed.
-"min_time_flag_time" end time: Nov 26 01:39 +07
-"min_time_flag_time" time elapsed: 00:00:03
-----------------------------------------------------------
-
-134/203 Testing: min_time_flag_iters
-134/203 Test: min_time_flag_iters
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_min_time_flag_iters_test"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"min_time_flag_iters" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:56+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/benchmark_min_time_flag_iters_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_MyBench [m[0;33m       563 ns          279 ns   [m[0;36m         4[m
-[m
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"min_time_flag_iters" end time: Nov 26 01:39 +07
-"min_time_flag_iters" time elapsed: 00:00:00
-----------------------------------------------------------
-
-135/203 Testing: filter_simple
-135/203 Test: filter_simple
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=Foo" "3"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_simple" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:56+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_Foo     [m[0;33m      1.65 ns         1.65 ns   [m[0;36m   8389101[m
-[m[0;32mBM_FooBar  [m[0;33m      1.63 ns         1.63 ns   [m[0;36m   8653594[m
-[m[0;32mBM_FooBa   [m[0;33m      1.63 ns         1.63 ns   [m[0;36m   9028029[m
-[m
-<end of output>
-Test time =   0.05 sec
-----------------------------------------------------------
-Test Passed.
-"filter_simple" end time: Nov 26 01:39 +07
-"filter_simple" time elapsed: 00:00:00
-----------------------------------------------------------
-
-136/203 Testing: filter_simple_list_only
-136/203 Test: filter_simple_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=Foo" "3"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_simple_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-BM_Foo
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_simple_list_only" end time: Nov 26 01:39 +07
-"filter_simple_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-137/203 Testing: filter_simple_negative
-137/203 Test: filter_simple_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-Foo" "2"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_simple_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:56+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.82 ns         1.76 ns   [m[0;36m   8090844[m
-[m[0;32mBM_Bar     [m[0;33m      1.83 ns         1.83 ns   [m[0;36m   7940780[m
-[m
-<end of output>
-Test time =   0.04 sec
-----------------------------------------------------------
-Test Passed.
-"filter_simple_negative" end time: Nov 26 01:39 +07
-"filter_simple_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-138/203 Testing: filter_simple_negative_list_only
-138/203 Test: filter_simple_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-Foo" "2"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_simple_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-BM_Bar
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_simple_negative_list_only" end time: Nov 26 01:39 +07
-"filter_simple_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-139/203 Testing: filter_suffix
-139/203 Test: filter_suffix
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=BM_.*" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_suffix" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:56+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_Foo     [m[0;33m      1.73 ns         1.73 ns   [m[0;36m   8445686[m
-[m[0;32mBM_Bar     [m[0;33m      1.64 ns         1.65 ns   [m[0;36m   8534806[m
-[m[0;32mBM_FooBar  [m[0;33m      1.67 ns         1.67 ns   [m[0;36m   8442411[m
-[m[0;32mBM_FooBa   [m[0;33m      1.66 ns         1.66 ns   [m[0;36m   8507913[m
-[m
-<end of output>
-Test time =   0.07 sec
-----------------------------------------------------------
-Test Passed.
-"filter_suffix" end time: Nov 26 01:39 +07
-"filter_suffix" time elapsed: 00:00:00
-----------------------------------------------------------
-
-140/203 Testing: filter_suffix_list_only
-140/203 Test: filter_suffix_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=BM_.*" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_suffix_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-BM_Foo
-BM_Bar
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_suffix_list_only" end time: Nov 26 01:39 +07
-"filter_suffix_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-141/203 Testing: filter_suffix_negative
-141/203 Test: filter_suffix_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-BM_.*" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_suffix_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:56+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.69 ns         1.69 ns   [m[0;36m   8688680[m
-[m
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"filter_suffix_negative" end time: Nov 26 01:39 +07
-"filter_suffix_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-142/203 Testing: filter_suffix_negative_list_only
-142/203 Test: filter_suffix_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-BM_.*" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_suffix_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_suffix_negative_list_only" end time: Nov 26 01:39 +07
-"filter_suffix_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-143/203 Testing: filter_regex_all
-143/203 Test: filter_regex_all
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=.*" "5"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_all" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:56+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.75 ns         1.75 ns   [m[0;36m   8465557[m
-[m[0;32mBM_Foo     [m[0;33m      1.72 ns         1.72 ns   [m[0;36m   8723415[m
-[m[0;32mBM_Bar     [m[0;33m      1.67 ns         1.67 ns   [m[0;36m   8606698[m
-[m[0;32mBM_FooBar  [m[0;33m      1.65 ns         1.65 ns   [m[0;36m   8539215[m
-[m[0;32mBM_FooBa   [m[0;33m      2.06 ns         2.06 ns   [m[0;36m   8503489[m
-[m
-<end of output>
-Test time =   0.09 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_all" end time: Nov 26 01:39 +07
-"filter_regex_all" time elapsed: 00:00:00
-----------------------------------------------------------
-
-144/203 Testing: filter_regex_all_list_only
-144/203 Test: filter_regex_all_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=.*" "5"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_all_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-BM_Foo
-BM_Bar
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_all_list_only" end time: Nov 26 01:39 +07
-"filter_regex_all_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-145/203 Testing: filter_regex_all_negative
-145/203 Test: filter_regex_all_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-.*" "0"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_all_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-Failed to match any benchmarks against regex: -.*
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_all_negative" end time: Nov 26 01:39 +07
-"filter_regex_all_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-146/203 Testing: filter_regex_all_negative_list_only
-146/203 Test: filter_regex_all_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-.*" "0"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_all_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-Failed to match any benchmarks against regex: -.*
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_all_negative_list_only" end time: Nov 26 01:39 +07
-"filter_regex_all_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-147/203 Testing: filter_regex_blank
-147/203 Test: filter_regex_blank
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=" "5"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_blank" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.76 ns         1.75 ns   [m[0;36m   7901573[m
-[m[0;32mBM_Foo     [m[0;33m      1.72 ns         1.71 ns   [m[0;36m   8436662[m
-[m[0;32mBM_Bar     [m[0;33m      1.72 ns         1.71 ns   [m[0;36m   8718222[m
-[m[0;32mBM_FooBar  [m[0;33m      1.64 ns         1.64 ns   [m[0;36m   8663527[m
-[m[0;32mBM_FooBa   [m[0;33m      1.70 ns         1.70 ns   [m[0;36m   8510514[m
-[m
-<end of output>
-Test time =   0.09 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_blank" end time: Nov 26 01:39 +07
-"filter_regex_blank" time elapsed: 00:00:00
-----------------------------------------------------------
-
-148/203 Testing: filter_regex_blank_list_only
-148/203 Test: filter_regex_blank_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=" "5"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_blank_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-BM_Foo
-BM_Bar
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_blank_list_only" end time: Nov 26 01:39 +07
-"filter_regex_blank_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-149/203 Testing: filter_regex_blank_negative
-149/203 Test: filter_regex_blank_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-" "0"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_blank_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-Failed to match any benchmarks against regex: -
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_blank_negative" end time: Nov 26 01:39 +07
-"filter_regex_blank_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-150/203 Testing: filter_regex_blank_negative_list_only
-150/203 Test: filter_regex_blank_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-" "0"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_blank_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-Failed to match any benchmarks against regex: -
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_blank_negative_list_only" end time: Nov 26 01:39 +07
-"filter_regex_blank_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-151/203 Testing: filter_regex_none
-151/203 Test: filter_regex_none
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=monkey" "0"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_none" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-Failed to match any benchmarks against regex: monkey
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_none" end time: Nov 26 01:39 +07
-"filter_regex_none" time elapsed: 00:00:00
-----------------------------------------------------------
-
-152/203 Testing: filter_regex_none_list_only
-152/203 Test: filter_regex_none_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=monkey" "0"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_none_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-Failed to match any benchmarks against regex: monkey
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_none_list_only" end time: Nov 26 01:39 +07
-"filter_regex_none_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-153/203 Testing: filter_regex_none_negative
-153/203 Test: filter_regex_none_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-monkey" "5"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_none_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.73 ns         1.72 ns   [m[0;36m   7092752[m
-[m[0;32mBM_Foo     [m[0;33m      1.68 ns         1.67 ns   [m[0;36m   8402363[m
-[m[0;32mBM_Bar     [m[0;33m      1.69 ns         1.67 ns   [m[0;36m   8396557[m
-[m[0;32mBM_FooBar  [m[0;33m      1.68 ns         1.67 ns   [m[0;36m   8459511[m
-[m[0;32mBM_FooBa   [m[0;33m      1.69 ns         1.68 ns   [m[0;36m   8460661[m
-[m
-<end of output>
-Test time =   0.08 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_none_negative" end time: Nov 26 01:39 +07
-"filter_regex_none_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-154/203 Testing: filter_regex_none_negative_list_only
-154/203 Test: filter_regex_none_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-monkey" "5"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_none_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-BM_Foo
-BM_Bar
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_none_negative_list_only" end time: Nov 26 01:39 +07
-"filter_regex_none_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-155/203 Testing: filter_regex_wildcard
-155/203 Test: filter_regex_wildcard
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=.*Foo.*" "3"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_wildcard" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_Foo     [m[0;33m      1.80 ns         1.79 ns   [m[0;36m   7734055[m
-[m[0;32mBM_FooBar  [m[0;33m      1.73 ns         1.72 ns   [m[0;36m   7779308[m
-[m[0;32mBM_FooBa   [m[0;33m      1.74 ns         1.72 ns   [m[0;36m   8180557[m
-[m
-<end of output>
-Test time =   0.05 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_wildcard" end time: Nov 26 01:39 +07
-"filter_regex_wildcard" time elapsed: 00:00:00
-----------------------------------------------------------
-
-156/203 Testing: filter_regex_wildcard_list_only
-156/203 Test: filter_regex_wildcard_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=.*Foo.*" "3"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_wildcard_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-BM_Foo
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_wildcard_list_only" end time: Nov 26 01:39 +07
-"filter_regex_wildcard_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-157/203 Testing: filter_regex_wildcard_negative
-157/203 Test: filter_regex_wildcard_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-.*Foo.*" "2"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_wildcard_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.84 ns         1.81 ns   [m[0;36m   7808147[m
-[m[0;32mBM_Bar     [m[0;33m      1.71 ns         1.71 ns   [m[0;36m   7596690[m
-[m
-<end of output>
-Test time =   0.04 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_wildcard_negative" end time: Nov 26 01:39 +07
-"filter_regex_wildcard_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-158/203 Testing: filter_regex_wildcard_negative_list_only
-158/203 Test: filter_regex_wildcard_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-.*Foo.*" "2"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_wildcard_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-BM_Bar
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_wildcard_negative_list_only" end time: Nov 26 01:39 +07
-"filter_regex_wildcard_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-159/203 Testing: filter_regex_begin
-159/203 Test: filter_regex_begin
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=^BM_.*" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_Foo     [m[0;33m      1.73 ns         1.72 ns   [m[0;36m   8459879[m
-[m[0;32mBM_Bar     [m[0;33m      1.71 ns         1.71 ns   [m[0;36m   8232737[m
-[m[0;32mBM_FooBar  [m[0;33m      1.72 ns         1.72 ns   [m[0;36m   7962512[m
-[m[0;32mBM_FooBa   [m[0;33m      1.72 ns         1.72 ns   [m[0;36m   8051474[m
-[m
-<end of output>
-Test time =   0.07 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin" end time: Nov 26 01:39 +07
-"filter_regex_begin" time elapsed: 00:00:00
-----------------------------------------------------------
-
-160/203 Testing: filter_regex_begin_list_only
-160/203 Test: filter_regex_begin_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=^BM_.*" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-BM_Foo
-BM_Bar
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin_list_only" end time: Nov 26 01:39 +07
-"filter_regex_begin_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-161/203 Testing: filter_regex_begin_negative
-161/203 Test: filter_regex_begin_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-^BM_.*" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.71 ns         1.71 ns   [m[0;36m   8230840[m
-[m
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin_negative" end time: Nov 26 01:39 +07
-"filter_regex_begin_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-162/203 Testing: filter_regex_begin_negative_list_only
-162/203 Test: filter_regex_begin_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-^BM_.*" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin_negative_list_only" end time: Nov 26 01:39 +07
-"filter_regex_begin_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-163/203 Testing: filter_regex_begin2
-163/203 Test: filter_regex_begin2
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=^N" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin2" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.86 ns         1.81 ns   [m[0;36m   7260729[m
-[m
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin2" end time: Nov 26 01:39 +07
-"filter_regex_begin2" time elapsed: 00:00:00
-----------------------------------------------------------
-
-164/203 Testing: filter_regex_begin2_list_only
-164/203 Test: filter_regex_begin2_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=^N" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin2_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin2_list_only" end time: Nov 26 01:39 +07
-"filter_regex_begin2_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-165/203 Testing: filter_regex_begin2_negative
-165/203 Test: filter_regex_begin2_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-^N" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin2_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_Foo     [m[0;33m      1.89 ns         1.84 ns   [m[0;36m   7331006[m
-[m[0;32mBM_Bar     [m[0;33m      1.84 ns         1.81 ns   [m[0;36m   8103906[m
-[m[0;32mBM_FooBar  [m[0;33m      1.93 ns         1.90 ns   [m[0;36m   7939735[m
-[m[0;32mBM_FooBa   [m[0;33m      1.84 ns         1.80 ns   [m[0;36m   7646475[m
-[m
-<end of output>
-Test time =   0.07 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin2_negative" end time: Nov 26 01:39 +07
-"filter_regex_begin2_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-166/203 Testing: filter_regex_begin2_negative_list_only
-166/203 Test: filter_regex_begin2_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-^N" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_begin2_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-BM_Foo
-BM_Bar
-BM_FooBar
-BM_FooBa
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_begin2_negative_list_only" end time: Nov 26 01:39 +07
-"filter_regex_begin2_negative_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-167/203 Testing: filter_regex_end
-167/203 Test: filter_regex_end
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=.*Ba$" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_end" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mBM_FooBa   [m[0;33m      1.71 ns         1.71 ns   [m[0;36m   8131852[m
-[m
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_end" end time: Nov 26 01:39 +07
-"filter_regex_end" time elapsed: 00:00:00
-----------------------------------------------------------
-
-168/203 Testing: filter_regex_end_list_only
-168/203 Test: filter_regex_end_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=.*Ba$" "1"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_end_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-BM_FooBa
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_end_list_only" end time: Nov 26 01:39 +07
-"filter_regex_end_list_only" time elapsed: 00:00:00
-----------------------------------------------------------
-
-169/203 Testing: filter_regex_end_negative
-169/203 Test: filter_regex_end_negative
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_min_time=0.01s" "--benchmark_filter=-.*Ba$" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_end_negative" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-2025-11-26T01:39:57+07:00
-Running /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test
-Run on (4 X 2496 MHz CPU s)
-CPU Caches:
-  L1 Data 32 KiB (x4)
-  L1 Instruction 32 KiB (x4)
-  L2 Unified 256 KiB (x4)
-  L3 Unified 8192 KiB (x4)
-Load Average: 0.87, 0.80, 0.66
-***WARNING*** Library was built as DEBUG. Timings may be affected.
------------------------------------------------------
-Benchmark           Time             CPU   Iterations
------------------------------------------------------
-[0;32mNoPrefix   [m[0;33m      1.77 ns         1.74 ns   [m[0;36m   7665613[m
-[m[0;32mBM_Foo     [m[0;33m      1.73 ns         1.73 ns   [m[0;36m   8025806[m
-[m[0;32mBM_Bar     [m[0;33m      1.91 ns         1.88 ns   [m[0;36m   8571121[m
-[m[0;32mBM_FooBar  [m[0;33m      1.74 ns         1.71 ns   [m[0;36m   7597498[m
-[m
-<end of output>
-Test time =   0.07 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_end_negative" end time: Nov 26 01:39 +07
-"filter_regex_end_negative" time elapsed: 00:00:00
-----------------------------------------------------------
-
-170/203 Testing: filter_regex_end_negative_list_only
-170/203 Test: filter_regex_end_negative_list_only
-Command: "/home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test/filter_test" "--benchmark_list_tests" "--benchmark_filter=-.*Ba$" "4"
-Directory: /home/chesnokova/LABA3/build/_deps/googlebenchmark-build/test
-"filter_regex_end_negative_list_only" start time: Nov 26 01:39 +07
-Output:
-----------------------------------------------------------
-NoPrefix
-BM_Foo
-BM_Bar
-BM_FooBar
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"filter_regex_end_negative_list_only" end time: Nov 26 01:39 +07
-"filter_regex_end_negative_list_only" time elapsed: 00:00:00
 ----------------------------------------------------------
 

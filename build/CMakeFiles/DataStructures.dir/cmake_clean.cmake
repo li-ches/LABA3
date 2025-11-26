@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataStructures.dir/dlist.cpp.o.d"
   "CMakeFiles/DataStructures.dir/hash.cpp.o"
   "CMakeFiles/DataStructures.dir/hash.cpp.o.d"
+  "CMakeFiles/DataStructures.dir/hash_serialize.cpp.o"
+  "CMakeFiles/DataStructures.dir/hash_serialize.cpp.o.d"
   "CMakeFiles/DataStructures.dir/list.cpp.o"
   "CMakeFiles/DataStructures.dir/list.cpp.o.d"
   "CMakeFiles/DataStructures.dir/queue.cpp.o"

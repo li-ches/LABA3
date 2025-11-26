@@ -186,4 +186,5 @@ CMakeFiles/prg.dir/main.cpp.o: /home/chesnokova/LABA3/main.cpp \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /home/chesnokova/LABA3/compl.h
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/chesnokova/LABA3/hash_serialize.h /home/chesnokova/LABA3/compl.h

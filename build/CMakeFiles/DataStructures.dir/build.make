@@ -167,6 +167,20 @@ CMakeFiles/DataStructures.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/hash.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/hash.cpp -o CMakeFiles/DataStructures.dir/hash.cpp.s
 
+CMakeFiles/DataStructures.dir/hash_serialize.cpp.o: CMakeFiles/DataStructures.dir/flags.make
+CMakeFiles/DataStructures.dir/hash_serialize.cpp.o: /home/chesnokova/LABA3/hash_serialize.cpp
+CMakeFiles/DataStructures.dir/hash_serialize.cpp.o: CMakeFiles/DataStructures.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DataStructures.dir/hash_serialize.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataStructures.dir/hash_serialize.cpp.o -MF CMakeFiles/DataStructures.dir/hash_serialize.cpp.o.d -o CMakeFiles/DataStructures.dir/hash_serialize.cpp.o -c /home/chesnokova/LABA3/hash_serialize.cpp
+
+CMakeFiles/DataStructures.dir/hash_serialize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataStructures.dir/hash_serialize.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chesnokova/LABA3/hash_serialize.cpp > CMakeFiles/DataStructures.dir/hash_serialize.cpp.i
+
+CMakeFiles/DataStructures.dir/hash_serialize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataStructures.dir/hash_serialize.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chesnokova/LABA3/hash_serialize.cpp -o CMakeFiles/DataStructures.dir/hash_serialize.cpp.s
+
 # Object files for target DataStructures
 DataStructures_OBJECTS = \
 "CMakeFiles/DataStructures.dir/arr.cpp.o" \
@@ -175,7 +189,8 @@ DataStructures_OBJECTS = \
 "CMakeFiles/DataStructures.dir/stack.cpp.o" \
 "CMakeFiles/DataStructures.dir/queue.cpp.o" \
 "CMakeFiles/DataStructures.dir/compl.cpp.o" \
-"CMakeFiles/DataStructures.dir/hash.cpp.o"
+"CMakeFiles/DataStructures.dir/hash.cpp.o" \
+"CMakeFiles/DataStructures.dir/hash_serialize.cpp.o"
 
 # External object files for target DataStructures
 DataStructures_EXTERNAL_OBJECTS =
@@ -187,9 +202,10 @@ libDataStructures.a: CMakeFiles/DataStructures.dir/stack.cpp.o
 libDataStructures.a: CMakeFiles/DataStructures.dir/queue.cpp.o
 libDataStructures.a: CMakeFiles/DataStructures.dir/compl.cpp.o
 libDataStructures.a: CMakeFiles/DataStructures.dir/hash.cpp.o
+libDataStructures.a: CMakeFiles/DataStructures.dir/hash_serialize.cpp.o
 libDataStructures.a: CMakeFiles/DataStructures.dir/build.make
 libDataStructures.a: CMakeFiles/DataStructures.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libDataStructures.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chesnokova/LABA3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libDataStructures.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/DataStructures.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DataStructures.dir/link.txt --verbose=$(VERBOSE)
 
