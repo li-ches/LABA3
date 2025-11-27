@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-5E4yw8"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-5E4yw8"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-vBIecj"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-vBIecj"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -49,13 +49,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-5E4yw8'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-vBIecj'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_35e03/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_35e03.dir/build.make CMakeFiles/cmTC_35e03.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-5E4yw8'
-        Building CXX object CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_458f1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_458f1.dir/build.make CMakeFiles/cmTC_458f1.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-vBIecj'
+        Building CXX object CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -65,8 +65,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_35e03.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_35e03.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchlGfM1.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_458f1.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_458f1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccMPpX7K.s
         GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -87,15 +87,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: c81c05345ce537099dafd5580045814a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_35e03.dir/'
-         as -v --64 -o CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchlGfM1.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_458f1.dir/'
+         as -v --64 -o CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMPpX7K.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_35e03
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35e03.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_35e03 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_458f1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_458f1.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_458f1 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
@@ -108,10 +108,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_35e03' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_35e03.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqUBvVK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_35e03 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_35e03' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_35e03.'
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-5E4yw8'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_458f1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_458f1.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAocXI4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_458f1 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_458f1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_458f1.'
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-vBIecj'
         
       exitCode: 0
   -
@@ -151,13 +151,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-5E4yw8']
+        ignore line: [Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-vBIecj']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_35e03/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_35e03.dir/build.make CMakeFiles/cmTC_35e03.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-5E4yw8']
-        ignore line: [Building CXX object CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_458f1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_458f1.dir/build.make CMakeFiles/cmTC_458f1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-vBIecj']
+        ignore line: [Building CXX object CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -167,8 +167,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_35e03.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_35e03.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchlGfM1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_458f1.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_458f1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccMPpX7K.s]
         ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -189,15 +189,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_35e03.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o /tmp/cchlGfM1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_458f1.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccMPpX7K.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_35e03]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35e03.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_35e03 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_458f1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_458f1.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_458f1 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
@@ -210,13 +210,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_35e03' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_35e03.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqUBvVK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_35e03 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_458f1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_458f1.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAocXI4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_458f1 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccqUBvVK.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccAocXI4.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -234,7 +234,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_35e03] ==> ignore
+          arg [cmTC_458f1] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -246,7 +246,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_35e03.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_458f1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -309,8 +309,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Z7o69o"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Z7o69o"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-3UreRt"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-3UreRt"
     cmakeVariables:
       CMAKE_C_FLAGS: " --coverage"
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -319,13 +319,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Z7o69o'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-3UreRt'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_91dde/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_91dde.dir/build.make CMakeFiles/cmTC_91dde.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Z7o69o'
-        Building C object CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   --coverage    -v -o CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_025b5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_025b5.dir/build.make CMakeFiles/cmTC_025b5.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-3UreRt'
+        Building C object CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   --coverage    -v -o CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -335,8 +335,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_91dde.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_91dde.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fprofile-arcs -ftest-coverage -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGUOWmZ.s
+        COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_025b5.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_025b5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fprofile-arcs -ftest-coverage -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccp2sVA3.s
         GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -353,15 +353,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 38987c28e967c64056a6454abdef726e
-        COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_91dde.dir/'
-         as -v --64 -o CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o /tmp/ccGUOWmZ.s
+        COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_025b5.dir/'
+         as -v --64 -o CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o /tmp/ccp2sVA3.s
         GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_91dde
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91dde.dir/link.txt --verbose=1
-        /usr/bin/cc  --coverage   --coverage -v CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o -o cmTC_91dde 
+        COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_025b5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_025b5.dir/link.txt --verbose=1
+        /usr/bin/cc  --coverage   --coverage -v CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o -o cmTC_025b5 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
@@ -374,10 +374,10 @@ events:
         gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-coverage' '-coverage' '-v' '-o' 'cmTC_91dde' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_91dde.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6uF70L.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_91dde /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o -lgcov -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-coverage' '-coverage' '-v' '-o' 'cmTC_91dde' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_91dde.'
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Z7o69o'
+        COLLECT_GCC_OPTIONS='-coverage' '-coverage' '-v' '-o' 'cmTC_025b5' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_025b5.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaqtOlT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_025b5 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o -lgcov -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-coverage' '-coverage' '-v' '-o' 'cmTC_025b5' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_025b5.'
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-3UreRt'
         
       exitCode: 0
   -
@@ -411,13 +411,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Z7o69o']
+        ignore line: [Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-3UreRt']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_91dde/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_91dde.dir/build.make CMakeFiles/cmTC_91dde.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Z7o69o']
-        ignore line: [Building C object CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   --coverage    -v -o CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_025b5/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_025b5.dir/build.make CMakeFiles/cmTC_025b5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-3UreRt']
+        ignore line: [Building C object CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   --coverage    -v -o CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -427,8 +427,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_91dde.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_91dde.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fprofile-arcs -ftest-coverage -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGUOWmZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_025b5.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_025b5.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fprofile-arcs -ftest-coverage -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccp2sVA3.s]
         ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -445,15 +445,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
-        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_91dde.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o /tmp/ccGUOWmZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_025b5.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o /tmp/ccp2sVA3.s]
         ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_91dde]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91dde.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  --coverage   --coverage -v CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o -o cmTC_91dde ]
+        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-v' '-o' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_025b5]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_025b5.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  --coverage   --coverage -v CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o -o cmTC_025b5 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
@@ -466,13 +466,13 @@ events:
         ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-coverage' '-v' '-o' 'cmTC_91dde' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_91dde.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6uF70L.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_91dde /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o -lgcov -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-coverage' '-coverage' '-v' '-o' 'cmTC_025b5' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_025b5.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaqtOlT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_025b5 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o -lgcov -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc6uF70L.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccaqtOlT.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -490,7 +490,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_91dde] ==> ignore
+          arg [cmTC_025b5] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -502,7 +502,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_91dde.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_025b5.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcov] ==> lib [gcov]
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
@@ -546,8 +546,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YqS4D4"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YqS4D4"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ig4jhE"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ig4jhE"
     cmakeVariables:
       CMAKE_C_FLAGS: " --coverage"
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -556,17 +556,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YqS4D4'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ig4jhE'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_34cec/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_34cec.dir/build.make CMakeFiles/cmTC_34cec.dir/build
-        gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YqS4D4»
-        Building C object CMakeFiles/cmTC_34cec.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  --coverage  -o CMakeFiles/cmTC_34cec.dir/src.c.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YqS4D4/src.c
-        Linking C executable cmTC_34cec
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34cec.dir/link.txt --verbose=1
-        /usr/bin/cc  --coverage   --coverage  CMakeFiles/cmTC_34cec.dir/src.c.o -o cmTC_34cec 
-        gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YqS4D4»
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5eaa6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5eaa6.dir/build.make CMakeFiles/cmTC_5eaa6.dir/build
+        gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ig4jhE»
+        Building C object CMakeFiles/cmTC_5eaa6.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  --coverage  -o CMakeFiles/cmTC_5eaa6.dir/src.c.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ig4jhE/src.c
+        Linking C executable cmTC_5eaa6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5eaa6.dir/link.txt --verbose=1
+        /usr/bin/cc  --coverage   --coverage  CMakeFiles/cmTC_5eaa6.dir/src.c.o -o cmTC_5eaa6 
+        gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ig4jhE»
         
       exitCode: 0
   -
@@ -577,8 +577,8 @@ events:
     checks:
       - "Looking for shm_open in rt"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-OhPubU"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-OhPubU"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-mAzdsw"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-mAzdsw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -588,17 +588,17 @@ events:
       variable: "HAVE_LIB_RT"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-OhPubU'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-mAzdsw'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_da7cf/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_da7cf.dir/build.make CMakeFiles/cmTC_da7cf.dir/build
-        gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-OhPubU»
-        Building CXX object CMakeFiles/cmTC_da7cf.dir/CheckFunctionExists.cxx.o
-        /usr/bin/c++   --coverage -DCHECK_FUNCTION_EXISTS=shm_open -std=gnu++17 -o CMakeFiles/cmTC_da7cf.dir/CheckFunctionExists.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-OhPubU/CheckFunctionExists.cxx
-        Linking CXX executable cmTC_da7cf
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da7cf.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage -DCHECK_FUNCTION_EXISTS=shm_open  --coverage  CMakeFiles/cmTC_da7cf.dir/CheckFunctionExists.cxx.o -o cmTC_da7cf  -lrt 
-        gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-OhPubU»
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d92d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d92d.dir/build.make CMakeFiles/cmTC_3d92d.dir/build
+        gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-mAzdsw»
+        Building CXX object CMakeFiles/cmTC_3d92d.dir/CheckFunctionExists.cxx.o
+        /usr/bin/c++   --coverage -DCHECK_FUNCTION_EXISTS=shm_open -std=gnu++17 -o CMakeFiles/cmTC_3d92d.dir/CheckFunctionExists.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-mAzdsw/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_3d92d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d92d.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage -DCHECK_FUNCTION_EXISTS=shm_open  --coverage  CMakeFiles/cmTC_3d92d.dir/CheckFunctionExists.cxx.o -o cmTC_3d92d  -lrt 
+        gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-mAzdsw»
         
       exitCode: 0
   -
@@ -612,8 +612,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WALL"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-dd7KVV"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-dd7KVV"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-au0tlI"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-au0tlI"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -623,17 +623,17 @@ events:
       variable: "HAVE_CXX_FLAG_WALL"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-dd7KVV'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-au0tlI'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b8dd/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1b8dd.dir/build.make CMakeFiles/cmTC_1b8dd.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-dd7KVV'
-        Building CXX object CMakeFiles/cmTC_1b8dd.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WALL  --coverage  -Wall -std=c++11   -Wall -o CMakeFiles/cmTC_1b8dd.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-dd7KVV/src.cxx
-        Linking CXX executable cmTC_1b8dd
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b8dd.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  --coverage  CMakeFiles/cmTC_1b8dd.dir/src.cxx.o -o cmTC_1b8dd 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-dd7KVV'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68764/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_68764.dir/build.make CMakeFiles/cmTC_68764.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-au0tlI'
+        Building CXX object CMakeFiles/cmTC_68764.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WALL  --coverage  -Wall -std=c++11   -Wall -o CMakeFiles/cmTC_68764.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-au0tlI/src.cxx
+        Linking CXX executable cmTC_68764
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68764.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  --coverage  CMakeFiles/cmTC_68764.dir/src.cxx.o -o cmTC_68764 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-au0tlI'
         
       exitCode: 0
   -
@@ -647,8 +647,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WEXTRA"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-STUDxQ"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-STUDxQ"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8shbv3"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8shbv3"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -658,17 +658,17 @@ events:
       variable: "HAVE_CXX_FLAG_WEXTRA"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-STUDxQ'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8shbv3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9dac2/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_9dac2.dir/build.make CMakeFiles/cmTC_9dac2.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-STUDxQ'
-        Building CXX object CMakeFiles/cmTC_9dac2.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  --coverage  -Wall  -Wextra -std=c++11   -Wextra -o CMakeFiles/cmTC_9dac2.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-STUDxQ/src.cxx
-        Linking CXX executable cmTC_9dac2
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dac2.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  --coverage  CMakeFiles/cmTC_9dac2.dir/src.cxx.o -o cmTC_9dac2 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-STUDxQ'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e3697/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e3697.dir/build.make CMakeFiles/cmTC_e3697.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8shbv3'
+        Building CXX object CMakeFiles/cmTC_e3697.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  --coverage  -Wall  -Wextra -std=c++11   -Wextra -o CMakeFiles/cmTC_e3697.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8shbv3/src.cxx
+        Linking CXX executable cmTC_e3697
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3697.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  --coverage  CMakeFiles/cmTC_e3697.dir/src.cxx.o -o cmTC_e3697 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8shbv3'
         
       exitCode: 0
   -
@@ -682,8 +682,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WSHADOW"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-UE5yh0"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-UE5yh0"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8inub0"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8inub0"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -693,17 +693,17 @@ events:
       variable: "HAVE_CXX_FLAG_WSHADOW"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-UE5yh0'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8inub0'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84229/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_84229.dir/build.make CMakeFiles/cmTC_84229.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-UE5yh0'
-        Building CXX object CMakeFiles/cmTC_84229.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHADOW  --coverage  -Wall  -Wextra  -Wshadow -std=c++11   -Wshadow -o CMakeFiles/cmTC_84229.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-UE5yh0/src.cxx
-        Linking CXX executable cmTC_84229
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84229.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  --coverage  CMakeFiles/cmTC_84229.dir/src.cxx.o -o cmTC_84229 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-UE5yh0'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3f1e2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3f1e2.dir/build.make CMakeFiles/cmTC_3f1e2.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8inub0'
+        Building CXX object CMakeFiles/cmTC_3f1e2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHADOW  --coverage  -Wall  -Wextra  -Wshadow -std=c++11   -Wshadow -o CMakeFiles/cmTC_3f1e2.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8inub0/src.cxx
+        Linking CXX executable cmTC_3f1e2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f1e2.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  --coverage  CMakeFiles/cmTC_3f1e2.dir/src.cxx.o -o cmTC_3f1e2 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-8inub0'
         
       exitCode: 0
   -
@@ -717,8 +717,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-DKWsZE"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-DKWsZE"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-ExZCNE"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-ExZCNE"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -728,17 +728,17 @@ events:
       variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-DKWsZE'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-ExZCNE'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_78191/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_78191.dir/build.make CMakeFiles/cmTC_78191.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-DKWsZE'
-        Building CXX object CMakeFiles/cmTC_78191.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++11   -Wfloat-equal -o CMakeFiles/cmTC_78191.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-DKWsZE/src.cxx
-        Linking CXX executable cmTC_78191
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78191.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  --coverage  CMakeFiles/cmTC_78191.dir/src.cxx.o -o cmTC_78191 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-DKWsZE'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bca6f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bca6f.dir/build.make CMakeFiles/cmTC_bca6f.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-ExZCNE'
+        Building CXX object CMakeFiles/cmTC_bca6f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++11   -Wfloat-equal -o CMakeFiles/cmTC_bca6f.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-ExZCNE/src.cxx
+        Linking CXX executable cmTC_bca6f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bca6f.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  --coverage  CMakeFiles/cmTC_bca6f.dir/src.cxx.o -o cmTC_bca6f 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-ExZCNE'
         
       exitCode: 0
   -
@@ -752,8 +752,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pEglDb"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pEglDb"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7gvBXC"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7gvBXC"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -763,17 +763,17 @@ events:
       variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pEglDb'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7gvBXC'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_372f6/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_372f6.dir/build.make CMakeFiles/cmTC_372f6.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pEglDb'
-        Building CXX object CMakeFiles/cmTC_372f6.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++11   -Wold-style-cast -o CMakeFiles/cmTC_372f6.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pEglDb/src.cxx
-        Linking CXX executable cmTC_372f6
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_372f6.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  --coverage  CMakeFiles/cmTC_372f6.dir/src.cxx.o -o cmTC_372f6 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pEglDb'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e41f5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e41f5.dir/build.make CMakeFiles/cmTC_e41f5.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7gvBXC'
+        Building CXX object CMakeFiles/cmTC_e41f5.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++11   -Wold-style-cast -o CMakeFiles/cmTC_e41f5.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7gvBXC/src.cxx
+        Linking CXX executable cmTC_e41f5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e41f5.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  --coverage  CMakeFiles/cmTC_e41f5.dir/src.cxx.o -o cmTC_e41f5 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7gvBXC'
         
       exitCode: 0
   -
@@ -787,8 +787,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WERROR"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GlQBXj"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GlQBXj"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-VjsYio"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-VjsYio"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -798,17 +798,17 @@ events:
       variable: "HAVE_CXX_FLAG_WERROR"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GlQBXj'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-VjsYio'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7cb3a/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_7cb3a.dir/build.make CMakeFiles/cmTC_7cb3a.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GlQBXj'
-        Building CXX object CMakeFiles/cmTC_7cb3a.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WERROR  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror -std=c++11   -Werror -o CMakeFiles/cmTC_7cb3a.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GlQBXj/src.cxx
-        Linking CXX executable cmTC_7cb3a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cb3a.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  --coverage  CMakeFiles/cmTC_7cb3a.dir/src.cxx.o -o cmTC_7cb3a 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GlQBXj'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5ba7f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5ba7f.dir/build.make CMakeFiles/cmTC_5ba7f.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-VjsYio'
+        Building CXX object CMakeFiles/cmTC_5ba7f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WERROR  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror -std=c++11   -Werror -o CMakeFiles/cmTC_5ba7f.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-VjsYio/src.cxx
+        Linking CXX executable cmTC_5ba7f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ba7f.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  --coverage  CMakeFiles/cmTC_5ba7f.dir/src.cxx.o -o cmTC_5ba7f 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-VjsYio'
         
       exitCode: 0
   -
@@ -822,8 +822,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-jYeWtM"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-jYeWtM"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YLGEpg"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YLGEpg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -833,17 +833,17 @@ events:
       variable: "HAVE_CXX_FLAG_PEDANTIC"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-jYeWtM'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YLGEpg'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07f3e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_07f3e.dir/build.make CMakeFiles/cmTC_07f3e.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-jYeWtM'
-        Building CXX object CMakeFiles/cmTC_07f3e.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic -std=c++11   -pedantic -o CMakeFiles/cmTC_07f3e.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-jYeWtM/src.cxx
-        Linking CXX executable cmTC_07f3e
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07f3e.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  --coverage  CMakeFiles/cmTC_07f3e.dir/src.cxx.o -o cmTC_07f3e 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-jYeWtM'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_67c8a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_67c8a.dir/build.make CMakeFiles/cmTC_67c8a.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YLGEpg'
+        Building CXX object CMakeFiles/cmTC_67c8a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic -std=c++11   -pedantic -o CMakeFiles/cmTC_67c8a.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YLGEpg/src.cxx
+        Linking CXX executable cmTC_67c8a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67c8a.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  --coverage  CMakeFiles/cmTC_67c8a.dir/src.cxx.o -o cmTC_67c8a 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-YLGEpg'
         
       exitCode: 0
   -
@@ -857,8 +857,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Boyxit"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Boyxit"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-4b380L"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-4b380L"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -868,17 +868,17 @@ events:
       variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Boyxit'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-4b380L'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_03556/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_03556.dir/build.make CMakeFiles/cmTC_03556.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Boyxit'
-        Building CXX object CMakeFiles/cmTC_03556.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors -std=c++11   -pedantic-errors -o CMakeFiles/cmTC_03556.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Boyxit/src.cxx
-        Linking CXX executable cmTC_03556
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03556.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  --coverage  CMakeFiles/cmTC_03556.dir/src.cxx.o -o cmTC_03556 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Boyxit'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8df8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a8df8.dir/build.make CMakeFiles/cmTC_a8df8.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-4b380L'
+        Building CXX object CMakeFiles/cmTC_a8df8.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors -std=c++11   -pedantic-errors -o CMakeFiles/cmTC_a8df8.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-4b380L/src.cxx
+        Linking CXX executable cmTC_a8df8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8df8.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  --coverage  CMakeFiles/cmTC_a8df8.dir/src.cxx.o -o cmTC_a8df8 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-4b380L'
         
       exitCode: 0
   -
@@ -892,8 +892,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-9zkE6X"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-9zkE6X"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-95miIE"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-95miIE"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -903,18 +903,18 @@ events:
       variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-9zkE6X'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-95miIE'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d4f10/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_d4f10.dir/build.make CMakeFiles/cmTC_d4f10.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-9zkE6X'
-        Building CXX object CMakeFiles/cmTC_d4f10.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++11   -Wshorten-64-to-32 -o CMakeFiles/cmTC_d4f10.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-9zkE6X/src.cxx
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b186/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7b186.dir/build.make CMakeFiles/cmTC_7b186.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-95miIE'
+        Building CXX object CMakeFiles/cmTC_7b186.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++11   -Wshorten-64-to-32 -o CMakeFiles/cmTC_7b186.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-95miIE/src.cxx
         c++: error: unrecognized command-line option '-Wshorten-64-to-32'
         c++: error: unrecognized command-line option '-Wshorten-64-to-32'
-        gmake[1]: *** [CMakeFiles/cmTC_d4f10.dir/build.make:78: CMakeFiles/cmTC_d4f10.dir/src.cxx.o] Error 1
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-9zkE6X'
-        gmake: *** [Makefile:127: cmTC_d4f10/fast] Error 2
+        gmake[1]: *** [CMakeFiles/cmTC_7b186.dir/build.make:78: CMakeFiles/cmTC_7b186.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-95miIE'
+        gmake: *** [Makefile:127: cmTC_7b186/fast] Error 2
         
       exitCode: 2
   -
@@ -928,8 +928,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Vc3RSi"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Vc3RSi"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-6YGVXj"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-6YGVXj"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -939,17 +939,17 @@ events:
       variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Vc3RSi'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-6YGVXj'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9c59d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_9c59d.dir/build.make CMakeFiles/cmTC_9c59d.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Vc3RSi'
-        Building CXX object CMakeFiles/cmTC_9c59d.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing -std=c++11   -fstrict-aliasing -o CMakeFiles/cmTC_9c59d.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Vc3RSi/src.cxx
-        Linking CXX executable cmTC_9c59d
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c59d.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  --coverage  CMakeFiles/cmTC_9c59d.dir/src.cxx.o -o cmTC_9c59d 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Vc3RSi'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c8d23/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c8d23.dir/build.make CMakeFiles/cmTC_c8d23.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-6YGVXj'
+        Building CXX object CMakeFiles/cmTC_c8d23.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing -std=c++11   -fstrict-aliasing -o CMakeFiles/cmTC_c8d23.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-6YGVXj/src.cxx
+        Linking CXX executable cmTC_c8d23
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8d23.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  --coverage  CMakeFiles/cmTC_c8d23.dir/src.cxx.o -o cmTC_c8d23 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-6YGVXj'
         
       exitCode: 0
   -
@@ -963,8 +963,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-aiZoFb"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-aiZoFb"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-o6cNvP"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-o6cNvP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -974,17 +974,17 @@ events:
       variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-aiZoFb'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-o6cNvP'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_917e7/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_917e7.dir/build.make CMakeFiles/cmTC_917e7.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-aiZoFb'
-        Building CXX object CMakeFiles/cmTC_917e7.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++11   -Wno-deprecated-declarations -o CMakeFiles/cmTC_917e7.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-aiZoFb/src.cxx
-        Linking CXX executable cmTC_917e7
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_917e7.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  --coverage  CMakeFiles/cmTC_917e7.dir/src.cxx.o -o cmTC_917e7 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-aiZoFb'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bea76/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bea76.dir/build.make CMakeFiles/cmTC_bea76.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-o6cNvP'
+        Building CXX object CMakeFiles/cmTC_bea76.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++11   -Wno-deprecated-declarations -o CMakeFiles/cmTC_bea76.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-o6cNvP/src.cxx
+        Linking CXX executable cmTC_bea76
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bea76.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  --coverage  CMakeFiles/cmTC_bea76.dir/src.cxx.o -o cmTC_bea76 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-o6cNvP'
         
       exitCode: 0
   -
@@ -998,8 +998,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Sc1yEU"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Sc1yEU"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-G9HDUP"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-G9HDUP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1009,17 +1009,17 @@ events:
       variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Sc1yEU'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-G9HDUP'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c1a90/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c1a90.dir/build.make CMakeFiles/cmTC_c1a90.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Sc1yEU'
-        Building CXX object CMakeFiles/cmTC_c1a90.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++11   -Wno-deprecated -o CMakeFiles/cmTC_c1a90.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Sc1yEU/src.cxx
-        Linking CXX executable cmTC_c1a90
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1a90.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  --coverage  CMakeFiles/cmTC_c1a90.dir/src.cxx.o -o cmTC_c1a90 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Sc1yEU'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_832b2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_832b2.dir/build.make CMakeFiles/cmTC_832b2.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-G9HDUP'
+        Building CXX object CMakeFiles/cmTC_832b2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++11   -Wno-deprecated -o CMakeFiles/cmTC_832b2.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-G9HDUP/src.cxx
+        Linking CXX executable cmTC_832b2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_832b2.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  --coverage  CMakeFiles/cmTC_832b2.dir/src.cxx.o -o cmTC_832b2 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-G9HDUP'
         
       exitCode: 0
   -
@@ -1033,8 +1033,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-zFThE1"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-zFThE1"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-BN18Fc"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-BN18Fc"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1044,17 +1044,17 @@ events:
       variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-zFThE1'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-BN18Fc'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_337a5/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_337a5.dir/build.make CMakeFiles/cmTC_337a5.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-zFThE1'
-        Building CXX object CMakeFiles/cmTC_337a5.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++11   -Wstrict-aliasing -o CMakeFiles/cmTC_337a5.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-zFThE1/src.cxx
-        Linking CXX executable cmTC_337a5
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_337a5.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage  CMakeFiles/cmTC_337a5.dir/src.cxx.o -o cmTC_337a5 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-zFThE1'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d361a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d361a.dir/build.make CMakeFiles/cmTC_d361a.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-BN18Fc'
+        Building CXX object CMakeFiles/cmTC_d361a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++11   -Wstrict-aliasing -o CMakeFiles/cmTC_d361a.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-BN18Fc/src.cxx
+        Linking CXX executable cmTC_d361a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d361a.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage  CMakeFiles/cmTC_d361a.dir/src.cxx.o -o cmTC_d361a 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-BN18Fc'
         
       exitCode: 0
   -
@@ -1068,8 +1068,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WD654"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ee8zVt"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ee8zVt"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Wx9hJJ"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Wx9hJJ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1079,18 +1079,18 @@ events:
       variable: "HAVE_CXX_FLAG_WD654"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ee8zVt'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Wx9hJJ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d37f/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_0d37f.dir/build.make CMakeFiles/cmTC_0d37f.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ee8zVt'
-        Building CXX object CMakeFiles/cmTC_0d37f.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WD654  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++11   -wd654 -o CMakeFiles/cmTC_0d37f.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ee8zVt/src.cxx
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61bfd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_61bfd.dir/build.make CMakeFiles/cmTC_61bfd.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Wx9hJJ'
+        Building CXX object CMakeFiles/cmTC_61bfd.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WD654  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++11   -wd654 -o CMakeFiles/cmTC_61bfd.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Wx9hJJ/src.cxx
         c++: error: unrecognized command-line option '-wd654'
         c++: error: unrecognized command-line option '-wd654'
-        gmake[1]: *** [CMakeFiles/cmTC_0d37f.dir/build.make:78: CMakeFiles/cmTC_0d37f.dir/src.cxx.o] Error 1
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Ee8zVt'
-        gmake: *** [Makefile:127: cmTC_0d37f/fast] Error 2
+        gmake[1]: *** [CMakeFiles/cmTC_61bfd.dir/build.make:78: CMakeFiles/cmTC_61bfd.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-Wx9hJJ'
+        gmake: *** [Makefile:127: cmTC_61bfd/fast] Error 2
         
       exitCode: 2
   -
@@ -1104,8 +1104,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-gWWT6u"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-gWWT6u"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GXgiIb"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GXgiIb"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1115,18 +1115,18 @@ events:
       variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-gWWT6u'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GXgiIb'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5cf82/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_5cf82.dir/build.make CMakeFiles/cmTC_5cf82.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-gWWT6u'
-        Building CXX object CMakeFiles/cmTC_5cf82.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++11   -Wthread-safety -o CMakeFiles/cmTC_5cf82.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-gWWT6u/src.cxx
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ca4a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3ca4a.dir/build.make CMakeFiles/cmTC_3ca4a.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GXgiIb'
+        Building CXX object CMakeFiles/cmTC_3ca4a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++11   -Wthread-safety -o CMakeFiles/cmTC_3ca4a.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GXgiIb/src.cxx
         c++: error: unrecognized command-line option '-Wthread-safety'
         c++: error: unrecognized command-line option '-Wthread-safety'
-        gmake[1]: *** [CMakeFiles/cmTC_5cf82.dir/build.make:78: CMakeFiles/cmTC_5cf82.dir/src.cxx.o] Error 1
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-gWWT6u'
-        gmake: *** [Makefile:127: cmTC_5cf82/fast] Error 2
+        gmake[1]: *** [CMakeFiles/cmTC_3ca4a.dir/build.make:78: CMakeFiles/cmTC_3ca4a.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-GXgiIb'
+        gmake: *** [Makefile:127: cmTC_3ca4a/fast] Error 2
         
       exitCode: 2
   -
@@ -1140,8 +1140,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_COVERAGE"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-c453jZ"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-c453jZ"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pkTIsA"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pkTIsA"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1151,17 +1151,17 @@ events:
       variable: "HAVE_CXX_FLAG_COVERAGE"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-c453jZ'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pkTIsA'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2d0c3/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_2d0c3.dir/build.make CMakeFiles/cmTC_2d0c3.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-c453jZ'
-        Building CXX object CMakeFiles/cmTC_2d0c3.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_CXX_FLAG_COVERAGE  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage -std=c++11   --coverage -o CMakeFiles/cmTC_2d0c3.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-c453jZ/src.cxx
-        Linking CXX executable cmTC_2d0c3
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d0c3.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage  --coverage  CMakeFiles/cmTC_2d0c3.dir/src.cxx.o -o cmTC_2d0c3 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-c453jZ'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b4d5c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b4d5c.dir/build.make CMakeFiles/cmTC_b4d5c.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pkTIsA'
+        Building CXX object CMakeFiles/cmTC_b4d5c.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_COVERAGE  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage -std=c++11   --coverage -o CMakeFiles/cmTC_b4d5c.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pkTIsA/src.cxx
+        Linking CXX executable cmTC_b4d5c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4d5c.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  --coverage  --coverage  CMakeFiles/cmTC_b4d5c.dir/src.cxx.o -o cmTC_b4d5c 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-pkTIsA'
         
       exitCode: 0
   -
@@ -1183,14 +1183,14 @@ events:
       stdout: |
         Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f1ff/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_5f1ff.dir/build.make CMakeFiles/cmTC_5f1ff.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_28077/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_28077.dir/build.make CMakeFiles/cmTC_28077.dir/build
         gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
-        Building CXX object CMakeFiles/cmTC_5f1ff.dir/std_regex.cpp.o
-        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_5f1ff.dir/std_regex.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/std_regex.cpp
-        Linking CXX executable cmTC_5f1ff
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f1ff.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_5f1ff.dir/std_regex.cpp.o -o cmTC_5f1ff 
+        Building CXX object CMakeFiles/cmTC_28077.dir/std_regex.cpp.o
+        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_28077.dir/std_regex.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/std_regex.cpp
+        Linking CXX executable cmTC_28077
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28077.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_28077.dir/std_regex.cpp.o -o cmTC_28077 
         gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
         
       exitCode: 0
@@ -1218,18 +1218,18 @@ events:
       stdout: |
         Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_63111/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_63111.dir/build.make CMakeFiles/cmTC_63111.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8b90/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a8b90.dir/build.make CMakeFiles/cmTC_a8b90.dir/build
         gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
-        Building CXX object CMakeFiles/cmTC_63111.dir/gnu_posix_regex.cpp.o
-        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_63111.dir/gnu_posix_regex.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp
+        Building CXX object CMakeFiles/cmTC_a8b90.dir/gnu_posix_regex.cpp.o
+        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_a8b90.dir/gnu_posix_regex.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp
         /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp:1:10: fatal error: gnuregex.h: Нет такого файла или каталога
             1 | #include <gnuregex.h>
               |          ^~~~~~~~~~~~
         compilation terminated.
-        gmake[1]: *** [CMakeFiles/cmTC_63111.dir/build.make:78: CMakeFiles/cmTC_63111.dir/gnu_posix_regex.cpp.o] Ошибка 1
+        gmake[1]: *** [CMakeFiles/cmTC_a8b90.dir/build.make:78: CMakeFiles/cmTC_a8b90.dir/gnu_posix_regex.cpp.o] Ошибка 1
         gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
-        gmake: *** [Makefile:127: cmTC_63111/fast] Ошибка 2
+        gmake: *** [Makefile:127: cmTC_a8b90/fast] Ошибка 2
         
       exitCode: 2
     runResult:
@@ -1254,14 +1254,14 @@ events:
       stdout: |
         Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e61c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_8e61c.dir/build.make CMakeFiles/cmTC_8e61c.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f55b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f55b.dir/build.make CMakeFiles/cmTC_5f55b.dir/build
         gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
-        Building CXX object CMakeFiles/cmTC_8e61c.dir/posix_regex.cpp.o
-        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_8e61c.dir/posix_regex.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/posix_regex.cpp
-        Linking CXX executable cmTC_8e61c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e61c.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_8e61c.dir/posix_regex.cpp.o -o cmTC_8e61c 
+        Building CXX object CMakeFiles/cmTC_5f55b.dir/posix_regex.cpp.o
+        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_5f55b.dir/posix_regex.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_5f55b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f55b.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_5f55b.dir/posix_regex.cpp.o -o cmTC_5f55b 
         gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
         
       exitCode: 0
@@ -1289,14 +1289,14 @@ events:
       stdout: |
         Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60f55/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_60f55.dir/build.make CMakeFiles/cmTC_60f55.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55578/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_55578.dir/build.make CMakeFiles/cmTC_55578.dir/build
         gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
-        Building CXX object CMakeFiles/cmTC_60f55.dir/steady_clock.cpp.o
-        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_60f55.dir/steady_clock.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/steady_clock.cpp
-        Linking CXX executable cmTC_60f55
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60f55.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_60f55.dir/steady_clock.cpp.o -o cmTC_60f55 
+        Building CXX object CMakeFiles/cmTC_55578.dir/steady_clock.cpp.o
+        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_55578.dir/steady_clock.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_55578
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55578.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_55578.dir/steady_clock.cpp.o -o cmTC_55578 
         gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
         
       exitCode: 0
@@ -1324,14 +1324,14 @@ events:
       stdout: |
         Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eb8d2/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_eb8d2.dir/build.make CMakeFiles/cmTC_eb8d2.dir/build
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22bff/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_22bff.dir/build.make CMakeFiles/cmTC_22bff.dir/build
         gmake[1]: вход в каталог «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
-        Building CXX object CMakeFiles/cmTC_eb8d2.dir/pthread_affinity.cpp.o
-        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_eb8d2.dir/pthread_affinity.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/pthread_affinity.cpp
-        Linking CXX executable cmTC_eb8d2
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb8d2.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_eb8d2.dir/pthread_affinity.cpp.o -o cmTC_eb8d2 
+        Building CXX object CMakeFiles/cmTC_22bff.dir/pthread_affinity.cpp.o
+        /usr/bin/c++   --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11 -o CMakeFiles/cmTC_22bff.dir/pthread_affinity.cpp.o -c /home/chesnokova/LABA3/build/_deps/googlebenchmark-src/cmake/pthread_affinity.cpp
+        Linking CXX executable cmTC_22bff
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22bff.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_22bff.dir/pthread_affinity.cpp.o -o cmTC_22bff 
         gmake[1]: выход из каталога «/home/chesnokova/LABA3/build/CMakeFiles/CMakeTmp»
         
       exitCode: 0
@@ -1350,8 +1350,8 @@ events:
     checks:
       - "Performing Test BENCHMARK_HAS_O3_FLAG"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7FSIby"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7FSIby"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-31y8BX"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-31y8BX"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1361,17 +1361,17 @@ events:
       variable: "BENCHMARK_HAS_O3_FLAG"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7FSIby'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-31y8BX'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0bdcc/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_0bdcc.dir/build.make CMakeFiles/cmTC_0bdcc.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7FSIby'
-        Building CXX object CMakeFiles/cmTC_0bdcc.dir/src.cxx.o
-        /usr/bin/c++ -DBENCHMARK_HAS_O3_FLAG  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -O3 -o CMakeFiles/cmTC_0bdcc.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7FSIby/src.cxx
-        Linking CXX executable cmTC_0bdcc
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bdcc.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_0bdcc.dir/src.cxx.o -o cmTC_0bdcc 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7FSIby'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b1940/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b1940.dir/build.make CMakeFiles/cmTC_b1940.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-31y8BX'
+        Building CXX object CMakeFiles/cmTC_b1940.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_O3_FLAG  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -O3 -o CMakeFiles/cmTC_b1940.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-31y8BX/src.cxx
+        Linking CXX executable cmTC_b1940
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1940.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_b1940.dir/src.cxx.o -o cmTC_b1940 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-31y8BX'
         
       exitCode: 0
   -
@@ -1384,8 +1384,8 @@ events:
     checks:
       - "Performing Test BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-diIlmU"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-diIlmU"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-hfhgz4"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-hfhgz4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1395,17 +1395,17 @@ events:
       variable: "BENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-diIlmU'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-hfhgz4'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_132a9/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_132a9.dir/build.make CMakeFiles/cmTC_132a9.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-diIlmU'
-        Building CXX object CMakeFiles/cmTC_132a9.dir/src.cxx.o
-        /usr/bin/c++ -DBENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -Werror=deprecated-declarations -o CMakeFiles/cmTC_132a9.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-diIlmU/src.cxx
-        Linking CXX executable cmTC_132a9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_132a9.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_132a9.dir/src.cxx.o -o cmTC_132a9 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-diIlmU'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f1fe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7f1fe.dir/build.make CMakeFiles/cmTC_7f1fe.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-hfhgz4'
+        Building CXX object CMakeFiles/cmTC_7f1fe.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_DEPRECATED_DECLARATIONS_FLAG  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -Werror=deprecated-declarations -o CMakeFiles/cmTC_7f1fe.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-hfhgz4/src.cxx
+        Linking CXX executable cmTC_7f1fe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f1fe.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_7f1fe.dir/src.cxx.o -o cmTC_7f1fe 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-hfhgz4'
         
       exitCode: 0
   -
@@ -1418,8 +1418,8 @@ events:
     checks:
       - "Performing Test BENCHMARK_HAS_WNO_ODR"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7bvnl2"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7bvnl2"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-USgspS"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-USgspS"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1429,17 +1429,17 @@ events:
       variable: "BENCHMARK_HAS_WNO_ODR"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7bvnl2'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-USgspS'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_95efa/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_95efa.dir/build.make CMakeFiles/cmTC_95efa.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7bvnl2'
-        Building CXX object CMakeFiles/cmTC_95efa.dir/src.cxx.o
-        /usr/bin/c++ -DBENCHMARK_HAS_WNO_ODR  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -Wno-odr -o CMakeFiles/cmTC_95efa.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7bvnl2/src.cxx
-        Linking CXX executable cmTC_95efa
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95efa.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_95efa.dir/src.cxx.o -o cmTC_95efa 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-7bvnl2'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bb125/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bb125.dir/build.make CMakeFiles/cmTC_bb125.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-USgspS'
+        Building CXX object CMakeFiles/cmTC_bb125.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_WNO_ODR  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -Wno-odr -o CMakeFiles/cmTC_bb125.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-USgspS/src.cxx
+        Linking CXX executable cmTC_bb125
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb125.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_bb125.dir/src.cxx.o -o cmTC_bb125 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-USgspS'
         
       exitCode: 0
   -
@@ -1452,8 +1452,8 @@ events:
     checks:
       - "Performing Test BENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH"
     directories:
-      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-34Mqtp"
-      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-34Mqtp"
+      source: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-RbASI8"
+      binary: "/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-RbASI8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1463,17 +1463,17 @@ events:
       variable: "BENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH"
       cached: true
       stdout: |
-        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-34Mqtp'
+        Change Dir: '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-RbASI8'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1ed16/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1ed16.dir/build.make CMakeFiles/cmTC_1ed16.dir/build
-        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-34Mqtp'
-        Building CXX object CMakeFiles/cmTC_1ed16.dir/src.cxx.o
-        /usr/bin/c++ -DBENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -Wno-lto-type-mismatch -o CMakeFiles/cmTC_1ed16.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-34Mqtp/src.cxx
-        Linking CXX executable cmTC_1ed16
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed16.dir/link.txt --verbose=1
-        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_1ed16.dir/src.cxx.o -o cmTC_1ed16 
-        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-34Mqtp'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_16c6f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_16c6f.dir/build.make CMakeFiles/cmTC_16c6f.dir/build
+        gmake[1]: Entering directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-RbASI8'
+        Building CXX object CMakeFiles/cmTC_16c6f.dir/src.cxx.o
+        /usr/bin/c++ -DBENCHMARK_HAS_WNO_LTO_TYPE_MISMATCH  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -std=c++11   -Wno-lto-type-mismatch -o CMakeFiles/cmTC_16c6f.dir/src.cxx.o -c /home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-RbASI8/src.cxx
+        Linking CXX executable cmTC_16c6f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16c6f.dir/link.txt --verbose=1
+        /usr/bin/c++  --coverage  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing   --coverage  CMakeFiles/cmTC_16c6f.dir/src.cxx.o -o cmTC_16c6f 
+        gmake[1]: Leaving directory '/home/chesnokova/LABA3/build/CMakeFiles/CMakeScratch/TryCompile-RbASI8'
         
       exitCode: 0
 ...
