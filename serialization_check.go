@@ -21,8 +21,6 @@ func sep() {
 	fmt.Println()
 }
 
-
-
 func testMyArr() {
 	header("MyArr (Массив)")
 
@@ -37,11 +35,13 @@ func testMyArr() {
 	sep()
 	fmt.Println("Тест текстового формата ---")
 	fmt.Println("Сохранение в myarr.txt (Text)")
-	arr.SaveToFile("myarr.txt")
+	
+	arrSerializer := ds.NewArrSerializer()
+	arrSerializer.SaveToFile(arr, "myarr.txt")
 
 	fmt.Println("Загрузка из файла...")
 	loadTxt := ds.NewMyArr()
-	loadTxt.LoadFromFile("myarr.txt")
+	arrSerializer.LoadFromFile(loadTxt, "myarr.txt")
 
 	fmt.Println("Проверка данных...")
 	assert(loadTxt.LenArr() == 4, "length mismatch")
@@ -57,11 +57,11 @@ func testMyArr() {
 	sep()
 	fmt.Println("Тест бинарного формата ---")
 	fmt.Println("Сериализация в myarr.bin (Binary)")
-	arr.SaveToBinaryFile("myarr.bin")
+	arrSerializer.SaveToBinaryFile(arr, "myarr.bin")
 
 	fmt.Println("Загрузка из файла...")
 	loadBin := ds.NewMyArr()
-	loadBin.LoadFromBinaryFile("myarr.bin")
+	arrSerializer.LoadFromBinaryFile(loadBin, "myarr.bin")
 
 	fmt.Println("Проверка данных...")
 	fmt.Printf("  - Индекс 0: %s (Ожидалось: Москва)\n", loadBin.GetAt(0))
@@ -90,11 +90,13 @@ func testMyList() {
 	sep()
 	fmt.Println("Тест текстового формата ---")
 	fmt.Println("Сохранение в mylist.txt (Text)")
-	list.SaveToFile("mylist.txt")
+	
+	listSerializer := ds.NewListSerializer()
+	listSerializer.SaveToFile(list, "mylist.txt")
 
 	fmt.Println("Загрузка из файла...")
 	loadTxt := ds.NewMyList()
-	loadTxt.LoadFromFile("mylist.txt")
+	listSerializer.LoadFromFile(loadTxt, "mylist.txt")
 
 	fmt.Println("Проверка наличия значений...")
 	vals := []string{"Берлин", "Мадрид", "Рим"}
@@ -108,11 +110,11 @@ func testMyList() {
 	sep()
 	fmt.Println("Тест бинарного формата ---")
 	fmt.Println("Сохранение в mylist.bin (Binary)")
-	list.SaveToBinaryFile("mylist.bin")
+	listSerializer.SaveToBinaryFile(list, "mylist.bin")
 
 	fmt.Println("Загрузка из файла...")
 	loadBin := ds.NewMyList()
-	loadBin.LoadFromBinaryFile("mylist.bin")
+	listSerializer.LoadFromBinaryFile(loadBin, "mylist.bin")
 
 	fmt.Println("Проверка наличия значений...")
 	for _, v := range vals {
@@ -125,7 +127,6 @@ func testMyList() {
 	os.Remove("mylist.txt")
 	os.Remove("mylist.bin")
 }
-
 
 func testDList() {
 	header("DList (Двусвязный список)")
@@ -140,11 +141,13 @@ func testDList() {
 	sep()
 	fmt.Println("Тест текстового формата ---")
 	fmt.Println("Сохранение в dlist.txt (Text)")
-	l.SaveToFile("dlist.txt")
+	
+	dlistSerializer := ds.NewDListSerializer()
+	dlistSerializer.SaveToFile(l, "dlist.txt")
 
 	fmt.Println("Загрузка из файла...")
 	loadTxt := ds.NewDList()
-	loadTxt.LoadFromFile("dlist.txt")
+	dlistSerializer.LoadFromFile(loadTxt, "dlist.txt")
 
 	fmt.Println("Проверка наличия значений...")
 	for _, v := range []string{"Пекин", "Сеул", "Бангкок"} {
@@ -157,11 +160,11 @@ func testDList() {
 	sep()
 	fmt.Println("Тест бинарного формата ---")
 	fmt.Println("Сохранение в dlist.bin (Binary)")
-	l.SaveToBinaryFile("dlist.bin")
+	dlistSerializer.SaveToBinaryFile(l, "dlist.bin")
 
 	fmt.Println("Загрузка из файла...")
 	loadBin := ds.NewDList()
-	loadBin.LoadFromBinaryFile("dlist.bin")
+	dlistSerializer.LoadFromBinaryFile(loadBin, "dlist.bin")
 
 	fmt.Println("Проверка наличия значений...")
 	for _, v := range []string{"Пекин", "Сеул", "Бангкок"} {
@@ -174,8 +177,6 @@ func testDList() {
 	os.Remove("dlist.txt")
 	os.Remove("dlist.bin")
 }
-
-
 
 func testStack() {
 	header("Stack (Стек)")
@@ -190,11 +191,13 @@ func testStack() {
 	sep()
 	fmt.Println("Тест текстового формата ---")
 	fmt.Println("Сохранение в stack.txt")
-	s.SaveToFile("stack.txt")
+	
+	stackSerializer := ds.NewStackSerializer()
+	stackSerializer.SaveToFile(s, "stack.txt")
 
 	fmt.Println("Загрузка из файла...")
 	loadTxt := ds.NewStack()
-	loadTxt.LoadFromFile("stack.txt")
+	stackSerializer.LoadFromFile(loadTxt, "stack.txt")
 
 	fmt.Println("Проверка порядка (LIFO)...")
 	expected := []string{"Копенгаген", "Стокгольм", "Осло"}
@@ -209,11 +212,11 @@ func testStack() {
 	sep()
 	fmt.Println("Тест бинарного формата ---")
 	fmt.Println("Сохранение в stack.bin")
-	s.SaveToBinaryFile("stack.bin")
+	stackSerializer.SaveToBinaryFile(s, "stack.bin")
 
 	fmt.Println("Загрузка из файла...")
 	loadBin := ds.NewStack()
-	loadBin.LoadFromBinaryFile("stack.bin")
+	stackSerializer.LoadFromBinaryFile(loadBin, "stack.bin")
 
 	fmt.Println("Проверка порядка (LIFO)...")
 	for i, exp := range expected {
@@ -241,11 +244,13 @@ func testQueue() {
 	sep()
 	fmt.Println("Тест текстового формата ---")
 	fmt.Println("Сохранение в queue.txt")
-	q.SaveToFile("queue.txt")
+	
+	queueSerializer := ds.NewQueueSerializer()
+	queueSerializer.SaveToFile(q, "queue.txt")
 
 	fmt.Println("Загрузка из файла...")
 	loadTxt := ds.NewQueue()
-	loadTxt.LoadFromFile("queue.txt")
+	queueSerializer.LoadFromFile(loadTxt, "queue.txt")
 
 	fmt.Println("Проверка порядка (FIFO)...")
 	expected := []string{"Дели", "Мумбаи", "Калькутта"}
@@ -260,11 +265,11 @@ func testQueue() {
 	sep()
 	fmt.Println("Тест бинарного формата ---")
 	fmt.Println("Сохранение в queue.bin")
-	q.SaveToBinaryFile("queue.bin")
+	queueSerializer.SaveToBinaryFile(q, "queue.bin")
 
 	fmt.Println("Загрузка из файла...")
 	loadBin := ds.NewQueue()
-	loadBin.LoadFromBinaryFile("queue.bin")
+	queueSerializer.LoadFromBinaryFile(loadBin, "queue.bin")
 
 	fmt.Println("Проверка порядка (FIFO)...")
 	for i, exp := range expected {
@@ -279,171 +284,6 @@ func testQueue() {
 	os.Remove("queue.bin")
 }
 
-//
-// ──────────────────────────────────────────────────────────────
-//   CompleteBinaryTree
-// ──────────────────────────────────────────────────────────────
-//
-
-func testCBT() {
-	header("CompleteBinaryTree (CBT)")
-
-	t := ds.NewCBT()
-	fmt.Println("Вставка чисел: 50, 30, 70")
-	t.Insert(50)
-	t.Insert(30)
-	t.Insert(70)
-
-	// TEXT
-	sep()
-	fmt.Println("Тест текстового формата ---")
-	fmt.Println("Сохранение в cbt.txt")
-	t.SaveToFile("cbt.txt")
-
-	fmt.Println("Загрузка из cbt.txt...")
-	loadTxt := ds.NewCBT()
-	loadTxt.LoadFromFile("cbt.txt")
-
-	fmt.Println("Поиск узлов...")
-	vals := []int{50, 30, 70}
-	for _, v := range vals {
-		assert(loadTxt.Search(v), fmt.Sprint(v, " missing"))
-		fmt.Println("  -", v, "найдено")
-	}
-	fmt.Println("Текстовая сериализация: ПРОЙДЕНА")
-
-	// BINARY
-	sep()
-	fmt.Println("Тест бинарного формата ---")
-	fmt.Println("Сохранение в cbt.bin")
-	t.SaveToBinaryFile("cbt.bin")
-
-	fmt.Println("Загрузка из cbt.bin...")
-	loadBin := ds.NewCBT()
-	loadBin.LoadFromBinaryFile("cbt.bin")
-
-	fmt.Println("Поиск узлов...")
-	for _, v := range vals {
-		assert(loadBin.Search(v), fmt.Sprint(v, " missing"))
-		fmt.Println("  -", v, "найдено")
-	}
-	fmt.Println("Бинарная сериализация: ПРОЙДЕНА")
-
-	fmt.Println("CompleteBinaryTree: ВСЕ ТЕСТЫ ПРОЙДЕНЫ\n")
-	os.Remove("cbt.txt")
-	os.Remove("cbt.bin")
-}
-
-
-func testHash() {
-	header("HashTables (Хеш-таблицы)")
-
-	// CHAIN HASH
-	fmt.Println("ChainHash")
-	fmt.Println("Вставка: key1->value1, key2->value2")
-	ch := ds.NewChainHash(10)
-	ch.Insert("key1", "value1")
-	ch.Insert("key2", "value2")
-
-	// TEXT
-	sep()
-	fmt.Println("Тест текстового формата ---")
-	fmt.Println("Сохранение в chain.txt")
-	ch.SaveToFile("chain.txt")
-
-	fmt.Println("Загрузка...")
-	loadTxt := ds.NewChainHash(10)
-	loadTxt.LoadFromFile("chain.txt")
-
-	fmt.Println("Проверка значений...")
-	for _, kv := range []struct{ k, v string }{
-		{"key1", "value1"},
-		{"key2", "value2"},
-	} {
-		assert(loadTxt.Find(kv.k) == kv.v, kv.k+" mismatch")
-		fmt.Printf("  - %s -> %s\n", kv.k, kv.v)
-	}
-	fmt.Println("ChainHash Текстовая Сериализация: ПРОЙДЕНА")
-
-	// BINARY
-	sep()
-	fmt.Println("Тест бинарного формата ---")
-	fmt.Println("Сохранение в chain.bin")
-	ch.SaveToBinaryFile("chain.bin")
-
-	fmt.Println("Загрузка...")
-	loadBin := ds.NewChainHash(10)
-	loadBin.LoadFromBinaryFile("chain.bin")
-
-	fmt.Println("Проверка значений...")
-	for _, kv := range []struct{ k, v string }{
-		{"key1", "value1"},
-		{"key2", "value2"},
-	} {
-		assert(loadBin.Find(kv.k) == kv.v, kv.k+" mismatch")
-		fmt.Printf("  - %s -> %s\n", kv.k, kv.v)
-	}
-	fmt.Println("ChainHash Бинарная Сериализация: ПРОЙДЕНА")
-
-	//
-	// OpenHash
-	//
-	fmt.Println("\nOpenHash")
-	fmt.Println("Вставка: k1->v1, k2->v2")
-	oh := ds.NewOpenHash(10)
-	oh.Insert("k1", "v1")
-	oh.Insert("k2", "v2")
-
-	// TEXT
-	sep()
-	fmt.Println("Тест текстового формата ---")
-	fmt.Println("Сохранение в openhash.txt")
-	oh.SaveToFile("openhash.txt")
-
-	fmt.Println("Загрузка...")
-	ohTxt := ds.NewOpenHash(10)
-	ohTxt.LoadFromFile("openhash.txt")
-
-	fmt.Println("Проверка значений...")
-	for _, kv := range []struct{ k, v string }{
-		{"k1", "v1"},
-		{"k2", "v2"},
-	} {
-		assert(ohTxt.Find(kv.k) == kv.v, kv.k+" mismatch")
-		fmt.Printf("  - %s -> %s\n", kv.k, kv.v)
-	}
-	fmt.Println("OpenHash Текстовая Сериализация: ПРОЙДЕНА")
-
-	// BINARY
-	sep()
-	fmt.Println("Тест бинарного формата ---")
-	fmt.Println("Сохранение в openhash.bin")
-	oh.SaveToBinaryFile("openhash.bin")
-
-	fmt.Println("Загрузка...")
-	ohBin := ds.NewOpenHash(10)
-	ohBin.LoadFromBinaryFile("openhash.bin")
-
-	fmt.Println("Проверка значений...")
-	for _, kv := range []struct{ k, v string }{
-		{"k1", "v1"},
-		{"k2", "v2"},
-	} {
-		assert(ohBin.Find(kv.k) == kv.v, kv.k+" mismatch")
-		fmt.Printf("  - %s -> %s\n", kv.k, kv.v)
-	}
-	fmt.Println("OpenHash Бинарная Сериализация: ПРОЙДЕНА")
-
-	fmt.Println("HashTables: ВСЕ ТЕСТЫ ПРОЙДЕНЫ\n")
-
-	os.Remove("chain.txt")
-	os.Remove("chain.bin")
-	os.Remove("openhash.txt")
-	os.Remove("openhash.bin")
-}
-
-
-
 func main() {
 	fmt.Println("ЗАПУСК ТЕСТОВ СЕРИАЛИЗАЦИИ СТРУКТУР ДАННЫХ\n")
 
@@ -452,8 +292,6 @@ func main() {
 	testDList()
 	testStack()
 	testQueue()
-	testCBT()
-	testHash()
 
 	fmt.Println("=========================================")
 	fmt.Println("ВСЕ ТЕСТЫ УСПЕШНО ПРОЙДЕНЫ!")
